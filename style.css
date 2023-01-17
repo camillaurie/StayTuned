@@ -1,0 +1,41 @@
+.game {
+    background-color: #0c2f48;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.game__menu {
+    width: 10%;
+    background-color: #3a5c51;
+}
+
+.game__scene {
+    width: 80%;
+    background-color: #36424d;
+    height: 70vh;
+}
+
+.game__help {
+    width: 10%;
+    background-color: #3d2d19;
+}
+
+.game__time {
+    width: 10%;
+    background-color: #281a4a;
+}
+
+.game__dialogue {
+    width: 50%;
+    background-color: #1a4a3b;
+    height: 30vh;
+}
+
+.dialogue__character {
+    color: rgb(74, 114, 131)
+}
+
+.game__inventory {
+    width: 40%;
+    background-color: #213d19;
+}
