@@ -11,9 +11,9 @@
 
     <body>
         <div class="game">
-            <div class="game__menu">1</div>
+            <div id='audio' class="game__menu">1</div>
             <div id='video' class="game__scene">
-                <video playsinline controls autoplay>
+                <video id="currentVideo" onended="handleClickById()" playsinline controls autoplay >
                     <source src="video/mattie_welcome.webm" type="video/webm">
                 </video>
             </div>
@@ -27,7 +27,7 @@
                 </div>
                 <div class="dialogue__scroll"></div>
             </div>
-            <div class="game__inventory"><img alt="" src="pics/emptyinventory.png"></div>
+            <div id="inventory" class="game__inventory"><img alt="" src="pics/emptyinventory.png"></div>
         </div>
         <script type="text/javascript" src="index.js"></script>
     </body>
