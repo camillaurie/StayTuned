@@ -5,30 +5,28 @@
         <meta name="viewport" content="width=device-width"/>
 
         <title>Stay Tuned For Danger</title>
-        <link rel="stylesheet" href="normalize.css"/>
-        <link rel="stylesheet" href="style.css"/>
+        <link rel="stylesheet" href="style/normalize.css"/>
+        <link rel="stylesheet" href="style/style.css"/>
     </head>
 
     <body>
-        <div class="game">
-            <div id='audio' class="game__menu">1</div>
-            <div id='video' class="game__scene">
-                <video id="currentVideo" onended="handleClickById()" playsinline controls autoplay >
-                    <source src="video/mattie_welcome.webm" type="video/webm">
-                </video>
+        <div id="wrapper">
+            <div class="menu__screen">
+                <ul class="menu__list">
+                    <li id="NewGame" class="menu__item">New Game</li>
+                    <li class="menu__item">Load & Save Game</li>
+                    <li class="menu__item">Continue Game</li>
+                    <li class="menu__item">Second Chance</li>
+                    <li class="menu__item">Game Setup</li>
+                    <li class="menu__item">Credits</li>
+                    <li class="menu__item">Help</li>
+                    <li class="menu__item">Exit Game</li>
+                </ul>
             </div>
-            <div class="game__help">3</div>
-            <div class="game__time">4</div>
-            <div class="game__dialogue dialogue">
-                <div id="wholedialogue" class="dialogue__window">
-                    <p class="dialogue__character">Welcome to New York, Nancy! I'm really glad you could come out here on such a short notice.</p>
-                    <p id="itsAlwaysNice" class="dialogue__options">It's always nice to come back to the Big Apple - and now I get to stay with a famous soap opera star. It must be exciting work.</p>
-                    <p id="imHappyToHelp" class="dialogue__options">I'm happy to help in any way I can. Aunt Eloise told me that someone on the set is getting death threats.</p>
-                </div>
-                <div class="dialogue__scroll"></div>
-            </div>
-            <div id="inventory" class="game__inventory"><img alt="" src="pics/emptyinventory.png"></div>
         </div>
-        <script type="text/javascript" src="index.js"></script>
+        <script type="text/javascript" src="script/firstinteractionwithmattie.js"></script>
+        <script type="text/javascript" src="script/opening.js"></script>
+        <script type="text/javascript" src="script/maps.js"></script>
+        <script type="text/javascript" src="script/mattiesApartmentIntroduction.js"></script>
     </body>
 </html>
