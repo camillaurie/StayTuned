@@ -68,6 +68,9 @@ function handleClickById(event) {
         if (dialogueOptionId == 'watch') {
             watch();
         }
+        if (dialogueOptionId == 'teleprompter') {
+            teleprompter();
+        }
         if (dialogueOptionId == 'police') {
             police();
         }
@@ -232,9 +235,6 @@ function noAndThatsTheProblem0() {
             Someone sent him poisoned chocolates?
         </p>
         `
-        // !!!
-        // !!!
-        // тут надо дать ответы такие что полиции уже не будет но будут письма и шоколад
 }
 function noAndThatsTheProblem1() {
     document.getElementById("video")
@@ -422,6 +422,37 @@ function someoneSentHimABrokenWatch() {
         .innerHTML = `
         <p class='dialogue__character'>
             Someone sent him a broken watch with the hands at five minutes to midnight and a note saying, 'Time's running out'. That one really freaked me out!
+        </p>
+        <p id='police' class='dialogue__options'>
+            Did Rick go to the police?
+        </p>
+        <p id='letters1' class='dialogue__options'>
+            Tell me about the letters.
+        </p>
+        <p id='chocolates1' class='dialogue__options'>
+            Someone sent him poisoned chocolates?
+        </p>
+        `
+}
+
+function teleprompter() {
+    document.getElementById("audio")
+        .innerHTML = `
+        <audio controls autoplay onended="wellIwasReadingATeleprompter()"><source src="audio/nancy_sowhathappened.mp3" type="audio/mpeg"></audio>
+        `
+}
+
+function wellIwasReadingATeleprompter() {
+    document.getElementById("video")
+        .innerHTML = `
+        <video id="currentVideo" playsinline controls autoplay>
+            <source src="video/mattie_welliwasreading.webm" type="video/webm">
+        </video>
+        `
+    document.getElementById("wholedialogue")
+        .innerHTML = `
+        <p class='dialogue__character'>
+            Well, I was reading the teleprompter during a scene with Rick. All of the sudden, my lines read, 'YOU'RE GOING TO DIE A HORRIBLE DEATH, RICK'. At the time, we all thought it was some sick joke, but nobody admitted to doing it.
         </p>
         <p id='police' class='dialogue__options'>
             Did Rick go to the police?
