@@ -44,3 +44,16 @@
     width: 163px;
     height: 135px;
 }
+
+
+.activesides {
+    background: #ffffff40;
+    height: 292px;
+    width: 50px;
+    position: absolute;
+    top: 0;
+}
+
+.activerightside {
+    left: 564px;
+}

@@ -54,7 +54,7 @@ function mattiesHallwayExploration() {
     .innerHTML = `
         <div>
             <img id="circlingPicture" src="pics/mattie_day_circle/ME1X_0.png">
-            <div id="sasa" style="
+            <div id="ME1S_0" style="
                 height: 110px;
                 width: 70px;
                 background-color: red;
@@ -62,23 +62,8 @@ function mattiesHallwayExploration() {
                 top: 70px;
                 left: 380px;
             "></div>
-            <div id="turnleftincircle" style="
-                background: transparent;
-                height: 292px;
-                box-shadow: inset 20px 0 20px white;
-                position: absolute;
-                width: 50px;
-                top: 0;
-            "></div>
-            <div id="turnrightincircle" style="
-                background: transparent;
-                height: 292px;
-                box-shadow: inset -20px 0 20px white;
-                width: 50px;
-                position: absolute;
-                top: 0;
-                left: 608px;
-            "></div>
+            <div id="turnleftincircle" class ="activesides activeleftside"></div>
+            <div id="turnrightincircle" class ="activesides activerightside"></div>
         </div>
     `
 }
@@ -87,9 +72,13 @@ document
     .getElementById("wrapper")
     .addEventListener("mouseover", Turning); 
 
+    //то что наверху написано как-то логически связано с тем что внизу написано? 
+    // мне надо на верхнее если тру повесить нижнее
+    // чтобы если уже не тру то функция перестала выполняться
+
 function Turning(event) {
-    if (event.target.id == 'turnleftincircle') {
-        if (currentScreenNumber >=18) {
+    if (event.target.id == 'turnleftincircle') { // while true???
+        if (currentScreenNumber >=19) {
             currentScreenNumber = -1;
             increaseScreenNumber();
         } else {
@@ -98,7 +87,7 @@ function Turning(event) {
     }
     if (event.target.id == 'turnrightincircle') {
         if (currentScreenNumber <=0) {
-            currentScreenNumber = 17;
+            currentScreenNumber = 18;
             increaseScreenNumber();
         } else {
             decreaseScreenNumber();
@@ -119,4 +108,52 @@ function decreaseScreenNumber() {
             .getElementById("circlingPicture")
             .src = "pics/mattie_day_circle/ME1X_" + --currentScreenNumber + ".png";
             console.log(currentScreenNumber)
+}
+
+
+// addEventListener
+
+// document
+//     .getElementById("video")
+//     .innerHTML = ``
+
+//     document
+//     .getElementById("wrapper")
+//     .addEventListener("click", knockingOnMattiesDoor);
+
+
+document
+    .getElementById("wrapper")
+    .addEventListener("click", MovingInsideMattiesApartment); 
+
+function MovingInsideMattiesApartment(event) {
+    if (event.target.id == 'ME1S_0') {
+        document
+        .getElementById("video")
+        .innerHTML = `
+            <div>
+                <img id="circlingPicture" src="pics/apartment/ME1S_0.png">
+                <div id="ME1H_0" style="
+                    height: 258px;
+                    width: 119px;
+                    background-color: #873b9b69;
+                    position: absolute;
+                    left: 178px;
+                    top: 18px;
+                "></div>
+            </div>
+        `
+    }
+
+    if (event.target.id == 'ME1H_0') {
+        if (haveISpokenWithMattie == false) {
+            firstInteractionWithMattie()
+        } else {
+            document
+                .getElementById("video")
+                .innerHTML = `
+                    <img id="circlingPicture" src="pics/apartment/ME1S_0.png">
+                `
+        }
+    }
 }
