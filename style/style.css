@@ -57,3 +57,19 @@
 .activerightside {
     left: 564px;
 }
+
+.game__scene {
+    cursor: url(../pics/sprites/glass_grey.png), auto;
+}
+
+.activelocationspot {
+    background-color: #37ff0066;
+    position: absolute;
+    cursor: url(../pics/sprites/yellow_arrow_forward.png), pointer;
+}
+
+.activemapspot {
+    background-color: #4000ff66;
+    position: absolute;
+    cursor: url(../pics/sprites/glass_red.png), pointer;
+}
