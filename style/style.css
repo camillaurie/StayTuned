@@ -1,5 +1,6 @@
 html {
     cursor: url(../pics/sprites/pointer_grey.png), auto;
+    font-family: 'Inconsolata', monospace;
 }
 
 body {
@@ -32,8 +33,8 @@ body {
 }
 
 #inventoryVideo {
-    width: 163px;
-    height: 135px;
+    width: 150px;
+    height: 123px;
 }
 
 
@@ -56,6 +57,56 @@ body {
 
 .game__scene {
     cursor: url(../pics/sprites/glass_grey.png), auto;
+}
+
+
+::-webkit-scrollbar {
+    width: 33px;
+}
+
+::-webkit-scrollbar-track {
+    height: 100px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: url(../pics/sprites/crystal.png) no-repeat;
+    height: 58px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: url(../pics/sprites/crystal.png) no-repeat;
+    cursor: url(../pics/sprites/open_hand.png), ns-resize;
+}
+
+.game__dialogue {
+    position: absolute;
+    left: 52px;
+    top: 338px;
+    background-color: #000000;
+    height: 123px;
+    width: 284px;
+    padding: 0 25px;
+}
+
+.dialogue__character {
+    color: #777777;
+    padding-right: 25px;
+}
+
+.dialogue__options {
+    color: #a5a5a5;
+    padding-right: 25px;
+}
+
+.dialogue__options:hover {
+    color: #dfdfdf;
+}
+
+#wholedialogue {
+    height: 100%;
+    overflow-y: scroll;
+    position: absolute;
+    margin-right: -42px;
 }
 
 .activelocationspot div {

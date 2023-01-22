@@ -12,10 +12,10 @@ function knockingOnMattiesDoor(event) {
                 <img src="pics/ME0N_0.png">
                 <div class="activelocationspot">
                     <div id="LAAapartmentfrontdoor" style="
-                        height: 140px;
-                        width: 71px;
-                        top: 80px;
-                        left: 430px;
+                        height: 190px;
+                        width: 130px;
+                        top: 50px;
+                        left: 280px;
                     "></div>
                 </div>
             </div>
@@ -304,7 +304,7 @@ function MovingInsideMattiesApartment(event) {
         .innerHTML = `
             <div>
                 <img id="circlingPicture" src="pics/apartment/ME1S_0.png">
-                <div class="activelocationspot"
+                <div class="activelocationspot">
                     <div id="ME1H_0" style="
                         height: 258px;
                         width: 119px;
