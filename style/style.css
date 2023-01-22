@@ -112,7 +112,22 @@ body {
 .activelocationspot div {
     background-color: #37ff0066;
     position: absolute;
+}
+
+.forwardpointer {
     cursor: url(../pics/sprites/yellow_arrow_forward.png), pointer;
+}
+
+.slightlyleftpointer {
+    cursor: url(../pics/sprites/slightly_left.png), nw-resize;
+}
+
+.backpointer {
+    cursor: url(../pics/sprites/back_away.png), s-resize;
+}
+
+.redmagnifying {
+    cursor: url(../pics/sprites/glass_red.png), zoom-in;
 }
 
 .activemapspot {

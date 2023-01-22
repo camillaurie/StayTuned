@@ -11,7 +11,7 @@ function knockingOnMattiesDoor(event) {
             <div>
                 <img src="pics/ME0N_0.png">
                 <div class="activelocationspot">
-                    <div id="LAAapartmentfrontdoor" style="
+                    <div class="forwardpointer" id="LAAapartmentfrontdoor" style="
                         height: 190px;
                         width: 130px;
                         top: 50px;
@@ -54,7 +54,7 @@ function mattiesHallwayExploration() {
         <div>
             <img id="circlingPicture" src="pics/mattie_day_circle/ME1X_0.png">
             <div class="activelocationspot">
-            <div id="ME1S_0" style="
+            <div class="forwardpointer" id="ME1S_0" style="
                 height: 201px;
                 width: 133px;
                 top: 37px;
@@ -100,7 +100,7 @@ document
                 let thingy = document.getElementById("circlingPicture").getAttribute("src");
                 if (thingy == "pics/mattie_day_circle/ME1X_0.png") {
                     document.querySelector('.activelocationspot').innerHTML = `
-                        <div id="ME1S_0" style="
+                        <div class="forwardpointer" id="ME1S_0" style="
                             height: 201px;
                             width: 133px;
                             top: 37px;
@@ -109,7 +109,7 @@ document
                     `
                 } else if (thingy == "pics/mattie_day_circle/ME1X_1.png") {
                     document.querySelector('.activelocationspot').innerHTML = `
-                        <div id="ME1S_0" style="
+                        <div class="forwardpointer" id="ME1S_0" style="
                             height: 194px;
                             width: 140px;
                             top: 32px;
@@ -118,7 +118,7 @@ document
                     `
                 } else if (thingy == "pics/mattie_day_circle/ME1X_2.png") {
                     document.querySelector('.activelocationspot').innerHTML = `
-                        <div id="ME1A_0" style="
+                        <div class="redmagnifying" id="ME1A_0" style="
                             height: 86px;
                             width: 112px;
                             top: 173px;
@@ -127,7 +127,7 @@ document
                     `
                 } else if (thingy == "pics/mattie_day_circle/ME1X_3.png") {
                     document.querySelector('.activelocationspot').innerHTML = `
-                        <div id="ME1A_0" style="
+                        <div class="redmagnifying" id="ME1A_0" style="
                             height: 116px;
                             width: 230px;
                             top: 138px;
@@ -136,7 +136,7 @@ document
                     `
                 } else if (thingy == "pics/mattie_day_circle/ME1X_4.png") {
                     document.querySelector('.activelocationspot').innerHTML = `
-                        <div id="ME1A_0" style="
+                        <div class="redmagnifying" id="ME1A_0" style="
                             height: 138px;
                             width: 253px;
                             top: 140px;
@@ -145,7 +145,7 @@ document
                     `
                 } else if (thingy == "pics/mattie_day_circle/ME1X_5.png") {
                     document.querySelector('.activelocationspot').innerHTML = `
-                        <div id="ME1A_0" style="
+                        <div class="redmagnifying" id="ME1A_0" style="
                             height: 125px;
                             width: 236px;
                             top: 149px;
@@ -181,12 +181,12 @@ document
                     `
                 } else if (thingy == "pics/mattie_day_circle/ME1X_9.png") {
                     document.querySelector('.activelocationspot').innerHTML = `
-                        <div id="ME1S_0" style="">
+                        <div>
                         </div>
                     `
                 } else if (thingy == "pics/mattie_day_circle/ME1X_10.png") {
                     document.querySelector('.activelocationspot').innerHTML = `
-                        <div id="ME1S_0" style="">
+                        <div>
                         </div>
                     `
                 } else if (thingy == "pics/mattie_day_circle/ME1X_11.png") {
@@ -236,12 +236,12 @@ document
                     `
                 } else if (thingy == "pics/mattie_day_circle/ME1X_16.png") {
                     document.querySelector('.activelocationspot').innerHTML = `
-                        <div id="ME1S_0" style="">
+                        <div>
                         </div>
                     `
                 } else if (thingy == "pics/mattie_day_circle/ME1X_17.png") {
                     document.querySelector('.activelocationspot').innerHTML = `
-                        <div id="wallwithpics" style="
+                        <div class="redmagnifying" id="wallwithpics" style="
                             height: 180px;
                             width: 200px;
                             top: 43px;
@@ -250,7 +250,7 @@ document
                     `
                 } else if (thingy == "pics/mattie_day_circle/ME1X_18.png") {
                     document.querySelector('.activelocationspot').innerHTML = `
-                        <div id="wallwithpics" style="
+                        <div class="redmagnifying" id="wallwithpics" style="
                             height: 175px;
                             width: 244px;
                             top: 55px;
@@ -259,13 +259,13 @@ document
                     `
                 } else if (thingy == "pics/mattie_day_circle/ME1X_19.png") {
                     document.querySelector('.activelocationspot').innerHTML = `
-                    <div id="wallwithpics" style="
+                    <div class="redmagnifying" id="wallwithpics" style="
                         height: 120px;
                         width: 137px;
                         top: 93px;
                         left: 295px;">
                     </div>
-                    <div id="ME1S_0" style="
+                    <div class="forwardpointer" id="ME1S_0" style="
                         height: 171px;
                         width: 85px;
                         top: 50px;
@@ -305,11 +305,19 @@ function MovingInsideMattiesApartment(event) {
             <div>
                 <img id="circlingPicture" src="pics/apartment/ME1S_0.png">
                 <div class="activelocationspot">
-                    <div id="ME1H_0" style="
-                        height: 258px;
+                    <div class="slightlyleftpointer" id="ME1H_0" style="
+                        height: 206px;
                         width: 119px;
-                        left: 178px;
+                        left: 105px;
                         top: 18px;
+                    "></div>
+                </div>
+                <div class="activelocationspot">
+                    <div class="backpointer" id="backFromAlmostMetMattie" style="
+                        height: 67px;
+                        width: 400px;
+                        left: 61px;
+                        top: 225px;
                     "></div>
                 </div>
             </div>
