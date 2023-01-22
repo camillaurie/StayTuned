@@ -1,43 +1,34 @@
+html {
+    cursor: url(../pics/sprites/pointer_grey.png), auto;
+}
+
+body {
+    width: 640px;
+    height: 480px;
+    background-image: url(../pics/FRAME.png);
+    background-repeat: no-repeat;
+    position: relative;
+}
+
 .game {
-    background-color: #0c2f48;
     display: flex;
     flex-wrap: wrap;
 }
 
-.game__menu {
-    width: 10%;
-    background-color: #3a5c51;
+#video {
+    position: relative;
+    top: 18px;
+    left: 52px;
 }
 
-.game__scene {
-    width: 80%;
-    background-color: #36424d;
-    height: 70vh;
+#audio {
+    width: 0;
 }
 
-.game__help {
-    width: 10%;
-    background-color: #3d2d19;
-}
-
-.game__time {
-    width: 10%;
-    background-color: #281a4a;
-}
-
-.game__dialogue {
-    width: 50%;
-    background-color: #1a4a3b;
-    height: 30vh;
-}
-
-.dialogue__character {
-    color: rgb(74, 114, 131)
-}
-
-.game__inventory {
-    width: 40%;
-    background-color: #213d19;
+#inventory {
+    position: absolute;
+    top: 338px;
+    left: 438px;
 }
 
 #inventoryVideo {
@@ -55,14 +46,19 @@
 }
 
 .activerightside {
-    left: 564px;
+    left: 486px;
+    cursor: url(../pics/sprites/right_circle.png), e-resize;
+}
+
+.activeleftside {
+    cursor: url(../pics/sprites/left_circle.png), w-resize;
 }
 
 .game__scene {
     cursor: url(../pics/sprites/glass_grey.png), auto;
 }
 
-.activelocationspot {
+.activelocationspot div {
     background-color: #37ff0066;
     position: absolute;
     cursor: url(../pics/sprites/yellow_arrow_forward.png), pointer;
