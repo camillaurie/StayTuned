@@ -11,6 +11,21 @@ body {
     position: relative;
 }
 
+.menu__list {
+    padding: 10px;
+    position: absolute;
+    top: -6px;
+    left: 100px;
+}
+
+.menu__item {
+    list-style: none;
+    background-color: #ff000000;
+    width: 294px;
+    height: 37px;
+    margin: 10px;
+}
+
 .game {
     display: flex;
     flex-wrap: wrap;
@@ -59,6 +74,9 @@ body {
     cursor: url(../pics/sprites/glass_grey.png), auto;
 }
 
+.active__point {
+    cursor: url(../pics/sprites/pointer_red.png), auto;
+}
 
 ::-webkit-scrollbar {
     width: 33px;
