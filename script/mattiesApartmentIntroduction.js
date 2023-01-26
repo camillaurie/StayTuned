@@ -3,8 +3,7 @@ document
     .addEventListener("click", knockingOnMattiesDoor);
 
 function knockingOnMattiesDoor(event) {
-    // LAA - Location Active Area
-    if (event.target.id == 'LAAbuttontomattiesapartment') {
+    if (event.target.id == 'fromMapGoToTheApartment') {
         document
         .getElementById("video")
         .innerHTML = `
@@ -26,11 +25,49 @@ function knockingOnMattiesDoor(event) {
     }
 }
 
+
+
+
+document
+    .getElementById("wrapper")
+    .addEventListener("click", backToTheScreenThatWasBefore);
+
+function backToTheScreenThatWasBefore(event) {
+    // LAA - Location Active Area
+    if (event.target.id == 'backToTheScreenThatWasBefore') {
+        document
+        .getElementById("video")
+        .innerHTML = `
+        <div>
+            <img id="circlingPicture" src="pics/mattie_day_circle/ME1X_0.png">
+            <div class="activelocationspot">
+            <div class="forwardpointer" id="ME1S_0" style="
+                height: 201px;
+                width: 133px;
+                top: 37px;
+                left: 229px;
+            "></div></div>
+            <div id="turnleftincircle" class ="activesides activeleftside"></div>
+            <div id="turnrightincircle" class ="activesides activerightside"></div>
+        </div>
+    `
+    }
+}
+
+
+
+
+
+
 function getInvitedByMattie() {
     document
     .getElementById("audio")
     .innerHTML = `
-        <audio id="currentAudio" autoplay controls"><source src="audio/mattie_comeoninnancy.mp3" type="audio/mpeg"></audio>
+        <audio id="currentAudio" autoplay">
+        <source 
+            src="audio/mattie_comeoninnancy.mp3" 
+            type="audio/mpeg">
+        </audio>
     `
     document.getElementById("wholedialogue")
     .innerHTML = `
@@ -38,7 +75,6 @@ function getInvitedByMattie() {
             Come on in, Nancy! The door is open. 
         </p>
     `
-
     document.getElementById('currentAudio')
     .addEventListener('ended', mattiesHallwayExploration, false);
 }
@@ -65,6 +101,7 @@ function mattiesHallwayExploration() {
         </div>
     `
 }
+
 
 document
     .getElementById("wrapper")
@@ -118,7 +155,7 @@ document
                     `
                 } else if (thingy == "pics/mattie_day_circle/ME1X_2.png") {
                     document.querySelector('.activelocationspot').innerHTML = `
-                        <div class="redmagnifying" id="ME1A_0" style="
+                        <div class="redmagnifying" id="ME2A_0" style="
                             height: 86px;
                             width: 112px;
                             top: 173px;
@@ -127,7 +164,7 @@ document
                     `
                 } else if (thingy == "pics/mattie_day_circle/ME1X_3.png") {
                     document.querySelector('.activelocationspot').innerHTML = `
-                        <div class="redmagnifying" id="ME1A_0" style="
+                        <div class="redmagnifying" id="ME2A_0" style="
                             height: 116px;
                             width: 230px;
                             top: 138px;
@@ -136,7 +173,7 @@ document
                     `
                 } else if (thingy == "pics/mattie_day_circle/ME1X_4.png") {
                     document.querySelector('.activelocationspot').innerHTML = `
-                        <div class="redmagnifying" id="ME1A_0" style="
+                        <div class="redmagnifying" id="ME2A_0" style="
                             height: 138px;
                             width: 253px;
                             top: 140px;
@@ -145,7 +182,7 @@ document
                     `
                 } else if (thingy == "pics/mattie_day_circle/ME1X_5.png") {
                     document.querySelector('.activelocationspot').innerHTML = `
-                        <div class="redmagnifying" id="ME1A_0" style="
+                        <div class="redmagnifying" id="ME2A_0" style="
                             height: 125px;
                             width: 236px;
                             top: 149px;
@@ -241,7 +278,7 @@ document
                     `
                 } else if (thingy == "pics/mattie_day_circle/ME1X_17.png") {
                     document.querySelector('.activelocationspot').innerHTML = `
-                        <div class="redmagnifying" id="wallwithpics" style="
+                        <div class="redmagnifying" id="ME4D_0" style="
                             height: 180px;
                             width: 200px;
                             top: 43px;
@@ -250,7 +287,7 @@ document
                     `
                 } else if (thingy == "pics/mattie_day_circle/ME1X_18.png") {
                     document.querySelector('.activelocationspot').innerHTML = `
-                        <div class="redmagnifying" id="wallwithpics" style="
+                        <div class="redmagnifying" id="ME4D_0" style="
                             height: 175px;
                             width: 244px;
                             top: 55px;
@@ -259,7 +296,7 @@ document
                     `
                 } else if (thingy == "pics/mattie_day_circle/ME1X_19.png") {
                     document.querySelector('.activelocationspot').innerHTML = `
-                    <div class="redmagnifying" id="wallwithpics" style="
+                    <div class="redmagnifying" id="ME4D_0" style="
                         height: 120px;
                         width: 137px;
                         top: 93px;
@@ -334,5 +371,65 @@ function MovingInsideMattiesApartment(event) {
                     <img id="circlingPicture" src="pics/apartment/ME1S_0.png">
                 `
         }
+    }
+
+    if (event.target.id == 'ME4D_0') {
+        document
+        .getElementById("video")
+        .innerHTML = `
+            <div>
+                <img id="circlingPicture" src="pics/apartment/ME4D_0.png">
+                <div class="activelocationspot">
+                    <div class="redmagnifying" id="ME4A_0" style="
+                        height: 127px;
+                        width: 142px;
+                        left: 174px;
+                        top: 16px;
+                    "></div>
+                    <div class="redmagnifying" id="ME4B_0" style="
+                        height: 124px;
+                        width: 173px;
+                        left: 348px;
+                        top: 8px;
+                    "></div>
+                    <div class="redmagnifying" id="ME4C_0" style="
+                        height: 108px;
+                        width: 107px;
+                        left: 84px;
+                        top: 173px;
+                    "></div>
+                    <div class="backpointer" id="!!!" style="
+                        height: 67px;
+                        width: 345px;
+                        left: 191px;
+                        top: 225px;
+                    "></div>
+                </div>
+            </div>
+        `
+    }
+
+    if (event.target.id == 'ME2A_0') {
+        document
+        .getElementById("video")
+        .innerHTML = `
+            <div>
+                <img id="circlingPicture" src="pics/apartment/ME2A_0.png">
+                <div class="activelocationspot">
+                    <div class="redmagnifying" id="!!!" style="
+                        height: 127px;
+                        width: 142px;
+                        left: 174px;
+                        top: 16px;
+                    "></div>
+                    <div class="backpointer" id="backToTheScreenThatWasBefore" style="
+                        height: 67px;
+                        width: 345px;
+                        left: 191px;
+                        top: 225px;
+                    "></div>
+                </div>
+            </div>
+        `
     }
 }

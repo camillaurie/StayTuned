@@ -63,11 +63,11 @@ body {
 
 .activerightside {
     left: 486px;
-    cursor: url(../pics/sprites/right_circle.png), e-resize;
+    cursor: url(../pics/sprites/glass_blue.png), e-resize;
 }
 
 .activeleftside {
-    cursor: url(../pics/sprites/left_circle.png), w-resize;
+    cursor: url(../pics/sprites/glass_blue.png), w-resize;
 }
 
 .game__scene {
@@ -133,6 +133,8 @@ body {
 }
 
 .forwardpointer {
+    background-color: #b65aa066;
+    position: absolute;
     cursor: url(../pics/sprites/yellow_arrow_forward.png), pointer;
 }
 
@@ -142,6 +144,8 @@ body {
 
 .backpointer {
     cursor: url(../pics/sprites/back_away.png), s-resize;
+    background-color: #d1c73d66;
+    position: absolute;
 }
 
 .redmagnifying {
