@@ -150,6 +150,8 @@ body {
 
 .redmagnifying {
     cursor: url(../pics/sprites/glass_red.png), zoom-in;
+    background-color: #506c3866;
+    position: absolute;
 }
 
 .activemapspot {
@@ -157,3 +159,4 @@ body {
     position: absolute;
     cursor: url(../pics/sprites/glass_red.png), pointer;
 }
+

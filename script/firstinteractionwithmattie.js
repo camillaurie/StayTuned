@@ -113,7 +113,7 @@ function noAndThatsTheProblem0() {
     document.getElementById("wholedialogue")
         .innerHTML = `
         <p class='dialogue__character'>
-            No, and that's the problem. No one is laking any of this seriously, especially Rick. He thinks nothing will ever hurt him.
+            No, and that's the problem. No one is taking any of this seriously, especially Rick. He thinks nothing will ever hurt him.
         </p>
         <p id='lettersafterpolice' class='dialogue__options'>
             Tell me about the letters.

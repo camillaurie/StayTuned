@@ -1,5 +1,8 @@
 // The Day Screens
 // The Circle Screens
+
+let theScreenThatWasBefore;
+
 let ME1X_all = `
 <div>
     <div id="activelocationspot">
@@ -64,7 +67,7 @@ let ME1X_5 = `
 
 let ME1X_6 = `
     <img id="circlingPicture" src="pics/mattie_day_circle/ME1X_6.png">
-    <div id="mapLATER" style="
+    <div class="redmagnifying" id="goToMap" style="
         height: 260px;
         width: 113px;
         top: 10px;
@@ -73,7 +76,7 @@ let ME1X_6 = `
 
 let ME1X_7 = `
     <img id="circlingPicture" src="pics/mattie_day_circle/ME1X_7.png">
-    <div id="mapLATER" style="
+    <div class="redmagnifying" id="goToMap" style="
         height: 268px;
         width: 93px;
         top: 8px;
@@ -82,7 +85,7 @@ let ME1X_7 = `
 
 let ME1X_8 = `
     <img id="circlingPicture" src="pics/mattie_day_circle/ME1X_8.png">
-    <div id="mapLATER" style="
+    <div class="redmagnifying" id="goToMap" style="
         height: 271px;
         width: 95px;
         top: 9px;
@@ -245,28 +248,165 @@ async function hallwayTurning(event) {
 
 document
     .getElementById("wrapper")
-    .addEventListener("click", goToME1S0); 
-function goToME1S0(event) {
-    if (event.target.id == 'ME1S_0')
+    .addEventListener("click", goToADifferentScreenInMattiesHallway); 
+function goToADifferentScreenInMattiesHallway(event) {
+    if (event.target.id == 'ME1S_0') {
     document
         .getElementById("video")
         .innerHTML = `
             <div class="thisScreenThisTime">
                 <img src="pics/apartment/ME1S_0.png">
-                <div class="forwardpointer" id="" style="
+                <div class="forwardpointer" id="firstInteractionWithMattie" style="
                     height: 246px;
                     width: 162px;
                     top: 0px;
                     left: 100px;
                 "></div>
-                <div class="backpointer" id="" style="
+                <div class="backpointer" id="goBackToSpinning" style="
                     height: 46px;
                     width: 536px;
                     top: 246px;
                     left: 0;
                 "></div>
             </div>
-        `
+        `;  
+    }
+
+    if (event.target.id == 'ME2A_0') {
+        document
+            .getElementById("video")
+            .innerHTML = `
+            <div class="thisScreenThisTime">
+                <img src="pics/apartment/ME2A_0.png">
+                <div class="redmagnifying" id="ME1L_0" style="
+                    height: 183px;
+                    width: 162px;
+                    top: 109px;
+                    left: 317px;
+                "></div>
+                <div class="redmagnifying" id="noteNextToPhone" style="
+                    height: 93px;
+                    width: 57px;
+                    top: 199px;
+                    left: 479px;
+                "></div>
+                <div class="backpointer" id="goBackToSpinning" style="
+                    height: 46px;
+                    width: 317px;
+                    top: 246px;
+                    left: 0;
+                "></div>
+            </div>
+            `;
+    }
+
+    if (event.target.id == 'goBackToSpinning') {
+        exploringTheHallwayDay()
+    }
+
+    if (event.target.id == 'firstInteractionWithMattie') {
+        firstInteractionWithMattie() 
+    }
+
+    if (event.target.id == 'ME4D_0') {
+        document
+        .getElementById("video")
+        .innerHTML = `
+            <div class="thisScreenThisTime">
+                <img src="pics/apartment/ME4D_0.png">
+                <div class="redmagnifying" id="ME4A_0" style="
+                    height: 127px;
+                    width: 142px;
+                    left: 174px;
+                    top: 16px;
+                "></div>
+                <div class="redmagnifying" id="ME4B_0" style="
+                    height: 124px;
+                    width: 173px;
+                    left: 348px;
+                    top: 8px;
+                "></div>
+                <div class="redmagnifying" id="ME4C_0" style="
+                    height: 108px;
+                    width: 107px;
+                    left: 84px;
+                    top: 173px;
+                "></div>
+                <div class="backpointer" id="goBackToSpinning" style="
+                    height: 67px;
+                    width: 345px;
+                    left: 191px;
+                    top: 225px;
+                "></div>
+            </div>
+        `;  
+    }
+
+    if (event.target.id == 'ME4A_0') {
+        document
+        .getElementById("video")
+        .innerHTML = `
+            <div class="thisScreenThisTime">
+            <img src="pics/apartment/ME4A_0.png">
+            <div class="backpointer" id="ME4D_0" style="
+                height: 67px;
+                width: 536px;
+                left: 0px;
+                top: 225px;
+            "></div>`
+    }
+    if (event.target.id == 'ME4B_0') {
+        document
+        .getElementById("video")
+        .innerHTML = `
+            <div class="thisScreenThisTime">
+            <img src="pics/apartment/ME4B_0.png">
+            <div class="backpointer" id="ME4D_0" style="
+                height: 67px;
+                width: 536px;
+                left: 0px;
+                top: 225px;
+            "></div>`
+    }
+    if (event.target.id == 'ME4C_0') {
+        document
+        .getElementById("video")
+        .innerHTML = `
+            <div class="thisScreenThisTime">
+            <img src="pics/apartment/ME4C_0.png">
+            <div class="backpointer" id="ME4D_0" style="
+                height: 67px;
+                width: 536px;
+                left: 0px;
+                top: 225px;
+            "></div>`
+    }
+
+    if (event.target.id == 'ME1L_0') {
+        document
+        .getElementById("video")
+        .innerHTML = `
+        <div class="thisScreenThisTime">
+        <img src="pics/apartment/ME1L_0.png">
+        <div class="redmagnifying" id="ME1M_0" style="
+            height: 150px;
+            width: 142px;
+            left: 245px;
+            top: 75px;
+        "></div>
+        <div class="redmagnifying" id="noteNextToPhone" style="
+            height: 116px;
+            width: 128px;
+            left: 408px;
+            top: 109px;
+        "></div>
+        <div class="backpointer" id="ME2A_0" style="
+            height: 67px;
+            width: 536px;
+            left: 0px;
+            top: 225px;
+        "></div>`
+    }
 }
 
 
@@ -317,7 +457,10 @@ function invitationIntoTheApartment() {
     `
     document.getElementById('currentAudio')
     .addEventListener('ended', exploringTheHallwayDay, false);
+    i = 0;
 }
+
+// The spinning screen
 
 function exploringTheHallwayDay() {
     document.getElementById("wholedialogue")
@@ -325,7 +468,7 @@ function exploringTheHallwayDay() {
     document
         .getElementById("video")
         .innerHTML = ME1X_all;
-    document
-        .getElementById("activelocationspot")
-        .innerHTML = ME1X_0;
+        document
+            .getElementById("activelocationspot")
+            .innerHTML = sequenceOfScreens[i]; //need to change the number with last in memory
 }

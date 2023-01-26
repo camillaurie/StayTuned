@@ -1,3 +1,17 @@
+document
+.getElementById("wrapper")
+.addEventListener("click", goToMap); 
+
+function goToMap(event) {
+    if (event.target.id == 'goToMap') {
+        if (haveISpokenWithMattie == false) {
+            map1();
+        }
+    }
+}
+
+
+
 function map1() {
     document
     .getElementById("video")
