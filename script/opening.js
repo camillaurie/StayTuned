@@ -8,7 +8,7 @@ function theOpeningLetter() {
             <div class="game">
                 <div id='audio' class="game__menu">!!!</div>
                 <div id='video' class="game__scene">
-                    <video id="currentVideo" onended="handleClickById()" playsinline controls autoplay >
+                    <video id="currentVideo" playsinline controls autoplay >
                         <source src="video/the_opening_letter.webm" type="video/webm">
                     </video>
                 </div>

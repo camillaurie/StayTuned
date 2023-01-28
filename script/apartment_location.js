@@ -407,10 +407,205 @@ function goToADifferentScreenInMattiesHallway(event) {
             top: 225px;
         "></div>`
     }
+
+    if (event.target.id == 'noteNextToPhone') {
+        if (noteNextToThePhone == 'Ned') {
+            document
+            .getElementById("video")
+            .innerHTML = `
+            <div class="thisScreenThisTime">
+            <img src="pics/apartment/ME1P_0.png">
+            <div class="backpointer" id="ME1L_0" style="
+                height: 67px;
+                width: 536px;
+                left: 0px;
+                top: 225px;
+            "></div>`
+        } else if (noteNextToThePhone == 'Bess') {
+            document
+            .getElementById("video")
+            .innerHTML = `
+            <div class="thisScreenThisTime">
+            <img src="pics/apartment/ME1N_0.png">
+            <div class="backpointer" id="ME1L_0" style="
+                height: 67px;
+                width: 536px;
+                left: 0px;
+                top: 225px;
+            "></div>`            
+        } else if (noteNextToThePhone == 'George') {
+            document
+            .getElementById("video")
+            .innerHTML = `
+            <div class="thisScreenThisTime">
+            <img src="pics/apartment/ME1O_0.png">
+            <div class="backpointer" id="ME1L_0" style="
+                height: 67px;
+                width: 536px;
+                left: 0px;
+                top: 225px;
+            "></div>`        
+        }
+    }
+
+    if (event.target.id == 'ME1M_0') {
+        document
+        .getElementById("video")
+        .innerHTML = `
+        <div class="thisScreenThisTime">
+        <img src="pics/apartment/ME1M_0.png">
+        <div class="redmagnifying" id="phoneButton1" style="
+            height: 32px;
+            width: 63px;
+            left: 164px;
+            top: 117px;
+        "></div>
+        <div class="redmagnifying" id="phoneButton2" style="
+            height: 32px;
+            width: 63px;
+            left: 236px;
+            top: 117px;
+        "></div>
+        <div class="redmagnifying" id="phoneButton3" style="
+            height: 32px;
+            width: 63px;
+            left: 309px;
+            top: 117px;
+        "></div>
+        <div class="redmagnifying" id="phoneButton4" style="
+            height: 32px;
+            width: 63px;
+            left: 160px;
+            top: 156px;
+        "></div>
+        <div class="redmagnifying" id="phoneButton5" style="
+            height: 32px;
+            width: 63px;
+            left: 237px;
+            top: 156px;
+        "></div>
+        <div class="redmagnifying" id="phoneButton6" style="
+            height: 32px;
+            width: 63px;
+            left: 313px;
+            top: 156px;
+        "></div>
+        <div class="redmagnifying" id="phoneButton7" style="
+            height: 32px;
+            width: 63px;
+            left: 155px;
+            top: 198px;
+        "></div>
+        <div class="redmagnifying" id="phoneButton8" style="
+            height: 32px;
+            width: 63px;
+            left: 236px;
+            top: 198px;
+        "></div>
+        <div class="redmagnifying" id="phoneButton9" style="
+            height: 32px;
+            width: 63px;
+            left: 319px;
+            top: 198px;
+        "></div>
+        <div class="redmagnifying" id="phoneButton0" style="
+            height: 32px;
+            width: 63px;
+            left: 237px;
+            top: 242px;
+        "></div>
+        <div class="backpointer" id="ME1L_0" style="
+            height: 67px;
+            width: 139px;
+            left: 0px;
+            top: 225px;
+        "></div>
+        <div class="backpointer" id="ME1L_0" style="
+            height: 67px;
+            width: 139px;
+            left: 397px;
+            top: 225px;
+        "></div>`
+        console.log('phoneCalling');
+        phoneCalling();
+    }
 }
 
-
-
+// start
+let currentPhoneNumber;
+document
+    .getElementById("wrapper")
+    .addEventListener("click", phoneCalling); 
+function phoneCalling(event) {
+    if (event && event.target.id == 'ME1M_0') {
+        currentPhoneNumber = '';
+        document.getElementById("wholedialogue")
+            .innerHTML = `
+                <p class="dialogue__character">Address Book:</p>
+                <p class="dialogue__character" style="width: 293px; height: 10px;"></p>
+                <p class="dialogue__character">Bess Marvin     1-523-555-4468</p>
+                <p class="dialogue__character">George Fayne    1-523-555-2583</p>
+                <p class="dialogue__character">Ned Nickerson   1-523-555-4357</p>
+            `
+    }
+    if (event && event.target.id == 'phoneButton1') {
+        currentPhoneNumber += '1';
+        console.log(currentPhoneNumber);
+    }
+    if (event && event.target.id == 'phoneButton2') {
+        currentPhoneNumber += '2';
+        console.log(currentPhoneNumber);
+    }
+    if (event && event.target.id == 'phoneButton3') {
+        currentPhoneNumber += '3';
+        console.log(currentPhoneNumber);
+    }
+    if (event && event.target.id == 'phoneButton4') {
+        currentPhoneNumber += '4';
+        console.log(currentPhoneNumber);
+    }
+    if (event && event.target.id == 'phoneButton5') {
+        currentPhoneNumber += '5';
+        console.log(currentPhoneNumber);
+    }
+    if (event && event.target.id == 'phoneButton6') {
+        currentPhoneNumber += '6';
+        console.log(currentPhoneNumber);
+    }
+    if (event && event.target.id == 'phoneButton7') {
+        currentPhoneNumber += '7';
+        console.log(currentPhoneNumber);
+    }
+    if (event && event.target.id == 'phoneButton8') {
+        currentPhoneNumber += '8';
+        console.log(currentPhoneNumber);
+    }
+    if (event && event.target.id == 'phoneButton9') {
+        currentPhoneNumber += '9';
+        console.log(currentPhoneNumber);
+    }
+    if (event && event.target.id == 'phoneButton0') {
+        currentPhoneNumber += '0';
+        console.log(currentPhoneNumber);
+    }
+    if (currentPhoneNumber && currentPhoneNumber.length == 11) {
+        if (currentPhoneNumber == '15235554468') {
+            console.log('Calling Bess');
+        } else if (currentPhoneNumber == '15235552583') {
+            console.log('Calling George');
+        } else if (currentPhoneNumber == '15235554357') {
+            console.log('Calling Ned');
+        } else {
+            console.log('Wrong Number');
+        }
+        document.getElementById("wholedialogue")
+            .innerHTML = `
+                <p class='dialogue__character'>
+                    ringing...
+                </p>
+            `
+    }
+}
 
 
 // Get Inside The Apartment 

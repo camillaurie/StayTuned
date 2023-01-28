@@ -96,6 +96,11 @@ body {
     cursor: url(../pics/sprites/open_hand.png), ns-resize;
 }
 
+.phone_numbers_list {
+    color: #848484;
+    font-size: 12px;
+}
+
 .game__dialogue {
     position: absolute;
     left: 52px;
@@ -159,4 +164,3 @@ body {
     position: absolute;
     cursor: url(../pics/sprites/glass_red.png), pointer;
 }
-

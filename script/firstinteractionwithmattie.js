@@ -418,10 +418,8 @@ function theyreTotallyBizarre() {
 }
 
 
-document.getElementById('ApartmentWithMattie').addEventListener('click', firstInteractionWithMattie);
 
 function firstInteractionWithMattie() {
-
     document
     .getElementById("wrapper")
     .innerHTML = `
