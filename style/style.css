@@ -149,6 +149,18 @@ body {
     cursor: url(../pics/sprites/yellow_arrow_forward.png), pointer;
 }
 
+.arrowdown {
+    background-color: #b3e77b66;
+    position: absolute;
+    cursor: url(../pics/sprites/arrow_down.png), pointer;
+}
+
+.arrowup {
+    background-color: #b3e77b66;
+    position: absolute;
+    cursor: url(../pics/sprites/arrow_up.png), pointer;
+}
+
 .slightlyleftpointer {
     cursor: url(../pics/sprites/slightly_left.png), nw-resize;
 }
