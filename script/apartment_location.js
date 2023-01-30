@@ -711,6 +711,13 @@ let MD1X_1 = `
         left: 220px;
         ">
     </div>
+    <div class="forwardpointer" id="MD1P_0" style="
+        height: 185px;
+        width: 129px;
+        top: 37px;
+        left: 50px;
+        ">
+    </div>
     `;
 
 let MD1X_2 = `
@@ -722,23 +729,82 @@ let MD1X_2 = `
         left: 332px;
         ">
     </div>
+    <div class="forwardpointer" id="MD1P_0" style="
+        height: 176px;
+        width: 160px;
+        top: 34px;
+        left: 142px;
+        ">
+    </div>
     `;
 
 let MD1X_3 = `
     <img id="circlingPicture" src="pics/mattie-room_day_circle/MD1X_3.png">
-    `;
+    <div class="forwardpointer" id="MD6R_0" style="
+        height: 99px;
+        width: 127px;
+        top: 70px;
+        left: 96px;
+        ">
+    </div>
+    <div class="forwardpointer" id="MD1P_0" style="
+        height: 193px;
+        width: 142px;
+        top: 31px;
+        left: 269px;
+        ">
+    </div>`;
 
 let MD1X_4 = `
     <img id="circlingPicture" src="pics/mattie-room_day_circle/MD1X_4.png">
-    `;
+    <div class="forwardpointer" id="MD6Q_0" style="
+        height: 99px;
+        width: 126px;
+        top: 70px;
+        left: 69px;
+        ">
+    </div>
+    <div class="forwardpointer" id="MD6R_0" style="
+        height: 99px;
+        width: 115px;
+        top: 70px;
+        left: 227px;
+        ">
+    </div>
+    <div class="forwardpointer" id="MD1P_0" style="
+        height: 209px;
+        width: 114px;
+        top: 16px;
+        left: 372px;
+        ">
+    </div>`;
 
 let MD1X_5 = `
     <img id="circlingPicture" src="pics/mattie-room_day_circle/MD1X_5.png">
-    `;
+    <div class="forwardpointer" id="MD6Q_0" style="
+        height: 99px;
+        width: 154px;
+        top: 70px;
+        left: 172px;
+        ">
+    </div>
+    <div class="forwardpointer" id="MD6R_0" style="
+        height: 99px;
+        width: 154px;
+        top: 70px;
+        left: 326px;
+        ">
+    </div>`;
 
 let MD1X_6 = `
     <img id="circlingPicture" src="pics/mattie-room_day_circle/MD1X_6.png">
-    `;
+    <div class="forwardpointer" id="MD6Q_0" style="
+        height: 99px;
+        width: 154px;
+        top: 70px;
+        left: 299px;
+        ">
+    </div>`;
 
 let MD1X_7 = `
     <img id="circlingPicture" src="pics/mattie-room_day_circle/MD1X_7.png">
@@ -805,23 +871,14 @@ let MD1X_11 = `
     </div>
     `;
 
-let MD1X_12 = `
-    <img id="circlingPicture" src="pics/mattie-room_day_circle/MD1X_12.png">
-    <div class="forwardpointer" id="MD1K_0" style="
-        height: 144px;
-        width: 147px;
-        top: 148px;
-        left: 50px;
-        ">
-    </div>
-    `;
+let MD1X_12 = `<img id="circlingPicture" src="pics/mattie-room_day_circle/MD1X_12.png">`;
 
 let MD1X_13 = `
     <img id="circlingPicture" src="pics/mattie-room_day_circle/MD1X_13.png">
-    <div class="forwardpointer" id="MD1K_0" style="
-        height: 144px;
-        width: 246px;
-        top: 148px;
+    <div class="forwardpointer" id="MD6V_0" style="
+        height: 74px;
+        width: 136px;
+        top: 218px;
         left: 50px;
         ">
     </div>
@@ -829,39 +886,53 @@ let MD1X_13 = `
 
 let MD1X_14 = `
     <img id="circlingPicture" src="pics/mattie-room_day_circle/MD1X_14.png">
-    <div class="forwardpointer" id="MD1K_0" style="
-        height: 144px;
-        width: 258px;
-        top: 148px;
-        left: 153px;
+    <div class="forwardpointer" id="MD6V_0" style="
+        height: 54px;
+        width: 158px;
+        top: 238px;
+        left: 123px;
+        ">
+    </div>
+    <div class="forwardpointer" id="md1z_0" style="
+        height: 78px;
+        width: 97px;
+        top: 160px;
+        left: 50px;
         ">
     </div>
     `;
 
 let MD1X_15 = `
     <img id="circlingPicture" src="pics/mattie-room_day_circle/MD1X_15.png">
-    <div class="forwardpointer" id="MD1K_0" style="
-        height: 144px;
-        width: 234px;
-        top: 148px;
-        left: 252px;
+    <div class="forwardpointer" id="MD6V_0" style="
+        height: 64px;
+        width: 164px;
+        top: 228px;
+        left: 232px;
         ">
     </div>
     <div class="forwardpointer" id="ME1E_0" style="
-        height: 173px;
-        width: 94px;
-        top: 41px;
-        left: 79px;
+        height: 185px;
+        width: 76px;
+        top: 38px;
+        left: 89px;
+        ">
+    </div>
+    <div class="forwardpointer" id="md1z_0" style="
+        height: 75px;
+        width: 87px;
+        top: 153px;
+        left: 172px;
         ">
     </div>
     `;
 
 let MD1X_16 = `
     <img id="circlingPicture" src="pics/mattie-room_day_circle/MD1X_16.png">
-    <div class="forwardpointer" id="MD1K_0" style="
-        height: 144px;
+    <div class="forwardpointer" id="MD6V_0" style="
+        height: 64px;
         width: 115px;
-        top: 148px;
+        top: 228px;
         left: 371px;
         ">
     </div>
@@ -877,6 +948,13 @@ let MD1X_16 = `
         width: 73px;
         top: 41px;
         left: 211px;
+        ">
+    </div>
+    <div class="forwardpointer" id="md1z_0" style="
+        height: 117px;
+        width: 87px;
+        top: 153px;
+        left: 284px;
         ">
     </div>
     `;
@@ -895,6 +973,13 @@ let MD1X_17 = `
         width: 94px;
         top: 36px;
         left: 313px;
+        ">
+    </div>
+    <div class="forwardpointer" id="md1z_0" style="
+        height: 117px;
+        width: 79px;
+        top: 153px;
+        left: 407px;
         ">
     </div>
     `;
@@ -984,12 +1069,12 @@ function goToADifferentScreenInMattiesRoom(event) {
             top: 225px;
         "></div>`    
     }
-    if (event && event.target.id == 'MD1K_0') {
+    if (event && event.target.id == 'MD6V_0') {
     document
         .getElementById("video")
         .innerHTML = `
         <div class="thisScreenThisTime">
-        <img src="pics/apartment/MD1K_0.png">
+        <img src="pics/apartment/MD6V_0.png">
         <div class="backpointer" id="goBackToSpinningRoom" style="
             height: 67px;
             width: 536px;
@@ -1008,14 +1093,21 @@ function goToADifferentScreenInMattiesRoom(event) {
             width: 536px;
             left: 0px;
             top: 225px;
-        "></div>`    
+        "></div>
+        <div class="forwardpointer" id="MD3T_0" style="   
+            height: 150px;
+            width: 150px;
+            top: 35px;
+            left: 315px;
+            ">
+        </div>`
     }
-    if (event && event.target.id == 'MD1K_0') {
+    if (event && event.target.id == 'MD6V_0') {
     document
         .getElementById("video")
         .innerHTML = `
         <div class="thisScreenThisTime">
-        <img src="pics/apartment/MD1K_0.png">
+        <img src="pics/apartment/MD6V_0.png">
         <div class="backpointer" id="goBackToSpinningRoom" style="
             height: 67px;
             width: 536px;
@@ -1030,11 +1122,25 @@ function goToADifferentScreenInMattiesRoom(event) {
         <div class="thisScreenThisTime">
         <img src="pics/apartment/MD3P_0.png">
         <div class="backpointer" id="goBackToSpinningRoom" style="
-            height: 67px;
+            height: 37px;
             width: 536px;
             left: 0px;
-            top: 225px;
-        "></div>`    
+            top: 255px;
+        "></div>
+        <div class="forwardpointer" id="MD3R_0" style="   
+            height: 91px;
+            width: 154px;
+            top: 65px;
+            left: 278px;
+            ">
+        </div>
+        <div class="forwardpointer" id="MD3Q_0" style="
+            height: 82px;
+            width: 149px;
+            top: 173px;
+            left: 247px;
+            ">
+        </div>`    
     }
     if (event && event.target.id == 'ME1E_0') {
     document
@@ -1049,7 +1155,176 @@ function goToADifferentScreenInMattiesRoom(event) {
             top: 225px;
         "></div>`    
     }
+    if (event && event.target.id == 'md1z_0') {
+    document
+        .getElementById("video")
+        .innerHTML = `
+        <div class="thisScreenThisTime">
+        <img src="pics/apartment/md1z_0.png">
+        <div class="backpointer" id="goBackToSpinningRoom" style="
+            height: 37px;
+            width: 536px;
+            left: 0px;
+            top: 255px;
+        "></div>
+        <div class="forwardpointer" id="MD3U_0" style="
+            height: 102px;
+            width: 279px;
+            top: 153px;
+            left: 137px;
+            ">
+        </div>`        
+    }
+    if (event && event.target.id == 'MD3U_0') {
+    document
+        .getElementById("video")
+        .innerHTML = `
+        <div class="thisScreenThisTime">
+        <img src="pics/apartment/MD3U_0.png">
+        <div class="backpointer" id="md1z_0" style="
+            height: 67px;
+            width: 536px;
+            left: 0px;
+            top: 225px;
+        "></div>
+        <div class="forwardpointer" id="MD3V_0" style="
+            height: 152px;
+            width: 103px;
+            top: 45px;
+            left: 147px;
+            ">
+        </div>  
+        <div class="forwardpointer" id="MD3W_0" style="
+            height: 120px;
+            width: 132px;
+            top: 68px;
+            left: 285px;
+            ">
+        </div>
+        <div class="forwardpointer" id="MD3Y_0" style="
+            height: 123px;
+            width: 104px;
+            top: 105px;
+            left: 432px;
+            ">
+        </div>`    
+    }
+    if (event && event.target.id == 'MD3V_0') {
+    document
+        .getElementById("video")
+        .innerHTML = `
+        <div class="thisScreenThisTime">
+        <img src="pics/apartment/MD3V_0.png">
+        <div class="backpointer" id="MD3U_0" style="
+            height: 67px;
+            width: 536px;
+            left: 0px;
+            top: 225px;
+        "></div>`    
+    }
+    if (event && event.target.id == 'MD3W_0') {
+    document
+        .getElementById("video")
+        .innerHTML = `
+        <div class="thisScreenThisTime">
+        <img src="pics/apartment/MD3W_0.png">
+        <div class="backpointer" id="MD3U_0" style="
+            height: 67px;
+            width: 536px;
+            left: 0px;
+            top: 225px;
+        "></div>`    
+    }
+    if (event && event.target.id == 'MD3Y_0') {
+    document
+        .getElementById("video")
+        .innerHTML = `
+        <div class="thisScreenThisTime">
+        <img src="pics/apartment/MD3Y_0.png">
+        <div class="backpointer" id="MD3U_0" style="
+            height: 67px;
+            width: 536px;
+            left: 0px;
+            top: 225px;
+        "></div>`    
+    }
+    if (event && event.target.id == 'MD3Q_0') {
+    document
+        .getElementById("video")
+        .innerHTML = `
+        <div class="thisScreenThisTime">
+        <img src="pics/apartment/MD3Q_0.png">
+        <div class="backpointer" id="MD3P_0" style="
+            height: 67px;
+            width: 536px;
+            left: 0px;
+            top: 225px;
+        "></div>`    
+    }
+    if (event && event.target.id == 'MD3R_0') {
+    document
+        .getElementById("video")
+        .innerHTML = `
+        <div class="thisScreenThisTime">
+        <img src="pics/apartment/MD3R_0.png">
+        <div class="backpointer" id="MD3P_0" style="
+            height: 67px;
+            width: 536px;
+            left: 0px;
+            top: 225px;
+        "></div>`    
+    }
+    if (event && event.target.id == 'MD3T_0') {
+    document
+        .getElementById("video")
+        .innerHTML = `
+        <div class="thisScreenThisTime">
+        <img src="pics/apartment/MD3T_0.png">
+        <div class="backpointer" id="MD3S_0" style="
+            height: 37px;
+            width: 536px;
+            left: 0px;
+            top: 255px;
+        "></div>`    
+    }
+    if (event && event.target.id == 'MD6Q_0') {
+    document
+        .getElementById("video")
+        .innerHTML = `
+        <div class="thisScreenThisTime">
+        <img src="pics/apartment/MD6Q_0.png">
+        <div class="backpointer" id="goBackToSpinningRoom" style="
+            height: 37px;
+            width: 536px;
+            left: 0px;
+            top: 255px;
+        "></div>`    
+    }
+    if (event && event.target.id == 'MD6R_0') {
+    document
+        .getElementById("video")
+        .innerHTML = `
+        <div class="thisScreenThisTime">
+        <img src="pics/apartment/MD6R_0.png">
+        <div class="backpointer" id="goBackToSpinningRoom" style="
+            height: 37px;
+            width: 536px;
+            left: 0px;
+            top: 255px;
+        "></div>`    
+    }
+    if (event && event.target.id == 'MD1P_0') {
+    document
+        .getElementById("video")
+        .innerHTML = `
+        <div class="thisScreenThisTime">
+        <img src="pics/apartment/MD1P_0.png">
+        <div class="backpointer" id="goBackToSpinningRoom" style="
+            height: 37px;
+            width: 536px;
+            left: 0px;
+            top: 255px;
+        "></div>`    
+    }
 }
-
-
 
