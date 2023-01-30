@@ -176,7 +176,7 @@ let ME1X_19 = `
         left: 133px;">
     </div>`;
 
-let sequenceOfScreens = [ME1X_0, ME1X_1, ME1X_2, ME1X_3, ME1X_4, ME1X_5, ME1X_6, ME1X_7, ME1X_8, ME1X_9, ME1X_10, ME1X_11, ME1X_12, ME1X_13, ME1X_14, ME1X_15, ME1X_16, ME1X_17, ME1X_18, ME1X_19];
+let sequenceOfScreensInHallway = [ME1X_0, ME1X_1, ME1X_2, ME1X_3, ME1X_4, ME1X_5, ME1X_6, ME1X_7, ME1X_8, ME1X_9, ME1X_10, ME1X_11, ME1X_12, ME1X_13, ME1X_14, ME1X_15, ME1X_16, ME1X_17, ME1X_18, ME1X_19];
 
 // The Hallway 
 
@@ -220,22 +220,22 @@ document
     .getElementById("wrapper")
     .addEventListener("mouseover", hallwayTurning); 
 async function hallwayTurning(event) {
-    if (event.target.id == 'turnleftincircle') {
+    if (event && event.target.id == 'turnleftincircle') {
         if (i > 18) {
             i = -1;
         }
         document
             .getElementById("activelocationspot")
-            .innerHTML = sequenceOfScreens[++i];
+            .innerHTML = sequenceOfScreensInHallway[++i];
             console.log(i);
     }
-    if (event.target.id == 'turnrightincircle') {
+    if (event && event.target.id == 'turnrightincircle') {
         if (i < 1) {
             i = 20;
         }
         document
             .getElementById("activelocationspot")
-            .innerHTML = sequenceOfScreens[--i];
+            .innerHTML = sequenceOfScreensInHallway[--i];
             console.log(i);
     }
 }
@@ -250,13 +250,13 @@ document
     .getElementById("wrapper")
     .addEventListener("click", goToADifferentScreenInMattiesHallway); 
 function goToADifferentScreenInMattiesHallway(event) {
-    if (event.target.id == 'ME1S_0') {
+    if (event && event.target.id == 'ME1S_0') {
     document
         .getElementById("video")
         .innerHTML = `
             <div class="thisScreenThisTime">
                 <img src="pics/apartment/ME1S_0.png">
-                <div class="forwardpointer" id="firstInteractionWithMattie" style="
+                <div class="forwardpointer" id="MD1X_6" style="
                     height: 246px;
                     width: 162px;
                     top: 0px;
@@ -272,7 +272,7 @@ function goToADifferentScreenInMattiesHallway(event) {
         `;  
     }
 
-    if (event.target.id == 'ME2A_0') {
+    if (event && event.target.id == 'ME2A_0') {
         document
             .getElementById("video")
             .innerHTML = `
@@ -300,15 +300,24 @@ function goToADifferentScreenInMattiesHallway(event) {
             `;
     }
 
-    if (event.target.id == 'goBackToSpinning') {
-        exploringTheHallwayDay()
+    if (event && event.target.id == 'goBackToSpinning') {
+        exploringTheHallwayDay();
     }
 
-    if (event.target.id == 'firstInteractionWithMattie') {
-        firstInteractionWithMattie() 
+    if (event && event.target.id == 'goBackToSpinningRoom') {
+        exploringTheRoomDay();
     }
 
-    if (event.target.id == 'ME4D_0') {
+    if (event && event.target.id == 'MD1X_6') {
+        if (haveISpokenWithMattie == false) {
+            firstInteractionWithMattie();
+        } else if (haveISpokenWithMattie == true) {
+            exploringTheRoomDay();
+            roomTurning();
+        }
+    }
+
+    if (event && event.target.id == 'ME4D_0') {
         document
         .getElementById("video")
         .innerHTML = `
@@ -342,7 +351,7 @@ function goToADifferentScreenInMattiesHallway(event) {
         `;  
     }
 
-    if (event.target.id == 'ME4A_0') {
+    if (event && event.target.id == 'ME4A_0') {
         document
         .getElementById("video")
         .innerHTML = `
@@ -355,7 +364,7 @@ function goToADifferentScreenInMattiesHallway(event) {
                 top: 225px;
             "></div>`
     }
-    if (event.target.id == 'ME4B_0') {
+    if (event && event.target.id == 'ME4B_0') {
         document
         .getElementById("video")
         .innerHTML = `
@@ -368,7 +377,7 @@ function goToADifferentScreenInMattiesHallway(event) {
                 top: 225px;
             "></div>`
     }
-    if (event.target.id == 'ME4C_0') {
+    if (event && event.target.id == 'ME4C_0') {
         document
         .getElementById("video")
         .innerHTML = `
@@ -382,7 +391,7 @@ function goToADifferentScreenInMattiesHallway(event) {
             "></div>`
     }
 
-    if (event.target.id == 'ME1L_0') {
+    if (event && event.target.id == 'ME1L_0') {
         document
         .getElementById("video")
         .innerHTML = `
@@ -408,7 +417,7 @@ function goToADifferentScreenInMattiesHallway(event) {
         "></div>`
     }
 
-    if (event.target.id == 'noteNextToPhone') {
+    if (event && event.target.id == 'noteNextToPhone') {
         if (noteNextToThePhone == 'Ned') {
             document
             .getElementById("video")
@@ -448,7 +457,7 @@ function goToADifferentScreenInMattiesHallway(event) {
         }
     }
 
-    if (event.target.id == 'ME1M_0') {
+    if (event && event.target.id == 'ME1M_0') {
         document
         .getElementById("video")
         .innerHTML = `
@@ -614,7 +623,7 @@ document
     .getElementById("wrapper")
     .addEventListener("click", knockingOnTheApartmentDoor);
 function knockingOnTheApartmentDoor(event) {
-    if (event.target.id == 'fromMapGoToTheApartment') {
+    if (event && event.target.id == 'fromMapGoToTheApartment') {
         document
         .getElementById("video")
         .innerHTML = `
@@ -665,5 +674,382 @@ function exploringTheHallwayDay() {
         .innerHTML = ME1X_all;
         document
             .getElementById("activelocationspot")
-            .innerHTML = sequenceOfScreens[i]; //need to change the number with last in memory
+            .innerHTML = sequenceOfScreensInHallway[i]; 
 }
+
+
+
+
+
+
+
+let MD1X_all = `
+<div>
+    <div id="activelocationspot">
+    </div>
+    <div id="turnleftincircle" class ="activesides activeleftside"></div>
+    <div id="turnrightincircle" class ="activesides activerightside"></div>
+</div>`;
+
+let MD1X_0 = `
+    <img id="circlingPicture" src="pics/mattie-room_day_circle/MD1X_0.png">
+    <div class="forwardpointer" id="MD3S_0" style="
+        height: 211px;
+        width: 165px;
+        top: 7px;
+        left: 88px;
+        ">
+    </div>
+    `;
+
+let MD1X_1 = `
+    <img id="circlingPicture" src="pics/mattie-room_day_circle/MD1X_1.png">
+    <div class="forwardpointer" id="MD3S_0" style="
+        height: 205px;
+        width: 144px;
+        top: 12px;
+        left: 220px;
+        ">
+    </div>
+    `;
+
+let MD1X_2 = `
+    <img id="circlingPicture" src="pics/mattie-room_day_circle/MD1X_2.png">
+    <div class="forwardpointer" id="MD3S_0" style="
+        height: 215px;
+        width: 154px;
+        top: 4px;
+        left: 332px;
+        ">
+    </div>
+    `;
+
+let MD1X_3 = `
+    <img id="circlingPicture" src="pics/mattie-room_day_circle/MD1X_3.png">
+    `;
+
+let MD1X_4 = `
+    <img id="circlingPicture" src="pics/mattie-room_day_circle/MD1X_4.png">
+    `;
+
+let MD1X_5 = `
+    <img id="circlingPicture" src="pics/mattie-room_day_circle/MD1X_5.png">
+    `;
+
+let MD1X_6 = `
+    <img id="circlingPicture" src="pics/mattie-room_day_circle/MD1X_6.png">
+    `;
+
+let MD1X_7 = `
+    <img id="circlingPicture" src="pics/mattie-room_day_circle/MD1X_7.png">
+    <div class="forwardpointer" id="MD1S_0" style="
+        height: 135px;
+        width: 165px;
+        top: 111px;
+        left: 96px;
+        ">
+    </div>
+    `;
+
+let MD1X_8 = `
+    <img id="circlingPicture" src="pics/mattie-room_day_circle/MD1X_8.png">
+    <div class="forwardpointer" id="MD1S_0" style="
+        height: 135px;
+        width: 162px;
+        top: 111px;
+        left: 218px;">
+    </div>
+    <div class="forwardpointer" id="MD3E_0" style="
+        height: 91px;
+        width: 115px;
+        top: 162px;
+        left: 50px;
+        ">
+    </div>`;
+
+let MD1X_9 = `
+    <img id="circlingPicture" src="pics/mattie-room_day_circle/MD1X_9.png">
+    <div class="forwardpointer" id="MD1S_0" style="
+        height: 135px;
+        width: 165px;
+        top: 111px;
+        left: 321px;
+        ">
+    </div>
+    <div class="forwardpointer" id="MD3E_0" style="
+        height: 91px;
+        width: 115px;
+        top: 153px;
+        left: 153px;
+        ">
+    </div>`;
+
+let MD1X_10 = `
+    <img id="circlingPicture" src="pics/mattie-room_day_circle/MD1X_10.png">
+    <div class="forwardpointer" id="MD3E_0" style="
+        height: 91px;
+        width: 115px;
+        top: 162px;
+        left: 266px;
+        ">
+    </div>`;
+
+let MD1X_11 = `
+    <img id="circlingPicture" src="pics/mattie-room_day_circle/MD1X_11.png">
+    <div class="forwardpointer" id="MD3E_0" style="
+        height: 91px;
+        width: 115px;
+        top: 174px;
+        left: 371px;
+        ">
+    </div>
+    `;
+
+let MD1X_12 = `
+    <img id="circlingPicture" src="pics/mattie-room_day_circle/MD1X_12.png">
+    <div class="forwardpointer" id="MD1K_0" style="
+        height: 144px;
+        width: 147px;
+        top: 148px;
+        left: 50px;
+        ">
+    </div>
+    `;
+
+let MD1X_13 = `
+    <img id="circlingPicture" src="pics/mattie-room_day_circle/MD1X_13.png">
+    <div class="forwardpointer" id="MD1K_0" style="
+        height: 144px;
+        width: 246px;
+        top: 148px;
+        left: 50px;
+        ">
+    </div>
+    `;
+
+let MD1X_14 = `
+    <img id="circlingPicture" src="pics/mattie-room_day_circle/MD1X_14.png">
+    <div class="forwardpointer" id="MD1K_0" style="
+        height: 144px;
+        width: 258px;
+        top: 148px;
+        left: 153px;
+        ">
+    </div>
+    `;
+
+let MD1X_15 = `
+    <img id="circlingPicture" src="pics/mattie-room_day_circle/MD1X_15.png">
+    <div class="forwardpointer" id="MD1K_0" style="
+        height: 144px;
+        width: 234px;
+        top: 148px;
+        left: 252px;
+        ">
+    </div>
+    <div class="forwardpointer" id="ME1E_0" style="
+        height: 173px;
+        width: 94px;
+        top: 41px;
+        left: 79px;
+        ">
+    </div>
+    `;
+
+let MD1X_16 = `
+    <img id="circlingPicture" src="pics/mattie-room_day_circle/MD1X_16.png">
+    <div class="forwardpointer" id="MD1K_0" style="
+        height: 144px;
+        width: 115px;
+        top: 148px;
+        left: 371px;
+        ">
+    </div>
+    <div class="forwardpointer" id="MD3P_0" style="
+        height: 208px;
+        width: 100px;
+        top: 20px;
+        left: 40px;
+        ">
+    </div>
+    <div class="forwardpointer" id="ME1E_0" style="
+        height: 173px;
+        width: 73px;
+        top: 41px;
+        left: 211px;
+        ">
+    </div>
+    `;
+
+let MD1X_17 = `
+    <img id="circlingPicture" src="pics/mattie-room_day_circle/MD1X_17.png">
+    <div class="forwardpointer" id="MD3P_0" style="
+        height: 210px;
+        width: 92px;
+        top: 12px;
+        left: 168px;
+        ">
+    </div>
+    <div class="forwardpointer" id="ME1E_0" style="
+        height: 187px;
+        width: 94px;
+        top: 36px;
+        left: 313px;
+        ">
+    </div>
+    `;
+
+let MD1X_18 = `
+    <img id="circlingPicture" src="pics/mattie-room_day_circle/MD1X_18.png">
+    <div class="forwardpointer" id="MD3P_0" style="
+        height: 205px;
+        width: 93px;
+        top: 12px;
+        left: 283px;
+        ">
+    </div>
+    `;
+
+let MD1X_19 = `
+    <img id="circlingPicture" src="pics/mattie-room_day_circle/MD1X_19.png">
+    `;
+
+let sequenceOfScreensInRoom = [MD1X_0, MD1X_1, MD1X_2, MD1X_3, MD1X_4, MD1X_5, MD1X_6, MD1X_7, MD1X_8, MD1X_9, MD1X_10, MD1X_11, MD1X_12, MD1X_13, MD1X_14, MD1X_15, MD1X_16, MD1X_17, MD1X_18, MD1X_19];
+
+
+
+let r = 6;
+document
+    .getElementById("wrapper")
+    .addEventListener("mouseover", roomTurning); 
+async function roomTurning(event) {
+    if (event && event.target.id == 'turnleftincircle') {
+        if (r > 18) {
+            r = -1;
+        }
+        document
+            .getElementById("activelocationspot")
+            .innerHTML = sequenceOfScreensInRoom[++r];
+            console.log(r);
+    }
+    if (event && event.target.id == 'turnrightincircle') {
+        if (r < 1) {
+            r = 20;
+        }
+        document
+            .getElementById("activelocationspot")
+            .innerHTML = sequenceOfScreensInRoom[--r];
+            console.log(r);
+    }
+}
+
+function exploringTheRoomDay() {
+    document.getElementById("wholedialogue")
+        .innerHTML = ``
+    document
+        .getElementById("video")
+        .innerHTML = MD1X_all;
+        document
+            .getElementById("activelocationspot")
+            .innerHTML = sequenceOfScreensInRoom[r]; 
+}
+
+document
+    .getElementById("wrapper")
+    .addEventListener("click", goToADifferentScreenInMattiesRoom); 
+function goToADifferentScreenInMattiesRoom(event) {
+    if (event && event.target.id == 'MD1S_0') {
+    document
+        .getElementById("video")
+        .innerHTML = `
+        <div class="thisScreenThisTime">
+        <img src="pics/apartment/MD1S_0.png">
+        <div class="backpointer" id="goBackToSpinningRoom" style="
+            height: 67px;
+            width: 536px;
+            left: 0px;
+            top: 225px;
+        "></div>`    
+    }
+    if (event && event.target.id == 'MD3E_0') {
+    document
+        .getElementById("video")
+        .innerHTML = `
+        <div class="thisScreenThisTime">
+        <img src="pics/apartment/MD3E_0.png">
+        <div class="backpointer" id="goBackToSpinningRoom" style="
+            height: 67px;
+            width: 536px;
+            left: 0px;
+            top: 225px;
+        "></div>`    
+    }
+    if (event && event.target.id == 'MD1K_0') {
+    document
+        .getElementById("video")
+        .innerHTML = `
+        <div class="thisScreenThisTime">
+        <img src="pics/apartment/MD1K_0.png">
+        <div class="backpointer" id="goBackToSpinningRoom" style="
+            height: 67px;
+            width: 536px;
+            left: 0px;
+            top: 225px;
+        "></div>`    
+    }
+    if (event && event.target.id == 'MD3S_0') {
+    document
+        .getElementById("video")
+        .innerHTML = `
+        <div class="thisScreenThisTime">
+        <img src="pics/apartment/MD3S_0.png">
+        <div class="backpointer" id="goBackToSpinningRoom" style="
+            height: 67px;
+            width: 536px;
+            left: 0px;
+            top: 225px;
+        "></div>`    
+    }
+    if (event && event.target.id == 'MD1K_0') {
+    document
+        .getElementById("video")
+        .innerHTML = `
+        <div class="thisScreenThisTime">
+        <img src="pics/apartment/MD1K_0.png">
+        <div class="backpointer" id="goBackToSpinningRoom" style="
+            height: 67px;
+            width: 536px;
+            left: 0px;
+            top: 225px;
+        "></div>`    
+    }
+    if (event && event.target.id == 'MD3P_0') {
+    document
+        .getElementById("video")
+        .innerHTML = `
+        <div class="thisScreenThisTime">
+        <img src="pics/apartment/MD3P_0.png">
+        <div class="backpointer" id="goBackToSpinningRoom" style="
+            height: 67px;
+            width: 536px;
+            left: 0px;
+            top: 225px;
+        "></div>`    
+    }
+    if (event && event.target.id == 'ME1E_0') {
+    document
+        .getElementById("video")
+        .innerHTML = `
+        <div class="thisScreenThisTime">
+        <img src="pics/apartment/ME1E_0.png">
+        <div class="backpointer" id="goBackToSpinningRoom" style="
+            height: 67px;
+            width: 536px;
+            left: 0px;
+            top: 225px;
+        "></div>`    
+    }
+}
+
+
+

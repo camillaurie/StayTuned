@@ -1,2 +1,2 @@
-let haveISpokenWithMattie = false;
+let haveISpokenWithMattie = true;
 let noteNextToThePhone = 'Ned';

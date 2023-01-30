@@ -3,6 +3,12 @@ html {
     font-family: 'Inconsolata', monospace;
 }
 
+audio {
+    position: absolute;
+    top: 290px;
+    /* it will have to be deleted */
+}
+
 body {
     width: 640px;
     height: 480px;

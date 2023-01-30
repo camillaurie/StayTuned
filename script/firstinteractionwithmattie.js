@@ -305,6 +305,10 @@ function ohBeforeIForget() {
     haveISpokenWithMattie = true;
 
 
+    document.getElementById('currentVideo')
+    .addEventListener('ended', exploringTheRoomDay, false);
+    r = 6;
+
     // !!!
     //
     //
