@@ -7,8 +7,8 @@ let ME1X_all = `
 <div>
     <div id="activelocationspot">
     </div>
-    <div id="turnleftincircle" class ="activesides activeleftside"></div>
-    <div id="turnrightincircle" class ="activesides activerightside"></div>
+    <div id="turnleftincirclehallway" class ="activesides activeleftside"></div>
+    <div id="turnrightincirclehallway" class ="activesides activerightside"></div>
 </div>`;
 
 let ME1X_0 = `
@@ -31,7 +31,7 @@ let ME1X_1 = `
 
 let ME1X_2 = `
     <img id="circlingPicture" src="pics/mattie_day_circle/ME1X_2.png">
-    <div class="redmagnifying" id="ME2A_0" style="
+    <div class="redmagnifying" id="ME1A_0" style="
         height: 86px;
         width: 112px;
         top: 173px;
@@ -40,7 +40,7 @@ let ME1X_2 = `
 
 let ME1X_3 = `
     <img id="circlingPicture" src="pics/mattie_day_circle/ME1X_3.png">
-    <div class="redmagnifying" id="ME2A_0" style="
+    <div class="redmagnifying" id="ME1A_0" style="
         height: 116px;
         width: 230px;
         top: 138px;
@@ -49,7 +49,7 @@ let ME1X_3 = `
 
 let ME1X_4 = `
     <img id="circlingPicture" src="pics/mattie_day_circle/ME1X_4.png">
-    <div class="redmagnifying" id="ME2A_0" style="
+    <div class="redmagnifying" id="ME1A_0" style="
         height: 138px;
         width: 253px;
         top: 140px;
@@ -58,7 +58,7 @@ let ME1X_4 = `
 
 let ME1X_5 = `
     <img id="circlingPicture" src="pics/mattie_day_circle/ME1X_5.png">
-    <div class="redmagnifying" id="ME2A_0" style="
+    <div class="redmagnifying" id="ME1A_0" style="
         height: 125px;
         width: 236px;
         top: 149px;
@@ -220,7 +220,7 @@ document
     .getElementById("wrapper")
     .addEventListener("mouseover", hallwayTurning); 
 async function hallwayTurning(event) {
-    if (event && event.target.id == 'turnleftincircle') {
+    if (event && event.target.id == 'turnleftincirclehallway') {
         if (i > 18) {
             i = -1;
         }
@@ -229,7 +229,7 @@ async function hallwayTurning(event) {
             .innerHTML = sequenceOfScreensInHallway[++i];
             console.log(i);
     }
-    if (event && event.target.id == 'turnrightincircle') {
+    if (event && event.target.id == 'turnrightincirclehallway') {
         if (i < 1) {
             i = 20;
         }
@@ -256,7 +256,7 @@ function goToADifferentScreenInMattiesHallway(event) {
         .innerHTML = `
             <div class="thisScreenThisTime">
                 <img src="pics/apartment/ME1S_0.png">
-                <div class="forwardpointer" id="MD1X_6" style="
+                <div class="forwardpointer" onclick="r = 6" id="MD1X_6" style="
                     height: 246px;
                     width: 162px;
                     top: 0px;
@@ -272,12 +272,12 @@ function goToADifferentScreenInMattiesHallway(event) {
         `;  
     }
 
-    if (event && event.target.id == 'ME2A_0') {
+    if (event && event.target.id == 'ME1A_0') {
         document
             .getElementById("video")
             .innerHTML = `
             <div class="thisScreenThisTime">
-                <img src="pics/apartment/ME2A_0.png">
+                <img src="pics/apartment/ME1A_0.png">
                 <div class="redmagnifying" id="ME1L_0" style="
                     height: 183px;
                     width: 162px;
@@ -409,7 +409,7 @@ function goToADifferentScreenInMattiesHallway(event) {
             left: 408px;
             top: 109px;
         "></div>
-        <div class="backpointer" id="ME2A_0" style="
+        <div class="backpointer" id="ME1A_0" style="
             height: 67px;
             width: 536px;
             left: 0px;
@@ -687,8 +687,8 @@ let MD1X_all = `
 <div>
     <div id="activelocationspot">
     </div>
-    <div id="turnleftincircle" class ="activesides activeleftside"></div>
-    <div id="turnrightincircle" class ="activesides activerightside"></div>
+    <div id="turnleftincircleroom" class ="activesides activeleftside"></div>
+    <div id="turnrightincircleroom" class ="activesides activerightside"></div>
 </div>`;
 
 let MD1X_0 = `
@@ -1036,7 +1036,7 @@ document
     .getElementById("wrapper")
     .addEventListener("mouseover", roomTurning); 
 async function roomTurning(event) {
-    if (event && event.target.id == 'turnleftincircle') {
+    if (event && event.target.id == 'turnleftincircleroom') {
         if (r > 18) {
             r = -1;
         }
@@ -1045,7 +1045,7 @@ async function roomTurning(event) {
             .innerHTML = sequenceOfScreensInRoom[++r];
             console.log(r);
     }
-    if (event && event.target.id == 'turnrightincircle') {
+    if (event && event.target.id == 'turnrightincircleroom') {
         if (r < 1) {
             r = 20;
         }
@@ -1181,7 +1181,14 @@ function goToADifferentScreenInMattiesRoom(event) {
             width: 536px;
             left: 0px;
             top: 225px;
-        "></div>`    
+        "></div>
+        <div class="forwardpointer" onclick="i = 10" id="goBackToSpinning" style="
+            height: 225px;
+            width: 320px;
+            top: 0px;
+            left: 120px;
+            ">
+        </div>`    
     }
     if (event && event.target.id == 'md1z_0') {
     document
