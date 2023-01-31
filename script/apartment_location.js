@@ -546,7 +546,7 @@ document
     .getElementById("wrapper")
     .addEventListener("click", phoneCalling); 
 function phoneCalling(event) {
-    if (event && event.target.id == 'ME1M_0') {
+    if (event && event.target.id == 'ME1M_0')  {
         currentPhoneNumber = '';
         document.getElementById("wholedialogue")
             .innerHTML = `
@@ -558,54 +558,186 @@ function phoneCalling(event) {
             `
     }
     if (event && event.target.id == 'phoneButton1') {
+        document
+        .getElementById("audio")
+        .innerHTML = `
+            <audio id="currentAudio" autoplay controls">
+            <source 
+                src="audio/Dial1.wav" 
+                type="audio/mpeg">
+            </audio>
+        `
         currentPhoneNumber += '1';
         console.log(currentPhoneNumber);
     }
     if (event && event.target.id == 'phoneButton2') {
+        document
+        .getElementById("audio")
+        .innerHTML = `
+            <audio id="currentAudio" autoplay controls">
+            <source 
+                src="audio/Dial2.wav" 
+                type="audio/mpeg">
+            </audio>
+        `
         currentPhoneNumber += '2';
         console.log(currentPhoneNumber);
     }
     if (event && event.target.id == 'phoneButton3') {
+        document
+        .getElementById("audio")
+        .innerHTML = `
+            <audio id="currentAudio" autoplay controls">
+            <source 
+                src="audio/Dial3.wav" 
+                type="audio/mpeg">
+            </audio>
+        `
         currentPhoneNumber += '3';
         console.log(currentPhoneNumber);
     }
     if (event && event.target.id == 'phoneButton4') {
+        document
+        .getElementById("audio")
+        .innerHTML = `
+            <audio id="currentAudio" autoplay controls">
+            <source 
+                src="audio/Dial4.wav" 
+                type="audio/mpeg">
+            </audio>
+        `
         currentPhoneNumber += '4';
         console.log(currentPhoneNumber);
     }
     if (event && event.target.id == 'phoneButton5') {
+        document
+        .getElementById("audio")
+        .innerHTML = `
+            <audio id="currentAudio" autoplay controls">
+            <source 
+                src="audio/Dial5.wav" 
+                type="audio/mpeg">
+            </audio>
+        `
         currentPhoneNumber += '5';
         console.log(currentPhoneNumber);
     }
     if (event && event.target.id == 'phoneButton6') {
+        document
+        .getElementById("audio")
+        .innerHTML = `
+            <audio id="currentAudio" autoplay controls">
+            <source 
+                src="audio/Dial6.wav" 
+                type="audio/mpeg">
+            </audio>
+        `
         currentPhoneNumber += '6';
         console.log(currentPhoneNumber);
     }
     if (event && event.target.id == 'phoneButton7') {
+        document
+        .getElementById("audio")
+        .innerHTML = `
+            <audio id="currentAudio" autoplay controls">
+            <source 
+                src="audio/Dial7.wav" 
+                type="audio/mpeg">
+            </audio>
+        `
         currentPhoneNumber += '7';
         console.log(currentPhoneNumber);
     }
     if (event && event.target.id == 'phoneButton8') {
+        document
+        .getElementById("audio")
+        .innerHTML = `
+            <audio id="currentAudio" autoplay controls">
+            <source 
+                src="audio/Dial8.wav" 
+                type="audio/mpeg">
+            </audio>
+        `
         currentPhoneNumber += '8';
         console.log(currentPhoneNumber);
     }
     if (event && event.target.id == 'phoneButton9') {
+        document
+        .getElementById("audio")
+        .innerHTML = `
+            <audio id="currentAudio" autoplay controls">
+            <source 
+                src="audio/Dial9.wav" 
+                type="audio/mpeg">
+            </audio>
+        `
         currentPhoneNumber += '9';
         console.log(currentPhoneNumber);
     }
     if (event && event.target.id == 'phoneButton0') {
+        document
+        .getElementById("audio")
+        .innerHTML = `
+            <audio id="currentAudio" autoplay controls">
+            <source 
+                src="audio/Dial0.wav" 
+                type="audio/mpeg">
+            </audio>
+        `
         currentPhoneNumber += '0';
         console.log(currentPhoneNumber);
     }
     if (currentPhoneNumber && currentPhoneNumber.length == 11) {
         if (currentPhoneNumber == '15235554468') {
+            document
+            .getElementById("audio")
+            .innerHTML = `
+                <audio id="currentAudio" autoplay controls">
+                <source 
+                    src="audio/TelRing.wav" 
+                    type="audio/mpeg">
+                </audio>
+            `
             console.log('Calling Bess');
+            currentPhoneNumber = ``;
         } else if (currentPhoneNumber == '15235552583') {
+            document
+            .getElementById("audio")
+            .innerHTML = `
+                <audio id="currentAudio" autoplay controls">
+                <source 
+                    src="audio/TelRing.wav" 
+                    type="audio/mpeg">
+                </audio>
+            `
             console.log('Calling George');
+            currentPhoneNumber = ``;
         } else if (currentPhoneNumber == '15235554357') {
+            document
+            .getElementById("audio")
+            .innerHTML = `
+                <audio id="currentAudio" autoplay controls">
+                <source 
+                    src="audio/TelRing.wav" 
+                    type="audio/mpeg">
+                </audio>
+            `
             console.log('Calling Ned');
+            currentPhoneNumber = ``;
         } else {
-            console.log('Wrong Number');
+            console.log("wrong number")
+            document
+            .getElementById("audio")
+            .innerHTML = `
+                <audio id="currentAudio" autoplay controls">
+                <source 
+                    src="audio/TelRing.wav" 
+                    type="audio/mpeg">
+                </audio>
+            `
+            currentPhoneNumber = ``;
+            document.getElementById('currentAudio')
+                .addEventListener('ended', dialAgain, false);
         }
         document.getElementById("wholedialogue")
             .innerHTML = `
@@ -616,6 +748,39 @@ function phoneCalling(event) {
     }
 }
 
+function dialAgain() {
+    // !!! change the subtitle.
+    document.getElementById("wholedialogue")
+        .innerHTML = `
+            <p class='dialogue__character'>
+                We're sorry...
+            </p>
+        `
+    document
+        .getElementById("audio")
+        .innerHTML = `
+            <audio id="currentAudio" autoplay controls">
+            <source 
+                src="audio/DialAgin.wav" 
+                type="audio/mpeg">
+            </audio>
+        `
+        document.getElementById('currentAudio')
+            .addEventListener('ended', tryDialingAgain, false);
+}
+
+function tryDialingAgain() {
+    currentPhoneNumber = '';
+    document.getElementById("wholedialogue")
+        .innerHTML = `
+            <p class="dialogue__character">Address Book:</p>
+            <p class="dialogue__character" style="width: 293px; height: 10px;"></p>
+            <p class="dialogue__character">Bess Marvin     1-523-555-4468</p>
+            <p class="dialogue__character">George Fayne    1-523-555-2583</p>
+            <p class="dialogue__character">Ned Nickerson   1-523-555-4357</p>
+        `;
+    phoneCalling();
+}
 
 // Get Inside The Apartment 
 
