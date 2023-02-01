@@ -393,28 +393,34 @@ function goToADifferentScreenInMattiesHallway(event) {
 
     if (event && event.target.id == 'ME1L_0') {
         document
-        .getElementById("video")
-        .innerHTML = `
-        <div class="thisScreenThisTime">
-        <img src="pics/apartment/ME1L_0.png">
-        <div class="redmagnifying" id="ME1M_0" style="
-            height: 150px;
-            width: 142px;
-            left: 245px;
-            top: 75px;
-        "></div>
-        <div class="redmagnifying" id="noteNextToPhone" style="
-            height: 116px;
-            width: 128px;
-            left: 408px;
-            top: 109px;
-        "></div>
-        <div class="backpointer" id="ME1A_0" style="
-            height: 67px;
-            width: 536px;
-            left: 0px;
-            top: 225px;
-        "></div>`
+            .getElementById("audio")
+            .innerHTML = ``;
+        document.getElementById("wholedialogue")
+            .innerHTML = ``;
+        currentPhoneNumber = '';
+        document
+            .getElementById("video")
+            .innerHTML = `
+            <div class="thisScreenThisTime">
+            <img src="pics/apartment/ME1L_0.png">
+            <div class="redmagnifying" id="ME1M_0" style="
+                height: 150px;
+                width: 142px;
+                left: 245px;
+                top: 75px;
+            "></div>
+            <div class="redmagnifying" id="noteNextToPhone" style="
+                height: 116px;
+                width: 128px;
+                left: 408px;
+                top: 109px;
+            "></div>
+            <div class="backpointer" id="ME1A_0" style="
+                height: 67px;
+                width: 536px;
+                left: 0px;
+                top: 225px;
+            "></div>`
     }
 
     if (event && event.target.id == 'noteNextToPhone') {
@@ -548,13 +554,22 @@ document
 function phoneCalling(event) {
     if (event && event.target.id == 'ME1M_0')  {
         currentPhoneNumber = '';
+        document
+        .getElementById("audio")
+        .innerHTML = `
+            <audio id="currentAudio" autoplay loop controls">
+            <source 
+                src="audio/DialTone.wav" 
+                type="audio/mpeg">
+            </audio> 
+        `
         document.getElementById("wholedialogue")
             .innerHTML = `
                 <p class="dialogue__character">Address Book:</p>
                 <p class="dialogue__character" style="width: 293px; height: 10px;"></p>
-                <p class="dialogue__character">Bess Marvin     1-523-555-4468</p>
-                <p class="dialogue__character">George Fayne    1-523-555-2583</p>
-                <p class="dialogue__character">Ned Nickerson   1-523-555-4357</p>
+                <p class="dialogue__character">Bess Marvin&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1-523-555-4468</p>
+                <p class="dialogue__character">George Fayne&nbsp;&nbsp;&nbsp;&nbsp;1-523-555-2583</p>
+                <p class="dialogue__character">Ned Nickerson&nbsp;&nbsp;&nbsp;1-523-555-4357</p>
             `
     }
     if (event && event.target.id == 'phoneButton1') {
@@ -775,10 +790,19 @@ function tryDialingAgain() {
         .innerHTML = `
             <p class="dialogue__character">Address Book:</p>
             <p class="dialogue__character" style="width: 293px; height: 10px;"></p>
-            <p class="dialogue__character">Bess Marvin     1-523-555-4468</p>
-            <p class="dialogue__character">George Fayne    1-523-555-2583</p>
-            <p class="dialogue__character">Ned Nickerson   1-523-555-4357</p>
+            <p class="dialogue__character">Bess Marvin&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1-523-555-4468</p>
+            <p class="dialogue__character">George Fayne&nbsp;&nbsp;&nbsp;&nbsp;1-523-555-2583</p>
+            <p class="dialogue__character">Ned Nickerson&nbsp;&nbsp;&nbsp;1-523-555-4357</p>
         `;
+        document
+        .getElementById("audio")
+        .innerHTML = `
+            <audio id="currentAudio" autoplay loop controls">
+            <source 
+                src="audio/DialTone.wav" 
+                type="audio/mpeg">
+            </audio> 
+        `
     phoneCalling();
 }
 
