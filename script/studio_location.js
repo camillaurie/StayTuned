@@ -56,7 +56,11 @@ let SE1X_all = `
     </div>
     <div id="turnleftincirclestudio1" class ="activesides activeleftside"></div>
     <div id="turnrightincirclestudio1" class ="activesides activerightside"></div>
-</div>`;
+</div>
+<video id="talkToRalph" playsinline mute loop autoplay style="
+    display: none;">
+    <source src="video/ralph.webm" type="video/webm">
+</video>;`;
 
 let SE1X_0 = `
     <img id="circlingPicture" src="pics/studio_first_circle/SE1X_0.png">
@@ -87,13 +91,6 @@ let SE1X_1 = `
 
 let SE1X_2 = `
     <img id="circlingPicture" src="pics/studio_first_circle/SE1X_2.png">
-    <video id="talkToRalph" playsinline mute loop autoplay style="
-        position: absolute;
-        top: 70px;
-        left: 0px;
-        width: 145px;">
-        <source src="video/ralph.webm" type="video/webm">
-    </video>
     <div class="forwardpointer" id="SE1W_0" style="
         height: 136px;
         width: 118px;
@@ -101,26 +98,31 @@ let SE1X_2 = `
         left: 304px;
         ">
     </div>`;
+    // <video id="talkToRalph" playsinline mute loop autoplay style="
+    //     position: absolute;
+    //     top: 70px;
+    //     left: 0px;
+    //     width: 145px;">
+    //     <source src="video/ralph.webm" type="video/webm">
+    // </video>
 
-let SE1X_3 = `
-    <img id="circlingPicture" src="pics/studio_first_circle/SE1X_3.png">
-    <video id="talkToRalph" playsinline mute loop autoplay style="
-        position: absolute;
-        top: 70px;
-        left: 204px;
-        width: 145px;">
-        <source src="video/ralph.webm" type="video/webm">
-    </video>`;
+let SE1X_3 = `<img id="circlingPicture" src="pics/studio_first_circle/SE1X_3.png">`;
+    // <video id="talkToRalph" playsinline mute loop autoplay style="
+    //     position: absolute;
+    //     top: 70px;
+    //     left: 204px;
+    //     width: 145px;">
+    //     <source src="video/ralph.webm" type="video/webm">
+    // </video>;
 
-let SE1X_4 = `
-    <img id="circlingPicture" src="pics/studio_first_circle/SE1X_4.png">
-    <video id="talkToRalph" playsinline mute loop autoplay style="
-        position: absolute;
-        top: 70px;
-        left: 391px;
-        width: 145px;">
-        <source src="video/ralph.webm" type="video/webm">
-    </video>`;
+let SE1X_4 = `<img id="circlingPicture" src="pics/studio_first_circle/SE1X_4.png">`;
+    // <video id="talkToRalph" playsinline mute loop autoplay style="
+    //     position: absolute;
+    //     top: 70px;
+    //     left: 391px;
+    //     width: 145px;">
+    //     <source src="video/ralph.webm" type="video/webm">
+    // </video>;
 
 let SE1X_5 = `<img id="circlingPicture" src="pics/studio_first_circle/SE1X_5.png">`;
 
@@ -286,6 +288,36 @@ async function studio1Turning(event) {
             .getElementById("activelocationspot")
             .innerHTML = sequenceOfScreensInStudio1[--s];
             console.log(s);
+    }
+    if (s == 2) {
+        document
+            .getElementById("talkToRalph")
+            .style = `
+                position: absolute;
+                top: 70px;
+                left: 0px;
+                width: 145px;`
+    } else if (s == 3) {
+        document
+            .getElementById("talkToRalph")
+            .style = `
+                position: absolute;
+                top: 70px;
+                left: 204px;
+                width: 145px;`
+    } else if (s == 4) {
+        document
+            .getElementById("talkToRalph")
+            .style = `
+                position: absolute;
+                top: 70px;
+                left: 391px;
+                width: 145px;`
+    } else {
+        document
+            .getElementById("talkToRalph")
+            .style = `
+                display: none;`
     }
 }
 
