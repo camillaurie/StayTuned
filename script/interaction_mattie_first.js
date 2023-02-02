@@ -423,7 +423,7 @@ function theyreTotallyBizarre() {
 
 
 
-function firstInteractionWithMattie() {
+function interaction_mattie_first() {
     document
     .getElementById("wrapper")
     .innerHTML = `

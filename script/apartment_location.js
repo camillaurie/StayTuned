@@ -310,7 +310,7 @@ function goToADifferentScreenInMattiesHallway(event) {
 
     if (event && event.target.id == 'MD1X_6') {
         if (haveISpokenWithMattie == false) {
-            firstInteractionWithMattie();
+            interaction_mattie_first();
         } else if (haveISpokenWithMattie == true) {
             exploringTheRoomDay();
             roomTurning();

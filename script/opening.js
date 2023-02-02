@@ -24,5 +24,5 @@ function theOpeningLetter() {
             </div>
             `
             document.getElementById('currentVideo')
-            .addEventListener('ended', map1, false);
+            .addEventListener('ended', map2, false); // !!! CHANGE to map1 don't forget!!!!!!!
 }

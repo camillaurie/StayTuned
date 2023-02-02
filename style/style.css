@@ -177,6 +177,10 @@ body {
     position: absolute;
 }
 
+#talkToRalph {
+    cursor: url(../pics/sprites/glass_red.png), zoom-in;
+}
+
 .activemapspot {
     background-color: #4000ff66;
     position: absolute;

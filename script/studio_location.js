@@ -10,10 +10,10 @@ function seeingTheStudioEntrance(event) {
                 <div class="thisScreenThisTime">
                     <img src="pics/studio_hallways/SE0A_0.png">
                     <div class="forwardpointer" id="getInsideTheStudio" style="
-                        height: 190px;
-                        width: 130px;
-                        top: 50px;
-                        left: 280px;
+                        height: 176px;
+                        width: 178px;
+                        top: 107px;
+                        left: 178px;
                     "></div>
                 </div>
             `
@@ -24,16 +24,23 @@ function seeingTheStudioEntrance(event) {
 }
 
 function getInsideTheStudio() {
+    s = 0;
     document
     .getElementById("video")
     .innerHTML = `
         <div class="thisScreenThisTime">
             <img src="pics/studio_hallways/SE1V_0.png">
             <div class="forwardpointer" id="exploringTheStudioDay" style="
-                height: 190px;
-                width: 130px;
-                top: 50px;
-                left: 280px;
+                height: 172px;
+                width: 210px;
+                top: 40px;
+                left: 160px;
+            "></div>
+            <div class="backpointer" id="goToMap" style="
+                height: 80px;
+                width: 536px;
+                top: 212px;
+                left: 0px;
             "></div>
         </div>
     `
@@ -53,360 +60,193 @@ let SE1X_all = `
 
 let SE1X_0 = `
     <img id="circlingPicture" src="pics/studio_first_circle/SE1X_0.png">
-    <div class="forwardpointer" id="!!!" style="
-        height: 211px;
-        width: 165px;
-        top: 7px;
-        left: 88px;
+    <div class="forwardpointer" id="beStoppedByRalph" style="
+        height: 217px;
+        width: 355px;
+        top: 15px;
+        left: 99px;
         ">
-    </div>
-    `;
+    </div>`;
 
 let SE1X_1 = `
     <img id="circlingPicture" src="pics/studio_first_circle/SE1X_1.png">
-    <div class="forwardpointer" id="!!!" style="
-        height: 205px;
-        width: 144px;
-        top: 12px;
-        left: 220px;
+    <div class="forwardpointer" id="SE1W_0" style="
+        height: 136px;
+        width: 118px;
+        top: 84px;
+        left: 116px;
         ">
     </div>
-    <div class="forwardpointer" id="!!!" style="
-        height: 185px;
-        width: 129px;
-        top: 37px;
-        left: 50px;
+    <div class="forwardpointer" id="beStoppedByRalph" style="
+        height: 189px;
+        width: 180px;
+        top: 41px;
+        left: 306px;
         ">
-    </div>
-    `;
+    </div>`;
 
 let SE1X_2 = `
     <img id="circlingPicture" src="pics/studio_first_circle/SE1X_2.png">
-    <video id="charactervideo" playsinline mute loop autoplay style="
+    <video id="talkToRalph" playsinline mute loop autoplay style="
         position: absolute;
         top: 70px;
         left: 0px;
         width: 145px;">
         <source src="video/ralph.webm" type="video/webm">
     </video>
-    <div class="forwardpointer" id="!!!" style="
-        height: 215px;
-        width: 154px;
-        top: 4px;
-        left: 332px;
+    <div class="forwardpointer" id="SE1W_0" style="
+        height: 136px;
+        width: 118px;
+        top: 84px;
+        left: 304px;
         ">
-    </div>
-    <div class="forwardpointer" id="!!!" style="
-        height: 176px;
-        width: 160px;
-        top: 34px;
-        left: 142px;
-        ">
-    </div>
-    `;
+    </div>`;
 
 let SE1X_3 = `
     <img id="circlingPicture" src="pics/studio_first_circle/SE1X_3.png">
-    <video id="charactervideo" playsinline mute loop autoplay style="
+    <video id="talkToRalph" playsinline mute loop autoplay style="
         position: absolute;
         top: 70px;
         left: 204px;
         width: 145px;">
         <source src="video/ralph.webm" type="video/webm">
-    </video>
-    <div class="forwardpointer" id="!!!" style="
-        height: 99px;
-        width: 127px;
-        top: 70px;
-        left: 96px;
-        ">
-    </div>
-    <div class="forwardpointer" id="!!!" style="
-        height: 193px;
-        width: 142px;
-        top: 31px;
-        left: 269px;
-        ">
-    </div>`;
+    </video>`;
 
 let SE1X_4 = `
     <img id="circlingPicture" src="pics/studio_first_circle/SE1X_4.png">
-    <video id="charactervideo" playsinline mute loop autoplay style="
+    <video id="talkToRalph" playsinline mute loop autoplay style="
         position: absolute;
         top: 70px;
         left: 391px;
         width: 145px;">
         <source src="video/ralph.webm" type="video/webm">
-    </video>
-    <div class="forwardpointer" id="!!!" style="
-        height: 99px;
-        width: 126px;
-        top: 70px;
-        left: 69px;
-        ">
-    </div>
-    <div class="forwardpointer" id="!!!" style="
-        height: 99px;
-        width: 115px;
-        top: 70px;
-        left: 227px;
-        ">
-    </div>
-    <div class="forwardpointer" id="!!!" style="
-        height: 209px;
-        width: 114px;
-        top: 16px;
-        left: 372px;
-        ">
-    </div>`;
+    </video>`;
 
-let SE1X_5 = `
-    <img id="circlingPicture" src="pics/studio_first_circle/SE1X_5.png">
-    <div class="forwardpointer" id="!!!" style="
-        height: 99px;
-        width: 154px;
-        top: 70px;
-        left: 172px;
-        ">
-    </div>
-    <div class="forwardpointer" id="!!!" style="
-        height: 99px;
-        width: 154px;
-        top: 70px;
-        left: 326px;
-        ">
-    </div>`;
+let SE1X_5 = `<img id="circlingPicture" src="pics/studio_first_circle/SE1X_5.png">`;
 
 let SE1X_6 = `
     <img id="circlingPicture" src="pics/studio_first_circle/SE1X_6.png">
-    <div class="forwardpointer" id="!!!" style="
-        height: 99px;
-        width: 154px;
-        top: 70px;
-        left: 299px;
-        ">
-    </div>
-    <div class="forwardpointer" id="!!!" style="
-        height: 74px;
-        width: 74px;
-        top: 218px;
-        left: 79px;
+    <div class="forwardpointer" id="SE1G_0" style="
+        height: 94px;
+        width: 75px;
+        top: 149px;
+        left: 50px;
         ">
     </div>`;
 
 let SE1X_7 = `
     <img id="circlingPicture" src="pics/studio_first_circle/SE1X_7.png">
-    <div class="forwardpointer" id="!!!" style="
-        height: 83px;
-        width: 165px;
-        top: 111px;
-        left: 96px;
+    <div class="forwardpointer" id="SE1G_0" style="
+        height: 94px;
+        width: 81px;
+        top: 149px;
+        left: 245px;
         ">
-    </div>
-    <div class="forwardpointer" id="!!!" style="
-        height: 74px;
-        width: 74px;
-        top: 218px;
-        left: 198px;
-        ">
-    </div>
-    `;
+    </div>`;
 
 let SE1X_8 = `
     <img id="circlingPicture" src="pics/studio_first_circle/SE1X_8.png">
-    <div class="forwardpointer" id="!!!" style="
-        height: 83px;
-        width: 162px;
-        top: 111px;
-        left: 218px;">
-    </div>
-    <div class="forwardpointer" id="!!!" style="
-        height: 91px;
-        width: 115px;
-        top: 162px;
-        left: 50px;
-        ">
-    </div>
-    <div class="forwardpointer" id="!!!" style="
-        height: 74px;
-        width: 74px;
-        top: 218px;
-        left: 299px;
+    <div class="forwardpointer" id="SE1G_0" style="
+        height: 94px;
+        width: 51px;
+        top: 149px;
+        left: 435px;
         ">
     </div>`;
 
 let SE1X_9 = `
     <img id="circlingPicture" src="pics/studio_first_circle/SE1X_9.png">
-    <div class="forwardpointer" id="!!!" style="
-        height: 83px;
-        width: 165px;
-        top: 111px;
-        left: 321px;
-        ">
-    </div>
-    <div class="forwardpointer" id="!!!" style="
-        height: 91px;
-        width: 115px;
-        top: 153px;
-        left: 153px;
-        ">
-    </div>
-    <div class="forwardpointer" id="!!!" style="
-        height: 74px;
-        width: 74px;
-        top: 218px;
-        left: 412px;
+    <div class="forwardpointer" id="goToMap" style="
+        height: 241px;
+        width: 135px;
+        top: 30px;
+        left: 50px;
         ">
     </div>`;
 
 let SE1X_10 = `
     <img id="circlingPicture" src="pics/studio_first_circle/SE1X_10.png">
-    <div class="forwardpointer" id="!!!" style="
-        height: 91px;
-        width: 115px;
-        top: 162px;
-        left: 266px;
+    <div class="forwardpointer" id="goToMap" style="
+        height: 241px;
+        width: 195px;
+        top: 30px;
+        left: 171px;
         ">
     </div>`;
 
 let SE1X_11 = `
     <img id="circlingPicture" src="pics/studio_first_circle/SE1X_11.png">
-    <div class="forwardpointer" id="!!!" style="
-        height: 91px;
-        width: 115px;
-        top: 174px;
-        left: 371px;
+    <div class="forwardpointer" id="goToMap" style="
+        height: 241px;
+        width: 125px;
+        top: 30px;
+        left: 361px;
         ">
-    </div>
-    `;
+    </div>`;
 
 let SE1X_12 = `<img id="circlingPicture" src="pics/studio_first_circle/SE1X_12.png">`;
 
 let SE1X_13 = `
     <img id="circlingPicture" src="pics/studio_first_circle/SE1X_13.png">
-    <div class="forwardpointer" id="!!!" style="
-        height: 74px;
-        width: 136px;
-        top: 218px;
-        left: 50px;
+    <div class="forwardpointer" id="SE1H_0" style="
+        height: 94px;
+        width: 120px;
+        top: 198px;
+        left: 120px;
         ">
-    </div>
-    `;
+    </div>`;
 
 let SE1X_14 = `
     <img id="circlingPicture" src="pics/studio_first_circle/SE1X_14.png">
-    <div class="forwardpointer" id="!!!" style="
-        height: 54px;
-        width: 158px;
-        top: 238px;
-        left: 123px;
+    <div class="forwardpointer" id="SE1H_0" style="
+        height: 94px;
+        width: 120px;
+        top: 198px;
+        left: 310px;
         ">
-    </div>
-    <div class="forwardpointer" id="!!!" style="
-        height: 78px;
-        width: 97px;
-        top: 160px;
-        left: 50px;
-        ">
-    </div>
-    `;
+    </div>`;
 
-let SE1X_15 = `
-    <img id="circlingPicture" src="pics/studio_first_circle/SE1X_15.png">
-    <div class="forwardpointer" id="!!!" style="
-        height: 64px;
-        width: 164px;
-        top: 228px;
-        left: 232px;
-        ">
-    </div>
-    <div class="forwardpointer" id="!!!" style="
-        height: 185px;
-        width: 76px;
-        top: 38px;
-        left: 89px;
-        ">
-    </div>
-    <div class="forwardpointer" id="!!!" style="
-        height: 75px;
-        width: 87px;
-        top: 153px;
-        left: 172px;
-        ">
-    </div>
-    `;
+let SE1X_15 = `<img id="circlingPicture" src="pics/studio_first_circle/SE1X_15.png">`;
 
 let SE1X_16 = `
     <img id="circlingPicture" src="pics/studio_first_circle/SE1X_16.png">
-    <div class="forwardpointer" id="!!!" style="
-        height: 64px;
-        width: 115px;
-        top: 228px;
-        left: 371px;
+    <div class="redmagnifying" id="SE1U_0" style="
+        height: 68px;
+        width: 119px;
+        top: 110px;
+        left: 60px;
         ">
-    </div>
-    <div class="forwardpointer" id="!!!" style="
-        height: 208px;
-        width: 100px;
-        top: 20px;
-        left: 40px;
-        ">
-    </div>
-    <div class="forwardpointer" id="!!!" style="
-        height: 173px;
-        width: 73px;
-        top: 41px;
-        left: 211px;
-        ">
-    </div>
-    <div class="forwardpointer" id="!!!" style="
-        height: 117px;
-        width: 87px;
-        top: 153px;
-        left: 284px;
-        ">
-    </div>
-    `;
+    </div>`;
 
 let SE1X_17 = `
     <img id="circlingPicture" src="pics/studio_first_circle/SE1X_17.png">
-    <div class="forwardpointer" id="!!!" style="
-        height: 210px;
-        width: 92px;
-        top: 12px;
-        left: 168px;
+    <div class="redmagnifying" id="SE1U_0" style="
+        height: 68px;
+        width: 119px;
+        top: 110px;
+        left: 251px;
         ">
-    </div>
-    <div class="forwardpointer" id="!!!" style="
-        height: 187px;
-        width: 94px;
-        top: 36px;
-        left: 313px;
-        ">
-    </div>
-    <div class="forwardpointer" id="!!!" style="
-        height: 117px;
-        width: 79px;
-        top: 153px;
-        left: 407px;
-        ">
-    </div>
-    `;
+    </div>`;
 
 let SE1X_18 = `
     <img id="circlingPicture" src="pics/studio_first_circle/SE1X_18.png">
-    <div class="forwardpointer" id="!!!" style="
-        height: 205px;
-        width: 93px;
-        top: 12px;
-        left: 283px;
+    <div class="redmagnifying" id="SE1U_0" style="
+        height: 68px;
+        width: 40px;
+        top: 110px;
+        left: 446px;
         ">
-    </div>
-    `;
+    </div>`;
 
 let SE1X_19 = `
     <img id="circlingPicture" src="pics/studio_first_circle/SE1X_19.png">
-    `;
+    <div class="forwardpointer" id="beStoppedByRalph" style="
+        height: 189px;
+        width: 180px;
+        top: 41px;
+        left: 306px;
+        ">
+    </div>`;
 
 let sequenceOfScreensInStudio1 = [SE1X_0, SE1X_1, SE1X_2, SE1X_3, SE1X_4, SE1X_5, SE1X_6, SE1X_7, SE1X_8, SE1X_9, SE1X_10, SE1X_11, SE1X_12, SE1X_13, SE1X_14, SE1X_15, SE1X_16, SE1X_17, SE1X_18, SE1X_19];
 
@@ -458,4 +298,192 @@ function exploringTheStudioDay() {
         document
             .getElementById("activelocationspot")
             .innerHTML = sequenceOfScreensInStudio1[s]; 
+}
+
+
+document
+    .getElementById("wrapper")
+    .addEventListener("click", goToADifferentScreenInStudio1); 
+function goToADifferentScreenInStudio1(event) {
+    if (event && event.target.id == 'goBackToSpinningStudio1') {
+        console.log('d')
+        exploringTheStudioDay();
+    }
+
+    if (event && event.target.id == 'SE1W_0') {
+        document
+            .getElementById("video")
+            .innerHTML = `
+            <div class="thisScreenThisTime">
+            <img src="pics/studio_hallways/SE1W_0.png">
+            <div class="backpointer" id="goBackToSpinningStudio1" style="
+                height: 67px;
+                width: 536px;
+                left: 0px;
+                top: 225px;
+            "></div>`    
+    }
+
+    if (event && event.target.id == 'SE1H_0') {
+        document
+            .getElementById("video")
+            .innerHTML = `
+            <div class="thisScreenThisTime">
+            <img src="pics/studio_hallways/SE1H_0.png">
+            <div class="redmagnifying" id="SE1J_0" style="
+                height: 110px;
+                width: 129px;
+                top: 55px;
+                left: 288px;
+            "></div>
+            <div class="backpointer" id="goBackToSpinningStudio1" style="
+                height: 67px;
+                width: 536px;
+                left: 0px;
+                top: 225px;
+            "></div>`    
+    }
+
+    if (event && event.target.id == 'SE1J_0') {
+        document
+            .getElementById("video")
+            .innerHTML = `
+            <div class="thisScreenThisTime">
+            <img src="pics/studio_hallways/SE1J_0.png">
+            <div class="redmagnifying" id="SE1K_0" style="
+                height: 225px;
+                width: 224px;
+                top: 0px;
+                left: 150px;
+            "></div>
+            <div class="backpointer" id="SE1H_0" style="
+                height: 67px;
+                width: 536px;
+                left: 0px;
+                top: 225px;
+            "></div>`   
+    }
+
+    if (event && event.target.id == 'SE1K_0') {
+        document
+            .getElementById("video")
+            .innerHTML = `
+            <div class="thisScreenThisTime">
+            <img src="pics/studio_hallways/SE1K_0.png">
+            <div class="redmagnifying" id="SE1L_0" style="
+                height: 292px;
+                width: 129px;
+                top: 0px;
+                left: 348px;
+            "></div>
+            <div class="redmagnifying" id="SE1J_0" style="
+                height: 292px;
+                width: 70px;
+                top: 0px;
+                left: 60px;
+            "></div>`
+    }
+
+    if (event && event.target.id == 'SE1L_0') {
+        document
+            .getElementById("video")
+            .innerHTML = `
+            <div class="thisScreenThisTime">
+            <img src="pics/studio_hallways/SE1L_0.png">
+            <div class="redmagnifying" id="SE1K_0" style="
+                height: 292px;
+                width: 70px;
+                top: 0px;
+                left: 60px;
+            "></div>`
+    }
+
+    if (event && event.target.id == 'SE1G_0') {
+        document
+            .getElementById("video")
+            .innerHTML = `
+            <div class="thisScreenThisTime">
+            <img src="pics/studio_hallways/SE1G_0.png">
+            <div class="redmagnifying" id="SE1M_0" style="
+                height: 94px;
+                width: 127px;
+                top: 102px;
+                left: 111px;
+            "></div>
+            <div class="backpointer" id="goBackToSpinningStudio1" style="
+                height: 67px;
+                width: 536px;
+                left: 0px;
+                top: 225px;
+            "></div>`
+    }
+
+    if (event && event.target.id == 'SE1M_0') {
+        document
+            .getElementById("video")
+            .innerHTML = `
+            <div class="thisScreenThisTime">
+            <img src="pics/studio_hallways/SE1M_0.png">
+            <div class="redmagnifying" id="SE1N_0" style="
+                height: 225px;
+                width: 225px;
+                top: 0px;
+                left: 157px;
+            "></div>
+            <div class="backpointer" id="SE1G_0" style="
+                height: 67px;
+                width: 536px;
+                left: 0px;
+                top: 225px;
+            "></div>`
+    }
+
+    if (event && event.target.id == 'SE1N_0') {
+        document
+            .getElementById("video")
+            .innerHTML = `
+            <div class="thisScreenThisTime">
+            <img src="pics/studio_hallways/SE1N_0.png">
+            <div class="redmagnifying" id="SE1O_0" style="
+                height: 292px;
+                width: 129px;
+                top: 0px;
+                left: 358px;
+            "></div>
+            <div class="redmagnifying" id="SE1M_0" style="
+                height: 292px;
+                width: 70px;
+                top: 0px;
+                left: 50px;
+            "></div>`
+    }
+
+    if (event && event.target.id == 'SE1O_0') {
+        document
+            .getElementById("video")
+            .innerHTML = `
+            <div class="thisScreenThisTime">
+            <img src="pics/studio_hallways/SE1O_0.png">
+            <div class="redmagnifying" id="SE1N_0" style="
+                height: 292px;
+                width: 130px;
+                top: 0px;
+                left: 48px;
+            "></div>`
+    }
+
+    
+    if (event && event.target.id == 'SE1U_0') {
+        document
+            .getElementById("video")
+            .innerHTML = `
+            <div class="thisScreenThisTime">
+            <img src="pics/studio_hallways/SE1U_0.png">
+            <div class="backpointer" id="goBackToSpinningStudio1" style="
+                height: 67px;
+                width: 536px;
+                left: 0px;
+                top: 225px;
+            "></div>`
+    }
 }
