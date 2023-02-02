@@ -1,38 +1,35 @@
 
 document
-.getElementById("wrapper")
-.addEventListener("click", knockingOnTheStudioDoor);
-function knockingOnTheStudioDoor(event) {
-if (event && event.target.id == 'fromMapGoToTheStudio') {
-    console.log('knicking');
-    
-    document
-    .getElementById("video")
-    .innerHTML = `
-        <div class="thisScreenThisTime">
-            <img src="pics/studio_hallways/SE0A_0.png">
-            <div class="forwardpointer" id="frontDoorOfTheStudio" style="
-                height: 190px;
-                width: 130px;
-                top: 50px;
-                left: 280px;
-            "></div>
-        </div>
-    `
-    document
-    .getElementById("frontDoorOfTheStudio")
-    .addEventListener("click", invitationIntoTheStudio);
-}
+    .getElementById("wrapper")
+    .addEventListener("click", seeingTheStudioEntrance);
+function seeingTheStudioEntrance(event) {
+    if (event && event.target.id == 'fromMapGoToTheStudio') {    
+        document
+            .getElementById("video")
+            .innerHTML = `
+                <div class="thisScreenThisTime">
+                    <img src="pics/studio_hallways/SE0A_0.png">
+                    <div class="forwardpointer" id="getInsideTheStudio" style="
+                        height: 190px;
+                        width: 130px;
+                        top: 50px;
+                        left: 280px;
+                    "></div>
+                </div>
+            `
+        document
+            .getElementById("getInsideTheStudio")
+            .addEventListener("click", getInsideTheStudio);
+    }
 }
 
-function invitationIntoTheStudio() {
-    console.log('invitation');
+function getInsideTheStudio() {
     document
     .getElementById("video")
     .innerHTML = `
         <div class="thisScreenThisTime">
             <img src="pics/studio_hallways/SE1V_0.png">
-            <div class="forwardpointer" id="enterTheStudio" style="
+            <div class="forwardpointer" id="exploringTheStudioDay" style="
                 height: 190px;
                 width: 130px;
                 top: 50px;
@@ -40,6 +37,9 @@ function invitationIntoTheStudio() {
             "></div>
         </div>
     `
+    document
+        .getElementById("exploringTheStudioDay")
+        .addEventListener("click", exploringTheStudioDay, false);
 }
 
 
@@ -82,6 +82,13 @@ let SE1X_1 = `
 
 let SE1X_2 = `
     <img id="circlingPicture" src="pics/studio_first_circle/SE1X_2.png">
+    <video id="charactervideo" playsinline mute loop autoplay style="
+        position: absolute;
+        top: 70px;
+        left: 0px;
+        width: 145px;">
+        <source src="video/ralph.webm" type="video/webm">
+    </video>
     <div class="forwardpointer" id="!!!" style="
         height: 215px;
         width: 154px;
@@ -100,6 +107,13 @@ let SE1X_2 = `
 
 let SE1X_3 = `
     <img id="circlingPicture" src="pics/studio_first_circle/SE1X_3.png">
+    <video id="charactervideo" playsinline mute loop autoplay style="
+        position: absolute;
+        top: 70px;
+        left: 204px;
+        width: 145px;">
+        <source src="video/ralph.webm" type="video/webm">
+    </video>
     <div class="forwardpointer" id="!!!" style="
         height: 99px;
         width: 127px;
@@ -117,6 +131,13 @@ let SE1X_3 = `
 
 let SE1X_4 = `
     <img id="circlingPicture" src="pics/studio_first_circle/SE1X_4.png">
+    <video id="charactervideo" playsinline mute loop autoplay style="
+        position: absolute;
+        top: 70px;
+        left: 391px;
+        width: 145px;">
+        <source src="video/ralph.webm" type="video/webm">
+    </video>
     <div class="forwardpointer" id="!!!" style="
         height: 99px;
         width: 126px;
@@ -391,7 +412,19 @@ let sequenceOfScreensInStudio1 = [SE1X_0, SE1X_1, SE1X_2, SE1X_3, SE1X_4, SE1X_5
 
 
 
-let s = 6;
+function exploringTheStudioDay() {
+    document.getElementById("wholedialogue")
+        .innerHTML = ``
+    document
+        .getElementById("video")
+        .innerHTML = ME1X_all;
+        document
+            .getElementById("activelocationspot")
+            .innerHTML = sequenceOfScreensInHallway[i]; 
+}
+
+
+let s = 0;
 document
     .getElementById("wrapper")
     .addEventListener("mouseover", studio1Turning); 
