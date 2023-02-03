@@ -57,7 +57,7 @@ let SE1X_all = `
     <div id="turnleftincirclestudio1" class ="activesides activeleftside"></div>
     <div id="turnrightincirclestudio1" class ="activesides activerightside"></div>
 </div>
-<video id="talkToRalph" playsinline mute loop autoplay style="
+<video id="talkToRalph" playsinline muted loop autoplay onclick="interaction_ralph()" style="
     display: none;">
     <source src="video/ralph.webm" type="video/webm">
 </video>;`;
@@ -244,9 +244,9 @@ let SE1X_19 = `
     <img id="circlingPicture" src="pics/studio_first_circle/SE1X_19.png">
     <div class="forwardpointer" id="beStoppedByRalph" style="
         height: 189px;
-        width: 180px;
+        width: 210px;
         top: 41px;
-        left: 306px;
+        left: 50px;
         ">
     </div>`;
 
@@ -290,13 +290,16 @@ async function studio1Turning(event) {
             console.log(s);
     }
     if (s == 2) {
-        document
-            .getElementById("talkToRalph")
-            .style = `
-                position: absolute;
-                top: 70px;
-                left: 0px;
-                width: 145px;`
+        if (document
+            .getElementById("talkToRalph")) {
+            document
+                .getElementById("talkToRalph")
+                .style = `
+                    position: absolute;
+                    top: 70px;
+                    left: 0px;
+                    width: 145px;`
+        }
     } else if (s == 3) {
         document
             .getElementById("talkToRalph")
@@ -314,10 +317,13 @@ async function studio1Turning(event) {
                 left: 391px;
                 width: 145px;`
     } else {
+        if (document
+            .getElementById("talkToRalph")) {
         document
             .getElementById("talkToRalph")
             .style = `
                 display: none;`
+        }
     }
 }
 
@@ -518,4 +524,21 @@ function goToADifferentScreenInStudio1(event) {
                 top: 225px;
             "></div>`
     }
+    
+    if (event && event.target.id == 'beStoppedByRalph') {
+        document
+        .getElementById("audio")
+        .innerHTML = `
+            <audio onended="interaction_ralph()" id="currentAudio" autoplay controls">
+            <source 
+                src="audio/Ral01.wav" 
+                type="audio/mpeg">
+            </audio> 
+        `
+        document.getElementById("wholedialogue")
+            .innerHTML = `
+                <p class="dialogue__character">Can I help you?</p>
+            `
+    }
+    
 }
