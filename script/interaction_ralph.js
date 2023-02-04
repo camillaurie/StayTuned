@@ -1,22 +1,50 @@
 function signTheListScreen1() {
     document.getElementById("video")
-        .innerHTML = `<img src="pics/studio_hallways/SE2F_0.png">`
+        .innerHTML = `
+            <img src="pics/studio_hallways/SE2D_0.png">
+            <div class="redmagnifying" onclick="getCloserToLogInPaper();" id="SE2F_0" style="
+                height: 206px;
+                width: 232px;
+                top: 42px;
+                left: 154px;
+            "></div>`
+    document.getElementById("wholedialogue")
+        .innerHTML = `
+        <p class='dialogue__character'>
+            You'll need to come to this desk every time you enter so I can log you in.
+        </p>
+        `
+    document.getElementById("audio")
+        .innerHTML = `
+        <audio controls autoplay><source src="audio/Ral05.wav" type="audio/mpeg"></audio>
+        `
+}
+
+function getCloserToLogInPaper() {
+    document.getElementById("video")
+        .innerHTML = `
+            <img src="pics/studio_hallways/SE2F_0.png">            
+            <div class="redmagnifying" onclick="getCloserToLogInPaper();" id="!!!" style="
+                height: 30px;
+                width: 410px;
+                top: 240px;
+                left: 62px;
+            "></div>`
 }
 
 function hereYouAre() {
     document.getElementById("video")
         .innerHTML = `
-        <video id="currentVideo" playsinline controls autoplay>
+        <video onended="signTheListScreen1()" id="currentVideo" playsinline controls autoplay>
             <source src="video/ralph_hereyouare.webm" type="video/webm">
         </video>
         `
     document.getElementById("wholedialogue")
         .innerHTML = `
         <p class='dialogue__character'>
-            Here you are.
+            Here you are. You'll need to sign for it.
         </p>
         `
-
     document.getElementById('currentVideo')
     .addEventListener('ended', signTheListScreen1, false);
 }
@@ -50,11 +78,20 @@ function wellForThePastMonthchange() {
 
 
 function interaction_ralph() {
-    document
-        .getElementById("video")
-        .innerHTML = `
-            <img src="pics/studio_hallways/ralph.png">
+    if (document.getElementById("audio").innerHTML.includes('audio/Ral01.wav')) {
+        document
+            .getElementById("video")
+            .innerHTML = `
+                <img src="pics/studio_hallways/ralph.png">
+            `
+    } else {
+        document.getElementById("video")
+            .innerHTML = `
+            <video id="currentVideo" playsinline controls autoplay>
+                <source src="video/ralph_canihelpyou.webm" type="video/webm">
+            </video>
         `
+    }
     document.getElementById("wholedialogue")
         .innerHTML = `
             <p class="dialogue__character">Can I help you?</p>
@@ -100,7 +137,7 @@ function interaction_ralph() {
     function noThankYouJustLooking() {
         document.getElementById("audio")
             .innerHTML = `
-            <audio controls autoplay onended="goBackToSpinningStudio1"><source src="audio/Ng09.wav" type="audio/mpeg"></audio>
+            <audio controls autoplay onended="exploringTheStudioDay();"><source src="audio/Ng09.wav" type="audio/mpeg"></audio>
             `
     }
     function yesMattieJensenLeftAVisitorsPassForMe() {

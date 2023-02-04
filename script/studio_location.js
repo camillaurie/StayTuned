@@ -540,5 +540,4 @@ function goToADifferentScreenInStudio1(event) {
                 <p class="dialogue__character">Can I help you?</p>
             `
     }
-    
 }
