@@ -3,10 +3,7 @@ function signTheListScreen1() {
         .innerHTML = `
             <img src="pics/studio_hallways/SE2D_0.png">
             <div class="redmagnifying" onclick="getCloserToLogInPaper();" id="SE2F_0" style="
-                height: 206px;
-                width: 232px;
-                top: 42px;
-                left: 154px;
+                display: none;
             "></div>`
     document.getElementById("wholedialogue")
         .innerHTML = `
@@ -16,7 +13,17 @@ function signTheListScreen1() {
         `
     document.getElementById("audio")
         .innerHTML = `
-        <audio controls autoplay><source src="audio/Ral05.wav" type="audio/mpeg"></audio>
+        <audio onended="makeTheLogInListMagnifyable();" controls autoplay><source src="audio/Ral05.wav" type="audio/mpeg"></audio>
+        `
+}
+
+function makeTheLogInListMagnifyable() {
+    document.getElementById("SE2F_0").style = `
+        display: block;
+                height: 206px;
+                width: 232px;
+                top: 42px;
+                left: 154px;
         `
 }
 
