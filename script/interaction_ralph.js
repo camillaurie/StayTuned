@@ -2,7 +2,7 @@ function signTheListScreen1() {
     document.getElementById("video")
         .innerHTML = `
             <img src="pics/studio_hallways/SE2D_0.png">
-            <div class="redmagnifying" onclick="getCloserToLogInPaper();" id="SE2F_0" style="
+            <div class="redmagnifying" onclick="placeholder();" id="SE2F_0" style="
                 display: none;
             "></div>`
     document.getElementById("wholedialogue")
@@ -13,30 +13,36 @@ function signTheListScreen1() {
         `
     document.getElementById("audio")
         .innerHTML = `
-        <audio onended="makeTheLogInListMagnifyable();" controls autoplay><source src="audio/Ral05.wav" type="audio/mpeg"></audio>
-        `
-}
-
-function makeTheLogInListMagnifyable() {
-    document.getElementById("SE2F_0").style = `
-        display: block;
-                height: 206px;
-                width: 232px;
-                top: 42px;
-                left: 154px;
+        <audio onended="getCloserToLogInPaper();" controls autoplay><source src="audio/Ral05.wav" type="audio/mpeg"></audio>
         `
 }
 
 function getCloserToLogInPaper() {
+    document.getElementById("wholedialogue")
+        .innerHTML = ``
     document.getElementById("video")
         .innerHTML = `
             <img src="pics/studio_hallways/SE2F_0.png">            
-            <div class="redmagnifying" onclick="getCloserToLogInPaper();" id="!!!" style="
+            <div class="redmagnifying" onclick="signThePaper();" style="
                 height: 30px;
                 width: 410px;
                 top: 240px;
                 left: 62px;
             "></div>`
+}
+
+function signThePaper() {
+    document.getElementById("wholedialogue")
+        .innerHTML = `
+            <p class='dialogue__character'>
+                Have a nice day.
+            </p>`;
+    document.getElementById("audio")
+        .innerHTML = `
+            <audio onended="RalphJustLetUsIn();" controls autoplay><source src="audio/Ral07.wav" type="audio/mpeg"></audio>`;
+    document.getElementById("video")
+        .innerHTML = `
+            <img src="pics/studio_hallways/SE2F_1.png">`;
 }
 
 function hereYouAre() {
@@ -128,7 +134,9 @@ function interaction_ralph() {
             myHandlerWithRalph();
         } else {
             //in case we're fast enough to choose before the video ends
-            video.addEventListener('ended', myHandlerWithRalph, false);
+            if (video) {
+                video.addEventListener('ended', myHandlerWithRalph, false);
+            }
         }
         function myHandlerWithRalph() {
             if (dialogueOptionId == 'noThankYouJustLooking') {

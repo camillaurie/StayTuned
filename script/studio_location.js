@@ -338,6 +338,31 @@ function exploringTheStudioDay() {
             .innerHTML = sequenceOfScreensInStudio1[s]; 
 }
 
+function RalphJustLetUsIn() {
+    document
+    .getElementById("video")
+    .innerHTML = `
+    <div class="thisScreenThisTime">
+    <img src="pics/studio_hallways/SE1R_0.png">
+    <div class="backpointer" id="!!!" style="
+        height: 67px;
+        width: 536px;
+        left: 0px;
+        top: 225px;
+    "></div>
+    <div class="redmagnifying" id="SE1Z_0" style="
+        height: 70px;
+        width: 52px;
+        top: 89px;
+        left: 306px;
+    "></div>
+    <div class="redmagnifying" id="SH2X_17" style="
+        height: 159px;
+        width: 112px;
+        top: 66px;
+        left: 86px;
+    "></div>`    
+}
 
 document
     .getElementById("wrapper")
@@ -509,7 +534,6 @@ function goToADifferentScreenInStudio1(event) {
                 left: 48px;
             "></div>`
     }
-
     
     if (event && event.target.id == 'SE1U_0') {
         document
@@ -518,6 +542,70 @@ function goToADifferentScreenInStudio1(event) {
             <div class="thisScreenThisTime">
             <img src="pics/studio_hallways/SE1U_0.png">
             <div class="backpointer" id="goBackToSpinningStudio1" style="
+                height: 67px;
+                width: 536px;
+                left: 0px;
+                top: 225px;
+            "></div>`
+    }
+
+    if (event && event.target.id == 'SE1R_0') {
+        document
+            .getElementById("video")
+            .innerHTML = `
+            <div class="thisScreenThisTime">
+            <img src="pics/studio_hallways/SE1R_0.png">
+            <div class="backpointer" id="!!!" style="
+                height: 67px;
+                width: 536px;
+                left: 0px;
+                top: 225px;
+            "></div>
+            <div class="redmagnifying" id="SE1Z_0" style="
+                height: 70px;
+                width: 52px;
+                top: 89px;
+                left: 306px;
+            "></div>
+            <div class="redmagnifying" id="SH2X_17" style="
+                height: 159px;
+                width: 112px;
+                top: 66px;
+                left: 86px;
+            "></div>`    
+    }
+
+    if (event && event.target.id == 'SE1Z_0') {
+        document
+            .getElementById("video")
+            .innerHTML = `
+            <div class="thisScreenThisTime">
+            <img src="pics/studio_hallways/SE1Z_0.png">
+            <div class="backpointer" id="SE1R_0" style="
+                height: 67px;
+                width: 159px;
+                left: 0px;
+                top: 225px;
+            "></div><div class="backpointer" id="SE1R_0" style="
+                height: 67px;
+                width: 159px;
+                left: 377px;
+                top: 225px;
+            "></div><div class="redmagnifying" id="SE2B_0" style="
+                height: 47px;
+                width: 99px;
+                left: 220px;
+                top: 245px;
+            "></div>`
+    }
+
+    if (event && event.target.id == 'SE2B_0') {
+        document
+            .getElementById("video")
+            .innerHTML = `
+            <div class="thisScreenThisTime">
+            <img src="pics/studio_hallways/SE2B_0.png">
+            <div class="backpointer" id="SE1Z_0" style="
                 height: 67px;
                 width: 536px;
                 left: 0px;
