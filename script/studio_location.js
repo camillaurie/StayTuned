@@ -323,6 +323,7 @@ async function studio1Turning(event) {
                 .style = `display: none;`;
         };
     };
+    await delay(500);
 };
 
 function exploringTheStudioDay() {
@@ -921,26 +922,40 @@ function exploringTheStudio2Day() {
 let z = 17;
 document
     .getElementById("wrapper")
-    .addEventListener("mouseover", studio2Turning); 
-async function studio2Turning(event) {
+    .addEventListener("mousedown", startTheCycleInStudio2);
+document
+    .getElementById("wrapper")
+    .addEventListener("mouseup", endTheCycleInStudio2);
+async function startTheCycleInStudio2(event) {
     if (event && event.target.id == 'turnleftincirclestudio2') {
-        if (z > 18) {
-            z = -1;
-        }
-        document
-            .getElementById("activelocationspot")
-            .innerHTML = sequenceOfScreensInStudio2[++z];
+        isSidePressed = true;
+        while (isSidePressed == true) {
+            if (z > 18) {
+                z = -1;
+            }
+            document
+                .getElementById("activelocationspot")
+                .innerHTML = sequenceOfScreensInStudio2[++z];
             console.log(z);
+            await delay(500);
+        }
     }
     if (event && event.target.id == 'turnrightincirclestudio2') {
-        if (z < 1) {
-            z = 20;
-        }
-        document
-            .getElementById("activelocationspot")
-            .innerHTML = sequenceOfScreensInStudio2[--z];
+        isSidePressed = true;
+        while (isSidePressed == true) {
+            if (z < 1) {
+                z = 20;
+            }
+            document
+                .getElementById("activelocationspot")
+                .innerHTML = sequenceOfScreensInStudio2[--z];
             console.log(z);
+            await delay(500);
+        }
     }
+}
+function endTheCycleInStudio2() {
+    isSidePressed = false;
 }
 
 function clearTheDialogueBox() {

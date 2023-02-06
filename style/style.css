@@ -17,6 +17,10 @@ body {
     position: relative;
 }
 
+.game {
+    user-select: none;
+}
+
 .menu__list {
     padding: 10px;
     position: absolute;

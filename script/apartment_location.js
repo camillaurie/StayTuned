@@ -216,28 +216,43 @@ let currentHallwayIndex = 0;
 // The below one is a very important thing, leave it here.
 
 let i = 0;
+let isSidePressed = false;
 document
     .getElementById("wrapper")
-    .addEventListener("mouseover", hallwayTurning); 
-async function hallwayTurning(event) {
+    .addEventListener("mousedown", startTheCycleInTheHallway);
+document
+    .getElementById("wrapper")
+    .addEventListener("mouseup", endTheCycleInTheHallway);
+async function startTheCycleInTheHallway(event) {
     if (event && event.target.id == 'turnleftincirclehallway') {
-        if (i > 18) {
-            i = -1;
-        }
-        document
-            .getElementById("activelocationspot")
-            .innerHTML = sequenceOfScreensInHallway[++i];
+        isSidePressed = true;
+        while (isSidePressed == true) {
+            if (i > 18) {
+                i = -1;
+            }
+            document
+                .getElementById("activelocationspot")
+                .innerHTML = sequenceOfScreensInHallway[++i];
             console.log(i);
+            await delay(500);
+        }
     }
     if (event && event.target.id == 'turnrightincirclehallway') {
-        if (i < 1) {
-            i = 20;
-        }
-        document
-            .getElementById("activelocationspot")
-            .innerHTML = sequenceOfScreensInHallway[--i];
+        isSidePressed = true;
+        while (isSidePressed == true) {
+            if (i < 1) {
+                i = 20;
+            }
+            document
+                .getElementById("activelocationspot")
+                .innerHTML = sequenceOfScreensInHallway[--i];
             console.log(i);
+            await delay(500);
+        }
     }
+}
+function endTheCycleInTheHallway() {
+    isSidePressed = false;
 }
 
 // как вариант на mouseIn врубить цикл кручения, а на mouseOut вырубать его 
@@ -1223,26 +1238,40 @@ let sequenceOfScreensInRoom = [MD1X_0, MD1X_1, MD1X_2, MD1X_3, MD1X_4, MD1X_5, M
 let r = 6;
 document
     .getElementById("wrapper")
-    .addEventListener("mouseover", roomTurning); 
-async function roomTurning(event) {
+    .addEventListener("mousedown", startTheCycleInMattiesRoom);
+document
+    .getElementById("wrapper")
+    .addEventListener("mouseup", endTheCycleInMattiesRoom);
+async function startTheCycleInMattiesRoom(event) {
     if (event && event.target.id == 'turnleftincircleroom') {
-        if (r > 18) {
-            r = -1;
-        }
-        document
-            .getElementById("activelocationspot")
-            .innerHTML = sequenceOfScreensInRoom[++r];
+        isSidePressed = true;
+        while (isSidePressed == true) {
+            if (r > 18) {
+                r = -1;
+            }
+            document
+                .getElementById("activelocationspot")
+                .innerHTML = sequenceOfScreensInRoom[++r];
             console.log(r);
+            await delay(500);
+        }
     }
     if (event && event.target.id == 'turnrightincircleroom') {
-        if (r < 1) {
-            r = 20;
-        }
-        document
-            .getElementById("activelocationspot")
-            .innerHTML = sequenceOfScreensInRoom[--r];
+        isSidePressed = true;
+        while (isSidePressed == true) {
+            if (r < 1) {
+                r = 20;
+            }
+            document
+                .getElementById("activelocationspot")
+                .innerHTML = sequenceOfScreensInRoom[--r];
             console.log(r);
+            await delay(500);
+        }
     }
+}
+function endTheCycleInMattiesRoom() {
+    isSidePressed = false;
 }
 
 function exploringTheRoomDay() {
