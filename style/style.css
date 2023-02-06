@@ -30,7 +30,7 @@ body {
 
 .menu__item {
     list-style: none;
-    background-color: #ff000000;
+    /* background-color: #ff000000; */
     width: 294px;
     height: 37px;
     margin: 10px;
@@ -64,7 +64,7 @@ body {
 
 
 .activesides {
-    background: #ffffff40;
+    /* background-color: #ffffff40; */
     height: 292px;
     width: 50px;
     position: absolute;
@@ -144,24 +144,18 @@ body {
 }
 
 .activelocationspot div {
-    background-color: #37ff0066;
+    /* background-color: #37ff0066; */
     position: absolute;
-}
-
-.forwardpointer {
-    background-color: #b65aa066;
-    position: absolute;
-    cursor: url(../pics/sprites/yellow_arrow_forward.png), pointer;
 }
 
 .arrowdown {
-    background-color: #b3e77b66;
+    /* background-color: #b3e77b66; */
     position: absolute;
     cursor: url(../pics/sprites/arrow_down.png), pointer;
 }
 
 .arrowup {
-    background-color: #b3e77b66;
+    /* background-color: #b3e77b66; */
     position: absolute;
     cursor: url(../pics/sprites/arrow_up.png), pointer;
 }
@@ -172,13 +166,13 @@ body {
 
 .backpointer {
     cursor: url(../pics/sprites/back_away.png), s-resize;
-    background-color: #d1c73d66;
+    /* background-color: #d1c73d66; */
     position: absolute;
 }
 
 .redmagnifying {
     cursor: url(../pics/sprites/glass_red.png), zoom-in;
-    background-color: #506c3866;
+    /* background-color: #506c3866; */
     position: absolute;
 }
 
@@ -187,7 +181,7 @@ body {
 }
 
 .activemapspot {
-    background-color: #4000ff66;
+    /* background-color: #4000ff66; */
     position: absolute;
     cursor: url(../pics/sprites/glass_red.png), pointer;
 }

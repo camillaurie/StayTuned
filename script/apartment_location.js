@@ -13,7 +13,7 @@ let ME1X_all = `
 
 let ME1X_0 = `
     <img id="circlingPicture" src="pics/mattie_day_circle/ME1X_0.png">
-    <div class="forwardpointer" id="ME1S_0" style="
+    <div class="redmagnifying" id="ME1S_0" style="
         height: 201px;
         width: 133px;
         top: 37px;
@@ -22,7 +22,7 @@ let ME1X_0 = `
 
 let ME1X_1 = `
     <img id="circlingPicture" src="pics/mattie_day_circle/ME1X_1.png">
-    <div class="forwardpointer" id="ME1S_0" style="
+    <div class="redmagnifying" id="ME1S_0" style="
         height: 194px;
         width: 140px;
         top: 32px;
@@ -169,7 +169,7 @@ let ME1X_19 = `
         top: 93px;
         left: 295px;">
     </div>
-    <div class="forwardpointer" id="ME1S_0" style="
+    <div class="redmagnifying" id="ME1S_0" style="
         height: 171px;
         width: 85px;
         top: 50px;
@@ -271,7 +271,7 @@ function goToADifferentScreenInMattiesHallway(event) {
         .innerHTML = `
             <div class="thisScreenThisTime">
                 <img src="pics/apartment/ME1S_0.png">
-                <div class="forwardpointer" onclick="r = 6" id="MD1X_6" style="
+                <div class="redmagnifying" onclick="r = 6" id="MD1X_6" style="
                     height: 246px;
                     width: 162px;
                     top: 0px;
@@ -833,7 +833,7 @@ function knockingOnTheApartmentDoor(event) {
         .innerHTML = `
             <div class="thisScreenThisTime">
                 <img src="pics/ME0N_0.png">
-                <div class="forwardpointer" id="frontDoorOfTheApartment" style="
+                <div class="redmagnifying" id="frontDoorOfTheApartment" style="
                     height: 190px;
                     width: 130px;
                     top: 50px;
@@ -897,7 +897,7 @@ let MD1X_all = `
 
 let MD1X_0 = `
     <img id="circlingPicture" src="pics/mattie-room_day_circle/MD1X_0.png">
-    <div class="forwardpointer" id="MD3S_0" style="
+    <div class="redmagnifying" id="MD3S_0" style="
         height: 211px;
         width: 165px;
         top: 7px;
@@ -908,14 +908,14 @@ let MD1X_0 = `
 
 let MD1X_1 = `
     <img id="circlingPicture" src="pics/mattie-room_day_circle/MD1X_1.png">
-    <div class="forwardpointer" id="MD3S_0" style="
+    <div class="redmagnifying" id="MD3S_0" style="
         height: 205px;
         width: 144px;
         top: 12px;
         left: 220px;
         ">
     </div>
-    <div class="forwardpointer" id="MD1P_0" style="
+    <div class="redmagnifying" id="MD1P_0" style="
         height: 185px;
         width: 129px;
         top: 37px;
@@ -926,14 +926,14 @@ let MD1X_1 = `
 
 let MD1X_2 = `
     <img id="circlingPicture" src="pics/mattie-room_day_circle/MD1X_2.png">
-    <div class="forwardpointer" id="MD3S_0" style="
+    <div class="redmagnifying" id="MD3S_0" style="
         height: 215px;
         width: 154px;
         top: 4px;
         left: 332px;
         ">
     </div>
-    <div class="forwardpointer" id="MD1P_0" style="
+    <div class="redmagnifying" id="MD1P_0" style="
         height: 176px;
         width: 160px;
         top: 34px;
@@ -944,14 +944,14 @@ let MD1X_2 = `
 
 let MD1X_3 = `
     <img id="circlingPicture" src="pics/mattie-room_day_circle/MD1X_3.png">
-    <div class="forwardpointer" id="MD6R_0" style="
+    <div class="redmagnifying" id="MD6R_0" style="
         height: 99px;
         width: 127px;
         top: 70px;
         left: 96px;
         ">
     </div>
-    <div class="forwardpointer" id="MD1P_0" style="
+    <div class="redmagnifying" id="MD1P_0" style="
         height: 193px;
         width: 142px;
         top: 31px;
@@ -961,21 +961,21 @@ let MD1X_3 = `
 
 let MD1X_4 = `
     <img id="circlingPicture" src="pics/mattie-room_day_circle/MD1X_4.png">
-    <div class="forwardpointer" id="MD6Q_0" style="
+    <div class="redmagnifying" id="MD6Q_0" style="
         height: 99px;
         width: 126px;
         top: 70px;
         left: 69px;
         ">
     </div>
-    <div class="forwardpointer" id="MD6R_0" style="
+    <div class="redmagnifying" id="MD6R_0" style="
         height: 99px;
         width: 115px;
         top: 70px;
         left: 227px;
         ">
     </div>
-    <div class="forwardpointer" id="MD1P_0" style="
+    <div class="redmagnifying" id="MD1P_0" style="
         height: 209px;
         width: 114px;
         top: 16px;
@@ -985,14 +985,14 @@ let MD1X_4 = `
 
 let MD1X_5 = `
     <img id="circlingPicture" src="pics/mattie-room_day_circle/MD1X_5.png">
-    <div class="forwardpointer" id="MD6Q_0" style="
+    <div class="redmagnifying" id="MD6Q_0" style="
         height: 99px;
         width: 154px;
         top: 70px;
         left: 172px;
         ">
     </div>
-    <div class="forwardpointer" id="MD6R_0" style="
+    <div class="redmagnifying" id="MD6R_0" style="
         height: 99px;
         width: 154px;
         top: 70px;
@@ -1002,14 +1002,14 @@ let MD1X_5 = `
 
 let MD1X_6 = `
     <img id="circlingPicture" src="pics/mattie-room_day_circle/MD1X_6.png">
-    <div class="forwardpointer" id="MD6Q_0" style="
+    <div class="redmagnifying" id="MD6Q_0" style="
         height: 99px;
         width: 154px;
         top: 70px;
         left: 299px;
         ">
     </div>
-    <div class="forwardpointer" id="MD8C_0" style="
+    <div class="redmagnifying" id="MD8C_0" style="
         height: 74px;
         width: 74px;
         top: 218px;
@@ -1019,14 +1019,14 @@ let MD1X_6 = `
 
 let MD1X_7 = `
     <img id="circlingPicture" src="pics/mattie-room_day_circle/MD1X_7.png">
-    <div class="forwardpointer" id="MD1S_0" style="
+    <div class="redmagnifying" id="MD1S_0" style="
         height: 83px;
         width: 165px;
         top: 111px;
         left: 96px;
         ">
     </div>
-    <div class="forwardpointer" id="MD8C_0" style="
+    <div class="redmagnifying" id="MD8C_0" style="
         height: 74px;
         width: 74px;
         top: 218px;
@@ -1037,20 +1037,20 @@ let MD1X_7 = `
 
 let MD1X_8 = `
     <img id="circlingPicture" src="pics/mattie-room_day_circle/MD1X_8.png">
-    <div class="forwardpointer" id="MD1S_0" style="
+    <div class="redmagnifying" id="MD1S_0" style="
         height: 83px;
         width: 162px;
         top: 111px;
         left: 218px;">
     </div>
-    <div class="forwardpointer" id="MD3E_0" style="
+    <div class="redmagnifying" id="MD3E_0" style="
         height: 91px;
         width: 115px;
         top: 162px;
         left: 50px;
         ">
     </div>
-    <div class="forwardpointer" id="MD8C_0" style="
+    <div class="redmagnifying" id="MD8C_0" style="
         height: 74px;
         width: 74px;
         top: 218px;
@@ -1060,21 +1060,21 @@ let MD1X_8 = `
 
 let MD1X_9 = `
     <img id="circlingPicture" src="pics/mattie-room_day_circle/MD1X_9.png">
-    <div class="forwardpointer" id="MD1S_0" style="
+    <div class="redmagnifying" id="MD1S_0" style="
         height: 83px;
         width: 165px;
         top: 111px;
         left: 321px;
         ">
     </div>
-    <div class="forwardpointer" id="MD3E_0" style="
+    <div class="redmagnifying" id="MD3E_0" style="
         height: 91px;
         width: 115px;
         top: 153px;
         left: 153px;
         ">
     </div>
-    <div class="forwardpointer" id="MD8C_0" style="
+    <div class="redmagnifying" id="MD8C_0" style="
         height: 74px;
         width: 74px;
         top: 218px;
@@ -1084,7 +1084,7 @@ let MD1X_9 = `
 
 let MD1X_10 = `
     <img id="circlingPicture" src="pics/mattie-room_day_circle/MD1X_10.png">
-    <div class="forwardpointer" id="MD3E_0" style="
+    <div class="redmagnifying" id="MD3E_0" style="
         height: 91px;
         width: 115px;
         top: 162px;
@@ -1094,7 +1094,7 @@ let MD1X_10 = `
 
 let MD1X_11 = `
     <img id="circlingPicture" src="pics/mattie-room_day_circle/MD1X_11.png">
-    <div class="forwardpointer" id="MD3E_0" style="
+    <div class="redmagnifying" id="MD3E_0" style="
         height: 91px;
         width: 115px;
         top: 174px;
@@ -1107,7 +1107,7 @@ let MD1X_12 = `<img id="circlingPicture" src="pics/mattie-room_day_circle/MD1X_1
 
 let MD1X_13 = `
     <img id="circlingPicture" src="pics/mattie-room_day_circle/MD1X_13.png">
-    <div class="forwardpointer" id="MD6V_0" style="
+    <div class="redmagnifying" id="MD6V_0" style="
         height: 74px;
         width: 136px;
         top: 218px;
@@ -1118,14 +1118,14 @@ let MD1X_13 = `
 
 let MD1X_14 = `
     <img id="circlingPicture" src="pics/mattie-room_day_circle/MD1X_14.png">
-    <div class="forwardpointer" id="MD6V_0" style="
+    <div class="redmagnifying" id="MD6V_0" style="
         height: 54px;
         width: 158px;
         top: 238px;
         left: 123px;
         ">
     </div>
-    <div class="forwardpointer" id="md1z_0" style="
+    <div class="redmagnifying" id="md1z_0" style="
         height: 78px;
         width: 97px;
         top: 160px;
@@ -1136,21 +1136,21 @@ let MD1X_14 = `
 
 let MD1X_15 = `
     <img id="circlingPicture" src="pics/mattie-room_day_circle/MD1X_15.png">
-    <div class="forwardpointer" id="MD6V_0" style="
+    <div class="redmagnifying" id="MD6V_0" style="
         height: 64px;
         width: 164px;
         top: 228px;
         left: 232px;
         ">
     </div>
-    <div class="forwardpointer" id="ME1E_0" style="
+    <div class="redmagnifying" id="ME1E_0" style="
         height: 185px;
         width: 76px;
         top: 38px;
         left: 89px;
         ">
     </div>
-    <div class="forwardpointer" id="md1z_0" style="
+    <div class="redmagnifying" id="md1z_0" style="
         height: 75px;
         width: 87px;
         top: 153px;
@@ -1161,28 +1161,28 @@ let MD1X_15 = `
 
 let MD1X_16 = `
     <img id="circlingPicture" src="pics/mattie-room_day_circle/MD1X_16.png">
-    <div class="forwardpointer" id="MD6V_0" style="
+    <div class="redmagnifying" id="MD6V_0" style="
         height: 64px;
         width: 115px;
         top: 228px;
         left: 371px;
         ">
     </div>
-    <div class="forwardpointer" id="MD3P_0" style="
+    <div class="redmagnifying" id="MD3P_0" style="
         height: 208px;
         width: 100px;
         top: 20px;
         left: 40px;
         ">
     </div>
-    <div class="forwardpointer" id="ME1E_0" style="
+    <div class="redmagnifying" id="ME1E_0" style="
         height: 173px;
         width: 73px;
         top: 41px;
         left: 211px;
         ">
     </div>
-    <div class="forwardpointer" id="md1z_0" style="
+    <div class="redmagnifying" id="md1z_0" style="
         height: 117px;
         width: 87px;
         top: 153px;
@@ -1193,21 +1193,21 @@ let MD1X_16 = `
 
 let MD1X_17 = `
     <img id="circlingPicture" src="pics/mattie-room_day_circle/MD1X_17.png">
-    <div class="forwardpointer" id="MD3P_0" style="
+    <div class="redmagnifying" id="MD3P_0" style="
         height: 210px;
         width: 92px;
         top: 12px;
         left: 168px;
         ">
     </div>
-    <div class="forwardpointer" id="ME1E_0" style="
+    <div class="redmagnifying" id="ME1E_0" style="
         height: 187px;
         width: 94px;
         top: 36px;
         left: 313px;
         ">
     </div>
-    <div class="forwardpointer" id="md1z_0" style="
+    <div class="redmagnifying" id="md1z_0" style="
         height: 117px;
         width: 79px;
         top: 153px;
@@ -1218,7 +1218,7 @@ let MD1X_17 = `
 
 let MD1X_18 = `
     <img id="circlingPicture" src="pics/mattie-room_day_circle/MD1X_18.png">
-    <div class="forwardpointer" id="MD3P_0" style="
+    <div class="redmagnifying" id="MD3P_0" style="
         height: 205px;
         width: 93px;
         top: 12px;
@@ -1340,7 +1340,7 @@ function goToADifferentScreenInMattiesRoom(event) {
             left: 0px;
             top: 225px;
         "></div>
-        <div class="forwardpointer" id="MD3T_0" style="   
+        <div class="redmagnifying" id="MD3T_0" style="   
             height: 150px;
             width: 150px;
             top: 35px;
@@ -1373,14 +1373,14 @@ function goToADifferentScreenInMattiesRoom(event) {
             left: 0px;
             top: 255px;
         "></div>
-        <div class="forwardpointer" id="MD3R_0" style="   
+        <div class="redmagnifying" id="MD3R_0" style="   
             height: 91px;
             width: 154px;
             top: 65px;
             left: 278px;
             ">
         </div>
-        <div class="forwardpointer" id="MD3Q_0" style="
+        <div class="redmagnifying" id="MD3Q_0" style="
             height: 82px;
             width: 149px;
             top: 173px;
@@ -1400,7 +1400,7 @@ function goToADifferentScreenInMattiesRoom(event) {
             left: 0px;
             top: 225px;
         "></div>
-        <div class="forwardpointer" onclick="i = 10" id="goBackToSpinning" style="
+        <div class="redmagnifying" onclick="i = 10" id="goBackToSpinning" style="
             height: 225px;
             width: 320px;
             top: 0px;
@@ -1420,7 +1420,7 @@ function goToADifferentScreenInMattiesRoom(event) {
             left: 0px;
             top: 255px;
         "></div>
-        <div class="forwardpointer" id="MD3U_0" style="
+        <div class="redmagnifying" id="MD3U_0" style="
             height: 102px;
             width: 279px;
             top: 153px;
@@ -1440,21 +1440,21 @@ function goToADifferentScreenInMattiesRoom(event) {
             left: 0px;
             top: 225px;
         "></div>
-        <div class="forwardpointer" id="MD3V_0" style="
+        <div class="redmagnifying" id="MD3V_0" style="
             height: 152px;
             width: 103px;
             top: 45px;
             left: 147px;
             ">
         </div>  
-        <div class="forwardpointer" id="MD3W_0" style="
+        <div class="redmagnifying" id="MD3W_0" style="
             height: 120px;
             width: 132px;
             top: 68px;
             left: 285px;
             ">
         </div>
-        <div class="forwardpointer" id="MD3Y_0" style="
+        <div class="redmagnifying" id="MD3Y_0" style="
             height: 123px;
             width: 104px;
             top: 105px;
@@ -1591,7 +1591,7 @@ function goToADifferentScreenInMattiesRoom(event) {
             left: 0px;
             top: 225px;
         "></div>
-        <div class="forwardpointer" id="MD8A_0" style="
+        <div class="redmagnifying" id="MD8A_0" style="
             height: 200px;
             width: 276px;
             top: 25px;

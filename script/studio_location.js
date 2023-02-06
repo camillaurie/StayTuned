@@ -9,7 +9,7 @@ function seeingTheStudioEntrance(event) {
             .innerHTML = `
                 <div class="thisScreenThisTime">
                     <img src="pics/studio_hallways/SE0A_0.png">
-                    <div class="forwardpointer" id="getInsideTheStudio" style="
+                    <div class="redmagnifying" id="getInsideTheStudio" style="
                         height: 176px;
                         width: 178px;
                         top: 107px;
@@ -29,7 +29,7 @@ function getInsideTheStudio() {
         .innerHTML = `
             <div class="thisScreenThisTime">
                 <img src="pics/studio_hallways/SE1V_0.png">
-                <div class="forwardpointer" id="exploringTheStudioDay" style="
+                <div class="redmagnifying" id="exploringTheStudioDay" style="
                     height: 172px;
                     width: 210px;
                     top: 40px;
@@ -62,7 +62,7 @@ let SE1X_all = `
 
 let SE1X_0 = `
     <img id="circlingPicture" src="pics/studio_first_circle/SE1X_0.png">
-    <div class="forwardpointer" id="beStoppedByRalph" style="
+    <div class="redmagnifying" id="beStoppedByRalph" style="
         height: 217px;
         width: 355px;
         top: 15px;
@@ -72,14 +72,14 @@ let SE1X_0 = `
 
 let SE1X_1 = `
     <img id="circlingPicture" src="pics/studio_first_circle/SE1X_1.png">
-    <div class="forwardpointer" id="SE1W_0" style="
+    <div class="redmagnifying" id="SE1W_0" style="
         height: 136px;
         width: 118px;
         top: 84px;
         left: 116px;
         ">
     </div>
-    <div class="forwardpointer" id="beStoppedByRalph" style="
+    <div class="redmagnifying" id="beStoppedByRalph" style="
         height: 189px;
         width: 180px;
         top: 41px;
@@ -89,7 +89,7 @@ let SE1X_1 = `
 
 let SE1X_2 = `
     <img id="circlingPicture" src="pics/studio_first_circle/SE1X_2.png">
-    <div class="forwardpointer" id="SE1W_0" style="
+    <div class="redmagnifying" id="SE1W_0" style="
         height: 136px;
         width: 118px;
         top: 84px;
@@ -126,7 +126,7 @@ let SE1X_5 = `<img id="circlingPicture" src="pics/studio_first_circle/SE1X_5.png
 
 let SE1X_6 = `
     <img id="circlingPicture" src="pics/studio_first_circle/SE1X_6.png">
-    <div class="forwardpointer" id="SE1G_0" style="
+    <div class="redmagnifying" id="SE1G_0" style="
         height: 94px;
         width: 75px;
         top: 149px;
@@ -136,7 +136,7 @@ let SE1X_6 = `
 
 let SE1X_7 = `
     <img id="circlingPicture" src="pics/studio_first_circle/SE1X_7.png">
-    <div class="forwardpointer" id="SE1G_0" style="
+    <div class="redmagnifying" id="SE1G_0" style="
         height: 94px;
         width: 81px;
         top: 149px;
@@ -146,7 +146,7 @@ let SE1X_7 = `
 
 let SE1X_8 = `
     <img id="circlingPicture" src="pics/studio_first_circle/SE1X_8.png">
-    <div class="forwardpointer" id="SE1G_0" style="
+    <div class="redmagnifying" id="SE1G_0" style="
         height: 94px;
         width: 51px;
         top: 149px;
@@ -156,7 +156,7 @@ let SE1X_8 = `
 
 let SE1X_9 = `
     <img id="circlingPicture" src="pics/studio_first_circle/SE1X_9.png">
-    <div class="forwardpointer" id="goToMap" style="
+    <div class="redmagnifying" id="goToMap" style="
         height: 241px;
         width: 135px;
         top: 30px;
@@ -166,7 +166,7 @@ let SE1X_9 = `
 
 let SE1X_10 = `
     <img id="circlingPicture" src="pics/studio_first_circle/SE1X_10.png">
-    <div class="forwardpointer" id="goToMap" style="
+    <div class="redmagnifying" id="goToMap" style="
         height: 241px;
         width: 195px;
         top: 30px;
@@ -176,7 +176,7 @@ let SE1X_10 = `
 
 let SE1X_11 = `
     <img id="circlingPicture" src="pics/studio_first_circle/SE1X_11.png">
-    <div class="forwardpointer" id="goToMap" style="
+    <div class="redmagnifying" id="goToMap" style="
         height: 241px;
         width: 125px;
         top: 30px;
@@ -188,7 +188,7 @@ let SE1X_12 = `<img id="circlingPicture" src="pics/studio_first_circle/SE1X_12.p
 
 let SE1X_13 = `
     <img id="circlingPicture" src="pics/studio_first_circle/SE1X_13.png">
-    <div class="forwardpointer" id="SE1H_0" style="
+    <div class="redmagnifying" id="SE1H_0" style="
         height: 94px;
         width: 120px;
         top: 198px;
@@ -198,7 +198,7 @@ let SE1X_13 = `
 
 let SE1X_14 = `
     <img id="circlingPicture" src="pics/studio_first_circle/SE1X_14.png">
-    <div class="forwardpointer" id="SE1H_0" style="
+    <div class="redmagnifying" id="SE1H_0" style="
         height: 94px;
         width: 120px;
         top: 198px;
@@ -240,7 +240,7 @@ let SE1X_18 = `
 
 let SE1X_19 = `
     <img id="circlingPicture" src="pics/studio_first_circle/SE1X_19.png">
-    <div class="forwardpointer" id="beStoppedByRalph" style="
+    <div class="redmagnifying" id="beStoppedByRalph" style="
         height: 189px;
         width: 210px;
         top: 41px;
@@ -637,7 +637,7 @@ function goToADifferentScreenInStudio1(event) {
             .innerHTML = `
                 <div class="thisScreenThisTime">
                 <img src="pics/studio_hallways/SH3A_0.png">
-                <div class="forwardpointer" id="SH1X_15" style="
+                <div class="redmagnifying" id="SH1X_15" style="
                     height: 181px;
                     width: 206px;
                     top: 44px;
@@ -721,7 +721,7 @@ let SH2X_all = `
 
 let SH2X_0 = `
     <img id="circlingPicture" src="pics/studio_second_circle/SH2X_0.png">
-    <div class="forwardpointer" id="beStoppedByRalph" style="
+    <div class="redmagnifying" id="beStoppedByRalph" style="
         height: 217px;
         width: 355px;
         top: 15px;
@@ -731,14 +731,14 @@ let SH2X_0 = `
 
 let SH2X_1 = `
     <img id="circlingPicture" src="pics/studio_second_circle/SH2X_1.png">
-    <div class="forwardpointer" id="SE1W_0" style="
+    <div class="redmagnifying" id="SE1W_0" style="
         height: 136px;
         width: 118px;
         top: 84px;
         left: 116px;
         ">
     </div>
-    <div class="forwardpointer" id="beStoppedByRalph" style="
+    <div class="redmagnifying" id="beStoppedByRalph" style="
         height: 189px;
         width: 180px;
         top: 41px;
@@ -748,7 +748,7 @@ let SH2X_1 = `
 
 let SH2X_2 = `
     <img id="circlingPicture" src="pics/studio_second_circle/SH2X_2.png">
-    <div class="forwardpointer" id="SE1W_0" style="
+    <div class="redmagnifying" id="SE1W_0" style="
         height: 136px;
         width: 118px;
         top: 84px;
@@ -774,7 +774,7 @@ let SH2X_3 = `<img id="circlingPicture" src="pics/studio_second_circle/SH2X_3.pn
 
 let SH2X_4 = `
     <img id="circlingPicture" src="pics/studio_second_circle/SH2X_4.png">
-    <div class="forwardpointer" id="SH3A_0" style="
+    <div class="redmagnifying" id="SH3A_0" style="
         height: 183px;
         width: 177px;
         top: 44px;
@@ -784,7 +784,7 @@ let SH2X_4 = `
 
 let SH2X_5 = `
     <img id="circlingPicture" src="pics/studio_second_circle/SH2X_5.png">
-    <div class="forwardpointer" id="SH3A_0" style="   
+    <div class="redmagnifying" id="SH3A_0" style="   
         height: 183px;
         width: 206px;
         top: 44px;
@@ -794,7 +794,7 @@ let SH2X_5 = `
 
 let SH2X_6 = `
     <img id="circlingPicture" src="pics/studio_second_circle/SH2X_6.png">
-    <div class="forwardpointer" id="SH3A_0" style="
+    <div class="redmagnifying" id="SH3A_0" style="
         height: 183px;
         width: 167px;
         top: 44px;
@@ -804,7 +804,7 @@ let SH2X_6 = `
 
 let SH2X_7 = `
     <img id="circlingPicture" src="pics/studio_second_circle/SH2X_7.png">
-    <div class="forwardpointer" id="SE1G_0" style="
+    <div class="redmagnifying" id="SE1G_0" style="
         height: 94px;
         width: 81px;
         top: 149px;
@@ -814,7 +814,7 @@ let SH2X_7 = `
 
 let SH2X_8 = `
     <img id="circlingPicture" src="pics/studio_second_circle/SH2X_8.png">
-    <div class="forwardpointer" id="SE1G_0" style="
+    <div class="redmagnifying" id="SE1G_0" style="
         height: 94px;
         width: 51px;
         top: 149px;
@@ -824,7 +824,7 @@ let SH2X_8 = `
 
 let SH2X_9 = `
     <img id="circlingPicture" src="pics/studio_second_circle/SH2X_9.png">
-    <div class="forwardpointer" id="goToMap" style="
+    <div class="redmagnifying" id="goToMap" style="
         height: 241px;
         width: 135px;
         top: 30px;
@@ -834,7 +834,7 @@ let SH2X_9 = `
 
 let SH2X_10 = `
     <img id="circlingPicture" src="pics/studio_second_circle/SH2X_10.png">
-    <div class="forwardpointer" id="goToMap" style="
+    <div class="redmagnifying" id="goToMap" style="
         height: 241px;
         width: 195px;
         top: 30px;
@@ -844,7 +844,7 @@ let SH2X_10 = `
 
 let SH2X_11 = `
     <img id="circlingPicture" src="pics/studio_second_circle/SH2X_11.png">
-    <div class="forwardpointer" id="goToMap" style="
+    <div class="redmagnifying" id="goToMap" style="
         height: 241px;
         width: 125px;
         top: 30px;
@@ -856,7 +856,7 @@ let SH2X_12 = `<img id="circlingPicture" src="pics/studio_second_circle/SH2X_12.
 
 let SH2X_13 = `
     <img id="circlingPicture" src="pics/studio_second_circle/SH2X_13.png">
-    <div class="forwardpointer" id="SE1H_0" style="
+    <div class="redmagnifying" id="SE1H_0" style="
         height: 94px;
         width: 120px;
         top: 198px;
@@ -895,7 +895,7 @@ let SH2X_18 = `
 
 let SH2X_19 = `
     <img id="circlingPicture" src="pics/studio_second_circle/SH2X_19.png">
-    <div class="forwardpointer" id="beStoppedByRalph" style="
+    <div class="redmagnifying" id="beStoppedByRalph" style="
         height: 189px;
         width: 210px;
         top: 41px;
