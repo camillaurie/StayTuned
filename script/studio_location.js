@@ -615,6 +615,74 @@ function goToADifferentScreenInStudio1(event) {
                     top: 225px;
                 "></div>`;
     };
+
+    if (event && event.target.id == 'SH1N_0') {
+        document
+            .getElementById("video")
+            .innerHTML = `
+                <div class="thisScreenThisTime">
+                <img src="pics/studio_hallways/SH1N_0.png">
+                <div class="backpointer" id="SH3A_0" style="
+                    height: 67px;
+                    width: 536px;
+                    left: 0px;
+                    top: 225px;
+                "></div>`;
+    };
+
+    if (event && event.target.id == 'SH3A_0') {
+        document
+            .getElementById("video")
+            .innerHTML = `
+                <div class="thisScreenThisTime">
+                <img src="pics/studio_hallways/SH3A_0.png">
+                <div class="forwardpointer" id="SH1X_15" style="
+                    height: 181px;
+                    width: 206px;
+                    top: 44px;
+                    left: 167px;
+                "></div>
+                <div class="redmagnifying" id="SH1N_0" style="
+                    height: 123px;
+                    width: 133px;
+                    top: 102px;
+                    left: 403px;
+                "></div>
+                <div class="backpointer" onclick="z = 15; exploringTheStudio2Day();" style="
+                    height: 67px;
+                    width: 536px;
+                    left: 0px;
+                    top: 225px;
+                "></div>`;
+    };
+
+    if (event && event.target.id == 'SH1X_15') {
+        document
+            .getElementById("video")
+            .innerHTML = `
+                <div class="thisScreenThisTime">
+                <img src="pics/studio_half_circle/SH1X_15.png">
+                <div class="backpointer" id="!!!" style="
+                    height: 67px;
+                    width: 536px;
+                    left: 0px;
+                    top: 225px;
+                "></div>`;
+        if (hasWilliamPappasComplained == false) {
+            document
+                .getElementById("audio")
+                .innerHTML = `
+                    <audio onended="clearTheDialogueBox();" id="currentAudio" autoplay controls">
+                    <source 
+                        src="audio/Pap01.wav" 
+                        type="audio/mpeg">
+                    </audio>`;
+            document.getElementById("wholedialogue")
+                .innerHTML = `
+                    <p class="dialogue__character">I don't care who he is. No one breaks a contract with Bill Pappas. I'll kill him before he runs out on me.</p>`;
+            hasWilliamPappasComplained = true;
+        };
+    };
     
     if (event && event.target.id == 'beStoppedByRalph') {
         document
@@ -703,24 +771,33 @@ let SH2X_3 = `<img id="circlingPicture" src="pics/studio_second_circle/SH2X_3.pn
     //     <source src="video/ralph.webm" type="video/webm">
     // </video>;
 
-let SH2X_4 = `<img id="circlingPicture" src="pics/studio_second_circle/SH2X_4.png">`;
-    // <video id="talkToRalph" playsinline mute loop autoplay style="
-    //     position: absolute;
-    //     top: 70px;
-    //     left: 391px;
-    //     width: 145px;">
-    //     <source src="video/ralph.webm" type="video/webm">
-    // </video>;
+let SH2X_4 = `
+    <img id="circlingPicture" src="pics/studio_second_circle/SH2X_4.png">
+    <div class="forwardpointer" id="SH3A_0" style="
+        height: 183px;
+        width: 177px;
+        top: 44px;
+        left: 50px;
+        ">
+    </div>`;
 
-let SH2X_5 = `<img id="circlingPicture" src="pics/studio_second_circle/SH2X_5.png">`;
+let SH2X_5 = `
+    <img id="circlingPicture" src="pics/studio_second_circle/SH2X_5.png">
+    <div class="forwardpointer" id="SH3A_0" style="   
+        height: 183px;
+        width: 206px;
+        top: 44px;
+        left: 167px;
+        ">
+    </div>`;
 
 let SH2X_6 = `
     <img id="circlingPicture" src="pics/studio_second_circle/SH2X_6.png">
-    <div class="forwardpointer" id="SE1G_0" style="
-        height: 94px;
-        width: 75px;
-        top: 149px;
-        left: 50px;
+    <div class="forwardpointer" id="SH3A_0" style="
+        height: 183px;
+        width: 167px;
+        top: 44px;
+        left: 319px;
         ">
     </div>`;
 
@@ -787,26 +864,13 @@ let SH2X_13 = `
     </div>`;
 
 let SH2X_14 = `
-    <img id="circlingPicture" src="pics/studio_second_circle/SH2X_14.png">
-    <div class="forwardpointer" id="SE1H_0" style="
-        height: 94px;
-        width: 120px;
-        top: 198px;
-        left: 310px;
-        ">
-    </div>`;
+    <img id="circlingPicture" src="pics/studio_second_circle/SH2X_14.png">`;
 
-let SH2X_15 = `<img id="circlingPicture" src="pics/studio_second_circle/SH2X_15.png">`;
+let SH2X_15 = `
+    <img id="circlingPicture" src="pics/studio_second_circle/SH2X_15.png">`;
 
 let SH2X_16 = `
-    <img id="circlingPicture" src="pics/studio_second_circle/SH2X_16.png">
-    <div class="redmagnifying" id="SE1U_0" style="
-        height: 68px;
-        width: 119px;
-        top: 110px;
-        left: 60px;
-        ">
-    </div>`;
+    <img id="circlingPicture" src="pics/studio_second_circle/SH2X_16.png">`;
 
 let SH2X_17 = `
     <img id="circlingPicture" src="pics/studio_second_circle/SH2X_17.png">
@@ -877,4 +941,9 @@ async function studio2Turning(event) {
             .innerHTML = sequenceOfScreensInStudio2[--z];
             console.log(z);
     }
+}
+
+function clearTheDialogueBox() {
+    document.getElementById("wholedialogue")
+    .innerHTML = ``;
 }

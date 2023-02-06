@@ -14,7 +14,8 @@ function signTheListScreen1() {
     document.getElementById("audio")
         .innerHTML = `
         <audio onended="getCloserToLogInPaper();" controls autoplay><source src="audio/Ral05.wav" type="audio/mpeg"></audio>
-        `
+        `;
+    z = 17;
 }
 
 function getCloserToLogInPaper() {
