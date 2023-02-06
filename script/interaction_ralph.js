@@ -13,7 +13,7 @@ function signTheListScreen1() {
         `
     document.getElementById("audio")
         .innerHTML = `
-        <audio onended="getCloserToLogInPaper();" controls autoplay><source src="audio/Ral05.wav" type="audio/mpeg"></audio>
+        <audio class="SoundOfVoice" onended="getCloserToLogInPaper();" controls autoplay><source src="audio/Ral05.wav" type="audio/mpeg"></audio>
         `;
     z = 17;
 }
@@ -40,7 +40,7 @@ function signThePaper() {
             </p>`;
     document.getElementById("audio")
         .innerHTML = `
-            <audio onended="RalphJustLetUsIn();" controls autoplay><source src="audio/Ral07.wav" type="audio/mpeg"></audio>`;
+            <audio class="SoundOfVoice" onended="RalphJustLetUsIn();" controls autoplay><source src="audio/Ral07.wav" type="audio/mpeg"></audio>`;
     document.getElementById("video")
         .innerHTML = `
             <img src="pics/studio_hallways/SE2F_1.png">`;
@@ -153,13 +153,13 @@ function interaction_ralph() {
     function noThankYouJustLooking() {
         document.getElementById("audio")
             .innerHTML = `
-            <audio controls autoplay onended="exploringTheStudioDay();"><source src="audio/Ng09.wav" type="audio/mpeg"></audio>
+            <audio class="SoundOfVoice" controls autoplay onended="exploringTheStudioDay();"><source src="audio/Ng09.wav" type="audio/mpeg"></audio>
             `
     }
     function yesMattieJensenLeftAVisitorsPassForMe() {
         document.getElementById("audio")
             .innerHTML = `
-            <audio controls autoplay onended="hereYouAre()"><source src="audio/Ng01.wav" type="audio/mpeg"></audio>
+            <audio class="SoundOfVoice" controls autoplay onended="hereYouAre()"><source src="audio/Ng01.wav" type="audio/mpeg"></audio>
             `
     }
 }

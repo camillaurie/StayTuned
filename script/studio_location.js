@@ -673,7 +673,7 @@ function goToADifferentScreenInStudio1(event) {
             document
                 .getElementById("audio")
                 .innerHTML = `
-                    <audio onended="clearTheDialogueBox();" id="currentAudio" autoplay controls">
+                    <audio class="SoundOfVoice" onended="clearTheDialogueBox();" id="currentAudio" autoplay controls">
                     <source 
                         src="audio/Pap01.wav" 
                         type="audio/mpeg">
@@ -689,7 +689,7 @@ function goToADifferentScreenInStudio1(event) {
         document
         .getElementById("audio")
         .innerHTML = `
-            <audio onended="interaction_ralph()" id="currentAudio" autoplay controls">
+            <audio class="SoundOfVoice" onended="interaction_ralph()" id="currentAudio" autoplay controls">
             <source 
                 src="audio/Ral01.wav" 
                 type="audio/mpeg">
