@@ -153,8 +153,14 @@ function interaction_ralph() {
     function noThankYouJustLooking() {
         document.getElementById("audio")
             .innerHTML = `
-            <audio class="SoundOfVoice" controls autoplay onended="exploringTheStudioDay();"><source src="audio/Ng09.wav" type="audio/mpeg"></audio>
-            `
+            <audio 
+                class="SoundOfVoice" 
+                controls 
+                autoplay 
+                onended="
+                    exploringTheStudioDay();">
+                <source src="audio/Ng09.wav" type="audio/mpeg">
+            </audio>`
     }
     function yesMattieJensenLeftAVisitorsPassForMe() {
         document.getElementById("audio")

@@ -267,64 +267,110 @@ function exploringTheStudioDay() {
 let s = 0;
 document
     .getElementById("wrapper")
-    .addEventListener("mouseover", studio1Turning); 
-async function studio1Turning(event) {
+    .addEventListener("mousedown", startTheCycleInStudio1);
+document
+    .getElementById("wrapper")
+    .addEventListener("mouseup", endTheCycleInStudio1);
+async function startTheCycleInStudio1(event) {
     if (event && event.target.id == 'turnleftincirclestudio1') {
-        if (s > 18) {
-            s = -1;
-        };
-        document
-            .getElementById("activelocationspot")
-            .innerHTML = sequenceOfScreensInStudio1[++s];
+        isSidePressed = true;
+        while (isSidePressed == true) {
+            if (s > 18) {
+                s = -1;
+            }
+            document
+                .getElementById("activelocationspot")
+                .innerHTML = sequenceOfScreensInStudio1[++s];
             console.log(s);
-    };
 
+            if (s == 2) {
+                if (document.getElementById("talkToRalph")) {
+                    document
+                        .getElementById("talkToRalph")
+                        .style = `
+                            position: absolute;
+                            top: 70px;
+                            left: 0px;
+                            width: 145px;`;
+                };
+            } else if (s == 3) {
+                document
+                    .getElementById("talkToRalph")
+                    .style = `
+                        position: absolute;
+                        top: 70px;
+                        left: 204px;
+                        width: 145px;`;
+            } else if (s == 4) {
+                document
+                    .getElementById("talkToRalph")
+                    .style = `
+                        position: absolute;
+                        top: 70px;
+                        left: 391px;
+                        width: 145px;`;
+            } else {
+                if (document
+                        .getElementById("talkToRalph")) {
+                    document
+                        .getElementById("talkToRalph")
+                        .style = `display: none;`;
+                };
+            };
+            await delay(500);
+        }
+    }
     if (event && event.target.id == 'turnrightincirclestudio1') {
-        if (s < 1) {
-            s = 20;
-        };
-        document
-            .getElementById("activelocationspot")
-            .innerHTML = sequenceOfScreensInStudio1[--s];
+        isSidePressed = true;
+        while (isSidePressed == true) {
+            if (s < 1) {
+                s = 20;
+            }
+            document
+                .getElementById("activelocationspot")
+                .innerHTML = sequenceOfScreensInStudio1[--s];
             console.log(s);
-    };
-
-    if (s == 2) {
-        if (document.getElementById("talkToRalph")) {
-            document
-                .getElementById("talkToRalph")
-                .style = `
-                    position: absolute;
-                    top: 70px;
-                    left: 0px;
-                    width: 145px;`;
-        };
-    } else if (s == 3) {
-        document
-            .getElementById("talkToRalph")
-            .style = `
-                position: absolute;
-                top: 70px;
-                left: 204px;
-                width: 145px;`;
-    } else if (s == 4) {
-        document
-            .getElementById("talkToRalph")
-            .style = `
-                position: absolute;
-                top: 70px;
-                left: 391px;
-                width: 145px;`;
-    } else {
-        if (document
-                .getElementById("talkToRalph")) {
-            document
-                .getElementById("talkToRalph")
-                .style = `display: none;`;
-        };
-    };
-    await delay(500);
-};
+            if (s == 2) {
+                if (document.getElementById("talkToRalph")) {
+                    document
+                        .getElementById("talkToRalph")
+                        .style = `
+                            position: absolute;
+                            top: 70px;
+                            left: 0px;
+                            width: 145px;`;
+                };
+            } else if (s == 3) {
+                document
+                    .getElementById("talkToRalph")
+                    .style = `
+                        position: absolute;
+                        top: 70px;
+                        left: 204px;
+                        width: 145px;`;
+            } else if (s == 4) {
+                document
+                    .getElementById("talkToRalph")
+                    .style = `
+                        position: absolute;
+                        top: 70px;
+                        left: 391px;
+                        width: 145px;`;
+            } else {
+                if (document
+                        .getElementById("talkToRalph")) {
+                    document
+                        .getElementById("talkToRalph")
+                        .style = `display: none;`;
+                };
+            };
+            await delay(500);
+        }
+    }
+}
+function endTheCycleInStudio1() {
+    isSidePressed = false;
+}
 
 function exploringTheStudioDay() {
     document.getElementById("wholedialogue")
@@ -375,6 +421,17 @@ document
 function goToADifferentScreenInStudio1(event) {
     if (event && event.target.id == 'goBackToSpinningStudio1') {
         exploringTheStudioDay();
+        if (s == 2) {
+            if (document.getElementById("talkToRalph")) {
+                document
+                    .getElementById("talkToRalph")
+                    .style = `
+                        position: absolute;
+                        top: 70px;
+                        left: 0px;
+                        width: 145px;`;
+            };
+        };
     };
 
     if (event && event.target.id == 'SE1W_0') {
@@ -663,12 +720,16 @@ function goToADifferentScreenInStudio1(event) {
             .innerHTML = `
                 <div class="thisScreenThisTime">
                 <img src="pics/studio_half_circle/SH1X_15.png">
-                <div class="backpointer" id="!!!" style="
+                <div class="backpointer" id="exploringTheHalfCircleDay" style="
                     height: 67px;
                     width: 536px;
                     left: 0px;
                     top: 225px;
                 "></div>`;
+                
+        document
+            .getElementById("exploringTheHalfCircleDay")
+            .addEventListener("click", exploringTheHalfCircleDay, false);
         if (hasWilliamPappasComplained == false) {
             document
                 .getElementById("audio")
@@ -680,7 +741,9 @@ function goToADifferentScreenInStudio1(event) {
                     </audio>`;
             document.getElementById("wholedialogue")
                 .innerHTML = `
-                    <p class="dialogue__character">I don't care who he is. No one breaks a contract with Bill Pappas. I'll kill him before he runs out on me.</p>`;
+                    <p class="dialogue__character">
+                        I don't care who he is. No one breaks a contract with Bill Pappas. I'll kill him before he runs out on me.
+                    </p>`;
             hasWilliamPappasComplained = true;
         };
     };
@@ -961,4 +1024,240 @@ function endTheCycleInStudio2() {
 function clearTheDialogueBox() {
     document.getElementById("wholedialogue")
     .innerHTML = ``;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+let SH1X_all = `
+    <div>
+        <div id="activelocationspot">
+        </div>
+        <div id="turnleftincirclehalf" class ="activesides activeleftside"></div>
+        <div id="turnrightincirclehalf" class ="activesides activerightside"></div>
+    </div>`;
+
+let SH1X_0 = `
+    <img id="circlingPicture" src="pics/studio_half_circle/SH1X_0.png">
+    <div class="redmagnifying" id="!!!" style="
+        height: 217px;
+        width: 355px;
+        top: 15px;
+        left: 99px;
+        ">
+    </div>`;
+
+let SH1X_1 = `
+    <img id="circlingPicture" src="pics/studio_half_circle/SH1X_1.png">
+    <div class="redmagnifying" id="!!!" style="
+        height: 217px;
+        width: 355px;
+        top: 15px;
+        left: 99px;
+        ">
+    </div>`;
+
+let SH1X_2 = `
+    <img id="circlingPicture" src="pics/studio_half_circle/SH1X_2.png">
+    <div class="redmagnifying" id="!!!" style="
+        height: 217px;
+        width: 355px;
+        top: 15px;
+        left: 99px;
+        ">
+    </div>`;
+
+let SH1X_3 = `
+    <img id="circlingPicture" src="pics/studio_half_circle/SH1X_3.png">
+    <div class="redmagnifying" id="!!!" style="
+        height: 217px;
+        width: 355px;
+        top: 15px;
+        left: 99px;
+        ">
+    </div>`;
+
+let SH1X_4 = `
+    <img id="circlingPicture" src="pics/studio_half_circle/SH1X_4.png">
+    <div class="redmagnifying" id="!!!" style="
+        height: 217px;
+        width: 355px;
+        top: 15px;
+        left: 99px;
+        ">
+    </div>`;
+
+let SH1X_5 = `
+    <img id="circlingPicture" src="pics/studio_half_circle/SH1X_5.png">
+    <div class="redmagnifying" id="!!!" style="
+        height: 217px;
+        width: 355px;
+        top: 15px;
+        left: 99px;
+        ">
+    </div>`;
+
+let SH1X_6 = `
+    <img id="circlingPicture" src="pics/studio_half_circle/SH1X_6.png">
+    <div class="redmagnifying" id="!!!" style="
+        height: 217px;
+        width: 355px;
+        top: 15px;
+        left: 99px;
+        ">
+    </div>`;
+
+let SH1X_7 = `
+    <img id="circlingPicture" src="pics/studio_half_circle/SH1X_7.png">
+    <div class="redmagnifying" id="!!!" style="
+        height: 217px;
+        width: 355px;
+        top: 15px;
+        left: 99px;
+        ">
+    </div>`;
+
+let SH1X_8 = `
+    <img id="circlingPicture" src="pics/studio_half_circle/SH1X_8.png">
+    <div class="redmagnifying" id="!!!" style="
+        height: 217px;
+        width: 355px;
+        top: 15px;
+        left: 99px;
+        ">
+    </div>`;
+
+let SH1X_9 = `
+    <img id="circlingPicture" src="pics/studio_half_circle/SH1X_9.png">
+    <div class="redmagnifying" id="!!!" style="
+        height: 217px;
+        width: 355px;
+        top: 15px;
+        left: 99px;
+        ">
+    </div>`;
+
+let SH1X_10 = `
+    <img id="circlingPicture" src="pics/studio_half_circle/SH1X_10.png">
+    <div class="redmagnifying" id="!!!" style="
+        height: 217px;
+        width: 355px;
+        top: 15px;
+        left: 99px;
+        ">
+    </div>`;
+
+let SH1X_11 = `
+    <img id="circlingPicture" src="pics/studio_half_circle/SH1X_11.png">
+    <div class="redmagnifying" id="!!!" style="
+        height: 217px;
+        width: 355px;
+        top: 15px;
+        left: 99px;
+        ">
+    </div>`;
+
+let SH1X_12 = `
+    <img id="circlingPicture" src="pics/studio_half_circle/SH1X_12.png">
+    <div class="redmagnifying" id="!!!" style="
+        height: 217px;
+        width: 355px;
+        top: 15px;
+        left: 99px;
+        ">
+    </div>`;
+
+let SH1X_13 = `
+    <img id="circlingPicture" src="pics/studio_half_circle/SH1X_13.png">
+    <div class="redmagnifying" id="!!!" style="
+        height: 217px;
+        width: 355px;
+        top: 15px;
+        left: 99px;
+        ">
+    </div>`;
+
+let SH1X_14 = `
+    <img id="circlingPicture" src="pics/studio_half_circle/SH1X_14.png">
+    <div class="redmagnifying" id="!!!" style="
+        height: 217px;
+        width: 355px;
+        top: 15px;
+        left: 99px;
+        ">
+    </div>`;
+
+let SH1X_15 = `
+    <img id="circlingPicture" src="pics/studio_half_circle/SH1X_15.png">
+    <div class="redmagnifying" id="!!!" style="
+        height: 217px;
+        width: 355px;
+        top: 15px;
+        left: 99px;
+        ">
+    </div>`;
+
+let sequenceOfScreensInTheHalf = [SH1X_0, SH1X_1, SH1X_2, SH1X_3, SH1X_4, SH1X_5, SH1X_6, SH1X_7, SH1X_8, SH1X_9, SH1X_10, SH1X_11, SH1X_12, SH1X_13, SH1X_14, SH1X_15];
+
+
+
+
+function exploringTheHalfCircleDay() {
+    document.getElementById("wholedialogue")
+        .innerHTML = ``;
+    document
+        .getElementById("video")
+        .innerHTML = SH1X_all;
+    document
+        .getElementById("activelocationspot")
+        .innerHTML = sequenceOfScreensInTheHalf[h]; 
+};
+
+let h = 6;
+document
+    .getElementById("wrapper")
+    .addEventListener("mousedown", startTheCycleInHalfACircleStudio);
+document
+    .getElementById("wrapper")
+    .addEventListener("mouseup", endTheCycleInHalfACircleStudio);
+async function startTheCycleInHalfACircleStudio(event) {
+    if (event && event.target.id == 'turnleftincirclehalf') {
+        isSidePressed = true;
+        while (isSidePressed == true) {
+            if (h > 18) {
+                h = -1;
+            }
+            document
+                .getElementById("activelocationspot")
+                .innerHTML = sequenceOfScreensInTheHalf[++h];
+            console.log(h);
+            await delay(500);
+        }
+    }
+    if (event && event.target.id == 'turnrightincirclehalf') {
+        isSidePressed = true;
+        while (isSidePressed == true) {
+            if (h < 1) {
+                h = 20;
+            }
+            document
+                .getElementById("activelocationspot")
+                .innerHTML = sequenceOfScreensInTheHalf[--h];
+            console.log(h);
+            await delay(500);
+        }
+    }
+}
+function endTheCycleInHalfACircleStudio() {
+    isSidePressed = false;
 }
