@@ -127,7 +127,6 @@ function interaction_ralph() {
         if (event) {
             dialogueOptionId = event.target.id;
         }
-        console.log('dodod', dialogueOptionId);
         if (video && video.ended) {
             //in case we're slow and we make our choice after the video has already ended
             myHandlerWithRalph();
