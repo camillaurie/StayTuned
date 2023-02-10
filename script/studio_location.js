@@ -620,29 +620,7 @@ function goToADifferentScreenInStudioHalf(event) {
     };
 
     if (event && event.target.id == 'SE1R_0') {
-        document
-            .getElementById("video")
-            .innerHTML = `
-                <div class="thisScreenThisTime">
-                <img src="pics/studio_hallways/SE1R_0.png">
-                <div class="backpointer" id="!!!" style="
-                    height: 67px;
-                    width: 536px;
-                    left: 0px;
-                    top: 225px;
-                "></div>
-                <div class="redmagnifying" id="SE1Z_0" style="
-                    height: 70px;
-                    width: 52px;
-                    top: 89px;
-                    left: 306px;
-                "></div>
-                <div class="redmagnifying" id="SH2X_17" style="
-                    height: 159px;
-                    width: 112px;
-                    top: 66px;
-                    left: 86px;
-                "></div>`;
+        RalphJustLetUsIn();
     };
 
     if (event && event.target.id == 'SE1Z_0') {
@@ -723,12 +701,6 @@ function goToADifferentScreenInStudioHalf(event) {
                     top: 44px;
                     left: 167px;
                 "></div>
-                <div class="redmagnifying" id="SH1N_0" style="
-                    height: 123px;
-                    width: 133px;
-                    top: 102px;
-                    left: 403px;
-                "></div>
                 <div class="backpointer" onclick="z = 5; exploringTheStudio2Day();" style="
                     height: 67px;
                     width: 536px;
@@ -749,6 +721,7 @@ function goToADifferentScreenInStudioHalf(event) {
                         src="audio/Pap01.wav" 
                         type="audio/mpeg">
                     </audio>`;
+                    setVoiceVolume();
             document.getElementById("wholedialogue")
                 .innerHTML = `
                     <p class="dialogue__character">
@@ -767,6 +740,7 @@ function goToADifferentScreenInStudioHalf(event) {
                 src="audio/Ral01.wav" 
                 type="audio/mpeg">
             </audio>`;
+            setVoiceVolume();
         document.getElementById("wholedialogue")
             .innerHTML = `
                 <p class="dialogue__character">Can I help you?</p>`;
@@ -952,6 +926,11 @@ function clearTheDialogueBox() {
     .innerHTML = ``;
 }
 
+function clearTheAudio() {
+    document.getElementById("audio")
+    .innerHTML = ``;
+}
+
 
 
 
@@ -974,7 +953,8 @@ let SH1X_all = `
     </div>`;
 
 let SH1X_0 = `
-    <img id="circlingPicture" src="pics/studio_half_circle/SH1X_0.png">`;
+    <img id="circlingPicture" src="pics/studio_half_circle/SH1X_0.png">
+    <div id="turnrightincirclehalf" class ="greymagnifying greymagnifyingright"></div>`;
 
 let SH1X_1 = `
     <img id="circlingPicture" src="pics/studio_half_circle/SH1X_1.png">`;
@@ -1058,7 +1038,8 @@ let SH1X_14 = `
     <img id="circlingPicture" src="pics/studio_half_circle/SH1X_14.png">`;
 
 let SH1X_15 = `
-    <img id="circlingPicture" src="pics/studio_half_circle/SH1X_15.png">`;
+    <img id="circlingPicture" src="pics/studio_half_circle/SH1X_15.png">
+    <div id="turnleftincirclehalf" class ="greymagnifying greymagnifyingleft"></div>`;
 
 let sequenceOfScreensInTheHalf = [SH1X_0, SH1X_1, SH1X_2, SH1X_3, SH1X_4, SH1X_5, SH1X_6, SH1X_7, SH1X_8, SH1X_9, SH1X_10, SH1X_11, SH1X_12, SH1X_13, SH1X_14, SH1X_15];
 

@@ -857,6 +857,7 @@ function invitationIntoTheApartment() {
             type="audio/mpeg">
         </audio>
     `
+    setVoiceVolume();
     document.getElementById("wholedialogue")
     .innerHTML = `
         <p class='dialogue__character'>

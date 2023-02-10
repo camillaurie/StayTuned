@@ -17,6 +17,14 @@ body {
     position: relative;
 }
 
+.settings_screen {
+    width: 640px;
+    height: 480px;
+    background-image: url(../pics/SETTINGS.png);
+    background-repeat: no-repeat;
+    position: relative;
+}
+
 .game {
     user-select: none;
 }
@@ -148,6 +156,24 @@ body {
     position: absolute;
 }
 
+.greymagnifying {
+    cursor: url(../pics/sprites/glass_grey.png), auto;
+    background-color: #cf10105b;
+    height: 292px;
+    width: 50px;
+    position: absolute;
+    top: 0;
+    z-index: 3;
+}
+
+.greymagnifyingleft {
+    left: 0px;
+}
+
+.greymagnifyingright {
+    left: 486px;
+}
+
 .arrowdown {
     background-color: #b3e77b66;
     position: absolute;
@@ -184,4 +210,50 @@ body {
     background-color: #4000ff66;
     position: absolute;
     cursor: url(../pics/sprites/glass_red.png), pointer;
+}
+
+.volume_slider {
+    position: absolute;
+    top: 57px;
+    left: 144px;
+    width: 90px;
+    -webkit-appearance: none;
+    background: none;
+}
+
+.volume_slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    background: url("../pics/sprites/sound_toggle.png");
+    width: 13px;
+    height: 12px;
+    background-repeat: no-repeat;
+    margin-left: 2px;
+    margin-top: 2px;
+}
+
+.backToMainMenu {
+    position: absolute;
+    top: 374px;
+    left: 197px;
+    width: 210px;
+    height: 38px;
+}
+
+.inventory__place {
+    position: absolute;
+    background-color: #000000;
+    width: 150px;
+    height: 123px;
+}
+
+.inventory__keys {
+    background: url("../pics/sprites/apartment_keys_in_inventory.png");
+    background-repeat: no-repeat;
+    width: 69px;
+    height: 57px;
+    margin: 5px;
+}
+
+.inventory__keys:hover {
+    background: url("../pics/sprites/apartment_keys_in_inventory_hover.png");
 }

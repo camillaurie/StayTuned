@@ -15,6 +15,7 @@ function signTheListScreen1() {
         .innerHTML = `
         <audio class="SoundOfVoice" onended="getCloserToLogInPaper();" controls autoplay><source src="audio/Ral05.wav" type="audio/mpeg"></audio>
         `;
+        setVoiceVolume();
     z = 17;
 }
 
@@ -41,6 +42,7 @@ function signThePaper() {
     document.getElementById("audio")
         .innerHTML = `
             <audio class="SoundOfVoice" onended="RalphJustLetUsIn();" controls autoplay><source src="audio/Ral07.wav" type="audio/mpeg"></audio>`;
+            setVoiceVolume();
     document.getElementById("video")
         .innerHTML = `
             <img src="pics/studio_hallways/SE2F_1.png">`;
@@ -49,7 +51,7 @@ function signThePaper() {
 function hereYouAre() {
     document.getElementById("video")
         .innerHTML = `
-        <video onended="signTheListScreen1()" id="currentVideo" playsinline controls autoplay>
+        <video class="SoundOfVoice" onplaying="setVoiceVolume()" onended="signTheListScreen1()" id="currentVideo" playsinline controls autoplay>
             <source src="video/ralph_hereyouare.webm" type="video/webm">
         </video>
         `
@@ -65,10 +67,11 @@ function hereYouAre() {
 function wellForThePastMonthchange() {
     document.getElementById("video")
         .innerHTML = `
-        <video id="currentVideo" playsinline controls autoplay>
+        <video class="SoundOfVoice" id="currentVideo" playsinline controls autoplay>
             <source src="video/mattie_theyretotallybizarre.webm" type="video/webm">
         </video>
         `
+    setVoiceVolume();
     document.getElementById("wholedialogue")
         .innerHTML = `
         <p class='dialogue__character'>
@@ -101,10 +104,11 @@ function interaction_ralph() {
     } else {
         document.getElementById("video")
             .innerHTML = `
-            <video id="currentVideo" playsinline controls autoplay>
+            <video class="SoundOfVoice" id="currentVideo" playsinline controls autoplay>
                 <source src="video/ralph_canihelpyou.webm" type="video/webm">
             </video>
         `
+        setVoiceVolume();
     }
     document.getElementById("wholedialogue")
         .innerHTML = `
@@ -160,11 +164,13 @@ function interaction_ralph() {
                     exploringTheStudioDay();">
                 <source src="audio/Ng09.wav" type="audio/mpeg">
             </audio>`
+            setVoiceVolume();
     }
     function yesMattieJensenLeftAVisitorsPassForMe() {
         document.getElementById("audio")
             .innerHTML = `
-            <audio class="SoundOfVoice" controls autoplay onended="hereYouAre()"><source src="audio/Ng01.wav" type="audio/mpeg"></audio>
+            <audio class="SoundOfVoice" controls autoplay onended="clearTheAudio(); hereYouAre()"><source src="audio/Ng01.wav" type="audio/mpeg"></audio>
             `
+            setVoiceVolume();
     }
 }

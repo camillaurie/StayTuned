@@ -13,10 +13,11 @@
 function wellIwasReadingATeleprompter() {
     document.getElementById("video")
         .innerHTML = `
-        <video id="currentVideo" playsinline controls autoplay>
+        <video class="SoundOfVoice" id="currentVideo" playsinline controls autoplay>
             <source src="video/mattie_welliwasreading.webm" type="video/webm">
         </video>
         `
+    setVoiceVolume(); 
     document.getElementById("wholedialogue")
         .innerHTML = `
         <p class='dialogue__character'>
@@ -36,10 +37,11 @@ function wellIwasReadingATeleprompter() {
 function wellTheFirstOnes1() {
     document.getElementById("video")
         .innerHTML = `
-        <video id="currentVideo" playsinline controls autoplay>
+        <video class="SoundOfVoice" id="currentVideo" playsinline controls autoplay>
             <source src="video/mattie_wellthefirstoneshadtheletters.webm" type="video/webm">
         </video>
         `
+    setVoiceVolume();
     document.getElementById("wholedialogue")
         .innerHTML = `
         <p class='dialogue__character'>
@@ -56,10 +58,11 @@ function wellTheFirstOnes1() {
 function wellTheFirstOnes2() {
     document.getElementById("video")
         .innerHTML = `
-        <video id="currentVideo" playsinline controls autoplay>
+        <video class="SoundOfVoice" id="currentVideo" playsinline controls autoplay>
             <source src="video/mattie_wellthefirstoneshadtheletters.webm" type="video/webm">
         </video>
         `
+    setVoiceVolume();
     document.getElementById("wholedialogue")
         .innerHTML = `
         <p class='dialogue__character'>
@@ -73,10 +76,11 @@ function wellTheFirstOnes2() {
 function wellTheFirstOnes3() {
     document.getElementById("video")
         .innerHTML = `
-        <video id="currentVideo" playsinline controls autoplay>
+        <video class="SoundOfVoice" id="currentVideo" playsinline controls autoplay>
             <source src="video/mattie_wellthefirstoneshadtheletters.webm" type="video/webm">
         </video>
         `
+    setVoiceVolume(); 
     document.getElementById("wholedialogue")
         .innerHTML = `
         <p class='dialogue__character'>
@@ -89,10 +93,11 @@ function wellTheFirstOnes3() {
 function wellTheFirstOnes4() {
     document.getElementById("video")
         .innerHTML = `
-        <video id="currentVideo" playsinline controls autoplay>
+        <video class="SoundOfVoice" id="currentVideo" playsinline controls autoplay>
             <source src="video/mattie_wellthefirstoneshadtheletters.webm" type="video/webm">
         </video>
         `
+    setVoiceVolume();
     document.getElementById("wholedialogue")
         .innerHTML = `
         <p class='dialogue__character'>
@@ -106,10 +111,11 @@ function wellTheFirstOnes4() {
 function noAndThatsTheProblem0() {
     document.getElementById("video")
         .innerHTML = `
-        <video id="currentVideo" playsinline controls autoplay>
+        <video class="SoundOfVoice" id="currentVideo" playsinline controls autoplay>
             <source src="video/mattie_noandthatstheproblem.webm" type="video/webm">
         </video>
         `
+    setVoiceVolume();
     document.getElementById("wholedialogue")
         .innerHTML = `
         <p class='dialogue__character'>
@@ -126,10 +132,11 @@ function noAndThatsTheProblem0() {
 function noAndThatsTheProblem1() {
     document.getElementById("video")
         .innerHTML = `
-        <video id="currentVideo" playsinline controls autoplay>
+        <video class="SoundOfVoice" id="currentVideo" playsinline controls autoplay>
             <source src="video/mattie_noandthatstheproblem.webm" type="video/webm">
         </video>
         `
+    setVoiceVolume(); 
     document.getElementById("wholedialogue")
         .innerHTML = `
         <p class='dialogue__character'>
@@ -143,10 +150,11 @@ function noAndThatsTheProblem1() {
 function noAndThatsTheProblem2() {
     document.getElementById("video")
         .innerHTML = `
-        <video id="currentVideo" playsinline controls autoplay>
+        <video class="SoundOfVoice" id="currentVideo" playsinline controls autoplay>
             <source src="video/mattie_noandthatstheproblem.webm" type="video/webm">
         </video>
         `
+    setVoiceVolume();
     document.getElementById("wholedialogue")
         .innerHTML = `
         <p class='dialogue__character'>
@@ -160,10 +168,11 @@ function noAndThatsTheProblem2() {
 function noAndThatsTheProblem3() {
     document.getElementById("video")
         .innerHTML = `
-        <video id="currentVideo" playsinline controls autoplay>
+        <video class="SoundOfVoice" id="currentVideo" playsinline controls autoplay>
             <source src="video/mattie_noandthatstheproblem.webm" type="video/webm">
         </video>
         `
+    setVoiceVolume();
     document.getElementById("wholedialogue")
         .innerHTML = `
         <p class='dialogue__character'>
@@ -176,10 +185,11 @@ function noAndThatsTheProblem3() {
 function ricksaMajorChocoholic1() {
     document.getElementById("video")
         .innerHTML = `
-        <video id="currentVideo" playsinline controls autoplay>
+        <video class="SoundOfVoice" id="currentVideo" playsinline controls autoplay>
             <source src="video/mattie_ricksamajorchocoholic.webm" type="video/webm">
         </video>
         `
+    setVoiceVolume();
     document.getElementById("wholedialogue")
         .innerHTML = `
         <p class='dialogue__character'>
@@ -196,10 +206,11 @@ function ricksaMajorChocoholic1() {
 function ricksaMajorChocoholic2() {
     document.getElementById("video")
         .innerHTML = `
-        <video id="currentVideo" playsinline controls autoplay>
+        <video class="SoundOfVoice" id="currentVideo" playsinline controls autoplay>
             <source src="video/mattie_ricksamajorchocoholic.webm" type="video/webm">
         </video>
         `
+    setVoiceVolume();
     document.getElementById("wholedialogue")
         .innerHTML = `
         <p class='dialogue__character'>
@@ -213,10 +224,11 @@ function ricksaMajorChocoholic2() {
 function ricksaMajorChocoholic3() {
     document.getElementById("video")
         .innerHTML = `
-        <video id="currentVideo" playsinline controls autoplay>
+        <video class="SoundOfVoice" id="currentVideo" playsinline controls autoplay>
             <source src="video/mattie_ricksamajorchocoholic.webm" type="video/webm">
         </video>
         `
+    setVoiceVolume();
     document.getElementById("wholedialogue")
         .innerHTML = `
         <p class='dialogue__character'>
@@ -229,10 +241,11 @@ function ricksaMajorChocoholic3() {
 function ricksaMajorChocoholic4() {
     document.getElementById("video")
         .innerHTML = `
-        <video id="currentVideo" playsinline controls autoplay>
+        <video class="SoundOfVoice" id="currentVideo" playsinline controls autoplay>
             <source src="video/mattie_ricksamajorchocoholic.webm" type="video/webm">
         </video>
         `
+    setVoiceVolume();
     document.getElementById("wholedialogue")
         .innerHTML = `
         <p class='dialogue__character'>
@@ -246,10 +259,11 @@ function ricksaMajorChocoholic4() {
 function someoneSentHimABrokenWatch() {
     document.getElementById("video")
         .innerHTML = `
-        <video id="currentVideo" playsinline controls autoplay>
+        <video class="SoundOfVoice" id="currentVideo" playsinline controls autoplay>
             <source src="video/mattie_someonesenthimabrokenwatch.webm" type="video/webm">
         </video>
         `
+    setVoiceVolume();
     document.getElementById("wholedialogue")
         .innerHTML = `
         <p class='dialogue__character'>
@@ -269,10 +283,11 @@ function someoneSentHimABrokenWatch() {
 function nancyImRunningLate() {
     document.getElementById("video")
         .innerHTML = `
-        <video id="currentVideo" playsinline controls autoplay>
-            <source src="video/mattie_nancyimrunninglate.webm" type="video/webm">
-        </video>
-        `
+            <video class="SoundOfVoice" id="currentVideo" playsinline controls autoplay>
+                <source src="video/mattie_nancyimrunninglate.webm" type="video/webm">
+            </video>
+            `
+        setVoiceVolume();
         document.getElementById("wholedialogue")
             .innerHTML = `
             <p class='dialogue__character'>
@@ -282,13 +297,25 @@ function nancyImRunningLate() {
         document.getElementById('currentVideo')
         .addEventListener('ended', ohBeforeIForget, false);
 }
+
+
+
+function InventoryWithKeysPicture() {
+    InventoryArray.push('Apartment_Keys');
+    document.getElementById("inventory")
+    .innerHTML = `<div class="inventory__place"><div class="inventory__keys"></div></div>`
+}
+
+let InventoryArray = [];
+
 function ohBeforeIForget() {
     document.getElementById("video")
         .innerHTML = `
-        <video id="currentVideo" playsinline controls autoplay>
-            <source src="video/mattie_ohbeforeiforget.webm" type="video/webm">
-        </video>
-        `
+            <video class="SoundOfVoice" id="currentVideo" playsinline controls autoplay>
+                <source src="video/mattie_ohbeforeiforget.webm" type="video/webm">
+            </video>
+            `
+        setVoiceVolume();
         document.getElementById("wholedialogue")
             .innerHTML = `
             <p class='dialogue__character'>
@@ -297,13 +324,12 @@ function ohBeforeIForget() {
             `
     document.getElementById("inventory")
     .innerHTML = `
-    <video id="inventoryVideo" playsinline controls autoplay>
+    <video class="SoundEffects" onended="InventoryWithKeysPicture()" id="inventoryVideo" playsinline controls autoplay>
         <source src="video/inventory_opens_withkeys.webm" type="video/webm">
     </video>
     `
 
     haveISpokenWithMattie = true;
-
 
     document.getElementById('currentVideo')
     .addEventListener('ended', exploringTheRoomDay, false);
@@ -322,10 +348,11 @@ function ohBeforeIForget() {
 function wellForThePastMonth() {
     document.getElementById("video")
         .innerHTML = `
-        <video id="currentVideo" playsinline controls autoplay>
+        <video class="SoundOfVoice" id="currentVideo" playsinline controls autoplay>
             <source src="video/mattie_wellforthepast.webm" type="video/webm">
         </video>
         `
+    setVoiceVolume();
     document.getElementById("wholedialogue")
         .innerHTML = `
         <p class='dialogue__character'>
@@ -342,10 +369,11 @@ function wellForThePastMonth() {
 function  yesItCanBeAllThatBad() {
     document.getElementById("video")
         .innerHTML = `
-        <video id="currentVideo" playsinline controls autoplay>
+        <video class="SoundOfVoice" id="currentVideo" playsinline controls autoplay>
             <source src="video/mattie_yesitcan.webm" type="video/webm">
         </video>
         `
+    setVoiceVolume();
     document.getElementById("wholedialogue")
         .innerHTML = `
         <p class='dialogue__character'>
@@ -359,11 +387,11 @@ function  yesItCanBeAllThatBad() {
 function  believeMe() {
     document.getElementById("video")
         .innerHTML = `
-        <video id="currentVideo" playsinline controls autoplay>
+        <video class="SoundOfVoice" id="currentVideo" playsinline controls autoplay>
             <source src="video/mattie_believeme.webm" type="video/webm">
         </video>
         `
-
+        setVoiceVolume();
     document.getElementById("wholedialogue")
         .innerHTML = `
         <p class='dialogue__character'>
@@ -380,10 +408,11 @@ function  believeMe() {
 function ohIveGottenSomeOdd() {
     document.getElementById("video")
         .innerHTML = `
-        <video id="currentVideo" playsinline controls autoplay>
+        <video class="SoundOfVoice" id="currentVideo" playsinline controls autoplay>
             <source src="video/mattie_ohivegottensomeodd.webm" type="video/webm">
         </video>
         `
+    setVoiceVolume();
     document.getElementById("wholedialogue")
         .innerHTML = `
         <p class='dialogue__character'>
@@ -397,10 +426,11 @@ function ohIveGottenSomeOdd() {
 function theyreTotallyBizarre() {
     document.getElementById("video")
         .innerHTML = `
-        <video id="currentVideo" playsinline controls autoplay>
+        <video class="SoundOfVoice" id="currentVideo" playsinline controls autoplay>
             <source src="video/mattie_theyretotallybizarre.webm" type="video/webm">
         </video>
         `
+        setVoiceVolume();
     document.getElementById("wholedialogue")
         .innerHTML = `
         <p class='dialogue__character'>
@@ -425,12 +455,12 @@ function theyreTotallyBizarre() {
 
 function interaction_mattie_first() {
     document
-    .getElementById("wrapper")
-    .innerHTML = `
+        .getElementById("wrapper")
+        .innerHTML = `
             <div class="game">
                 <div id='audio' class="game__menu">!!!</div>
                 <div id='video' class="game__scene">
-                    <video id="currentVideo" onended="handleClickById()" playsinline controls autoplay >
+                    <video class="SoundOfVoice" id="currentVideo" onended="handleClickById()" playsinline controls autoplay >
                         <source src="video/mattie_welcome.webm" type="video/webm">
                     </video>
                 </div>
@@ -447,6 +477,7 @@ function interaction_mattie_first() {
                 <div id="inventory" class="game__inventory"><img alt="" src="pics/emptyinventory.png"></div>
             </div>
             `
+    setVoiceVolume();
     document
         .getElementById("wrapper")
         .addEventListener("click", handleClickById);
@@ -535,132 +566,151 @@ function interaction_mattie_first() {
     function letters1() {
         document.getElementById("audio")
             .innerHTML = `
-            <audio class="SoundOfVoice" controls autoplay onended="wellTheFirstOnes1()"><source src="audio/nancy_tellmeabouttheletters.mp3" type="audio/mpeg"></audio>
+            <audio class="SoundOfVoice" controls autoplay onended="clearTheAudio(); wellTheFirstOnes1()"><source src="audio/nancy_tellmeabouttheletters.mp3" type="audio/mpeg"></audio>
             `
+            setVoiceVolume();
     }
     function letters2() {
         document.getElementById("audio")
             .innerHTML = `
-            <audio class="SoundOfVoice" controls autoplay onended="wellTheFirstOnes2()"><source src="audio/nancy_tellmeabouttheletters.mp3" type="audio/mpeg"></audio>
+            <audio class="SoundOfVoice" controls autoplay onended="clearTheAudio(); wellTheFirstOnes2()"><source src="audio/nancy_tellmeabouttheletters.mp3" type="audio/mpeg"></audio>
             `
+            setVoiceVolume();
     }
     function letters3() {
         document.getElementById("audio")
             .innerHTML = `
-            <audio class="SoundOfVoice" controls autoplay onended="wellTheFirstOnes3()"><source src="audio/nancy_tellmeabouttheletters.mp3" type="audio/mpeg"></audio>
+            <audio class="SoundOfVoice" controls autoplay onended="clearTheAudio(); wellTheFirstOnes3()"><source src="audio/nancy_tellmeabouttheletters.mp3" type="audio/mpeg"></audio>
             `
+            setVoiceVolume();
     }
 
 
     function police() {
         document.getElementById("audio")
             .innerHTML = `
-            <audio class="SoundOfVoice" controls autoplay onended="noAndThatsTheProblem0()"><source src="audio/nancy_didrickgotothepolice.mp3" type="audio/mpeg"></audio>
+            <audio class="SoundOfVoice" controls autoplay onended="clearTheAudio(); noAndThatsTheProblem0()"><source src="audio/nancy_didrickgotothepolice.mp3" type="audio/mpeg"></audio>
             `
+            setVoiceVolume();
     }
     function policeafterletters() {
         document.getElementById("audio")
             .innerHTML = `
-            <audio class="SoundOfVoice" controls autoplay onended="noAndThatsTheProblem1()"><source src="audio/nancy_didrickgotothepolice.mp3" type="audio/mpeg"></audio>
+            <audio class="SoundOfVoice" controls autoplay onended="clearTheAudio(); noAndThatsTheProblem1()"><source src="audio/nancy_didrickgotothepolice.mp3" type="audio/mpeg"></audio>
             `
+            setVoiceVolume();
     }
     function policeafterchocolates() {
         document.getElementById("audio")
             .innerHTML = `
-            <audio class="SoundOfVoice" controls autoplay onended="noAndThatsTheProblem2()"><source src="audio/nancy_didrickgotothepolice.mp3" type="audio/mpeg"></audio>
+            <audio class="SoundOfVoice" controls autoplay onended="clearTheAudio(); noAndThatsTheProblem2()"><source src="audio/nancy_didrickgotothepolice.mp3" type="audio/mpeg"></audio>
             `
+            setVoiceVolume();
     }
     function policeafterchocolatesandletters() {
         document.getElementById("audio")
             .innerHTML = `
-            <audio class="SoundOfVoice" controls autoplay onended="noAndThatsTheProblem3()"><source src="audio/nancy_didrickgotothepolice.mp3" type="audio/mpeg"></audio>
+            <audio class="SoundOfVoice" controls autoplay onended="clearTheAudio(); noAndThatsTheProblem3()"><source src="audio/nancy_didrickgotothepolice.mp3" type="audio/mpeg"></audio>
             `
+            setVoiceVolume();
     }
 
 
     function lettersafterpolice() {
         document.getElementById("audio")
             .innerHTML = `
-            <audio class="SoundOfVoice" controls autoplay onended="wellTheFirstOnes4()"><source src="audio/nancy_tellmeabouttheletters.mp3" type="audio/mpeg"></audio>
+            <audio class="SoundOfVoice" controls autoplay onended="clearTheAudio(); wellTheFirstOnes4()"><source src="audio/nancy_tellmeabouttheletters.mp3" type="audio/mpeg"></audio>
             `
+            setVoiceVolume();
     }
     function chocolatesafterpolice() {
         document.getElementById("audio")
             .innerHTML = `
-            <audio class="SoundOfVoice" controls autoplay onended="ricksaMajorChocoholic4()"><source src="audio/nancy_someonesenthimpoisoned.mp3" type="audio/mpeg"></audio>
+            <audio class="SoundOfVoice" controls autoplay onended="clearTheAudio(); ricksaMajorChocoholic4()"><source src="audio/nancy_someonesenthimpoisoned.mp3" type="audio/mpeg"></audio>
             `
+            setVoiceVolume();
     }
 
 
     function chocolates1() {
         document.getElementById("audio")
             .innerHTML = `
-            <audio class="SoundOfVoice" controls autoplay onended="ricksaMajorChocoholic1()"><source src="audio/nancy_someonesenthimpoisoned.mp3" type="audio/mpeg"></audio>
+            <audio class="SoundOfVoice" controls autoplay onended="clearTheAudio(); ricksaMajorChocoholic1()"><source src="audio/nancy_someonesenthimpoisoned.mp3" type="audio/mpeg"></audio>
             `
+            setVoiceVolume();
     }
     function chocolates2() {
         document.getElementById("audio")
             .innerHTML = `
-            <audio class="SoundOfVoice" controls autoplay onended="ricksaMajorChocoholic2()"><source src="audio/nancy_someonesenthimpoisoned.mp3" type="audio/mpeg"></audio>
+            <audio class="SoundOfVoice" controls autoplay onended="clearTheAudio(); ricksaMajorChocoholic2()"><source src="audio/nancy_someonesenthimpoisoned.mp3" type="audio/mpeg"></audio>
             `
+            setVoiceVolume();
     }
     function chocolates3() {
         document.getElementById("audio")
             .innerHTML = `
-            <audio class="SoundOfVoice" controls autoplay onended="ricksaMajorChocoholic3()"><source src="audio/nancy_someonesenthimpoisoned.mp3" type="audio/mpeg"></audio>
+            <audio class="SoundOfVoice" controls autoplay onended="clearTheAudio(); ricksaMajorChocoholic3()"><source src="audio/nancy_someonesenthimpoisoned.mp3" type="audio/mpeg"></audio>
             `
+            setVoiceVolume();
     }
 
 
     function watch() {
         document.getElementById("audio")
             .innerHTML = `
-            <audio class="SoundOfVoice" controls autoplay onended="someoneSentHimABrokenWatch()"><source src="audio/nancy_whatwasthebrokenwatch.mp3" type="audio/mpeg"></audio>
+            <audio class="SoundOfVoice" controls autoplay onended="sclearTheAudio(); omeoneSentHimABrokenWatch()"><source src="audio/nancy_whatwasthebrokenwatch.mp3" type="audio/mpeg"></audio>
             `
+            setVoiceVolume();
     }
     function teleprompter() {
         document.getElementById("audio")
             .innerHTML = `
-            <audio class="SoundOfVoice" controls autoplay onended="wellIwasReadingATeleprompter()"><source src="audio/nancy_sowhathappened.mp3" type="audio/mpeg"></audio>
+            <audio class="SoundOfVoice" controls autoplay onended="clearTheAudio(); wellIwasReadingATeleprompter()"><source src="audio/nancy_sowhathappened.mp3" type="audio/mpeg"></audio>
             `
+            setVoiceVolume();
     }
     function itsAlwaysNice() {
         document.getElementById("audio")
             .innerHTML = `
-            <audio class="SoundOfVoice" controls autoplay onended="believeMe()"><source src="audio/nancy_bigapple.mp3" type="audio/mpeg"></audio>
+            <audio class="SoundOfVoice" controls autoplay onended="clearTheAudio(); believeMe()"><source src="audio/nancy_bigapple.mp3" type="audio/mpeg"></audio>
             `
+            setVoiceVolume();
     }
     function imHappyToHelp() {
         document.getElementById("audio")
             .innerHTML = `
-            <audio class="SoundOfVoice" controls autoplay onended="wellForThePastMonth()"><source src="audio/nancy_imhappytohelp.mp3" type="audio/mpeg"></audio>
+            <audio class="SoundOfVoice" controls autoplay onended="clearTheAudio(); wellForThePastMonth()"><source src="audio/nancy_imhappytohelp.mp3" type="audio/mpeg"></audio>
             `
+            setVoiceVolume();
     }
     function butItCantBeAll() {
         document.getElementById("audio")
             .innerHTML = `
-            <audio class="SoundOfVoice" controls autoplay onended="yesItCanBeAllThatBad()"><source src="audio/nancy_butitcantbe.mp3" type="audio/mpeg"></audio>
+            <audio class="SoundOfVoice" controls autoplay onended="clearTheAudio(); yesItCanBeAllThatBad()"><source src="audio/nancy_butitcantbe.mp3" type="audio/mpeg"></audio>
             `
+            setVoiceVolume();
     }
     function tellMeAboutTheDeath() {
         console.log('popo')
         document.getElementById("audio")
             .innerHTML = `
-            <audio class="SoundOfVoice" controls autoplay onended="wellForThePastMonth()"><source src="audio/nancy_tellmeaboutthedeaththreats.mp3" type="audio/mpeg"></audio>
+            <audio class="SoundOfVoice" controls autoplay onended="clearTheAudio(); wellForThePastMonth()"><source src="audio/nancy_tellmeaboutthedeaththreats.mp3" type="audio/mpeg"></audio>
             `
-
+            setVoiceVolume();
     }
     function weird() {
         document.getElementById("audio")
             .innerHTML = `
-            <audio class="SoundOfVoice" controls autoplay onended="theyreTotallyBizarre()"><source src="audio/nancy_weird.mp3" type="audio/mpeg"></audio>
+            <audio class="SoundOfVoice" controls autoplay onended="clearTheAudio(); theyreTotallyBizarre()"><source src="audio/nancy_weird.mp3" type="audio/mpeg"></audio>
             `
+            setVoiceVolume();
     }
     function haveYouEverReceived() {
         console.log('eoeoe')
         document.getElementById("audio")
             .innerHTML = `
-            <audio class="SoundOfVoice" controls autoplay onended="ohIveGottenSomeOdd()"><source src="audio/nancy_haveyoueverreceived.mp3" type="audio/mpeg"></audio>
+            <audio class="SoundOfVoice" controls autoplay onended="clearTheAudio(); ohIveGottenSomeOdd()"><source src="audio/nancy_haveyoueverreceived.mp3" type="audio/mpeg"></audio>
             `
+            setVoiceVolume();
     }
 }
