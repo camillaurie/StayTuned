@@ -65,7 +65,8 @@ body {
     left: 438px;
 }
 
-.inventory_open_gif {
+.inventory_open_gif,
+.inventory_close_gif {
     position: absolute;
 }
 

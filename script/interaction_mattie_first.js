@@ -319,7 +319,7 @@ function ohBeforeIForget() {
             <div id="inventory_gif" class="inventory_open_gif">
                 <img alt="" src="pics/sprites/inventory_opens.gif">
             </div>
-            <audio class="SoundEffects" autoplay onended="InventoryPushKeys()"">
+            <audio class="SoundEffects" autoplay onended="InventoryPushKeys()">
                 <source src="audio/Clik7.wav" type="audio/mpeg">
             </audio>`
     setEffectsVolume();
@@ -480,7 +480,7 @@ function interaction_mattie_first() {
             dialogueOptionId = event.target.id;
         }
         console.log('dodod', dialogueOptionId);
-        if (video.ended) {
+        if (video && video.ended) {
             //in case we're slow and we make our choice after the video has already ended
             myHandler();
         } else {
