@@ -36,6 +36,18 @@ function outputUpdate(value) {
     setVoiceVolume();
 }
 
+function setEffectsVolume() {
+    let effectsVolume = document.querySelector('.SoundEffects');
+    effectsVolume.volume = sliderForEffectsVolume;
+};
+
+let sliderForEffectsVolume = 0.75;
+
+function outputUpdate(value) {
+    sliderForEffectsVolume = value/100;
+    setEffectsVolume();
+}
+
 document
     .getElementById("wrapper")
     .addEventListener("click", backToMainMenu);

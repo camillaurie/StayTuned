@@ -299,52 +299,42 @@ function nancyImRunningLate() {
 }
 
 
-
-function InventoryWithKeysPicture() {
-    InventoryArray.push('Apartment_Keys');
-    document.getElementById("inventory")
-    .innerHTML = `<div class="inventory__place"><div class="inventory__keys"></div></div>`
-}
-
-let InventoryArray = [];
-
 function ohBeforeIForget() {
     document.getElementById("video")
         .innerHTML = `
-            <video class="SoundOfVoice" id="currentVideo" playsinline controls autoplay>
+            <video class="SoundOfVoice" id="currentVideo" onended="removeInventoryGif()" playsinline controls autoplay>
                 <source src="video/mattie_ohbeforeiforget.webm" type="video/webm">
-            </video>
-            `
+            </video>`
         setVoiceVolume();
         document.getElementById("wholedialogue")
             .innerHTML = `
             <p class='dialogue__character'>
                 Oh, before I forget, here's a copy of the house keys. I'm ALWAYS losing my keys, so I've got plenty of copies. I'll write the studio's address on your map. Just catch a taxicab outside, and show them the map. They'll know how to get there. 
-            </p>
-            `
+            </p>`
     document.getElementById("inventory")
-    .innerHTML = `
-    <video class="SoundEffects" onended="InventoryWithKeysPicture()" id="inventoryVideo" playsinline controls autoplay>
-        <source src="video/inventory_opens_withkeys.webm" type="video/webm">
-    </video>
-    `
+        .innerHTML = `
+            <div class="inventory__place">
+                <div id="apartmentkeys" class="inventory__keys"></div>
+            </div>
+            <div id="inventory_gif" class="inventory_open_gif">
+                <img alt="" src="pics/sprites/inventory_opens.gif">
+            </div>
+            <audio class="SoundEffects" autoplay onended="InventoryPushKeys()"">
+                <source src="audio/Clik7.wav" type="audio/mpeg">
+            </audio>`
+    setEffectsVolume();
 
     haveISpokenWithMattie = true;
 
     document.getElementById('currentVideo')
     .addEventListener('ended', exploringTheRoomDay, false);
     r = 6;
-
-    // !!!
-    //
-    //
-    //
-    // here i will have to add the real inventory
-    //
-    //
-    //
-    // !!!
 }
+
+function removeInventoryGif() {
+    document.getElementById("inventory_gif").remove();
+}
+
 function wellForThePastMonth() {
     document.getElementById("video")
         .innerHTML = `

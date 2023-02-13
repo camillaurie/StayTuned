@@ -65,11 +65,9 @@ body {
     left: 438px;
 }
 
-#inventoryVideo {
-    width: 150px;
-    height: 123px;
+.inventory_open_gif {
+    position: absolute;
 }
-
 
 .activesides {
     background-color: #ffffff40;
@@ -87,6 +85,10 @@ body {
 
 .activeleftside {
     cursor: url(../pics/sprites/glass_blue.png), w-resize;
+}
+
+.blue_keys_in_hand {
+    cursor: url(../pics/sprites/keys_blue.png), auto;
 }
 
 .game__scene {
@@ -166,6 +168,10 @@ body {
     z-index: 3;
 }
 
+.keys_in_hand {
+    cursor: url(../pics/sprites/keys_grey.png), auto;
+}
+
 .greymagnifyingleft {
     left: 0px;
 }
@@ -200,6 +206,10 @@ body {
     cursor: url(../pics/sprites/glass_red.png), zoom-in;
     background-color: #506c3866;
     position: absolute;
+}
+
+.red_keys_in_hand {
+    cursor: url(../pics/sprites/keys_red.png), auto;
 }
 
 #talkToRalph {
