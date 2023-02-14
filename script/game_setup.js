@@ -28,7 +28,7 @@ function setVoiceVolume() {
     let voiceVolume = document.querySelector('.SoundOfVoice');
     voiceVolume.volume = sliderForVoiceVolume;
 };
-
+ 
 let sliderForVoiceVolume = 0.75;
 
 function outputUpdate(value) {

@@ -450,7 +450,7 @@ function interaction_mattie_first() {
             <div class="game">
                 <div id='audio' class="game__menu">!!!</div>
                 <div id='video' class="game__scene">
-                    <video class="SoundOfVoice" id="currentVideo" onended="handleClickById()" playsinline controls autoplay >
+                    <video class="SoundOfVoice" id="currentVideo" playsinline controls autoplay >
                         <source src="video/mattie_welcome.webm" type="video/webm">
                     </video>
                 </div>
@@ -479,11 +479,10 @@ function interaction_mattie_first() {
         if (event) {
             dialogueOptionId = event.target.id;
         }
-        console.log('dodod', dialogueOptionId);
         if (video && video.ended) {
             //in case we're slow and we make our choice after the video has already ended
             myHandler();
-        } else {
+        } else if (video) {
             //in case we're fast enough to choose before the video ends
             video.addEventListener('ended', myHandler, false);
         }
@@ -681,7 +680,6 @@ function interaction_mattie_first() {
             setVoiceVolume();
     }
     function tellMeAboutTheDeath() {
-        console.log('popo')
         document.getElementById("audio")
             .innerHTML = `
             <audio class="SoundOfVoice" controls autoplay onended="clearTheAudio(); wellForThePastMonth()"><source src="audio/nancy_tellmeaboutthedeaththreats.mp3" type="audio/mpeg"></audio>

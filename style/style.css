@@ -48,6 +48,18 @@ body {
     cursor: url(../pics/sprites/pointer_red.png), pointer;
 }
 
+.arrowdown {
+    position: absolute;
+    background-color: #6aa2e24f;
+    cursor: url(../pics/sprites/arrow_down.png), pointer;
+}
+
+.arrowup {
+    position: absolute;
+    background-color: #60db3b4f;
+    cursor: url(../pics/sprites/arrow_up.png), pointer;
+}
+
 .game {
     display: flex;
     flex-wrap: wrap;

@@ -328,7 +328,6 @@ function goToADifferentScreenInMattiesHallway(event) {
             interaction_mattie_first();
         } else if (haveISpokenWithMattie == true) {
             exploringTheRoomDay();
-            roomTurning();
         }
     }
 
@@ -842,7 +841,6 @@ function knockingOnTheApartmentDoor(event) {
             </div>
         `
         if (haveISpokenWithMattie == false) {
-            console.log('haven"t spoken')
             document
                 .getElementById("frontDoorOfTheApartment")
                 .addEventListener("click", invitationIntoTheApartment);
@@ -856,21 +854,33 @@ function knockingOnTheApartmentDoor(event) {
 
 function openingApartmentWithKeys() {
     if (onHandRightNow == 'keys') {
-        i = 0;
-        exploringTheHallwayDay();
-        onHandRightNow = '';
-        closedInventoryToInventoryWithKeys();
+        document
+        .getElementById("audio")
+        .innerHTML = `
+            <audio autoplay class="SoundEffects" id="currentAudio" onended="doorToTheApartmentOpened()">
+                <source 
+                    src="audio/dooropn.wav" 
+                    type="audio/mpeg">
+            </audio>`
+        setEffectsVolume();
     } else {
         document
             .getElementById("audio")
             .innerHTML = `
-                <audio class="SoundOfVoice" id="currentAudio" autoplay controls">
+                <audio autoplay class="SoundOfVoice" id="currentAudio">
                     <source 
-                        src="audio/Ral01.wav" 
+                        src="audio/Nv18.wav" 
                         type="audio/mpeg">
                 </audio>`
         setVoiceVolume();
     }
+}
+
+function doorToTheApartmentOpened() {
+    i = 0;
+    exploringTheHallwayDay();
+    onHandRightNow = '';
+    closedInventoryToInventoryWithKeys();
 }
 
 function invitationIntoTheApartment() {

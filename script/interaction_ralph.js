@@ -136,11 +136,8 @@ function interaction_ralph() {
             myHandlerWithRalph();
         } else if (document.getElementById('video').innerHTML.includes('ralph.png')) {
             myHandlerWithRalph();
-        } else {
-            //in case we're fast enough to choose before the video ends
-            if (video) {
-                video.addEventListener('ended', myHandlerWithRalph, false);
-            }
+        } else if (video) {
+            video.addEventListener('ended', myHandlerWithRalph, false);
         }
         function myHandlerWithRalph() {
             if (dialogueOptionId == 'noThankYouJustLooking') {
