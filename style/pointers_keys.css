@@ -1,0 +1,23 @@
+.activerightside {
+    cursor: url(../pics/sprites/keys_blue.png), e-resize;
+}
+
+.activeleftside {
+    cursor: url(../pics/sprites/keys_blue.png), w-resize;
+}
+
+.game__scene {
+    cursor: url(../pics/sprites/keys_grey.png), auto;
+}
+
+.greymagnifying {
+    cursor: url(../pics/sprites/keys_grey.png), auto;
+}
+
+.redmagnifying {
+    cursor: url(../pics/sprites/keys_red.png), zoom-in;
+}
+
+#talkToRalph {
+    cursor: url(../pics/sprites/keys_red.png), zoom-in;
+}

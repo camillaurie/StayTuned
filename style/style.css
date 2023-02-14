@@ -32,16 +32,20 @@ body {
 .menu__list {
     padding: 10px;
     position: absolute;
-    top: -6px;
+    top: -14px;
     left: 100px;
 }
 
 .menu__item {
     list-style: none;
-    background-color: #ff000000;
+    background-color: #ffffff4f;
     width: 294px;
-    height: 37px;
-    margin: 10px;
+    height: 23px;
+    margin: 24px;
+}
+
+.active__point {
+    cursor: url(../pics/sprites/pointer_red.png), pointer;
 }
 
 .game {
@@ -81,19 +85,6 @@ body {
 
 .activerightside {
     left: 486px;
-    cursor: url(../pics/sprites/glass_blue.png), e-resize;
-}
-
-.activeleftside {
-    cursor: url(../pics/sprites/glass_blue.png), w-resize;
-}
-
-.game__scene {
-    cursor: url(../pics/sprites/glass_grey.png), auto;
-}
-
-.active__point {
-    cursor: url(../pics/sprites/pointer_red.png), auto;
 }
 
 ::-webkit-scrollbar {
@@ -156,7 +147,6 @@ body {
 }
 
 .greymagnifying {
-    cursor: url(../pics/sprites/glass_grey.png), auto;
     background-color: #cf10105b;
     height: 292px;
     width: 50px;
@@ -173,22 +163,6 @@ body {
     left: 486px;
 }
 
-.arrowdown {
-    background-color: #b3e77b66;
-    position: absolute;
-    cursor: url(../pics/sprites/arrow_down.png), pointer;
-}
-
-.arrowup {
-    background-color: #b3e77b66;
-    position: absolute;
-    cursor: url(../pics/sprites/arrow_up.png), pointer;
-}
-
-.slightlyleftpointer {
-    cursor: url(../pics/sprites/slightly_left.png), nw-resize;
-}
-
 .backpointer {
     cursor: url(../pics/sprites/back_away.png), s-resize;
     background-color: #d1c73d66;
@@ -196,19 +170,8 @@ body {
 }
 
 .redmagnifying {
-    cursor: url(../pics/sprites/glass_red.png), zoom-in;
     background-color: #506c3866;
     position: absolute;
-}
-
-#talkToRalph {
-    cursor: url(../pics/sprites/glass_red.png), zoom-in;
-}
-
-.activemapspot {
-    background-color: #4000ff66;
-    position: absolute;
-    cursor: url(../pics/sprites/glass_red.png), pointer;
 }
 
 .volume_slider {
