@@ -319,7 +319,7 @@ function ohBeforeIForget() {
             <div id="inventory_gif" class="inventory_open_gif">
                 <img alt="" src="pics/sprites/inventory_opens.gif">
             </div>
-            <audio class="SoundEffects" autoplay onended="InventoryPushKeys()">
+            <audio class="SoundEffects" autoplay>
                 <source src="audio/Clik7.wav" type="audio/mpeg">
             </audio>`
     setEffectsVolume();

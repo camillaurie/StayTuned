@@ -88,10 +88,6 @@ body {
     cursor: url(../pics/sprites/glass_blue.png), w-resize;
 }
 
-.blue_keys_in_hand {
-    cursor: url(../pics/sprites/keys_blue.png), auto;
-}
-
 .game__scene {
     cursor: url(../pics/sprites/glass_grey.png), auto;
 }
@@ -169,10 +165,6 @@ body {
     z-index: 3;
 }
 
-.keys_in_hand {
-    cursor: url(../pics/sprites/keys_grey.png), auto;
-}
-
 .greymagnifyingleft {
     left: 0px;
 }
@@ -207,10 +199,6 @@ body {
     cursor: url(../pics/sprites/glass_red.png), zoom-in;
     background-color: #506c3866;
     position: absolute;
-}
-
-.red_keys_in_hand {
-    cursor: url(../pics/sprites/keys_red.png), auto;
 }
 
 #talkToRalph {
