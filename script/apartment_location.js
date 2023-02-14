@@ -841,9 +841,35 @@ function knockingOnTheApartmentDoor(event) {
                 "></div>
             </div>
         `
+        if (haveISpokenWithMattie == false) {
+            console.log('haven"t spoken')
+            document
+                .getElementById("frontDoorOfTheApartment")
+                .addEventListener("click", invitationIntoTheApartment);
+        } else {
+            document
+                .getElementById("frontDoorOfTheApartment")
+                .addEventListener("click", openingApartmentWithKeys);
+        }
+    }
+}
+
+function openingApartmentWithKeys() {
+    if (onHandRightNow == 'keys') {
+        i = 0;
+        exploringTheHallwayDay();
+        onHandRightNow = '';
+        closedInventoryToInventoryWithKeys();
+    } else {
         document
-        .getElementById("frontDoorOfTheApartment")
-        .addEventListener("click", invitationIntoTheApartment);
+            .getElementById("audio")
+            .innerHTML = `
+                <audio class="SoundOfVoice" id="currentAudio" autoplay controls">
+                    <source 
+                        src="audio/Ral01.wav" 
+                        type="audio/mpeg">
+                </audio>`
+        setVoiceVolume();
     }
 }
 

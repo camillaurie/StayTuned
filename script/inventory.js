@@ -59,7 +59,16 @@ document
     .addEventListener("click", openTheInventoryAgain); 
 function openTheInventoryAgain(event) {
     if (event && event.target.id == "closed_inventory_gif") {
-        inventoryContains.push('keys');
+        closedInventoryToInventoryWithKeys()
+    }
+}
+
+function killVideoOpenGif() {
+    document.getElementById('inventory_opens_video_gif').remove();
+}
+
+function closedInventoryToInventoryWithKeys() {
+    inventoryContains.push('keys');
         onHandRightNow = '';
         document.getElementById("pointers").href = "style/pointers_default.css";
         document
@@ -74,9 +83,4 @@ function openTheInventoryAgain(event) {
                 <audio class="SoundEffects" autoplay>
                     <source src="audio/Clik7.wav" type="audio/mpeg">
                 </audio>`
-    }
-}
-
-function killVideoOpenGif() {
-    document.getElementById('inventory_opens_video_gif').remove();
 }
