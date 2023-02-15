@@ -5,7 +5,7 @@ function gameSetupScreen() {
         .getElementById("wrapper")
         .innerHTML = `
             <div class="settings_screen">
-                <audio class="SoundOfVoice" id="currentAudio" autoplay loop controls">
+                <audio autoplay loop controls class="SoundOfVoice"">
                     <source 
                         src="audio/Ng01.wav" 
                         type="audio/mpeg">
@@ -14,10 +14,16 @@ function gameSetupScreen() {
                 <input class="volume_slider volume_slider__voice" type="range" min="0" max="100" value="75" id="fader" step="1" oninput="outputUpdateVoice(value)">
             </div>
             <div class="music_volume">
-                
+                <audio autoplay loop controls class="SoundOfMusic"">
+                    <source 
+                        src="audio/music__STFD.wav" 
+                        type="audio/mpeg">
+                    </source>
+                </audio> 
+                <input class="volume_slider volume_slider__music" type="range" min="0" max="100" value="75" id="fader" step="1" oninput="outputUpdateMusic(value)">
             </div>
             <div class="effects_volume">
-                <audio class="SoundEffects" id="currentAudio" autoplay loop controls">
+                <audio autoplay loop controls class="SoundEffects"">
                     <source 
                         src="audio/LIDOFF.wav" 
                         type="audio/mpeg">
@@ -28,31 +34,53 @@ function gameSetupScreen() {
             <div id="backToMainMenu" class="backToMainMenu active__point"></div>
         </div>`
     setVoiceVolume();
+    setEffectsVolume();
+    setMusicVolume();
 }
+
+
+
+let sliderForVoiceVolume = 0.75;
 
 function setVoiceVolume() {
     let voiceVolume = document.querySelector('.SoundOfVoice');
     voiceVolume.volume = sliderForVoiceVolume;
 };
- 
-let sliderForVoiceVolume = 0.75;
 
 function outputUpdateVoice(value) {
     sliderForVoiceVolume = value/100;
     setVoiceVolume();
 }
 
+
+
+let sliderForEffectsVolume = 0.75;
+
 function setEffectsVolume() {
     let effectsVolume = document.querySelector('.SoundEffects');
     effectsVolume.volume = sliderForEffectsVolume;
 };
 
-let sliderForEffectsVolume = 0.75;
-
 function outputUpdateEffects(value) {
     sliderForEffectsVolume = value/100;
     setEffectsVolume();
 }
+
+
+
+let sliderForMusicVolume = 0.75;
+
+function setMusicVolume() {
+    let musicVolume = document.querySelector('.SoundOfMusic');
+    musicVolume.volume = sliderForMusicVolume;
+};
+
+function outputUpdateMusic(value) {
+    sliderForMusicVolume = value/100;
+    setMusicVolume();
+}
+
+
 
 document
     .getElementById("wrapper")

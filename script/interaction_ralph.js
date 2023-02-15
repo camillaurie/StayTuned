@@ -13,7 +13,7 @@ function signTheListScreen1() {
         `
     document.getElementById("audio")
         .innerHTML = `
-        <audio class="SoundOfVoice" onended="getCloserToLogInPaper();" controls autoplay><source src="audio/Ral05.wav" type="audio/mpeg"></audio>
+        <audio controls autoplay class="SoundOfVoice" onended="getCloserToLogInPaper();"><source src="audio/Ral05.wav" type="audio/mpeg"></audio>
         `;
         setVoiceVolume();
     z = 17;
@@ -41,7 +41,7 @@ function signThePaper() {
             </p>`;
     document.getElementById("audio")
         .innerHTML = `
-            <audio class="SoundOfVoice" onended="RalphJustLetUsIn();" controls autoplay><source src="audio/Ral07.wav" type="audio/mpeg"></audio>`;
+            <audio controls autoplay class="SoundOfVoice" onended="RalphJustLetUsIn();"><source src="audio/Ral07.wav" type="audio/mpeg"></audio>`;
             setVoiceVolume();
     document.getElementById("video")
         .innerHTML = `
@@ -166,7 +166,7 @@ function interaction_ralph() {
     function yesMattieJensenLeftAVisitorsPassForMe() {
         document.getElementById("audio")
             .innerHTML = `
-            <audio class="SoundOfVoice" controls autoplay onended="clearTheAudio(); hereYouAre()"><source src="audio/Ng01.wav" type="audio/mpeg"></audio>
+            <audio controls autoplay class="SoundOfVoice" onended="clearTheAudio(); hereYouAre()"><source src="audio/Ng01.wav" type="audio/mpeg"></audio>
             `
             setVoiceVolume();
     }

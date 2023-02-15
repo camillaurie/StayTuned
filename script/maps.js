@@ -14,6 +14,8 @@ function goToMap(event) {
                 map3();
             }
         }
+        currentMusicFile.innerHTML = musicOnTheMapScreen;
+        setMusicVolume();
     }
 }
 
@@ -38,7 +40,7 @@ function map2() {
     document
     .getElementById("video")
     .innerHTML = `
-        <div class="map1logics" style="position: relative;">
+        <div class="map2logics" style="position: relative;">
             <img src="pics/map2.png">
             <div class="redmagnifying" id="fromMapGoToTheApartment" style="
                 height: 90px;
@@ -59,7 +61,7 @@ function map3() {
     document
     .getElementById("video")
     .innerHTML = `
-        <div class="map1logics" style="position: relative;">
+        <div class="map3logics" style="position: relative;">
             <img src="pics/map3.png">
             <div class="redmagnifying" id="fromMapGoToTheApartment" style="
                 height: 90px;

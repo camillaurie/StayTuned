@@ -23,6 +23,8 @@ function seeingTheStudioEntrance(event) {
 };
 
 function getInsideTheStudio() {
+    currentMusicFile.innerHTML = musicInTheStudio;
+    setMusicVolume();
     s = 0;
     document
         .getElementById("video")
@@ -716,7 +718,7 @@ function goToADifferentScreenInStudioHalf(event) {
             document
                 .getElementById("audio")
                 .innerHTML = `
-                    <audio class="SoundOfVoice" onended="clearTheDialogueBox();" id="currentAudio" autoplay controls">
+                    <audio autoplay controls class="SoundOfVoice" onended="clearTheDialogueBox();" id="currentAudio">
                     <source 
                         src="audio/Pap01.wav" 
                         type="audio/mpeg">
@@ -735,7 +737,7 @@ function goToADifferentScreenInStudioHalf(event) {
         document
         .getElementById("audio")
         .innerHTML = `
-            <audio class="SoundOfVoice" onended="interaction_ralph()" id="currentAudio" autoplay controls">
+            <audio autoplay controls class="SoundOfVoice" onended="interaction_ralph()" id="currentAudio">
             <source 
                 src="audio/Ral01.wav" 
                 type="audio/mpeg">

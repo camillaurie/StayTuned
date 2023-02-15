@@ -3,10 +3,28 @@ html {
     font-family: 'Inconsolata', monospace;
 }
 
+#game_music {
+    position: absolute;
+    top: 481px;
+    left: 3px;
+    width: 100px;
+    height: 100px;
+    background-color: #d2b0b0;
+    /* it will have to be deleted */
+}
+
 audio {
     position: absolute;
-    top: 290px;
     /* it will have to be deleted */
+}
+
+.SoundOfVoice {
+    top: 540px;
+}
+
+.SoundEffects {
+    top: 510px;
+    left: 335px;
 }
 
 body {
@@ -195,6 +213,11 @@ body {
 
 .volume_slider__voice {
     top: 57px;
+    left: 144px;
+}
+
+.volume_slider__music {
+    top: 104px;
     left: 144px;
 }
 
