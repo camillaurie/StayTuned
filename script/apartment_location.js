@@ -1347,12 +1347,132 @@ function goToADifferentScreenInMattiesRoom(event) {
         .innerHTML = `
         <div class="thisScreenThisTime">
         <img src="pics/apartment/MD3E_0.png">
+        <div class="redmagnifying" id="MD6W_0" style="
+            height: 110px;
+            width: 146px;
+            left: 110px;
+            top: 115px;
+        "></div>
+        <div class="redmagnifying" id="MD3C_0" style="
+            height: 145px;
+            width: 156px;
+            left: 340px;
+            top: 25px;
+        "></div>
         <div class="backpointer" id="goBackToSpinningRoom" style="
             height: 67px;
             width: 536px;
             left: 0px;
             top: 225px;
         "></div>`    
+    }
+    if (event && event.target.id == 'MD3C_0') {
+        document
+            .getElementById("video")
+            .innerHTML = `
+            <div class="thisScreenThisTime">
+            <img src="pics/apartment/MD3C_0.png">
+            <div class="backpointer" id="MD3E_0" style="
+                height: 58px;
+                width: 536px;
+                left: 0px;
+                top: 234px;
+            "></div>
+            <div class="redmagnifying" id="MD3A_0" style="
+                height: 210px;
+                width: 206px;
+                left: 150px;
+                top: 15px;
+            "></div>`    
+    }
+    if (event && event.target.id == 'MD3A_0') {
+        document
+            .getElementById("video")
+            .innerHTML = `
+            <div class="thisScreenThisTime">
+            <img src="pics/apartment/MD3A_0.png">
+            <div class="backpointer" id="MD3C_0" style="
+                height: 58px;
+                width: 536px;
+                left: 0px;
+                top: 234px;
+            "></div>
+            <div class="redmagnifying" id="MD3G_0" style="
+                height: 210px;
+                width: 206px;
+                left: 150px;
+                top: 15px;
+            "></div>`    
+    }
+    if (event && event.target.id == 'MD6W_0') {
+        document
+            .getElementById("video")
+            .innerHTML = `
+            <div class="thisScreenThisTime">
+            <img src="pics/apartment/MD6W_0.png">
+            <div class="backpointer" id="MD3E_0" style="
+                height: 58px;
+                width: 536px;
+                left: 0px;
+                top: 234px;
+            "></div>
+            <div class="redmagnifying" id="MD6X_0" style="
+                height: 210px;
+                width: 206px;
+                left: 150px;
+                top: 15px;
+            "></div>`    
+    }
+    if (event && event.target.id == 'MD6X_0') {
+        document
+            .getElementById("video")
+            .innerHTML = `
+            <div class="thisScreenThisTime">
+            <img src="pics/apartment/MD6X_0.png">
+            <div class="redmagnifying" id="MD6Y_0" style="
+                height: 202px;
+                width: 185px;
+                left: 299px;
+                top: 26px;
+            "></div>
+            <div class="redmagnifying" id="MD6W_0" style="
+                height: 218px;
+                width: 146px;
+                left: 32px;
+                top: 42px;
+            "></div>`    
+    }
+    if (event && event.target.id == 'MD6Y_0') {
+        document
+            .getElementById("video")
+            .innerHTML = `
+            <div class="thisScreenThisTime">
+            <img src="pics/apartment/MD6Y_0.png">
+            <div class="redmagnifying" id="MD6Z_0" style="
+                height: 202px;
+                width: 185px;
+                left: 299px;
+                top: 26px;
+            "></div>
+            <div class="redmagnifying" id="MD6X_0" style="
+                height: 218px;
+                width: 146px;
+                left: 32px;
+                top: 42px;
+            "></div>`    
+    }
+    if (event && event.target.id == 'MD6Z_0') {
+        document
+            .getElementById("video")
+            .innerHTML = `
+            <div class="thisScreenThisTime">
+            <img src="pics/apartment/MD6Z_0.png">
+            <div class="redmagnifying" id="MD6Y_0" style="
+                height: 218px;
+                width: 146px;
+                left: 32px;
+                top: 42px;
+            "></div>`    
     }
     if (event && event.target.id == 'MD6V_0') {
     document
