@@ -188,11 +188,19 @@ body {
 
 .volume_slider {
     position: absolute;
-    top: 57px;
-    left: 144px;
     width: 90px;
     -webkit-appearance: none;
     background: none;
+}
+
+.volume_slider__voice {
+    top: 57px;
+    left: 144px;
+}
+
+.volume_slider__effects {
+    top: 151px;
+    left: 146px;
 }
 
 .volume_slider::-webkit-slider-thumb {

@@ -5,22 +5,28 @@ function gameSetupScreen() {
         .getElementById("wrapper")
         .innerHTML = `
             <div class="settings_screen">
-                <div id="audio"></div>
-                    <audio class="SoundOfVoice" id="currentAudio" autoplay loop controls">
-                        <source 
-                            src="audio/nancy_bigapple.mp3" 
-                            type="audio/mpeg">
-                    </audio> 
-                    <input class="volume_slider volume_slider__voice" type="range" min="0" max="100" value="75" id="fader" step="1" oninput="outputUpdate(value)">
-                </div>
-                <div class="music_volume">
+                <audio class="SoundOfVoice" id="currentAudio" autoplay loop controls">
+                    <source 
+                        src="audio/Ng01.wav" 
+                        type="audio/mpeg">
+                    </source>
+                </audio> 
+                <input class="volume_slider volume_slider__voice" type="range" min="0" max="100" value="75" id="fader" step="1" oninput="outputUpdateVoice(value)">
+            </div>
+            <div class="music_volume">
                 
-                </div>
-                <div class="effects_volume">
-                
-                </div>
-                <div id="backToMainMenu" class="backToMainMenu active__point"></div>
-            </div>`
+            </div>
+            <div class="effects_volume">
+                <audio class="SoundEffects" id="currentAudio" autoplay loop controls">
+                    <source 
+                        src="audio/LIDOFF.wav" 
+                        type="audio/mpeg">
+                    </source>
+                </audio> 
+                <input class="volume_slider volume_slider__effects" type="range" min="0" max="100" value="75" id="fader" step="1" oninput="outputUpdateEffects(value)">
+            </div>
+            <div id="backToMainMenu" class="backToMainMenu active__point"></div>
+        </div>`
     setVoiceVolume();
 }
 
@@ -31,7 +37,7 @@ function setVoiceVolume() {
  
 let sliderForVoiceVolume = 0.75;
 
-function outputUpdate(value) {
+function outputUpdateVoice(value) {
     sliderForVoiceVolume = value/100;
     setVoiceVolume();
 }
@@ -43,7 +49,7 @@ function setEffectsVolume() {
 
 let sliderForEffectsVolume = 0.75;
 
-function outputUpdate(value) {
+function outputUpdateEffects(value) {
     sliderForEffectsVolume = value/100;
     setEffectsVolume();
 }
