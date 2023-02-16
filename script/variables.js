@@ -1,5 +1,6 @@
-let haveISpokenWithMattie = false; // default is false
-let noteNextToThePhone = 'Ned';
-let doIKnowDwaynePlace = false; // default is false
-let hasWilliamPappasComplained = false;
-let onHandRightNow = '';
+let haveISpokenWithMattie = false; // false
+let noteNextToThePhone = 'Ned'; // Ned
+let doIKnowDwaynePlace = false; // false
+let hasWilliamPappasComplained = false; // false
+let onHandRightNow = ''; // ''
+let doIHaveAVisitorsPass = false // false

@@ -49,6 +49,10 @@ function signThePaper() {
 }
 
 function hereYouAre() {
+    document.getElementById("inventoryclicksound").play();
+    document.querySelector('.inventory__place').innerHTML = passInInventory + document.querySelector('.inventory__place').innerHTML;
+    inventoryContains.push('pass');
+    console.log(inventoryContains);
     document.getElementById("video")
         .innerHTML = `
         <video class="SoundOfVoice" onplaying="setVoiceVolume()" onended="signTheListScreen1()" id="currentVideo" playsinline controls autoplay>

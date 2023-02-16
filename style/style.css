@@ -18,6 +18,12 @@ audio {
     /* it will have to be deleted */
 }
 
+#inventoryclicksound {
+    top: 290px;
+    left: -100px;
+    /* it will have to be deleted */
+}
+
 .SoundOfVoice {
     top: 540px;
 }
@@ -246,9 +252,12 @@ body {
 
 .inventory__place {
     position: absolute;
+    display: flex;
+    flex-wrap: wrap;
     background-color: #000000;
     width: 150px;
     height: 123px;
+    padding-top: 3px;
 }
 
 .inventory__keys {
@@ -256,9 +265,22 @@ body {
     background-repeat: no-repeat;
     width: 69px;
     height: 57px;
-    margin: 5px;
 }
 
 .inventory__keys:hover {
     background: url("../pics/sprites/apartment_keys_in_inventory_hover.png");
+}
+
+.inventory__visitors_pass {
+    background: url("../pics/sprites/visitorspassinside.png");
+    background-repeat: no-repeat;
+    width: 69px;
+    height: 57px;
+}
+
+.inventory__visitors_pass:hover {
+    background: url("../pics/sprites/visitorspassinsidehover.png");
+    background-repeat: no-repeat;
+    width: 69px;
+    height: 57px;
 }

@@ -397,7 +397,7 @@ function RalphJustLetUsIn() {
         .innerHTML = `
             <div class="thisScreenThisTime">
             <img src="pics/studio_hallways/SE1R_0.png">
-            <div class="backpointer" id="!!!" style="
+            <div class="backpointer" onclick="s = 0; exploringTheStudioDay()" style="
                 height: 67px;
                 width: 536px;
                 left: 0px;

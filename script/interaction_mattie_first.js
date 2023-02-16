@@ -313,13 +313,13 @@ function ohBeforeIForget() {
             </p>`
     document.getElementById("inventory")
         .innerHTML = `
-            <div class="inventory__place">
-                <div id="apartmentkeys" class="inventory__keys"></div>
+            <div id="inventory__place" class="inventory__place">
+                <div id="apartmentkeys" class="inventory__item inventory__keys"></div>
             </div>
             <div id="inventory_gif" class="inventory_open_gif">
                 <img alt="" src="pics/sprites/inventory_opens.gif">
             </div>
-            <audio class="SoundEffects" autoplay>
+            <audio controls id="inventoryclicksound" class="SoundEffects" autoplay>
                 <source src="audio/Clik7.wav" type="audio/mpeg">
             </audio>`
     setEffectsVolume();
