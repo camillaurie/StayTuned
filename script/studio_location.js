@@ -479,58 +479,44 @@ function goToADifferentScreenInStudioHalf(event) {
                 "></div>`;
     };
 
-    if (event && event.target.id == 'SE1J_0') {
+    if (event && event.target.id == 'SE1J_0_fromInside') {
         document
-            .getElementById("video")
+            .getElementById("audio")
             .innerHTML = `
-                <div class="thisScreenThisTime">
-                <img src="pics/studio_hallways/SE1J_0.png">
-                <div class="redmagnifying" id="SE1K_0" style="
-                    height: 225px;
-                    width: 224px;
-                    top: 0px;
-                    left: 150px;
-                "></div>
-                <div class="backpointer" id="SE1H_0" style="
-                    height: 67px;
-                    width: 536px;
-                    left: 0px;
-                    top: 225px;
-                "></div>`;
+                <audio autoplay controls onended="magazine2Cover();" class="SoundEffects" id="currentAudio"">
+                    <source 
+                        src="audio/Magazine.wav" 
+                        type="audio/mpeg">
+                </audio>`
+        setEffectsVolume();
+    };
+
+    if (event && event.target.id == 'SE1J_0') {
+        magazine2Cover();
     };
 
     if (event && event.target.id == 'SE1K_0') {
         document
-            .getElementById("video")
+            .getElementById("audio")
             .innerHTML = `
-                <div class="thisScreenThisTime">
-                <img src="pics/studio_hallways/SE1K_0.png">
-                <div class="redmagnifying" id="SE1L_0" style="
-                    height: 292px;
-                    width: 129px;
-                    top: 0px;
-                    left: 348px;
-                "></div>
-                <div class="redmagnifying" id="SE1J_0" style="
-                    height: 292px;
-                    width: 70px;
-                    top: 0px;
-                    left: 60px;
-                "></div>`;
+                <audio autoplay controls onended="magazine2Page1();" class="SoundEffects" id="currentAudio"">
+                    <source 
+                        src="audio/Magazine.wav" 
+                        type="audio/mpeg">
+                </audio>`
+        setEffectsVolume();
     };
 
     if (event && event.target.id == 'SE1L_0') {
         document
-            .getElementById("video")
+            .getElementById("audio")
             .innerHTML = `
-                <div class="thisScreenThisTime">
-                <img src="pics/studio_hallways/SE1L_0.png">
-                <div class="redmagnifying" id="SE1K_0" style="
-                    height: 292px;
-                    width: 70px;
-                    top: 0px;
-                    left: 60px;
-                "></div>`;
+                <audio autoplay controls onended="magazine2Page2();" class="SoundEffects" id="currentAudio"">
+                    <source 
+                        src="audio/Magazine.wav" 
+                        type="audio/mpeg">
+                </audio>`
+        setEffectsVolume();
     };
 
     if (event && event.target.id == 'SE1G_0') {
@@ -553,58 +539,44 @@ function goToADifferentScreenInStudioHalf(event) {
                 "></div>`;
     };
 
-    if (event && event.target.id == 'SE1M_0') {
+    if (event && event.target.id == 'SE1M_0_fromInside') {
         document
-            .getElementById("video")
+            .getElementById("audio")
             .innerHTML = `
-                <div class="thisScreenThisTime">
-                <img src="pics/studio_hallways/SE1M_0.png">
-                <div class="redmagnifying" id="SE1N_0" style="
-                    height: 225px;
-                    width: 225px;
-                    top: 0px;
-                    left: 157px;
-                "></div>
-                <div class="backpointer" id="SE1G_0" style="
-                    height: 67px;
-                    width: 536px;
-                    left: 0px;
-                    top: 225px;
-                "></div>`;
+                <audio autoplay controls onended="magazineCover();" class="SoundEffects" id="currentAudio"">
+                    <source 
+                        src="audio/Magazine.wav" 
+                        type="audio/mpeg">
+                </audio>`
+                setEffectsVolume();
+    };
+
+    if (event && event.target.id == 'SE1M_0') {
+        magazineCover();
     };
 
     if (event && event.target.id == 'SE1N_0') {
         document
-            .getElementById("video")
+            .getElementById("audio")
             .innerHTML = `
-                <div class="thisScreenThisTime">
-                <img src="pics/studio_hallways/SE1N_0.png">
-                <div class="redmagnifying" id="SE1O_0" style="
-                    height: 292px;
-                    width: 129px;
-                    top: 0px;
-                    left: 358px;
-                "></div>
-                <div class="redmagnifying" id="SE1M_0" style="
-                    height: 292px;
-                    width: 70px;
-                    top: 0px;
-                    left: 50px;
-                "></div>`;
+                <audio autoplay controls onended="magazinePage1();" class="SoundEffects" id="currentAudio"">
+                    <source 
+                        src="audio/Magazine.wav" 
+                        type="audio/mpeg">
+                </audio>`
+                setEffectsVolume();
     };
 
     if (event && event.target.id == 'SE1O_0') {
         document
-            .getElementById("video")
+            .getElementById("audio")
             .innerHTML = `
-                <div class="thisScreenThisTime">
-                <img src="pics/studio_hallways/SE1O_0.png">
-                <div class="redmagnifying" id="SE1N_0" style="
-                    height: 292px;
-                    width: 130px;
-                    top: 0px;
-                    left: 48px;
-                "></div>`;
+                <audio autoplay controls onended="magazinePage2();" class="SoundEffects" id="currentAudio"">
+                    <source 
+                        src="audio/Magazine.wav" 
+                        type="audio/mpeg">
+                </audio>`
+                setEffectsVolume();
     };
     
     if (event && event.target.id == 'SE1U_0') {
@@ -737,7 +709,7 @@ function goToADifferentScreenInStudioHalf(event) {
         document
         .getElementById("audio")
         .innerHTML = `
-            <audio autoplay controls class="SoundOfVoice" onended="interaction_ralph()" id="currentAudio">
+            <audio autoplay controls class="SoundOfVoice" id="currentAudio">
             <source 
                 src="audio/Ral01.wav" 
                 type="audio/mpeg">
@@ -837,13 +809,34 @@ let SH2X_8 = `
     <img id="circlingPicture" src="pics/studio_second_circle/SH2X_8.png">`;
 
 let SH2X_9 = `
-    <img id="circlingPicture" src="pics/studio_second_circle/SH2X_9.png">`;
+    <img id="circlingPicture" src="pics/studio_second_circle/SH2X_9.png">
+    <div class="redmagnifying" onclick="s = 10; exploringTheStudioDay()" style="
+        height: 163px;
+        width: 168px;
+        top: 42px;
+        left: 50px;
+        ">
+    </div>`;
 
 let SH2X_10 = `
-    <img id="circlingPicture" src="pics/studio_second_circle/SH2X_10.png">`;
+    <img id="circlingPicture" src="pics/studio_second_circle/SH2X_10.png">
+    <div class="redmagnifying" onclick="s = 10; exploringTheStudioDay()" style="
+        height: 163px;
+        width: 168px;
+        top: 42px;
+        left: 184px;
+        ">
+    </div>`;
 
 let SH2X_11 = `
-    <img id="circlingPicture" src="pics/studio_second_circle/SH2X_11.png">`;
+    <img id="circlingPicture" src="pics/studio_second_circle/SH2X_11.png">
+    <div class="redmagnifying" onclick="s = 10; exploringTheStudioDay()" style="
+        height: 163px;
+        width: 168px;
+        top: 42px;
+        left: 318px;
+        ">
+    </div>`;
 
 let SH2X_12 = `
     <img id="circlingPicture" src="pics/studio_second_circle/SH2X_12.png">`;
@@ -884,7 +877,6 @@ function exploringTheStudio2Day() {
         .innerHTML = sequenceOfScreensInStudio2[z]; 
 };
 
-
 let z = 17;
 document
     .getElementById("wrapper")
@@ -898,10 +890,42 @@ async function startTheCycleInStudio2(event) {
         while (isSidePressed == true) {
             if (z > 18) {
                 z = -1;
-            }
+            };
             document
                 .getElementById("activelocationspot")
                 .innerHTML = sequenceOfScreensInStudio2[++z];
+            if (isTheShowOnAir == true) {
+                if (z == 16) {
+                    //
+                }
+                if (z == 17) {
+                    document
+                        .getElementById("activelocationspot")
+                        .innerHTML += `<img id="onair_17" src="pics/studio_second_circle/onair_17.png" style="
+                            position: absolute;
+                            left: 143px;
+                            top: 128px;
+                        ">`
+                }
+                if (z == 18) {
+                    document
+                        .getElementById("activelocationspot")
+                        .innerHTML += `<img id="onair_18" src="pics/studio_second_circle/onair_18.png" style="
+                            position: absolute;
+                            left: 277px;
+                            top: 129px;
+                        ">`
+                }
+                if (z == 19) {
+                    document
+                        .getElementById("activelocationspot")
+                        .innerHTML += `<img id="onair_19" src="pics/studio_second_circle/onair_19.png" style="
+                            position: absolute;
+                            left: 408px;
+                            top: 122px;
+                        ">`
+                }
+            }
             console.log(z);
             await delay(500);
         }
@@ -910,10 +934,42 @@ async function startTheCycleInStudio2(event) {
         while (isSidePressed == true) {
             if (z < 1) {
                 z = 20;
-            }
+            };
             document
                 .getElementById("activelocationspot")
                 .innerHTML = sequenceOfScreensInStudio2[--z];
+            if (isTheShowOnAir == true) {
+                if (z == 16) {
+                    //
+                }
+                if (z == 17) {
+                    document
+                        .getElementById("activelocationspot")
+                        .innerHTML += `<img id="onair_17" src="pics/studio_second_circle/onair_17.png" style="
+                            position: absolute;
+                            left: 143px;
+                            top: 128px;
+                        ">`
+                }
+                if (z == 18) {
+                    document
+                        .getElementById("activelocationspot")
+                        .innerHTML += `<img id="onair_18" src="pics/studio_second_circle/onair_18.png" style="
+                            position: absolute;
+                            left: 277px;
+                            top: 129px;
+                        ">`
+                }
+                if (z == 19) {
+                    document
+                        .getElementById("activelocationspot")
+                        .innerHTML += `<img id="onair_19" src="pics/studio_second_circle/onair_19.png" style="
+                            position: absolute;
+                            left: 408px;
+                            top: 122px;
+                        ">`
+                }
+            }
             console.log(z);
             await delay(500);
         }
@@ -1100,4 +1156,118 @@ async function startTheCycleInHalfACircleStudio(event) {
 }
 function endTheCycleInHalfACircleStudio() {
     isSidePressed = false;
+}
+
+
+
+
+function magazineCover() {
+    document
+        .getElementById("video")
+        .innerHTML = `
+            <div class="thisScreenThisTime">
+                <img src="pics/studio_hallways/SE1M_0.png">
+                <div class="redmagnifying" id="SE1N_0" style="
+                    height: 225px;
+                    width: 225px;
+                    top: 0px;
+                    left: 157px;
+                "></div>
+                <div class="backpointer" id="SE1G_0" style="
+                    height: 67px;
+                    width: 536px;
+                    left: 0px;
+                    top: 225px;
+                "></div>
+            </div>`;
+    }
+
+function magazinePage1() {
+    document
+        .getElementById("video")
+        .innerHTML = `
+            <div class="thisScreenThisTime">
+                <img src="pics/studio_hallways/SE1N_0.png">
+                <div class="redmagnifying" id="SE1O_0" style="
+                    height: 292px;
+                    width: 129px;
+                    top: 0px;
+                    left: 358px;
+                "></div>
+                <div class="redmagnifying" id="SE1M_0_fromInside" style="
+                    height: 292px;
+                    width: 70px;
+                    top: 0px;
+                    left: 50px;
+                "></div>
+            </div>`;
+}
+
+
+function magazinePage2() {
+    document
+        .getElementById("video")
+        .innerHTML = `
+            <div class="thisScreenThisTime">
+            <img src="pics/studio_hallways/SE1O_0.png">
+            <div class="redmagnifying" id="SE1N_0" style="
+                height: 292px;
+                width: 130px;
+                top: 0px;
+                left: 48px;
+            "></div>`;
+}
+
+function magazine2Page1() {
+    document
+        .getElementById("video")
+        .innerHTML = `
+            <div class="thisScreenThisTime">
+            <img src="pics/studio_hallways/SE1K_0.png">
+            <div class="redmagnifying" id="SE1L_0" style="
+                height: 292px;
+                width: 129px;
+                top: 0px;
+                left: 348px;
+            "></div>
+            <div class="redmagnifying" id="SE1J_0_fromInside" style="
+                height: 292px;
+                width: 70px;
+                top: 0px;
+                left: 60px;
+            "></div>`;
+};
+
+function magazine2Page2() {
+    document
+        .getElementById("video")
+        .innerHTML = `
+            <div class="thisScreenThisTime">
+            <img src="pics/studio_hallways/SE1L_0.png">
+            <div class="redmagnifying" id="SE1K_0" style="
+                height: 292px;
+                width: 70px;
+                top: 0px;
+                left: 60px;
+            "></div>`;
+}
+
+function magazine2Cover() {
+    document
+    .getElementById("video")
+    .innerHTML = `
+        <div class="thisScreenThisTime">
+        <img src="pics/studio_hallways/SE1J_0.png">
+        <div class="redmagnifying" id="SE1K_0" style="
+            height: 225px;
+            width: 224px;
+            top: 0px;
+            left: 150px;
+        "></div>
+        <div class="backpointer" id="SE1H_0" style="
+            height: 67px;
+            width: 536px;
+            left: 0px;
+            top: 225px;
+        "></div>`;
 }

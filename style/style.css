@@ -157,17 +157,17 @@ body {
 }
 
 .dialogue__character {
-    color: #777777;
+    color: #7b9c9c;
     padding-right: 25px;
 }
 
 .dialogue__options {
-    color: #a5a5a5;
+    color: #bdc6c6;
     padding-right: 25px;
 }
 
 .dialogue__options:hover {
-    color: #dfdfdf;
+    color: #cfd7d7;
 }
 
 #wholedialogue {

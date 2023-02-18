@@ -99,31 +99,33 @@ function wellForThePastMonthchange() {
 
 
 function interaction_ralph() {
-    if (document.getElementById("audio").innerHTML.includes('audio/Ral01.wav')) {
-        document
-            .getElementById("video")
-            .innerHTML = `
-                <img src="pics/studio_hallways/ralph.png">
-            `
-    } else {
-        document.getElementById("video")
-            .innerHTML = `
-            <video class="SoundOfVoice" id="currentVideo" playsinline controls autoplay>
-                <source src="video/ralph_canihelpyou.webm" type="video/webm">
-            </video>
-        `
-        setVoiceVolume();
-    }
+    document.getElementById("video")
+        .innerHTML = `
+        <video class="SoundOfVoice" id="currentVideo" playsinline controls autoplay>
+            <source src="video/ralph_canihelpyou.webm" type="video/webm">
+        </video>
+    `
+    setVoiceVolume();
     document.getElementById("wholedialogue")
         .innerHTML = `
             <p class="dialogue__character">Can I help you?</p>
             <p id='noThankYouJustLooking' class='dialogue__options'>
                 No, thank you - just looking.
-            </p>
-            <p id='yesMattieJensenLeftAVisitorsPassForMe' class='dialogue__options'>
-                Yes, Mattie Jensen left a visitor's pass for me. It should be listed under Nancy Drew.
-            </p>
-    `
+            </p>`
+
+            if (document.getElementById('inventory__place').innerHTML.includes('inventory__visitors_pass') == false) {
+                document.getElementById("wholedialogue")
+                    .innerHTML += `
+                        <p id='yesMattieJensenLeftAVisitorsPassForMe' class='dialogue__options'>
+                            Yes, Mattie Jensen left a visitor's pass for me. It should be listed under Nancy Drew.
+                        </p>`
+            } else {
+                document.getElementById("wholedialogue")
+                    .innerHTML += `
+                        <p id='helloHereIsMyPass' class='dialogue__options'>
+                            Hello...here is my pass.
+                        </p>`
+            }
     document
         .getElementById("wrapper")
         .addEventListener("click", handleClickWithRalph);
@@ -150,6 +152,9 @@ function interaction_ralph() {
             if (dialogueOptionId == 'yesMattieJensenLeftAVisitorsPassForMe') {
                 yesMattieJensenLeftAVisitorsPassForMe();
             }
+            if (dialogueOptionId == 'helloHereIsMyPass') {
+                helloHereIsMyPass();
+            }
         }
     }
 
@@ -174,4 +179,27 @@ function interaction_ralph() {
             `
             setVoiceVolume();
     }
+    function helloHereIsMyPass() {
+        document.getElementById("audio")
+            .innerHTML = `
+            <audio controls autoplay class="SoundOfVoice" onended="clearTheAudio(); youMayProceed()"><source src="audio/Ng04.wav" type="audio/mpeg"></audio>
+            `
+            setVoiceVolume();
+    }
+}
+
+function youMayProceed() {
+    document.getElementById("video")
+        .innerHTML = 
+        document.getElementById("video")
+            .innerHTML = `
+            <video playsinline controls autoplay class="SoundOfVoice" id="currentVideo" onended="RalphJustLetUsIn();">
+                <source src="video/ralph_hellomissdrew.webm" type="video/webm">
+            </video>`
+        setVoiceVolume();
+        document.getElementById("wholedialogue")
+            .innerHTML = `
+            <p class='dialogue__character'>
+                Hello, Ms. Drew. Thank you - you may proceed.
+            </p>`
 }

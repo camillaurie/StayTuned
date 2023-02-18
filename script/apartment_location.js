@@ -571,7 +571,7 @@ function phoneCalling(event) {
         document
         .getElementById("audio")
         .innerHTML = `
-            <audio autoplay loop controls class="SoundEffects" id="currentAudio"">
+            <audio autoplay loop controls class="SoundEffects" id="currentAudio">
             <source 
                 src="audio/DialTone.wav" 
                 type="audio/mpeg">
@@ -590,7 +590,7 @@ function phoneCalling(event) {
         document
         .getElementById("audio")
         .innerHTML = `
-            <audio autoplay controls class="SoundEffects" id="currentAudio"">
+            <audio autoplay controls class="SoundEffects" id="currentAudio">
             <source 
                 src="audio/Dial1.wav" 
                 type="audio/mpeg">
@@ -603,7 +603,7 @@ function phoneCalling(event) {
         document
         .getElementById("audio")
         .innerHTML = `
-            <audio autoplay controls class="SoundEffects" id="currentAudio"">
+            <audio autoplay controls class="SoundEffects" id="currentAudio">
             <source 
                 src="audio/Dial2.wav" 
                 type="audio/mpeg">
@@ -616,7 +616,7 @@ function phoneCalling(event) {
         document
         .getElementById("audio")
         .innerHTML = `
-            <audio autoplay controls class="SoundEffects" id="currentAudio"">
+            <audio autoplay controls class="SoundEffects" id="currentAudio">
             <source 
                 src="audio/Dial3.wav" 
                 type="audio/mpeg">
@@ -629,7 +629,7 @@ function phoneCalling(event) {
         document
         .getElementById("audio")
         .innerHTML = `
-            <audio autoplay controls class="SoundEffects" id="currentAudio"">
+            <audio autoplay controls class="SoundEffects" id="currentAudio">
             <source 
                 src="audio/Dial4.wav" 
                 type="audio/mpeg">
@@ -642,7 +642,7 @@ function phoneCalling(event) {
         document
         .getElementById("audio")
         .innerHTML = `
-            <audio autoplay controls class="SoundEffects" id="currentAudio"">
+            <audio autoplay controls class="SoundEffects" id="currentAudio">
             <source 
                 src="audio/Dial5.wav" 
                 type="audio/mpeg">
@@ -655,7 +655,7 @@ function phoneCalling(event) {
         document
         .getElementById("audio")
         .innerHTML = `
-            <audio autoplay controls class="SoundEffects" id="currentAudio"">
+            <audio autoplay controls class="SoundEffects" id="currentAudio">
             <source 
                 src="audio/Dial6.wav" 
                 type="audio/mpeg">
@@ -668,7 +668,7 @@ function phoneCalling(event) {
         document
         .getElementById("audio")
         .innerHTML = `
-            <audio autoplay controls class="SoundEffects" id="currentAudio"">
+            <audio autoplay controls class="SoundEffects" id="currentAudio">
             <source 
                 src="audio/Dial7.wav" 
                 type="audio/mpeg">
@@ -681,7 +681,7 @@ function phoneCalling(event) {
         document
         .getElementById("audio")
         .innerHTML = `
-            <audio autoplay controls class="SoundEffects" id="currentAudio"">
+            <audio autoplay controls class="SoundEffects" id="currentAudio">
             <source 
                 src="audio/Dial8.wav" 
                 type="audio/mpeg">
@@ -694,7 +694,7 @@ function phoneCalling(event) {
         document
         .getElementById("audio")
         .innerHTML = `
-            <audio autoplay controls class="SoundEffects" id="currentAudio"">
+            <audio autoplay controls class="SoundEffects" id="currentAudio">
             <source 
                 src="audio/Dial9.wav" 
                 type="audio/mpeg">
@@ -707,7 +707,7 @@ function phoneCalling(event) {
         document
         .getElementById("audio")
         .innerHTML = `
-            <audio autoplay controls class="SoundEffects" id="currentAudio"">
+            <audio autoplay controls class="SoundEffects" id="currentAudio">
             <source 
                 src="audio/Dial0.wav" 
                 type="audio/mpeg">
@@ -721,7 +721,7 @@ function phoneCalling(event) {
             document
             .getElementById("audio")
             .innerHTML = `
-                <audio autoplay controls class="SoundEffects" id="currentAudio"">
+                <audio autoplay controls class="SoundEffects" id="currentAudio">
                 <source 
                     src="audio/TelRing.wav" 
                     type="audio/mpeg">
@@ -733,7 +733,7 @@ function phoneCalling(event) {
             document
             .getElementById("audio")
             .innerHTML = `
-                <audio autoplay controls class="SoundEffects" id="currentAudio"">
+                <audio autoplay controls class="SoundEffects" id="currentAudio">
                 <source 
                     src="audio/TelRing.wav" 
                     type="audio/mpeg">
@@ -745,7 +745,7 @@ function phoneCalling(event) {
             document
             .getElementById("audio")
             .innerHTML = `
-                <audio autoplay controls class="SoundEffects"o id="currentAudio"">
+                <audio autoplay controls class="SoundEffects"o id="currentAudio">
                 <source 
                     src="audio/TelRing.wav" 
                     type="audio/mpeg">
@@ -758,7 +758,7 @@ function phoneCalling(event) {
             document
             .getElementById("audio")
             .innerHTML = `
-                <audio autoplay controls class="SoundEffects" id="currentAudio"">
+                <audio autoplay controls class="SoundEffects" id="currentAudio">
                 <source 
                     src="audio/TelRing.wav" 
                     type="audio/mpeg">
@@ -788,7 +788,7 @@ function dialAgain() {
     document
         .getElementById("audio")
         .innerHTML = `
-            <audio autoplay controls class="SoundEffects" id="currentAudio"">
+            <audio autoplay controls class="SoundEffects" id="currentAudio">
             <source 
                 src="audio/DialAgin.wav" 
                 type="audio/mpeg">
@@ -811,7 +811,7 @@ function tryDialingAgain() {
         document
         .getElementById("audio")
         .innerHTML = `
-            <audio autoplay loop controls class="SoundEffects" id="currentAudio"">
+            <audio autoplay loop controls class="SoundEffects" id="currentAudio">
             <source 
                 src="audio/DialTone.wav" 
                 type="audio/mpeg">
@@ -889,7 +889,7 @@ function invitationIntoTheApartment() {
     document
     .getElementById("audio")
     .innerHTML = `
-        <audio autoplay controls onended="currentMusicFile.innerHTML = musicInMattiesApartmentDay; setMusicVolume();" class="SoundOfVoice" id="currentAudio"">
+        <audio autoplay controls onended="currentMusicFile.innerHTML = musicInMattiesApartmentDay; setMusicVolume();" class="SoundOfVoice" id="currentAudio">
         <source 
             src="audio/mattie_comeoninnancy.mp3" 
             type="audio/mpeg">
