@@ -577,6 +577,7 @@ function phoneCalling(event) {
                 type="audio/mpeg">
             </audio> 
         `
+        setEffectsVolume();
         document.getElementById("wholedialogue")
             .innerHTML = `
                 <p class="dialogue__character">Address Book:</p>
@@ -596,6 +597,7 @@ function phoneCalling(event) {
                 type="audio/mpeg">
             </audio>
         `
+        setEffectsVolume();
         currentPhoneNumber += '1';
         console.log(currentPhoneNumber);
     }
@@ -609,6 +611,7 @@ function phoneCalling(event) {
                 type="audio/mpeg">
             </audio>
         `
+        setEffectsVolume();
         currentPhoneNumber += '2';
         console.log(currentPhoneNumber);
     }
@@ -622,6 +625,7 @@ function phoneCalling(event) {
                 type="audio/mpeg">
             </audio>
         `
+        setEffectsVolume();
         currentPhoneNumber += '3';
         console.log(currentPhoneNumber);
     }
@@ -635,6 +639,7 @@ function phoneCalling(event) {
                 type="audio/mpeg">
             </audio>
         `
+        setEffectsVolume();
         currentPhoneNumber += '4';
         console.log(currentPhoneNumber);
     }
@@ -648,6 +653,7 @@ function phoneCalling(event) {
                 type="audio/mpeg">
             </audio>
         `
+        setEffectsVolume();
         currentPhoneNumber += '5';
         console.log(currentPhoneNumber);
     }
@@ -661,6 +667,7 @@ function phoneCalling(event) {
                 type="audio/mpeg">
             </audio>
         `
+        setEffectsVolume();
         currentPhoneNumber += '6';
         console.log(currentPhoneNumber);
     }
@@ -674,6 +681,7 @@ function phoneCalling(event) {
                 type="audio/mpeg">
             </audio>
         `
+        setEffectsVolume();
         currentPhoneNumber += '7';
         console.log(currentPhoneNumber);
     }
@@ -687,6 +695,7 @@ function phoneCalling(event) {
                 type="audio/mpeg">
             </audio>
         `
+        setEffectsVolume();
         currentPhoneNumber += '8';
         console.log(currentPhoneNumber);
     }
@@ -700,6 +709,7 @@ function phoneCalling(event) {
                 type="audio/mpeg">
             </audio>
         `
+        setEffectsVolume();
         currentPhoneNumber += '9';
         console.log(currentPhoneNumber);
     }
@@ -713,6 +723,7 @@ function phoneCalling(event) {
                 type="audio/mpeg">
             </audio>
         `
+        setEffectsVolume();
         currentPhoneNumber += '0';
         console.log(currentPhoneNumber);
     }
@@ -727,6 +738,7 @@ function phoneCalling(event) {
                     type="audio/mpeg">
                 </audio>
             `
+            setEffectsVolume();
             console.log('Calling Bess');
             currentPhoneNumber = ``;
         } else if (currentPhoneNumber == '15235552583') {
@@ -739,6 +751,7 @@ function phoneCalling(event) {
                     type="audio/mpeg">
                 </audio>
             `
+            setEffectsVolume();
             console.log('Calling George');
             currentPhoneNumber = ``;
         } else if (currentPhoneNumber == '15235554357') {
@@ -751,6 +764,7 @@ function phoneCalling(event) {
                     type="audio/mpeg">
                 </audio>
             `
+            setEffectsVolume();
             console.log('Calling Ned');
             currentPhoneNumber = ``;
         } else {
@@ -764,6 +778,7 @@ function phoneCalling(event) {
                     type="audio/mpeg">
                 </audio>
             `
+            setEffectsVolume();
             currentPhoneNumber = ``;
             document.getElementById('currentAudio')
                 .addEventListener('ended', dialAgain, false);
@@ -794,6 +809,7 @@ function dialAgain() {
                 type="audio/mpeg">
             </audio>
         `
+        setEffectsVolume();
         document.getElementById('currentAudio')
             .addEventListener('ended', tryDialingAgain, false);
 }
@@ -817,6 +833,7 @@ function tryDialingAgain() {
                 type="audio/mpeg">
             </audio> 
         `
+        setEffectsVolume();
     phoneCalling();
 }
 

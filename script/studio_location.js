@@ -57,8 +57,7 @@ let SE1X_all = `
     <div id="turnleftincirclestudio1" class ="activesides activeleftside"></div>
     <div id="turnrightincirclestudio1" class ="activesides activerightside"></div>
 </div>
-<video id="talkToRalph" playsinline muted loop autoplay onclick="interaction_ralph()" style="
-    display: none;">
+<video id="talkToRalph" playsinline muted loop autoplay onclick="interaction_ralph()">
     <source src="video/ralph.webm" type="video/webm">
 </video>;`;
 
@@ -332,8 +331,8 @@ async function startTheCycleInStudio1(event) {
                 .getElementById("activelocationspot")
                 .innerHTML = sequenceOfScreensInStudio1[--s];
             console.log(s);
-            if (s == 2) {
-                if (document.getElementById("talkToRalph")) {
+            if (document.getElementById("talkToRalph")) {
+                if (s == 2) {
                     document
                         .getElementById("talkToRalph")
                         .style = `
@@ -341,32 +340,32 @@ async function startTheCycleInStudio1(event) {
                             top: 70px;
                             left: 0px;
                             width: 145px;`;
-                };
-            } else if (s == 3) {
-                document
-                    .getElementById("talkToRalph")
-                    .style = `
-                        position: absolute;
-                        top: 70px;
-                        left: 204px;
-                        width: 145px;`;
-            } else if (s == 4) {
-                document
-                    .getElementById("talkToRalph")
-                    .style = `
-                        position: absolute;
-                        top: 70px;
-                        left: 391px;
-                        width: 145px;`;
-            } else {
-                if (document
-                        .getElementById("talkToRalph")) {
+                } else if (s == 3) {
                     document
                         .getElementById("talkToRalph")
-                        .style = `display: none;`;
+                        .style = `
+                            position: absolute;
+                            top: 70px;
+                            left: 200px;
+                            width: 145px;`;
+                } else if (s == 4) {
+                    document
+                        .getElementById("talkToRalph")
+                        .style = `
+                            position: absolute;
+                            top: 70px;
+                            left: 391px;
+                            width: 145px;`;
+                } else {
+                    if (document
+                            .getElementById("talkToRalph")) {
+                        document
+                            .getElementById("talkToRalph")
+                            .style = `display: none;`;
+                    };
                 };
-            };
-            await delay(500);
+                await delay(500);
+            }
         }
     }
 }
@@ -380,6 +379,27 @@ function exploringTheStudioDay() {
     document
         .getElementById("video")
         .innerHTML = SE1X_all;
+    if (s == 4) {
+        document.getElementById('talkToRalph').style = `
+            position: absolute;
+            top: 70px;
+            left: 391px;
+            width: 145px;`;
+    } else if (s == 3) {
+        document.getElementById('talkToRalph').style = `
+            position: absolute;
+            top: 70px;
+            left: 200px;
+            width: 145px;`;
+    } else if (s == 2) {
+        document.getElementById('talkToRalph').style = `
+            position: absolute;
+            top: 70px;
+            left: 0px;
+            width: 145px;`;
+    } else {
+        document.getElementById('talkToRalph').style = `display: none;`
+    }
     document
         .getElementById("activelocationspot")
         .innerHTML = sequenceOfScreensInStudio1[s]; 
