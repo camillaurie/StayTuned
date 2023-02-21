@@ -410,7 +410,7 @@ function RalphJustLetUsIn() {
         .getElementById("wholedialogue")
         .innerHTML = ``;
     document
-        .getElementById("audio")
+        .getElementById("media_elements")
         .innerHTML = ``;
     document
         .getElementById("video")
@@ -501,7 +501,7 @@ function goToADifferentScreenInStudioHalf(event) {
 
     if (event && event.target.id == 'SE1J_0_fromInside') {
         document
-            .getElementById("audio")
+            .getElementById("media_elements")
             .innerHTML = `
                 <audio autoplay controls onended="magazine2Cover();" class="SoundEffects" id="currentAudio"">
                     <source 
@@ -517,7 +517,7 @@ function goToADifferentScreenInStudioHalf(event) {
 
     if (event && event.target.id == 'SE1K_0') {
         document
-            .getElementById("audio")
+            .getElementById("media_elements")
             .innerHTML = `
                 <audio autoplay controls onended="magazine2Page1();" class="SoundEffects" id="currentAudio"">
                     <source 
@@ -529,7 +529,7 @@ function goToADifferentScreenInStudioHalf(event) {
 
     if (event && event.target.id == 'SE1L_0') {
         document
-            .getElementById("audio")
+            .getElementById("media_elements")
             .innerHTML = `
                 <audio autoplay controls onended="magazine2Page2();" class="SoundEffects" id="currentAudio"">
                     <source 
@@ -561,7 +561,7 @@ function goToADifferentScreenInStudioHalf(event) {
 
     if (event && event.target.id == 'SE1M_0_fromInside') {
         document
-            .getElementById("audio")
+            .getElementById("media_elements")
             .innerHTML = `
                 <audio autoplay controls onended="magazineCover();" class="SoundEffects" id="currentAudio"">
                     <source 
@@ -577,7 +577,7 @@ function goToADifferentScreenInStudioHalf(event) {
 
     if (event && event.target.id == 'SE1N_0') {
         document
-            .getElementById("audio")
+            .getElementById("media_elements")
             .innerHTML = `
                 <audio autoplay controls onended="magazinePage1();" class="SoundEffects" id="currentAudio"">
                     <source 
@@ -589,7 +589,7 @@ function goToADifferentScreenInStudioHalf(event) {
 
     if (event && event.target.id == 'SE1O_0') {
         document
-            .getElementById("audio")
+            .getElementById("media_elements")
             .innerHTML = `
                 <audio autoplay controls onended="magazinePage2();" class="SoundEffects" id="currentAudio"">
                     <source 
@@ -708,7 +708,7 @@ function goToADifferentScreenInStudioHalf(event) {
         exploringTheHalfCircleDay();
         if (hasWilliamPappasComplained == false) {
             document
-                .getElementById("audio")
+                .getElementById("media_elements")
                 .innerHTML = `
                     <audio autoplay controls class="SoundOfVoice" onended="clearTheDialogueBox();" id="currentAudio">
                     <source 
@@ -727,7 +727,7 @@ function goToADifferentScreenInStudioHalf(event) {
     
     if (event && event.target.id == 'beStoppedByRalph') {
         document
-        .getElementById("audio")
+        .getElementById("media_elements")
         .innerHTML = `
             <audio autoplay controls class="SoundOfVoice" id="currentAudio">
             <source 
@@ -1005,7 +1005,7 @@ function clearTheDialogueBox() {
 }
 
 function clearTheAudio() {
-    document.getElementById("audio")
+    document.getElementById("media_elements")
     .innerHTML = ``;
 }
 

@@ -407,7 +407,7 @@ function goToADifferentScreenInMattiesHallway(event) {
 
     if (event && event.target.id == 'ME1L_0') {
         document
-            .getElementById("audio")
+            .getElementById("media_elements")
             .innerHTML = ``;
         document.getElementById("wholedialogue")
             .innerHTML = ``;
@@ -569,9 +569,9 @@ function phoneCalling(event) {
     if (event && event.target.id == 'ME1M_0')  {
         currentPhoneNumber = '';
         document
-        .getElementById("audio")
+        .getElementById("media_elements")
         .innerHTML = `
-            <audio autoplay loop controls class="SoundEffects" id="currentAudio">
+            <audio autoplay loop controls class="PersistentSoundEffects SoundEffects" id="currentAudio">
             <source 
                 src="audio/DialTone.wav" 
                 type="audio/mpeg">
@@ -589,7 +589,7 @@ function phoneCalling(event) {
     }
     if (event && event.target.id == 'phoneButton1') {
         document
-        .getElementById("audio")
+        .getElementById("media_elements")
         .innerHTML = `
             <audio autoplay controls class="SoundEffects" id="currentAudio">
             <source 
@@ -603,7 +603,7 @@ function phoneCalling(event) {
     }
     if (event && event.target.id == 'phoneButton2') {
         document
-        .getElementById("audio")
+        .getElementById("media_elements")
         .innerHTML = `
             <audio autoplay controls class="SoundEffects" id="currentAudio">
             <source 
@@ -617,7 +617,7 @@ function phoneCalling(event) {
     }
     if (event && event.target.id == 'phoneButton3') {
         document
-        .getElementById("audio")
+        .getElementById("media_elements")
         .innerHTML = `
             <audio autoplay controls class="SoundEffects" id="currentAudio">
             <source 
@@ -631,7 +631,7 @@ function phoneCalling(event) {
     }
     if (event && event.target.id == 'phoneButton4') {
         document
-        .getElementById("audio")
+        .getElementById("media_elements")
         .innerHTML = `
             <audio autoplay controls class="SoundEffects" id="currentAudio">
             <source 
@@ -645,7 +645,7 @@ function phoneCalling(event) {
     }
     if (event && event.target.id == 'phoneButton5') {
         document
-        .getElementById("audio")
+        .getElementById("media_elements")
         .innerHTML = `
             <audio autoplay controls class="SoundEffects" id="currentAudio">
             <source 
@@ -659,7 +659,7 @@ function phoneCalling(event) {
     }
     if (event && event.target.id == 'phoneButton6') {
         document
-        .getElementById("audio")
+        .getElementById("media_elements")
         .innerHTML = `
             <audio autoplay controls class="SoundEffects" id="currentAudio">
             <source 
@@ -673,7 +673,7 @@ function phoneCalling(event) {
     }
     if (event && event.target.id == 'phoneButton7') {
         document
-        .getElementById("audio")
+        .getElementById("media_elements")
         .innerHTML = `
             <audio autoplay controls class="SoundEffects" id="currentAudio">
             <source 
@@ -687,7 +687,7 @@ function phoneCalling(event) {
     }
     if (event && event.target.id == 'phoneButton8') {
         document
-        .getElementById("audio")
+        .getElementById("media_elements")
         .innerHTML = `
             <audio autoplay controls class="SoundEffects" id="currentAudio">
             <source 
@@ -701,7 +701,7 @@ function phoneCalling(event) {
     }
     if (event && event.target.id == 'phoneButton9') {
         document
-        .getElementById("audio")
+        .getElementById("media_elements")
         .innerHTML = `
             <audio autoplay controls class="SoundEffects" id="currentAudio">
             <source 
@@ -715,7 +715,7 @@ function phoneCalling(event) {
     }
     if (event && event.target.id == 'phoneButton0') {
         document
-        .getElementById("audio")
+        .getElementById("media_elements")
         .innerHTML = `
             <audio autoplay controls class="SoundEffects" id="currentAudio">
             <source 
@@ -730,7 +730,7 @@ function phoneCalling(event) {
     if (currentPhoneNumber && currentPhoneNumber.length == 11) {
         if (currentPhoneNumber == '15235554468') {
             document
-            .getElementById("audio")
+            .getElementById("media_elements")
             .innerHTML = `
                 <audio autoplay controls class="SoundEffects" id="currentAudio">
                 <source 
@@ -743,7 +743,7 @@ function phoneCalling(event) {
             currentPhoneNumber = ``;
         } else if (currentPhoneNumber == '15235552583') {
             document
-            .getElementById("audio")
+            .getElementById("media_elements")
             .innerHTML = `
                 <audio autoplay controls class="SoundEffects" id="currentAudio">
                 <source 
@@ -756,7 +756,7 @@ function phoneCalling(event) {
             currentPhoneNumber = ``;
         } else if (currentPhoneNumber == '15235554357') {
             document
-            .getElementById("audio")
+            .getElementById("media_elements")
             .innerHTML = `
                 <audio autoplay controls class="SoundEffects"o id="currentAudio">
                 <source 
@@ -770,7 +770,7 @@ function phoneCalling(event) {
         } else {
             console.log("wrong number")
             document
-            .getElementById("audio")
+            .getElementById("media_elements")
             .innerHTML = `
                 <audio autoplay controls class="SoundEffects" id="currentAudio">
                 <source 
@@ -801,7 +801,7 @@ function dialAgain() {
             </p>
         `
     document
-        .getElementById("audio")
+        .getElementById("media_elements")
         .innerHTML = `
             <audio autoplay controls class="SoundEffects" id="currentAudio">
             <source 
@@ -825,7 +825,7 @@ function tryDialingAgain() {
             <p class="dialogue__character">Ned Nickerson&nbsp;&nbsp;&nbsp;1-523-555-4357</p>
         `;
         document
-        .getElementById("audio")
+        .getElementById("media_elements")
         .innerHTML = `
             <audio autoplay loop controls class="SoundEffects" id="currentAudio">
             <source 
@@ -872,7 +872,7 @@ function knockingOnTheApartmentDoor(event) {
 function openingApartmentWithKeys() {
     if (onHandRightNow == 'keys') {
         document
-        .getElementById("audio")
+        .getElementById("media_elements")
         .innerHTML = `
             <audio autoplay class="SoundEffects" id="currentAudio" onended="doorToTheApartmentOpened()">
                 <source 
@@ -882,7 +882,7 @@ function openingApartmentWithKeys() {
         setEffectsVolume();
     } else {
         document
-            .getElementById("audio")
+            .getElementById("media_elements")
             .innerHTML = `
                 <audio autoplay class="SoundOfVoice" id="currentAudio">
                     <source 
@@ -904,7 +904,7 @@ function doorToTheApartmentOpened() {
 
 function invitationIntoTheApartment() {
     document
-    .getElementById("audio")
+    .getElementById("media_elements")
     .innerHTML = `
         <audio autoplay controls onended="currentMusicFile.innerHTML = musicInMattiesApartmentDay; setMusicVolume();" class="SoundOfVoice" id="currentAudio">
         <source 
@@ -1362,26 +1362,28 @@ function goToADifferentScreenInMattiesRoom(event) {
     document
         .getElementById("video")
         .innerHTML = `
-        <div class="thisScreenThisTime">
-        <img src="pics/apartment/MD3E_0.png">
-        <div class="redmagnifying" id="MD6W_0" style="
-            height: 110px;
-            width: 146px;
-            left: 110px;
-            top: 115px;
-        "></div>
-        <div class="redmagnifying" id="MD3C_0" style="
-            height: 145px;
-            width: 156px;
-            left: 340px;
-            top: 25px;
-        "></div>
-        <div class="backpointer" id="goBackToSpinningRoom" style="
-            height: 67px;
-            width: 536px;
-            left: 0px;
-            top: 225px;
-        "></div>`    
+            <div class="thisScreenThisTime">
+                <img src="pics/apartment/MD3E_0.png">
+                <div class="redmagnifying" id="MD6W_0" style="
+                    height: 110px;
+                    width: 146px;
+                    left: 110px;
+                    top: 115px;
+                "></div>
+                <div class="redmagnifying" id="MD3C_0" style="
+                    height: 145px;
+                    width: 156px;
+                    left: 340px;
+                    top: 25px;
+                "></div>
+                <div class="backpointer" id="goBackToSpinningRoom" style="
+                    height: 67px;
+                    width: 536px;
+                    left: 0px;
+                    top: 225px;
+                "></div>
+            </div>
+        `    
     }
     if (event && event.target.id == 'MD3C_0') {
         document

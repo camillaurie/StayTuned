@@ -13,19 +13,21 @@
     </head>
 
     <body>
+        <div id="media_elements"></div>
         <div id="game_music"></div>
-        <div id="wrapper">
+        <div id="wrapper"></div>
+        <div id="gameSetupScreen" style="display: none;"></div>
+        <div id="menu">
             <div class="menu__screen">
-                <img alt="" src="pics/MAIN_MENU_1.png">
+                <img id="main_menu_bg" alt="" src="pics/MAIN_MENU_1.png">
                 <ul class="menu__list">
                     <li id="NewGame" class="active__point menu__item new-game"></li>
                     <li class="active__point menu__item load-and-save"></li>
-                    <li class="menu__item continue-game"></li>
+                    <li id="continue_game" class="menu__item continue_game"></li>
                     <li class="active__point menu__item second-chance"></li>
                     <li id ="game-setup" class="active__point menu__item game-setup"></li>
                     <li class="active__point menu__item credits-menu"></li>
                     <li class="active__point menu__item help-menu"></li>
-                    <li class="active__point menu__item more-nancy-drew"></li>
                     <li class="active__point menu__item exit-game"></li>
                 </ul>
             </div>

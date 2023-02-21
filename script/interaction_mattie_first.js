@@ -448,7 +448,7 @@ function interaction_mattie_first() {
         .getElementById("wrapper")
         .innerHTML = `
             <div class="game">
-                <div id='audio' class="game__menu">!!!</div>
+                <div id="menu_button" class="game__menu"></div>
                 <div id='video' class="game__scene">
                     <video class="SoundOfVoice" id="currentVideo" controls autoplay >
                         <source src="video/mattie_welcome.webm" type="video/webm">
@@ -553,21 +553,21 @@ function interaction_mattie_first() {
 
 
     function letters1() {
-        document.getElementById("audio")
+        document.getElementById("media_elements")
             .innerHTML = `
             <audio controls autoplay class="SoundOfVoice" onended="clearTheAudio(); wellTheFirstOnes1()"><source src="audio/Nma07.wav" type="audio/mpeg"></audio>
             `
             setVoiceVolume();
     }
     function letters2() {
-        document.getElementById("audio")
+        document.getElementById("media_elements")
             .innerHTML = `
             <audio controls autoplay class="SoundOfVoice" onended="clearTheAudio(); wellTheFirstOnes2()"><source src="audio/Nma07.wav" type="audio/mpeg"></audio>
             `
             setVoiceVolume();
     }
     function letters3() {
-        document.getElementById("audio")
+        document.getElementById("media_elements")
             .innerHTML = `
             <audio controls autoplay class="SoundOfVoice" onended="clearTheAudio(); wellTheFirstOnes3()"><source src="audio/Nma07.wav" type="audio/mpeg"></audio>
             `
@@ -576,28 +576,28 @@ function interaction_mattie_first() {
 
 
     function police() {
-        document.getElementById("audio")
+        document.getElementById("media_elements")
             .innerHTML = `
             <audio controls autoplay class="SoundOfVoice" onended="clearTheAudio(); noAndThatsTheProblem0()"><source src="audio/Nma11.wav" type="audio/mpeg"></audio>
             `
             setVoiceVolume();
     }
     function policeafterletters() {
-        document.getElementById("audio")
+        document.getElementById("media_elements")
             .innerHTML = `
             <audio controls autoplay class="SoundOfVoice" onended="clearTheAudio(); noAndThatsTheProblem1()"><source src="audio/Nma11.wav" type="audio/mpeg"></audio>
             `
             setVoiceVolume();
     }
     function policeafterchocolates() {
-        document.getElementById("audio")
+        document.getElementById("media_elements")
             .innerHTML = `
             <audio controls autoplay class="SoundOfVoice" onended="clearTheAudio(); noAndThatsTheProblem2()"><source src="audio/Nma11.wav" type="audio/mpeg"></audio>
             `
             setVoiceVolume();
     }
     function policeafterchocolatesandletters() {
-        document.getElementById("audio")
+        document.getElementById("media_elements")
             .innerHTML = `
             <audio controls autoplay class="SoundOfVoice" onended="clearTheAudio(); noAndThatsTheProblem3()"><source src="audio/Nma11.wav" type="audio/mpeg"></audio>
             `
@@ -606,14 +606,14 @@ function interaction_mattie_first() {
 
 
     function lettersafterpolice() {
-        document.getElementById("audio")
+        document.getElementById("media_elements")
             .innerHTML = `
             <audio controls autoplay class="SoundOfVoice" onended="clearTheAudio(); wellTheFirstOnes4()"><source src="audio/Nma07.wav" type="audio/mpeg"></audio>
             `
             setVoiceVolume();
     }
     function chocolatesafterpolice() {
-        document.getElementById("audio")
+        document.getElementById("media_elements")
             .innerHTML = `
             <audio controls autoplay class="SoundOfVoice" onended="clearTheAudio(); ricksaMajorChocoholic4()"><source src="audio/Nma08.wav" type="audio/mpeg"></audio>
             `
@@ -622,21 +622,21 @@ function interaction_mattie_first() {
 
 
     function chocolates1() {
-        document.getElementById("audio")
+        document.getElementById("media_elements")
             .innerHTML = `
             <audio controls autoplay class="SoundOfVoice" onended="clearTheAudio(); ricksaMajorChocoholic1()"><source src="audio/Nma08.wav" type="audio/mpeg"></audio>
             `
             setVoiceVolume();
     }
     function chocolates2() {
-        document.getElementById("audio")
+        document.getElementById("media_elements")
             .innerHTML = `
             <audio controls autoplay class="SoundOfVoice" onended="clearTheAudio(); ricksaMajorChocoholic2()"><source src="audio/Nma08.wav" type="audio/mpeg"></audio>
             `
             setVoiceVolume();
     }
     function chocolates3() {
-        document.getElementById("audio")
+        document.getElementById("media_elements")
             .innerHTML = `
             <audio controls autoplay class="SoundOfVoice" onended="clearTheAudio(); ricksaMajorChocoholic3()"><source src="audio/Nma08.wav" type="audio/mpeg"></audio>
             `
@@ -645,49 +645,49 @@ function interaction_mattie_first() {
 
 
     function watch() {
-        document.getElementById("audio")
+        document.getElementById("media_elements")
             .innerHTML = `
             <audio controls autoplay class="SoundOfVoice" onended="clearTheAudio(); someoneSentHimABrokenWatch()"><source src="audio/Nma09.wav" type="audio/mpeg"></audio>
             `
             setVoiceVolume();
     }
     function teleprompter() {
-        document.getElementById("audio")
+        document.getElementById("media_elements")
             .innerHTML = `
             <audio controls autoplay class="SoundOfVoice" onended="clearTheAudio(); wellIwasReadingATeleprompter()"><source src="audio/Nma10.wav" type="audio/mpeg"></audio>
             `
             setVoiceVolume();
     }
     function itsAlwaysNice() {
-        document.getElementById("audio")
+        document.getElementById("media_elements")
             .innerHTML = `
             <audio controls autoplay class="SoundOfVoice" onended="clearTheAudio(); believeMe()"><source src="audio/Nma01.wav" type="audio/mpeg"></audio>
             `
             setVoiceVolume();
     }
     function imHappyToHelp() {
-        document.getElementById("audio")
+        document.getElementById("media_elements")
             .innerHTML = `
             <audio controls autoplay class="SoundOfVoice" onended="clearTheAudio(); wellForThePastMonth()"><source src="audio/Nma02.wav" type="audio/mpeg"></audio>
             `
             setVoiceVolume();
     }
     function butItCantBeAll() {
-        document.getElementById("audio")
+        document.getElementById("media_elements")
             .innerHTML = `
             <audio controls autoplay class="SoundOfVoice" onended="clearTheAudio(); yesItCanBeAllThatBad()"><source src="audio/Nma03.wav" type="audio/mpeg"></audio>
             `
             setVoiceVolume();
     }
     function tellMeAboutTheDeath() {
-        document.getElementById("audio")
+        document.getElementById("media_elements")
             .innerHTML = `
             <audio controls autoplay class="SoundOfVoice" onended="clearTheAudio(); wellForThePastMonth()"><source src="audio/Nma12.wav" type="audio/mpeg"></audio>
             `
             setVoiceVolume();
     }
     function weird() {
-        document.getElementById("audio")
+        document.getElementById("media_elements")
             .innerHTML = `
             <audio controls autoplay class="SoundOfVoice" onended="clearTheAudio(); theyreTotallyBizarre()"><source src="audio/Nma05.wav" type="audio/mpeg"></audio>
             `
@@ -695,7 +695,7 @@ function interaction_mattie_first() {
     }
     function haveYouEverReceived() {
         console.log('eoeoe')
-        document.getElementById("audio")
+        document.getElementById("media_elements")
             .innerHTML = `
             <audio controls autoplay class="SoundOfVoice" onended="clearTheAudio(); ohIveGottenSomeOdd()"><source src="audio/Nma06.wav" type="audio/mpeg"></audio>
             `

@@ -41,6 +41,13 @@ body {
     position: relative;
 }
 
+#menu {
+    z-index: 100;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
 .settings_screen {
     width: 640px;
     height: 480px;
@@ -53,10 +60,20 @@ body {
     user-select: none;
 }
 
+.game__menu {
+    position: absolute;
+    background-color: #777777d6;
+    width: 39px;
+    height: 73px;
+    left: 5px;
+    top: 41px;
+    border-radius: 50%;
+}
+
 .menu__list {
     padding: 10px;
     position: absolute;
-    top: -14px;
+    top: 5px;
     left: 100px;
 }
 
@@ -242,12 +259,18 @@ body {
     margin-top: 2px;
 }
 
-.backToMainMenu {
+#gameSetupScreen {
+    position: absolute;
+    top: 0;
+}
+
+.backToMainMenuFromSettings {
     position: absolute;
     top: 374px;
     left: 197px;
     width: 210px;
     height: 38px;
+    background-color: #00000077;
 }
 
 .inventory__place {

@@ -11,7 +11,7 @@ function signTheListScreen1() {
             You'll need to come to this desk every time you enter so I can log you in.
         </p>
         `
-    document.getElementById("audio")
+    document.getElementById("media_elements")
         .innerHTML = `
         <audio controls autoplay class="SoundOfVoice" onended="getCloserToLogInPaper();"><source src="audio/Ral05.wav" type="audio/mpeg"></audio>
         `;
@@ -39,7 +39,7 @@ function signThePaper() {
             <p class='dialogue__character'>
                 Have a nice day.
             </p>`;
-    document.getElementById("audio")
+    document.getElementById("media_elements")
         .innerHTML = `
             <audio controls autoplay class="SoundOfVoice" onended="RalphJustLetUsIn();"><source src="audio/Ral07.wav" type="audio/mpeg"></audio>`;
             setVoiceVolume();
@@ -160,7 +160,7 @@ function interaction_ralph() {
 
 
     function noThankYouJustLooking() {
-        document.getElementById("audio")
+        document.getElementById("media_elements")
             .innerHTML = `
             <audio 
                 class="SoundOfVoice" 
@@ -173,14 +173,14 @@ function interaction_ralph() {
             setVoiceVolume();
     }
     function yesMattieJensenLeftAVisitorsPassForMe() {
-        document.getElementById("audio")
+        document.getElementById("media_elements")
             .innerHTML = `
             <audio controls autoplay class="SoundOfVoice" onended="clearTheAudio(); hereYouAre()"><source src="audio/Ng01.wav" type="audio/mpeg"></audio>
             `
             setVoiceVolume();
     }
     function helloHereIsMyPass() {
-        document.getElementById("audio")
+        document.getElementById("media_elements")
             .innerHTML = `
             <audio controls autoplay class="SoundOfVoice" onended="clearTheAudio(); youMayProceed()"><source src="audio/Ng04.wav" type="audio/mpeg"></audio>
             `
