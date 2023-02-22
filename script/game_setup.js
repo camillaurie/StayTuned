@@ -6,9 +6,11 @@ function gameSetupScreen() {
     document
         .getElementById("gameSetupScreen")
         .style.display = 'block';
-    document
-        .getElementById('video')
-        .style.display = 'none';
+    if (document.getElementById('video')) {
+        document
+            .getElementById('video')
+            .style.display = 'none';
+    }
     document
         .getElementById("gameSetupScreen")
         .innerHTML = `

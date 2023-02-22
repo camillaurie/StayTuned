@@ -17,7 +17,7 @@ let musicInMattiesApartmentDay = `
         </source>
     </audio>`
 
-let musicInTheStudio = `
+    let musicInTheStudio = `
     <audio controls autoplay loop class="SoundOfMusic"">
         <source 
             src="audio/Music_Calm.mp3" 

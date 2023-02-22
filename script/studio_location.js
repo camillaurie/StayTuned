@@ -3,24 +3,45 @@ document
     .getElementById("wrapper")
     .addEventListener("click", seeingTheStudioEntrance);
 function seeingTheStudioEntrance(event) {
-    if (event && event.target.id == 'fromMapGoToTheStudio') {    
+    if (event && event.target.id == 'fromMapGoToTheStudio') {  
         document
-            .getElementById("video")
-            .innerHTML = `
-                <div class="thisScreenThisTime">
-                    <img src="pics/studio_hallways/SE0A_0.png">
-                    <div class="redmagnifying" id="getInsideTheStudio" style="
-                        height: 176px;
-                        width: 178px;
-                        top: 107px;
-                        left: 178px;
-                    "></div>
-                </div>`;
-        document
-            .getElementById("getInsideTheStudio")
-            .addEventListener("click", getInsideTheStudio);
+        .getElementById("media_elements")
+        .innerHTML = `
+            <audio controls autoplay class="SoundOfVoice" onended="seeStudioEntrance(); clearTheAudio();"><source src="audio/tax02.wav" type="audio/mpeg"></audio>
+        `
+    ;
+    setVoiceVolume();
     };
 };
+
+function seeStudioEntrance() {
+    document
+        .getElementById("video")
+        .innerHTML = `
+            <div class="thisScreenThisTime">
+                <img src="pics/studio_hallways/SE0A_0.png">
+                <div class="backpointer" onclick="goBackToMap()" style="
+                    height: 80px;
+                    width: 536px;
+                    top: 212px;
+                    left: 0px;
+                "></div>
+                <div class="redmagnifying" id="getInsideTheStudio" style="
+                    height: 176px;
+                    width: 178px;
+                    top: 107px;
+                    left: 178px;
+                "></div>
+            </div>
+        `
+    ;
+    document
+        .getElementById("getInsideTheStudio")
+        .addEventListener("click", getInsideTheStudio)
+    ;
+}
+
+//TODO: check if in the game you have to catch a taxi again if you're coming back to where you just left. For instance, I left Mattie's apartment, but realized I have to come back. I haven't gone to the studio. Do I have to hear the taxi catching audio again?
 
 function getInsideTheStudio() {
     currentMusicFile.innerHTML = musicInTheStudio;

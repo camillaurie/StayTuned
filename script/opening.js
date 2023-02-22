@@ -2,9 +2,20 @@ document.getElementById('menu').addEventListener('click', theOpeningLetter);
 
 function theOpeningLetter(event) {
     if (event && event.target.id == 'NewGame') {
+        //TODO: after everything's done add here all the variables that need to be set to their default values.
         document
             .getElementById("menu")
             .style.display = 'none';
+        document
+            .getElementById('game_music')
+            .innerHTML = `
+                <audio controls autoplay loop class="SoundOfMusic"">
+                    <source 
+                        src="audio/Music_Stage.mp3" 
+                        type="audio/mpeg">
+                    </source>
+                </audio>
+            `
         document
             .getElementById("wrapper")
             .innerHTML = `
@@ -28,6 +39,6 @@ function theOpeningLetter(event) {
             `
         setVoiceVolume();
         document.getElementById('currentVideo')
-        .addEventListener('ended', map2, false); // !!! CHANGE to map1 don't forget!!!!!!!
+        .addEventListener('ended', map1, false);
     }
 }

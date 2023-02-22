@@ -19,7 +19,30 @@ function goToMap(event) {
     }
 }
 
-
+function goBackToMap() {
+    if (haveISpokenWithMattie == false) {
+        document
+            .getElementById("video")
+            .innerHTML = `
+                <div class="map1logics" style="position: relative;">
+                    <img src="pics/map1.png">
+                    <div class="redmagnifying" id="fromMapGoToTheApartment" style="
+                        height: 90px;
+                        width: 240px;
+                        top: 50px;
+                        left: 280px;
+                    "></div>
+                </div>
+            `
+    }
+    if (haveISpokenWithMattie == true) {
+        if (doIKnowDwaynePlace == false) {
+            map2()
+        } else if (doIKnowDwaynePlace == true) {
+            map3();
+        }
+    }
+}
 
 function map1() {
     document
@@ -35,6 +58,8 @@ function map1() {
             "></div>
         </div>
     `
+    currentMusicFile.innerHTML = musicOnTheMapScreen;
+    setMusicVolume();
 }
 function map2() {
     document

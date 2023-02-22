@@ -839,33 +839,50 @@ function tryDialingAgain() {
 
 // Get Inside The Apartment 
 
+function seeMattiesFrontDoor() {
+    document
+        .getElementById("video")
+        .innerHTML = `
+            <div class="thisScreenThisTime">
+                <img src="pics/ME0N_0.png">
+                <div class="redmagnifying" id="frontDoorOfTheApartment" style="
+                    height: 190px;
+                    width: 130px;
+                    top: 50px;
+                    left: 280px;
+                "></div>
+                <div class="backpointer" onclick="goBackToMap()" style="
+                    height: 67px;
+                    width: 536px;
+                    left: 0px;
+                    top: 225px;
+                "></div>
+            </div>
+        `
+    ;
+    if (haveISpokenWithMattie == false) {
+        document
+            .getElementById("frontDoorOfTheApartment")
+            .addEventListener("click", invitationIntoTheApartment);
+    } else {
+        document
+            .getElementById("frontDoorOfTheApartment")
+            .addEventListener("click", openingApartmentWithKeys);
+    }
+}
+
 document
     .getElementById("wrapper")
     .addEventListener("click", knockingOnTheApartmentDoor);
 function knockingOnTheApartmentDoor(event) {
     if (event && event.target.id == 'fromMapGoToTheApartment') {
         document
-            .getElementById("video")
+            .getElementById("media_elements")
             .innerHTML = `
-                <div class="thisScreenThisTime">
-                    <img src="pics/ME0N_0.png">
-                    <div class="redmagnifying" id="frontDoorOfTheApartment" style="
-                        height: 190px;
-                        width: 130px;
-                        top: 50px;
-                        left: 280px;
-                    "></div>
-                </div>
+                <audio controls autoplay class="SoundOfVoice" onended="seeMattiesFrontDoor(); clearTheAudio();"><source src="audio/tax01.wav" type="audio/mpeg"></audio>
             `
-        if (haveISpokenWithMattie == false) {
-            document
-                .getElementById("frontDoorOfTheApartment")
-                .addEventListener("click", invitationIntoTheApartment);
-        } else {
-            document
-                .getElementById("frontDoorOfTheApartment")
-                .addEventListener("click", openingApartmentWithKeys);
-        }
+        ;
+        setVoiceVolume();
     }
 }
 
