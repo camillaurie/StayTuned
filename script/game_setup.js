@@ -41,9 +41,13 @@ function gameSetupScreen() {
             </div>
             <div id="backToMainMenuFromSettings" class="backToMainMenuFromSettings active__point"></div>
         </div>`
-    setVoiceVolume();
-    setEffectsVolume();
-    setMusicVolume();
+    
+    document.querySelector('.volume_slider__voice').value = sliderForVoiceVolume*100;
+    document.querySelector('.volume_slider__music').value = sliderForMusicVolume*100;
+    document.querySelector('.volume_slider__effects').value = sliderForEffectsVolume*100;
+    setVoiceTestVolume();
+    setEffectsTestVolume();
+    setMusicTestVolume();
     PauseAllTheSoundsOfTheGame();
 }
 

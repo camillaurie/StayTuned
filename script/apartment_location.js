@@ -906,12 +906,13 @@ function invitationIntoTheApartment() {
     document
     .getElementById("media_elements")
     .innerHTML = `
-        <audio autoplay controls onended="currentMusicFile.innerHTML = musicInMattiesApartmentDay; setMusicVolume();" class="SoundOfVoice" id="currentAudio">
+        <audio autoplay controls onended="currentMusicFile.innerHTML = musicInMattiesApartmentDay; setMusicVolume(); clearTheAudio();" class="SoundOfVoice" id="currentAudio">
         <source 
             src="audio/mattie_comeoninnancy.mp3" 
             type="audio/mpeg">
         </audio>
     `
+    
     setVoiceVolume();
     document.getElementById("wholedialogue")
     .innerHTML = `
