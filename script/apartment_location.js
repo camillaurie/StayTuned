@@ -1415,14 +1415,14 @@ function goToADifferentScreenInMattiesRoom(event) {
                 left: 0px;
                 top: 234px;
             "></div>
-            <div class="redmagnifying" id="MD3A_0" style="
+            <div class="redmagnifying" id="willISeeRemote" style="
                 height: 210px;
                 width: 206px;
                 left: 150px;
                 top: 15px;
             "></div>`    
     }
-    if (event && event.target.id == 'MD3A_0') {
+    if (event && event.target.id == 'willISeeRemote' && acquiredRemoteControl == false) {
         document
             .getElementById("video")
             .innerHTML = `
@@ -1434,12 +1434,15 @@ function goToADifferentScreenInMattiesRoom(event) {
                 left: 0px;
                 top: 234px;
             "></div>
-            <div class="redmagnifying" id="MD3G_0" style="
+            <div class="redmagnifying" onclick="gettingTheRemoteControl(); showBasketWithNoRemote();" style="
                 height: 210px;
                 width: 206px;
                 left: 150px;
                 top: 15px;
             "></div>`    
+    }
+    if (event && event.target.id == 'willISeeRemote' && acquiredRemoteControl == true) {
+        showBasketWithNoRemote();
     }
     if (event && event.target.id == 'MD6W_0') {
         document
@@ -1833,3 +1836,32 @@ function goToADifferentScreenInMattiesRoom(event) {
 
 }
 
+function showBasketWithNoRemote() {
+    document
+        .getElementById("video")
+        .innerHTML = `
+            <div class="thisScreenThisTime">
+                <img src="pics/apartment/MD3G_0.png">
+                <div class="backpointer" id="MD3C_0" style="
+                    height: 58px;
+                    width: 536px;
+                    left: 0px;
+                    top: 234px;
+                "></div>
+                <div class="redmagnifying" id="MD3N_0" style="
+                    height: 210px;
+                    width: 206px;
+                    left: 150px;
+                    top: 15px;
+                ">
+            </div>
+        </div>
+    `    
+}
+
+function gettingTheRemoteControl() {
+    acquiredRemoteControl = true;
+    document.getElementById("inventory__place")
+        .innerHTML = remoteInInventory + document.getElementById("inventory__place").innerHTML;
+    setEffectsVolume();
+}

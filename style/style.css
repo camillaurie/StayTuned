@@ -300,7 +300,15 @@ body {
 
 .inventory__visitors_pass:hover {
     background: url("../pics/sprites/visitorspassinsidehover.png");
+}
+
+.inventory__remote_control {
+    background: url("../pics/sprites/remote.png");
     background-repeat: no-repeat;
     width: 69px;
     height: 57px;
+}
+
+.inventory__remote_control:hover {
+    background: url("../pics/sprites/remotehover.png");
 }

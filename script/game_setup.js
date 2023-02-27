@@ -226,6 +226,5 @@ function continueGame(event) {
         PlayAllTheSoundsOfTheGame();
     }
 }
-//TODO: after every video there needs to be a static picture. 
-//TODO: all the voice audio files should be deleted once they've played
-//TODO: fix the bugs later. I'm too tired.
+// TODO: after every video there needs to be a static picture. 
+// TODO: all the voice audio files should be deleted once they've played

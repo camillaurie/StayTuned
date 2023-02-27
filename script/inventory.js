@@ -24,16 +24,18 @@ let inventoryContains = ['keys']
 
 function closeEmptyInventory() {
     inventoryContains = [];
-            document
-                .getElementById("inventory")
-                .innerHTML = `
-                    <div id="inventory__place" class="inventory__place"></div>
-                    <div class="inventory_close_gif">
-                        <img id="closed_inventory_gif" alt="" src="pics/sprites/inventory_closes.gif">
-                    </div>
-                    <audio controls id="inventoryclicksound" class="SoundEffects" autoplay>
-                        <source src="audio/Clik7.wav" type="audio/mpeg">
-                    </audio>`
+    document
+        .getElementById("inventory")
+        .innerHTML = `
+            <div id="inventory__place" class="inventory__place"></div>
+            <div class="inventory_close_gif">
+                <img id="closed_inventory_gif" alt="" src="pics/sprites/inventory_closes.gif">
+            </div>
+            <audio controls id="inventoryclicksound" class="SoundEffects" autoplay>
+                <source src="audio/Clik7.wav" type="audio/mpeg">
+            </audio>
+        `
+    ;
 }
 
 document
@@ -55,13 +57,17 @@ function changeTheCursorFromInventory(event) {
     if (event && event.target.id == 'visitorspass' && onHandRightNow == '') {
         document.getElementById("pointers").href = "style/pointers_pass.css";
         onHandRightNow = 'pass';
-        if (inventoryContains.length == 1) {
-            closeEmptyInventory();
-        } else if (inventoryContains.length > 1) {
-            inventoryContains = inventoryContains.filter(filterPass);
-            document.getElementById('visitorspass').remove();
-            document.getElementById("inventoryclicksound").play();
-        }
+        inventoryContains = inventoryContains.filter(filterPass);
+        document.getElementById('visitorspass').remove();
+        document.getElementById("inventoryclicksound").play();
+    }
+
+    if (event && event.target.id == 'remotecontrol' && onHandRightNow == '') {
+        document.getElementById("pointers").href = "style/pointers_remote.css";
+        onHandRightNow = 'remote';
+        inventoryContains = inventoryContains.filter(filterRemote);
+        document.getElementById('remotecontrol').remove();
+        document.getElementById("inventoryclicksound").play();
     }
 
     if (event && event.target.id == 'inventory__place' && onHandRightNow != '') {
@@ -73,29 +79,58 @@ function changeTheCursorFromInventory(event) {
         if (onHandRightNow == 'pass') {
             document.getElementById('inventory__place').innerHTML = passInInventory + document.getElementById('inventory__place').innerHTML
         }
+        if (onHandRightNow == 'remote') {
+            document.getElementById('inventory__place').innerHTML = remoteInInventory + document.getElementById('inventory__place').innerHTML
+        }
         document.getElementById("inventoryclicksound").play();
         onHandRightNow = '';
     }
 
-    if (event && event.target.className.includes('inventory__visitors_pass') && onHandRightNow == 'keys') {
+    if (event && event.target.className.includes('inventory__visitors_pass') && (onHandRightNow == 'keys' || onHandRightNow == 'remote')) {
         inventoryContains.push(onHandRightNow);
         document.getElementById("pointers").href = "style/pointers_default.css";
-        document.getElementById('inventory__place').innerHTML = keysInInventory + document.getElementById('inventory__place').innerHTML;
+        if (onHandRightNow == 'keys') {
+            document.getElementById('inventory__place').innerHTML = keysInInventory + document.getElementById('inventory__place').innerHTML;
+        }
+        if (onHandRightNow == 'remote') {
+            document.getElementById('inventory__place').innerHTML = remoteInInventory + document.getElementById('inventory__place').innerHTML;
+        }
         document.getElementById("inventoryclicksound").play();
         onHandRightNow = '';
     }
 
-    if (event && event.target.className.includes('inventory__keys') && onHandRightNow == 'pass') {
+    if (event && event.target.className.includes('inventory__keys') && (onHandRightNow == 'pass' || onHandRightNow == 'remote')) {
         inventoryContains.push(onHandRightNow);
         document.getElementById("pointers").href = "style/pointers_default.css";
-        document.getElementById('inventory__place').innerHTML = passInInventory + document.getElementById('inventory__place').innerHTML;
+        if (onHandRightNow == 'remote') {
+            document.getElementById('inventory__place').innerHTML = remoteInInventory + document.getElementById('inventory__place').innerHTML;
+        }
+        if (onHandRightNow == 'pass') {
+            document.getElementById('inventory__place').innerHTML = passInInventory + document.getElementById('inventory__place').innerHTML;
+        }
         document.getElementById("inventoryclicksound").play();
         onHandRightNow = '';
     }
+
+    if (event && event.target.className.includes('inventory__remote_control') && (onHandRightNow == 'keys' || onHandRightNow == 'pass')) {
+        inventoryContains.push(onHandRightNow);
+        document.getElementById("pointers").href = "style/pointers_default.css";
+        if (onHandRightNow == 'keys') {
+            document.getElementById('inventory__place').innerHTML = keysInInventory + document.getElementById('inventory__place').innerHTML;
+        }
+        if (onHandRightNow == 'pass') {
+            document.getElementById('inventory__place').innerHTML = passInInventory + document.getElementById('inventory__place').innerHTML;
+        }
+        document.getElementById("inventoryclicksound").play();
+        onHandRightNow = '';
+    }
+
+    // here it's more complicated
 }
 
 let keysInInventory = `<div id="apartmentkeys" class="inventory__item inventory__keys"></div>`
 let passInInventory = `<div id="visitorspass" class="inventory__item inventory__visitors_pass"></div>`
+let remoteInInventory = `<div id="remotecontrol" class="inventory__item inventory__remote_control"></div>`
 
 function filterKeys(item) {
     return item != 'keys';
@@ -103,6 +138,10 @@ function filterKeys(item) {
 
 function filterPass(item) {
     return item != 'pass';
+}
+
+function filterRemote(item) {
+    return item != 'remote';
 }
 
 

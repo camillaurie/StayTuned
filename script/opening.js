@@ -2,7 +2,7 @@ document.getElementById('menu').addEventListener('click', theOpeningLetter);
 
 function theOpeningLetter(event) {
     if (event && event.target.id == 'NewGame') {
-        //TODO: after everything's done add here all the variables that need to be set to their default values.
+        // TODO: after everything's done add here all the variables that need to be set to their default values.
         document
             .getElementById("menu")
             .style.display = 'none';

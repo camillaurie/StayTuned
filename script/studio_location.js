@@ -41,7 +41,10 @@ function seeStudioEntrance() {
     ;
 }
 
-//TODO: check if in the game you have to catch a taxi again if you're coming back to where you just left. For instance, I left Mattie's apartment, but realized I have to come back. I haven't gone to the studio. Do I have to hear the taxi catching audio again?
+// TODO: check if in the game you have to catch a taxi again if you're coming back to where you just left. For instance, I left Mattie's apartment, but realized I have to come back. I haven't gone to the studio. Do I have to hear the taxi catching audio again?
+// checked! You don't have to call a cab again if you're already there.
+// Side note: if you call the cab to go somewhere else and then decide you want to go to the place you're at, the audio will continue till the end, but you'll stay in place. 
+// If you return to the map view again, you'll have to listen to the same audio if you want to go there anyway.
 
 function getInsideTheStudio() {
     currentMusicFile.innerHTML = musicInTheStudio;
@@ -64,23 +67,28 @@ function getInsideTheStudio() {
                     top: 212px;
                     left: 0px;
                 "></div>
-            </div>`;
+            </div>
+        `
+    ;
     document
         .getElementById("exploringTheStudioDay")
-        .addEventListener("click", exploringTheStudioDay, false);
+        .addEventListener("click", exploringTheStudioDay, false)
+    ;
 };
 
 
 let SE1X_all = `
-<div>
-    <div id="activelocationspot">
-    </div>
-    <div id="turnleftincirclestudio1" class ="activesides activeleftside"></div>
-    <div id="turnrightincirclestudio1" class ="activesides activerightside"></div>
-</div>
-<video id="talkToRalph" playsinline muted loop autoplay onclick="interaction_ralph()">
-    <source src="video/ralph.webm" type="video/webm">
-</video>;`;
+        <div>
+            <div id="activelocationspot">
+            </div>
+            <div id="turnleftincirclestudio1" class ="activesides activeleftside"></div>
+            <div id="turnrightincirclestudio1" class ="activesides activerightside"></div>
+        </div>
+        <video id="talkToRalph" playsinline muted loop autoplay onclick="interaction_ralph()">
+            <source src="video/ralph.webm" type="video/webm">
+        </video>;
+    `
+;
 
 let SE1X_0 = `
     <img id="circlingPicture" src="pics/studio_first_circle/SE1X_0.png">

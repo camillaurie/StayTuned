@@ -1,0 +1,23 @@
+.activerightside {
+    cursor: url(../pics/sprites/rem_blue.png), e-resize;
+}
+
+.activeleftside {
+    cursor: url(../pics/sprites/rem_blue.png), w-resize;
+}
+
+.game__scene {
+    cursor: url(../pics/sprites/rem_grey.png), auto;
+}
+
+.greymagnifying {
+    cursor: url(../pics/sprites/rem_grey.png), auto;
+}
+
+.redmagnifying {
+    cursor: url(../pics/sprites/rem_red.png), zoom-in;
+}
+
+#talkToRalph {
+    cursor: url(../pics/sprites/rem_red.png), zoom-in;
+}
