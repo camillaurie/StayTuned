@@ -925,7 +925,14 @@ function doorToTheApartmentOpened() {
     i = 0;
     exploringTheHallwayDay();
     onHandRightNow = '';
-    closedInventoryToInventoryWithKeys();
+    if (inventoryContains.length == 0) {
+        closedInventoryToInventoryWithKeys();
+    } else {
+        document.getElementById('inventory__place').innerHTML = keysInInventory + document.getElementById('inventory__place').innerHTML;
+        document.getElementById("pointers").href = "style/pointers_default.css";
+        document.getElementById("inventoryclicksound").play();
+        inventoryContains.push('keys');
+    }
 }
 
 function invitationIntoTheApartment() {
@@ -1663,8 +1670,8 @@ function goToADifferentScreenInMattiesRoom(event) {
                         controls="" 
                         autoplay="" 
                         class="SoundOfVoice" 
-                        onended="clearTheAudio();
-                    ">
+                        onended="clearTheAudio();"
+                    >
                         <source 
                             src="audio/Nv18.wav" 
                             type="audio/mpeg"
@@ -2387,6 +2394,7 @@ function gettingTheRemoteControl() {
     document.getElementById("inventory__place")
         .innerHTML = remoteInInventory + document.getElementById("inventory__place").innerHTML;
     setEffectsVolume();
+    inventoryContains.push('remote');
 }
 
 function calendar() {
