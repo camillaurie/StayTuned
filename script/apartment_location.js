@@ -879,7 +879,16 @@ function knockingOnTheApartmentDoor(event) {
         document
             .getElementById("media_elements")
             .innerHTML = `
-                <audio controls autoplay class="SoundOfVoice" onended="seeMattiesFrontDoor(); clearTheAudio();"><source src="audio/tax01.wav" type="audio/mpeg"></audio>
+                <audio 
+                    controls 
+                    autoplay 
+                    class="SoundOfVoice" 
+                    onended="seeMattiesFrontDoor(); 
+                    clearTheAudio();">
+                    <source 
+                        src="audio/tax01.wav" 
+                        type="audio/mpeg">
+                </audio>
             `
         ;
         setVoiceVolume();
@@ -1367,14 +1376,425 @@ function goToADifferentScreenInMattiesRoom(event) {
     document
         .getElementById("video")
         .innerHTML = `
-        <div class="thisScreenThisTime">
-        <img src="pics/apartment/MD1S_0.png">
-        <div class="backpointer" id="goBackToSpinningRoom" style="
-            height: 67px;
-            width: 536px;
-            left: 0px;
-            top: 225px;
-        "></div>`    
+            <div class="thisScreenThisTime">
+                <img src="pics/apartment/MD1S_0.png">
+                <div class="backpointer" id="goBackToSpinningRoom" style="
+                    height: 67px;
+                    width: 536px;
+                    left: 0px;
+                    top: 225px;
+                "></div>
+                <div class="redmagnifying" onclick="calendar();" style="
+                    height: 30px;
+                    width: 95px;
+                    left: 288px;
+                    top: 171px;
+                "></div>
+                <div class="redmagnifying" id="MD1R_0" style="
+                    height: 64px;
+                    width: 85px;
+                    left: 196px;
+                    top: 69px;
+                "></div>
+                <div class="redmagnifying" id="MD6F_0" style="
+                    height: 44px;
+                    width: 115px;
+                    left: 90px;
+                    top: 133px;
+                "></div>
+                <div class="redmagnifying" id="MD9F_0" style="
+                    height: 56px;
+                    width: 65px;
+                    left: 209px;
+                    top: 0px;
+                "></div>
+                <div class="redmagnifying" id="MD6N_0" style="
+                    height: 70px;
+                    width: 95px;
+                    left: 308px;
+                    top: 81px;
+                "></div>
+            </div>`
+        ;    
+    }
+    if (event && event.target.id == 'MD6N_0') {
+        document
+            .getElementById("video")
+            .innerHTML = `
+                <div class="thisScreenThisTime">
+                    <img src="pics/apartment/MD6N_0.png">
+                    <div class="backpointer" id="MD1S_0" style="
+                        height: 58px;
+                        width: 536px;
+                        left: 0px;
+                        top: 234px;
+                    "></div>
+                    <div class="redmagnifying" id="MD6P_0" style="
+                        height: 219px;
+                        width: 120px;
+                        left: 82px;
+                        top: 15px;
+                    "></div>
+                </div>
+            `
+        ;
+    }
+    if (event && event.target.id == 'MD6P_0') {
+        document
+            .getElementById("video")
+            .innerHTML = `
+                <div class="thisScreenThisTime">
+                    <img src="pics/apartment/MD6P_0.png">
+                    <div class="backpointer" id="MD6N_0" style="
+                        height: 58px;
+                        width: 536px;
+                        left: 0px;
+                        top: 234px;
+                    "></div>
+                    <div class="redmagnifying" id="MD6O_0" style="
+                        height: 219px;
+                        width: 180px;
+                        left: 0px;
+                        top: 15px;
+                    "></div>
+                </div>
+            `
+        ;
+    }
+    if (event && event.target.id == 'MD6O_0') {
+        document
+            .getElementById("video")
+            .innerHTML = `
+                <div class="thisScreenThisTime">
+                    <img src="pics/apartment/MD6O_0.png">
+                    <div class="backpointer" id="MD6P_0" style="
+                        height: 58px;
+                        width: 536px;
+                        left: 0px;
+                        top: 234px;
+                    "></div>
+                </div>
+            `
+        ;
+    }
+    if (event && event.target.id == 'MD9F_0') {
+        document
+            .getElementById("video")
+            .innerHTML = `
+                <div class="thisScreenThisTime">
+                    <img src="pics/apartment/MD9F_0.png">
+                    <div class="backpointer" id="MD1S_0" style="
+                        height: 58px;
+                        width: 536px;
+                        left: 0px;
+                        top: 234px;
+                    "></div>
+                    <div class="redmagnifying" id="MD9G_0" style="
+                        height: 116px;
+                        width: 160px;
+                        left: 172px;
+                        top: 85px;
+                    "></div>
+                </div>
+            `
+        ;
+    }
+    if (event && event.target.id == 'MD9G_0') {
+        document
+            .getElementById("video")
+            .innerHTML = `
+                <div class="thisScreenThisTime">
+                    <img src="pics/apartment/MD9G_0.png">
+                    <div class="backpointer" id="MD9F_0" style="
+                        height: 58px;
+                        width: 536px;
+                        left: 0px;
+                        top: 234px;
+                    "></div>
+                </div>
+            `
+        ;
+    }
+    if (event && event.target.id == 'MD6F_0') {
+        document
+            .getElementById("video")
+            .innerHTML = `
+                <div class="thisScreenThisTime">
+                    <img src="pics/apartment/MD6F_0.png">
+                    <div class="backpointer" id="MD1S_0" style="
+                        height: 58px;
+                        width: 536px;
+                        left: 0px;
+                        top: 234px;
+                    "></div>
+                    <div class="redmagnifying" id="MD6G_0" style="
+                        height: 92px;
+                        width: 164px;
+                        left: 190px;
+                        top: 130px;
+                    "></div>
+                    <div class="redmagnifying" id="MD6I_0" style="
+                        height: 92px;
+                        width: 114px;
+                        left: 60px;
+                        top: 130px;
+                    "></div>
+                </div>
+            `
+        ;
+    }
+    if (event && event.target.id == 'MD6I_0') {
+        document
+            .getElementById("video")
+            .innerHTML = `
+                <div class="thisScreenThisTime">
+                    <img src="pics/apartment/MD6I_0.png">
+                    <div class="backpointer" id="MD6F_0" style="
+                        height: 58px;
+                        width: 536px;
+                        left: 0px;
+                        top: 234px;
+                    "></div>
+                    <div class="redmagnifying" id="MD6J_0" style="
+                        height: 234px;
+                        width: 130px;
+                        left: 352px;
+                        top: 0px;
+                    "></div>
+                </div>
+            `
+        ;
+    }
+    if (event && event.target.id == 'MD6J_0') {
+        document
+            .getElementById("video")
+            .innerHTML = `
+                <div class="thisScreenThisTime">
+                    <img src="pics/apartment/MD6J_0.png">
+                    <div class="backpointer" id="MD6F_0" style="
+                        height: 58px;
+                        width: 536px;
+                        left: 0px;
+                        top: 234px;
+                    "></div>
+                    <div class="redmagnifying" id="MD6I_0" style="
+                        height: 234px;
+                        width: 130px;
+                        left: 55px;
+                        top: 0px;
+                    "></div>
+                </div>
+            `
+        ;
+    }
+    if (event && event.target.id == 'MD6G_0') {
+        document
+            .getElementById("video")
+            .innerHTML = `
+                <div class="thisScreenThisTime">
+                    <img src="pics/apartment/MD6G_0.png">
+                    <div class="backpointer" id="MD6F_0" style="
+                        height: 58px;
+                        width: 536px;
+                        left: 0px;
+                        top: 234px;
+                    "></div>
+                    <div class="redmagnifying" id="MD6H_0" style="
+                        height: 88px;
+                        width: 205px;
+                        left: 172px;
+                        top: 105px;
+                    "></div>
+                </div>
+            `
+        ;
+    }
+    if (event && event.target.id == 'MD6H_0') {
+        document
+            .getElementById("video")
+            .innerHTML = `
+                <div class="thisScreenThisTime">
+                    <img src="pics/apartment/MD6H_0.png">
+                    <div class="backpointer" id="MD6G_0" style="
+                        height: 58px;
+                        width: 536px;
+                        left: 0px;
+                        top: 234px;
+                    "></div>
+                </div>
+            `
+        ;
+    }
+    if (event && event.target.id == 'MD1R_0') {
+        document
+            .getElementById("video")
+            .innerHTML = `
+                <div class="thisScreenThisTime">
+                    <img src="pics/apartment/MD1R_0.png">
+                    <div class="backpointer" id="MD1S_0" style="
+                        height: 58px;
+                        width: 426px;
+                        left: 0px;
+                        top: 234px;
+                    "></div>
+                    <div class="redmagnifying" id="MD6E_0" style="
+                        height: 88px;
+                        width: 110px;
+                        left: 426px;
+                        top: 204px;
+                    "></div>
+                    <div class="redmagnifying" id="theLockedDrawer" style="
+                        height: 98px;
+                        width: 220px;
+                        left: 176px;
+                        top: 104px;
+                        rotate: 20deg;
+                    "></div>
+                </div>
+            `
+        ;
+    }
+    if (event && event.target.id == 'theLockedDrawer') {
+        if (onHandRightNow != 'forgotten_key') {
+            document
+                .getElementById("media_elements")
+                .innerHTML = `
+                    <audio 
+                        controls="" 
+                        autoplay="" 
+                        class="SoundOfVoice" 
+                        onended="clearTheAudio();
+                    ">
+                        <source 
+                            src="audio/Nv18.wav" 
+                            type="audio/mpeg"
+                        >
+                    </audio>
+                `
+            ;
+        } else {
+            showOpenForgottenDrawer();
+        }
+    }
+    if (event && event.target.id == 'MD6M_0') {
+        document
+            .getElementById("video")
+            .innerHTML = `
+                <div class="thisScreenThisTime">
+                    <img src="pics/apartment/MD6M_0.png">
+                    <div class="backpointer" onclick="showOpenForgottenDrawer();" style="
+                        height: 58px;
+                        width: 536px;
+                        left: 0px;
+                        top: 234px;
+                    "></div>
+                    <div class="redmagnifying" id="MD6K_0" style="
+                        height: 234px;
+                        width: 438px;
+                        left: 50px;
+                        top: 0px;
+                    "></div>
+                </div>
+            `
+        ;
+    }
+    if (event && event.target.id == 'MD6K_0') {
+        document
+            .getElementById("video")
+            .innerHTML = `
+                <div class="thisScreenThisTime">
+                    <img src="pics/apartment/MD6K_0.png">
+                    <div class="redmagnifying" id="MD6L_0" style="
+                        height: 264px;
+                        width: 275px;
+                        left: 230px;
+                        top: 21px;
+                    "></div>
+                </div>
+            `
+        ;
+    }
+    if (event && event.target.id == 'MD6L_0') {
+        document
+            .getElementById("video")
+            .innerHTML = `
+                <div class="thisScreenThisTime">
+                    <img src="pics/apartment/MD6L_0.png">
+                    <div class="backpointer" id="MD6M_0" style="
+                        height: 58px;
+                        width: 536px;
+                        left: 0px;
+                        top: 234px;
+                    "></div>
+                    <div class="redmagnifying" id="MD6K_0" style="
+                        height: 213px;
+                        width: 268px;
+                        left: 33px;
+                        top: 21px;
+                    "></div>
+                </div>
+            `
+        ;
+    }
+    if (event && event.target.id == 'MD7C_0') {
+        document
+            .getElementById("video")
+            .innerHTML = `
+                <div class="thisScreenThisTime">
+                    <img src="pics/apartment/MD7C_0.png">
+                    <div class="backpointer" onclick="showOpenForgottenDrawer();" style="
+                        height: 58px;
+                        width: 536px;
+                        left: 0px;
+                        top: 234px;
+                    "></div>
+                    <div class="redmagnifying" id="MD7D_0" style="
+                        height: 234px;
+                        width: 130px;
+                        left: 310px;
+                        top: 0px;
+                    "></div>
+                </div>
+            `
+        ;
+    }
+    if (event && event.target.id == 'MD7D_0') {
+        document
+            .getElementById("video")
+            .innerHTML = `
+                <div class="thisScreenThisTime">
+                    <img src="pics/apartment/MD7D_0.png">
+                    <div class="backpointer" onclick="showOpenForgottenDrawer();" style="
+                        height: 58px;
+                        width: 536px;
+                        left: 0px;
+                        top: 234px;
+                    "></div>
+                    <div class="redmagnifying" id="MD7C_0" style="
+                        height: 234px;
+                        width: 130px;
+                        left: 97px;
+                        top: 0px;
+                    "></div>
+                </div>
+            `
+        ;
+    }
+    if (event && event.target.id == 'MD6E_0') {
+        document
+            .getElementById("video")
+            .innerHTML = `
+                <div class="thisScreenThisTime">
+                    <img src="pics/apartment/MD6E_0.png">
+                    <div class="backpointer" id="MD1R_0" style="
+                        height: 58px;
+                        width: 536px;
+                        left: 0px;
+                        top: 234px;
+                    "></div>
+                </div>
+            `
+        ;
     }
     if (event && event.target.id == 'MD3E_0') {
     document
@@ -1416,10 +1836,10 @@ function goToADifferentScreenInMattiesRoom(event) {
                 top: 234px;
             "></div>
             <div class="redmagnifying" id="willISeeRemote" style="
-                height: 210px;
-                width: 206px;
-                left: 150px;
-                top: 15px;
+                height: 110px;
+                width: 146px;
+                left: 196px;
+                top: 124px;
             "></div>`    
     }
     if (event && event.target.id == 'willISeeRemote' && acquiredRemoteControl == false) {
@@ -1428,21 +1848,60 @@ function goToADifferentScreenInMattiesRoom(event) {
             .innerHTML = `
             <div class="thisScreenThisTime">
             <img src="pics/apartment/MD3A_0.png">
-            <div class="backpointer" id="MD3C_0" style="
+            <div class="redmagnifying" id="MD3C_0" style="
                 height: 58px;
-                width: 536px;
-                left: 0px;
-                top: 234px;
+                width: 300px;
+                left: 118px;
+                top: 0px;
             "></div>
             <div class="redmagnifying" onclick="gettingTheRemoteControl(); showBasketWithNoRemote();" style="
-                height: 210px;
-                width: 206px;
-                left: 150px;
-                top: 15px;
+                height: 80px;
+                width: 196px;
+                left: 170px;
+                top: 95px;
             "></div>`    
     }
     if (event && event.target.id == 'willISeeRemote' && acquiredRemoteControl == true) {
         showBasketWithNoRemote();
+    }
+    if (event && event.target.id == 'MD3N_0') {
+        document
+            .getElementById("video")
+            .innerHTML = `
+            <div class="thisScreenThisTime">
+                <img src="pics/apartment/MD3N_0.png">
+                <div class="backpointer" id="willISeeRemote" style="
+                    height: 67px;
+                    width: 536px;
+                    left: 0px;
+                    top: 225px;
+                    ">
+                </div>
+                <div class="redmagnifying" id="MD3O_0" style="
+                    height: 225px;
+                    width: 212px;
+                    left: 157px;
+                    top: 0px;
+                    ">
+                </div>
+            </div>
+        `  
+    }
+    if (event && event.target.id == 'MD3O_0') {
+        document
+            .getElementById("video")
+            .innerHTML = `
+            <div class="thisScreenThisTime">
+                <img src="pics/apartment/MD3O_0.png">
+                <div class="redmagnifying" id="MD3N_0" style="
+                    height: 292px;
+                    width: 196px;
+                    left: 68px;
+                    top: 0px;
+                    ">
+                </div>
+            </div>
+        `  
     }
     if (event && event.target.id == 'MD6W_0') {
         document
@@ -1515,17 +1974,86 @@ function goToADifferentScreenInMattiesRoom(event) {
             "></div>`    
     }
     if (event && event.target.id == 'MD6V_0') {
-    document
-        .getElementById("video")
-        .innerHTML = `
-        <div class="thisScreenThisTime">
-        <img src="pics/apartment/MD6V_0.png">
-        <div class="backpointer" id="goBackToSpinningRoom" style="
-            height: 67px;
-            width: 536px;
-            left: 0px;
-            top: 225px;
-        "></div>`    
+        document
+            .getElementById("video")
+            .innerHTML = `
+                <div class="thisScreenThisTime">
+                    <img src="pics/apartment/MD6V_0.png">
+                    <div class="backpointer" id="goBackToSpinningRoom" style="
+                        height: 67px;
+                        width: 536px;
+                        left: 0px;
+                        top: 225px;
+                    "></div>
+                    <div class="redmagnifying" id="MD6T_0" style="
+                        height: 81px;
+                        width: 131px;
+                        left: 150px;
+                        top: 85px;
+                    "></div>
+                </div>
+            `
+        ;
+    }
+    if (event && event.target.id == 'MD6T_0') {
+        document
+            .getElementById("video")
+            .innerHTML = `
+                <div class="thisScreenThisTime">
+                    <img src="pics/apartment/MD6T_0.png">
+                    <div class="backpointer" id="MD6V_0" style="
+                        height: 67px;
+                        width: 536px;
+                        left: 0px;
+                        top: 225px;
+                    "></div>
+                    <div class="redmagnifying" id="MD6U_0" style="
+                        height: 225px;
+                        width: 178px;
+                        left: 200px;
+                        top: 0px;
+                    "></div>
+                </div>
+            `
+        ;
+    }
+    if (event && event.target.id == 'MD6U_0') {
+        document
+            .getElementById("video")
+            .innerHTML = `
+                <div class="thisScreenThisTime">
+                    <img src="pics/apartment/MD6U_0.png">
+                    <div class="redmagnifying" id="MD6T_0" style="
+                        height: 292px;
+                        width: 140px;
+                        left: 54px;
+                        top: 0px;
+                    "></div>
+                    <div class="redmagnifying" id="MD6S_0" style="
+                        height: 130px;
+                        width: 213px;
+                        left: 270px;
+                        top: 0px;
+                    "></div>
+                </div>
+            `
+        ;
+    }
+    if (event && event.target.id == 'MD6S_0') {
+        document
+            .getElementById("video")
+            .innerHTML = `
+                <div class="thisScreenThisTime">
+                    <img src="pics/apartment/MD6S_0.png">
+                    <div class="backpointer" id="MD6U_0" style="
+                        height: 67px;
+                        width: 536px;
+                        left: 0px;
+                        top: 225px;
+                    "></div>
+                </div>
+            `
+        ;
     }
     if (event && event.target.id == 'MD3S_0') {
     document
@@ -1546,19 +2074,6 @@ function goToADifferentScreenInMattiesRoom(event) {
             left: 315px;
             ">
         </div>`
-    }
-    if (event && event.target.id == 'MD6V_0') {
-    document
-        .getElementById("video")
-        .innerHTML = `
-        <div class="thisScreenThisTime">
-        <img src="pics/apartment/MD6V_0.png">
-        <div class="backpointer" id="goBackToSpinningRoom" style="
-            height: 67px;
-            width: 536px;
-            left: 0px;
-            top: 225px;
-        "></div>`    
     }
     if (event && event.target.id == 'MD3P_0') {
     document
@@ -1766,17 +2281,26 @@ function goToADifferentScreenInMattiesRoom(event) {
         "></div>`    
     }
     if (event && event.target.id == 'MD1P_0') {
-    document
-        .getElementById("video")
-        .innerHTML = `
-        <div class="thisScreenThisTime">
-        <img src="pics/apartment/MD1P_0.png">
-        <div class="backpointer" id="goBackToSpinningRoom" style="
-            height: 67px;
-            width: 536px;
-            left: 0px;
-            top: 225px;
-        "></div>`    
+        document
+            .getElementById("video")
+            .innerHTML = `
+                <div class="thisScreenThisTime">
+                    <img src="pics/apartment/MD1P_0.png">
+                    <div class="backpointer" id="goBackToSpinningRoom" style="
+                        height: 67px;
+                        width: 536px;
+                        left: 0px;
+                        top: 225px;
+                    "></div>
+                    <div class="redmagnifying" onclick="usingTheTV();" style="
+                        height: 215px;
+                        width: 229px;
+                        left: 149px;
+                        top: 10px;
+                    "></div>
+                </div>
+            `
+        ;
     }
     if (event && event.target.id == 'MD8C_0') {
     document
@@ -1833,7 +2357,6 @@ function goToADifferentScreenInMattiesRoom(event) {
             ">
         </div>`  
     }
-
 }
 
 function showBasketWithNoRemote() {
@@ -1842,17 +2365,17 @@ function showBasketWithNoRemote() {
         .innerHTML = `
             <div class="thisScreenThisTime">
                 <img src="pics/apartment/MD3G_0.png">
-                <div class="backpointer" id="MD3C_0" style="
+                <div class="redmagnifying" id="MD3C_0" style="
                     height: 58px;
-                    width: 536px;
-                    left: 0px;
-                    top: 234px;
+                    width: 300px;
+                    left: 118px;
+                    top: 0px;
                 "></div>
                 <div class="redmagnifying" id="MD3N_0" style="
-                    height: 210px;
-                    width: 206px;
-                    left: 150px;
-                    top: 15px;
+                    height: 90px;
+                    width: 256px;
+                    left: 140px;
+                    top: 95px;
                 ">
             </div>
         </div>
@@ -1864,4 +2387,159 @@ function gettingTheRemoteControl() {
     document.getElementById("inventory__place")
         .innerHTML = remoteInInventory + document.getElementById("inventory__place").innerHTML;
     setEffectsVolume();
+}
+
+function calendar() {
+    let c = Math.floor(Math.random() * 10);
+    if (c > 7) {
+        document
+            .getElementById("video")
+            .innerHTML = `
+                <div class="thisScreenThisTime">
+                    <img src="pics/apartment/MD6A_0.png">
+                    <div class="backpointer" id="MD1S_0" style="
+                        height: 58px;
+                        width: 536px;
+                        left: 0px;
+                        top: 234px;
+                    "></div>
+                </div>
+            `
+        ;
+    } else {
+        document
+            .getElementById("video")
+            .innerHTML = `
+                <div class="thisScreenThisTime">
+                    <img src="pics/apartment/MD6B_0.png">
+                    <div class="backpointer" id="MD1S_0" style="
+                        height: 58px;
+                        width: 536px;
+                        left: 0px;
+                        top: 234px;
+                    "></div>
+                </div>
+            `
+        ;
+    }
+}
+
+function showOpenForgottenDrawer() {
+    document
+        .getElementById("video")
+        .innerHTML = `
+            <div class="thisScreenThisTime">
+                <img src="pics/apartment/MD1T_0.png">
+                <div class="backpointer" id="MD1R_0" style="
+                    height: 58px;
+                    width: 536px;
+                    left: 0px;
+                    top: 234px;
+                "></div>
+                <div class="redmagnifying" id="MD7C_0" style="
+                    height: 68px;
+                    width: 114px;
+                    left: 240px;
+                    top: 144px;
+                "></div>
+                <div class="redmagnifying" id="MD6M_0" style="
+                    height: 68px;
+                    width: 66px;
+                    left: 160px;
+                    top: 124px;
+                "></div>
+            </div>
+        `
+    ;
+}
+
+function usingTheTV() {
+    if (onHandRightNow == 'remote') {
+        document
+            .getElementById("video")
+            .innerHTML = `
+                <div class="thisScreenThisTime">
+                    <img src="pics/apartment/MD9V_0.png">
+                    <div class="redmagnifying" onclick="turnOffTheTV();" style="
+                        height: 270px;
+                        width: 229px;
+                        left: 149px;
+                        top: 10px;
+                        z-index: 5;
+                    "></div>
+                    <video playsinline mute loop autoplay style="
+                        position: absolute;
+                        top: 115px;
+                        left: 178px;">
+                        <source src="video/MDTV_1.webm" type="video/webm">
+                    </video>
+                </div>
+            `
+        ;
+        onHandRightNow = '';
+        inventoryContains.push('remote');
+        document.getElementById('inventory__place').innerHTML = remoteInInventory + document.getElementById('inventory__place').innerHTML;
+        document.getElementById("inventoryclicksound").play();
+        document.getElementById("pointers").href = "style/pointers_default.css";
+    } else {
+        document
+            .getElementById("media_elements")
+            .innerHTML = `
+                <audio 
+                    autoplay 
+                    class="SoundOfVoice" 
+                    id="currentAudio">
+                    <source 
+                        src="audio/Icant.wav" 
+                        type="audio/mpeg">
+                </audio>
+            `
+        ;
+        setVoiceVolume();
+    }
+}
+
+function turnOffTheTV() {
+    if (onHandRightNow == 'remote') {
+        document
+            .getElementById("video")
+            .innerHTML = `
+                <div class="thisScreenThisTime">
+                    <img src="pics/apartment/MD1P_0.png">
+                    <div class="backpointer" id="goBackToSpinningRoom" style="
+                        height: 67px;
+                        width: 536px;
+                        left: 0px;
+                        top: 225px;
+                    "></div>
+                    <div class="redmagnifying" onclick="usingTheTV();" style="
+                        height: 215px;
+                        width: 229px;
+                        left: 149px;
+                        top: 10px;
+                    "></div>
+                </div>
+            `
+        ;
+        onHandRightNow = '';
+        inventoryContains.push('remote');
+        document.getElementById('inventory__place').innerHTML = remoteInInventory + document.getElementById('inventory__place').innerHTML;
+        document.getElementById("inventoryclicksound").play();
+        document.getElementById("pointers").href = "style/pointers_default.css";
+    } else {
+        document
+            .getElementById("media_elements")
+            .innerHTML = `
+                <audio 
+                    autoplay 
+                    class="SoundOfVoice" 
+                    id="currentAudio">
+                    <source 
+                        src="audio/Icant.wav" 
+                        type="audio/mpeg">
+                </audio>
+            `
+        ;
+        setVoiceVolume();
+    }
 }
