@@ -875,7 +875,7 @@ document
     .getElementById("wrapper")
     .addEventListener("click", knockingOnTheApartmentDoor);
 function knockingOnTheApartmentDoor(event) {
-    if (event && event.target.id == 'fromMapGoToTheApartment') {
+    if (event && event.target.id == 'fromMapGoToTheApartment' && myLocationRightNow != 1) {
         document
             .getElementById("media_elements")
             .innerHTML = `
@@ -883,7 +883,8 @@ function knockingOnTheApartmentDoor(event) {
                     controls 
                     autoplay 
                     class="SoundOfVoice" 
-                    onended="seeMattiesFrontDoor(); 
+                    onended="seeMattiesFrontDoor();
+                    myLocationRightNow = 1; 
                     clearTheAudio();">
                     <source 
                         src="audio/tax01.wav" 
@@ -892,6 +893,8 @@ function knockingOnTheApartmentDoor(event) {
             `
         ;
         setVoiceVolume();
+    } else if (event && event.target.id == 'fromMapGoToTheApartment') {
+        seeMattiesFrontDoor();
     }
 }
 

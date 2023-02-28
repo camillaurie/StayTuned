@@ -3,15 +3,27 @@ document
     .getElementById("wrapper")
     .addEventListener("click", seeingTheStudioEntrance);
 function seeingTheStudioEntrance(event) {
-    if (event && event.target.id == 'fromMapGoToTheStudio') {  
+    if (event && event.target.id == 'fromMapGoToTheStudio' && myLocationRightNow != 2) {  
         document
-        .getElementById("media_elements")
-        .innerHTML = `
-            <audio controls autoplay class="SoundOfVoice" onended="seeStudioEntrance(); clearTheAudio();"><source src="audio/tax02.wav" type="audio/mpeg"></audio>
+            .getElementById("media_elements")
+            .innerHTML = `
+                <audio 
+                    controls 
+                    autoplay 
+                    class="SoundOfVoice" 
+                    onended="seeStudioEntrance(); 
+                    myLocationRightNow = 2;
+                    clearTheAudio();">
+                    <source 
+                        src="audio/tax02.wav" 
+                        type="audio/mpeg">
+                </audio>
         `
     ;
     setVoiceVolume();
-    };
+    } else if (event && event.target.id == 'fromMapGoToTheStudio') {
+        seeStudioEntrance();
+    }
 };
 
 function seeStudioEntrance() {

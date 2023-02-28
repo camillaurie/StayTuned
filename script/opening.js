@@ -38,6 +38,7 @@ function theOpeningLetter(event) {
                 </div>
             `
         setVoiceVolume();
+        setMusicVolume();
         document.getElementById('currentVideo')
         .addEventListener('ended', map1, false);
     }

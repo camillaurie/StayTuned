@@ -6,3 +6,4 @@ let onHandRightNow = ''; // ''
 let doIHaveAVisitorsPass = false // false
 let isTheShowOnAir = true; // true
 let acquiredRemoteControl = false; // false
+let myLocationRightNow = '';
