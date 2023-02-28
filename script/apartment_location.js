@@ -1936,52 +1936,61 @@ function goToADifferentScreenInMattiesRoom(event) {
         document
             .getElementById("video")
             .innerHTML = `
-            <div class="thisScreenThisTime">
-            <img src="pics/apartment/MD6X_0.png">
-            <div class="redmagnifying" id="MD6Y_0" style="
-                height: 202px;
-                width: 185px;
-                left: 299px;
-                top: 26px;
-            "></div>
-            <div class="redmagnifying" id="MD6W_0" style="
-                height: 218px;
-                width: 146px;
-                left: 32px;
-                top: 42px;
-            "></div>`    
+                <div class="thisScreenThisTime">
+                    <img src="pics/apartment/MD6X_0.png">
+                    <div class="redmagnifying" id="MD6Y_0" style="
+                        height: 202px;
+                        width: 185px;
+                        left: 299px;
+                        top: 26px;
+                    "></div>
+                    <div class="redmagnifying" id="MD6W_0" style="
+                        height: 218px;
+                        width: 146px;
+                        left: 32px;
+                        top: 42px;
+                    "></div>
+                </div>
+            `
+        ;
     }
     if (event && event.target.id == 'MD6Y_0') {
         document
             .getElementById("video")
             .innerHTML = `
-            <div class="thisScreenThisTime">
-            <img src="pics/apartment/MD6Y_0.png">
-            <div class="redmagnifying" id="MD6Z_0" style="
-                height: 202px;
-                width: 185px;
-                left: 299px;
-                top: 26px;
-            "></div>
-            <div class="redmagnifying" id="MD6X_0" style="
-                height: 218px;
-                width: 146px;
-                left: 32px;
-                top: 42px;
-            "></div>`    
+                <div class="thisScreenThisTime">
+                    <img src="pics/apartment/MD6Y_0.png">
+                    <div class="redmagnifying" id="MD6Z_0" style="
+                        height: 202px;
+                        width: 185px;
+                        left: 299px;
+                        top: 26px;
+                    "></div>
+                    <div class="redmagnifying" id="MD6X_0" style="
+                        height: 218px;
+                        width: 146px;
+                        left: 32px;
+                        top: 42px;
+                    "></div>
+                </div>
+            `
+        ;
     }
     if (event && event.target.id == 'MD6Z_0') {
         document
             .getElementById("video")
             .innerHTML = `
-            <div class="thisScreenThisTime">
-            <img src="pics/apartment/MD6Z_0.png">
-            <div class="redmagnifying" id="MD6Y_0" style="
-                height: 218px;
-                width: 146px;
-                left: 32px;
-                top: 42px;
-            "></div>`    
+                <div class="thisScreenThisTime">
+                    <img src="pics/apartment/MD6Z_0.png">
+                    <div class="redmagnifying" id="MD6Y_0" style="
+                        height: 218px;
+                        width: 146px;
+                        left: 32px;
+                        top: 42px;
+                    "></div>
+                </div>
+            `
+        ;
     }
     if (event && event.target.id == 'MD6V_0') {
         document
@@ -2006,48 +2015,36 @@ function goToADifferentScreenInMattiesRoom(event) {
         ;
     }
     if (event && event.target.id == 'MD6T_0') {
+        closedMagazine3();
+    }
+    if (event && event.target.id == 'MD6T_0_fromInside') {
         document
-            .getElementById("video")
+            .getElementById("media_elements")
             .innerHTML = `
-                <div class="thisScreenThisTime">
-                    <img src="pics/apartment/MD6T_0.png">
-                    <div class="backpointer" id="MD6V_0" style="
-                        height: 67px;
-                        width: 536px;
-                        left: 0px;
-                        top: 225px;
-                    "></div>
-                    <div class="redmagnifying" id="MD6U_0" style="
-                        height: 225px;
-                        width: 178px;
-                        left: 200px;
-                        top: 0px;
-                    "></div>
-                </div>
+                <audio autoplay controls onended="closedMagazine3();" class="SoundEffects" id="currentAudio"">
+                    <source 
+                        src="audio/Magazine.wav" 
+                        type="audio/mpeg">
+                </audio>
             `
         ;
+        setEffectsVolume();
+    }
+    if (event && event.target.id == 'MD6U_0_fromCover') {
+        document
+            .getElementById("media_elements")
+            .innerHTML = `
+                <audio autoplay controls onended="magazine3page1();" class="SoundEffects" id="currentAudio"">
+                    <source 
+                        src="audio/Magazine.wav" 
+                        type="audio/mpeg">
+                </audio>
+            `
+        ;
+        setEffectsVolume();
     }
     if (event && event.target.id == 'MD6U_0') {
-        document
-            .getElementById("video")
-            .innerHTML = `
-                <div class="thisScreenThisTime">
-                    <img src="pics/apartment/MD6U_0.png">
-                    <div class="redmagnifying" id="MD6T_0" style="
-                        height: 292px;
-                        width: 140px;
-                        left: 54px;
-                        top: 0px;
-                    "></div>
-                    <div class="redmagnifying" id="MD6S_0" style="
-                        height: 130px;
-                        width: 213px;
-                        left: 270px;
-                        top: 0px;
-                    "></div>
-                </div>
-            `
-        ;
+        magazine3page1();
     }
     if (event && event.target.id == 'MD6S_0') {
         document
@@ -2369,6 +2366,30 @@ function goToADifferentScreenInMattiesRoom(event) {
     }
 }
 
+
+function closedMagazine3() {
+    document
+        .getElementById("video")
+        .innerHTML = `
+            <div class="thisScreenThisTime">
+                <img src="pics/apartment/MD6T_0.png">
+                <div class="backpointer" id="MD6V_0" style="
+                    height: 67px;
+                    width: 536px;
+                    left: 0px;
+                    top: 225px;
+                "></div>
+                <div class="redmagnifying" id="MD6U_0_fromCover" style="
+                    height: 225px;
+                    width: 178px;
+                    left: 200px;
+                    top: 0px;
+                "></div>
+            </div>
+        `
+    ;
+}
+
 function showBasketWithNoRemote() {
     document
         .getElementById("video")
@@ -2390,6 +2411,29 @@ function showBasketWithNoRemote() {
             </div>
         </div>
     `    
+}
+
+function magazine3page1() {
+    document
+        .getElementById("video")
+        .innerHTML = `
+            <div class="thisScreenThisTime">
+                <img src="pics/apartment/MD6U_0.png">
+                <div class="redmagnifying" id="MD6T_0_fromInside" style="
+                    height: 292px;
+                    width: 140px;
+                    left: 54px;
+                    top: 0px;
+                "></div>
+                <div class="redmagnifying" id="MD6S_0" style="
+                    height: 130px;
+                    width: 213px;
+                    left: 270px;
+                    top: 0px;
+                "></div>
+            </div>
+        `
+    ;
 }
 
 function gettingTheRemoteControl() {
