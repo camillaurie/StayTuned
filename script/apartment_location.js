@@ -2412,6 +2412,7 @@ function magazine3page1() {
 
 function gettingTheRemoteControl() {
     acquiredRemoteControl = true;
+    document.getElementById("inventoryclicksound").play();
     document.getElementById("inventory__place")
         .innerHTML = remoteInInventory + document.getElementById("inventory__place").innerHTML;
     setEffectsVolume();
@@ -2482,6 +2483,9 @@ function showOpenForgottenDrawer() {
     ;
 }
 
+
+
+
 function usingTheTV() {
     if (onHandRightNow == 'remote') {
         document
@@ -2505,6 +2509,30 @@ function usingTheTV() {
                 </div>
             `
         ;
+        document
+            .getElementById("media_elements")
+            .innerHTML = `
+                <audio 
+                    controls
+                    autoplay 
+                    loop
+                    class="SoundEffects" 
+                    id="currentAudio">
+                    <source 
+                        src="audio/noise1.wav" 
+                        type="audio/mpeg">
+                </audio>
+                <audio 
+                    controls 
+                    id="ICantOverTV">
+                    <source 
+                        src="audio/Icant.wav" 
+                        type="audio/mpeg">
+                </audio>
+            `
+        ;
+        setEffectsVolume();
+        setVoiceVolume();
         onHandRightNow = '';
         inventoryContains.push('remote');
         document.getElementById('inventory__place').innerHTML = remoteInInventory + document.getElementById('inventory__place').innerHTML;
@@ -2515,6 +2543,7 @@ function usingTheTV() {
             .getElementById("media_elements")
             .innerHTML = `
                 <audio 
+                    controls
                     autoplay 
                     class="SoundOfVoice" 
                     id="currentAudio">
@@ -2527,6 +2556,9 @@ function usingTheTV() {
         setVoiceVolume();
     }
 }
+
+
+
 
 function turnOffTheTV() {
     if (onHandRightNow == 'remote') {
@@ -2550,6 +2582,10 @@ function turnOffTheTV() {
                 </div>
             `
         ;
+        document
+            .getElementById("media_elements")
+            .innerHTML = ``
+        ;
         onHandRightNow = '';
         inventoryContains.push('remote');
         document.getElementById('inventory__place').innerHTML = remoteInInventory + document.getElementById('inventory__place').innerHTML;
@@ -2557,19 +2593,8 @@ function turnOffTheTV() {
         document.getElementById("pointers").href = "style/pointers_default.css";
     } else {
         document
-            .getElementById("media_elements")
-            .innerHTML = `
-                <audio 
-                    autoplay 
-                    class="SoundOfVoice" 
-                    id="currentAudio">
-                    <source 
-                        src="audio/Icant.wav" 
-                        type="audio/mpeg">
-                </audio>
-            `
-        ;
-        setVoiceVolume();
+            .getElementById("ICantOverTV")
+            .play();
     }
 }
 
