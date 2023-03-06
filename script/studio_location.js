@@ -752,7 +752,7 @@ function goToADifferentScreenInStudioHalf(event) {
             document
                 .getElementById("media_elements")
                 .innerHTML = `
-                    <audio autoplay controls class="SoundOfVoice" onended="clearTheDialogueBox();" id="currentAudio">
+                    <audio autoplay controls class="SoundOfVoice" onended="clearTheDialogueBox(); clearTheAudio();" id="currentAudio">
                     <source 
                         src="audio/Pap01.wav" 
                         type="audio/mpeg">
@@ -771,7 +771,7 @@ function goToADifferentScreenInStudioHalf(event) {
         document
         .getElementById("media_elements")
         .innerHTML = `
-            <audio autoplay controls class="SoundOfVoice" id="currentAudio">
+            <audio autoplay controls onended="clearTheAudio(); clearTheDialogueBox();" class="SoundOfVoice" id="currentAudio">
             <source 
                 src="audio/Ral01.wav" 
                 type="audio/mpeg">
@@ -903,6 +903,22 @@ function goToADifferentScreenInStudioHalf(event) {
             .innerHTML = `
                 <div class="thisScreenThisTime">
                 <img src="pics/studio_hallways/SH1R_0.png">
+                <div class="backpointer" onclick="exploringTheHalfCircleDay()" style="
+                    height: 67px;
+                    width: 536px;
+                    left: 0px;
+                    top: 225px;
+                "></div>
+            `
+        ;
+    };
+
+    if (event && event.target.id == 'SH1M_0') {
+        document
+            .getElementById("video")
+            .innerHTML = `
+                <div class="thisScreenThisTime">
+                <img src="pics/studio_hallways/SH1M_0.png">
                 <div class="backpointer" onclick="exploringTheHalfCircleDay();" style="
                     height: 67px;
                     width: 536px;
@@ -910,6 +926,217 @@ function goToADifferentScreenInStudioHalf(event) {
                     top: 225px;
                 "></div>
             `
+        ;
+    };
+
+    if (event && event.target.id == 'SH2B_0') {
+        document
+            .getElementById("video")
+            .innerHTML = `
+                <div class="thisScreenThisTime">
+                <img src="pics/studio_hallways/SH2B_0.png">
+                <div class="backpointer" id="SH2G_0" style="
+                    height: 67px;
+                    width: 536px;
+                    left: 0px;
+                    top: 225px;
+                "></div>
+                <div class="redmagnifying" id="SH2C_0" style="
+                    height: 109px;
+                    width: 104px;
+                    left: 200px;
+                    top: 90px;
+                "></div>
+                <div class="redmagnifying" id="SH1B_0" style="
+                    height: 219px;
+                    width: 54px;
+                    left: 60px;
+                    top: 50px;
+                "></div>
+            `
+        ;
+    };
+
+    if (event && event.target.id == 'SH2G_0') {
+        document
+            .getElementById("video")
+            .innerHTML = `
+                <div class="thisScreenThisTime">
+                <img src="pics/studio_hallways/SH2G_0.png">
+                <div class="backpointer" id="SH2B_0" style="
+                    height: 67px;
+                    width: 536px;
+                    left: 0px;
+                    top: 225px;
+                "></div>
+                <div class="redmagnifying" onclick="h = 0; exploringTheHalfCircleDay();" style="
+                    height: 109px;
+                    width: 123px;
+                    left: 200px;
+                    top: 90px;
+                "></div>
+            `
+        ;
+    };
+
+    if (event && event.target.id == 'SH2C_0') {
+        document
+            .getElementById("video")
+            .innerHTML = `
+                <div class="thisScreenThisTime">
+                <img src="pics/studio_hallways/SH2C_0.png">
+                <div class="backpointer" id="SH1F_0" style="
+                    height: 67px;
+                    width: 536px;
+                    left: 0px;
+                    top: 225px;
+                "></div>
+                <div class="redmagnifying" id="SH3D_0" style="
+                    height: 267px;
+                    width: 193px;
+                    left: 47px;
+                    top: 0px;
+                "></div>
+            `
+        ;
+    };
+
+    if (event && event.target.id == 'SH1F_0') {
+        document
+            .getElementById("video")
+            .innerHTML = `
+                <div class="thisScreenThisTime">
+                <img src="pics/studio_hallways/SH1F_0.png">
+                <div class="backpointer" id="SH2C_0" style="
+                    height: 67px;
+                    width: 536px;
+                    left: 0px;
+                    top: 225px;
+                "></div>
+                <div class="redmagnifying" id="SH2G_0" style="
+                    height: 109px;
+                    width: 123px;
+                    left: 200px;
+                    top: 90px;
+                "></div>
+                <div class="redmagnifying" id="SH1B_0" style="
+                    height: 115px;
+                    width: 17px;
+                    left: 348px;
+                    top: 79px;
+                "></div>
+            `
+        ;
+    };
+
+    if (event && event.target.id == 'SH1B_0') {
+        document
+            .getElementById("video")
+            .innerHTML = `
+                <div class="thisScreenThisTime">
+                <img src="pics/studio_hallways/SH1B_0.png">
+                <div class="backpointer" id="SH2B_0" style="
+                    height: 67px;
+                    width: 536px;
+                    left: 0px;
+                    top: 225px;
+                "></div>
+                <div class="redmagnifying" id="!!!" style="
+                    height: 109px;
+                    width: 123px;
+                    left: 200px;
+                    top: 90px;
+                "></div>
+            `
+        ;
+    };
+
+    if (event && event.target.id == 'SH3D_0') {
+        document
+            .getElementById("video")
+            .innerHTML = `
+                <div class="thisScreenThisTime">
+                <img src="pics/studio_hallways/SH3D_0.png">
+                <div class="backpointer" id="SH3E_0" style="
+                    height: 67px;
+                    width: 536px;
+                    left: 0px;
+                    top: 225px;
+                "></div>
+                <div class="redmagnifying" id="!!!" style="
+                    height: 109px;
+                    width: 123px;
+                    left: 200px;
+                    top: 90px;
+                "></div>
+            `
+        ;
+    };
+
+    if (event && event.target.id == 'SH3E_0') {
+        document
+            .getElementById("video")
+            .innerHTML = `
+                <div class="thisScreenThisTime">
+                <img src="pics/studio_hallways/SH3E_0.png">
+                <div class="backpointer" id="SH3D_0" style="
+                    height: 67px;
+                    width: 536px;
+                    left: 0px;
+                    top: 225px;
+                "></div>
+                <div class="redmagnifying" id="SH1F_0" style="
+                    height: 225px;
+                    width: 173px;
+                    left: 200px;
+                    top: 0px;
+                "></div>
+                <div class="redmagnifying" id="SH1Q_0" style="
+                    height: 67px;
+                    width: 71px;
+                    left: 465px;
+                    top: 94px;
+                "></div>
+            `
+        ;
+    };
+
+    if (event && event.target.id == 'SH1Q_0') {
+        document
+            .getElementById("video")
+            .innerHTML = `
+                <div class="thisScreenThisTime">
+                <img src="pics/studio_hallways/SH1Q_0.png">
+                <div class="backpointer" id="SH3E_0" style="
+                    height: 67px;
+                    width: 536px;
+                    left: 0px;
+                    top: 225px;
+                "></div>
+            `
+        ;
+    };
+
+    if (event && event.target.id == 'SH3I_0') {
+        document
+            .getElementById("video")
+            .innerHTML = `
+                <div class="thisScreenThisTime">
+                <img src="pics/studio_hallways/SH3I_0.png">
+                <div class="backpointer" onclick="exploringTheStudio2Day();" style="
+                    height: 67px;
+                    width: 536px;
+                    left: 0px;
+                    top: 225px;
+                "></div>
+                <div class="redmagnifying" onclick="exploringTheHalfCircle2Day();" style="
+                    height: 121px;
+                    width: 181px;
+                    left: 173px;
+                    top: 90px;
+                "></div>
+            `
+            // TODO: exploringTheHalfCircle2Day() doesn't exist, it should be made. 
         ;
     };
 };
@@ -1013,13 +1240,31 @@ let SH2X_13 = `
     <img id="circlingPicture" src="pics/studio_second_circle/SH2X_13.png">`;
 
 let SH2X_14 = `
-    <img id="circlingPicture" src="pics/studio_second_circle/SH2X_14.png">`;
+    <img id="circlingPicture" src="pics/studio_second_circle/SH2X_14.png">
+    <div class="redmagnifying" id="SH3I_0" style="
+        width: 127px;
+        height: 95px;
+        top: 95px;
+        left: 63px;
+    "></div>`;
 
 let SH2X_15 = `
-    <img id="circlingPicture" src="pics/studio_second_circle/SH2X_15.png">`;
+    <img id="circlingPicture" src="pics/studio_second_circle/SH2X_15.png">
+    <div class="redmagnifying" id="SH3I_0" style="
+        width: 127px;
+        height: 95px;
+        top: 95px;
+        left: 203px;
+    "></div>`;
 
 let SH2X_16 = `
-    <img id="circlingPicture" src="pics/studio_second_circle/SH2X_16.png">`;
+    <img id="circlingPicture" src="pics/studio_second_circle/SH2X_16.png">
+    <div class="redmagnifying" id="SH3I_0" style="
+        width: 127px;
+        height: 95px;
+        top: 95px;
+        left: 333px;
+    "></div>`;
 
 let SH2X_17 = `
     <img id="circlingPicture" src="pics/studio_second_circle/SH2X_17.png">
@@ -1317,16 +1562,52 @@ let SH1X_7 = `
     "></div>`;
 
 let SH1X_8 = `
-    <img id="circlingPicture" src="pics/studio_half_circle/SH1X_8.png">`;
+    <img id="circlingPicture" src="pics/studio_half_circle/SH1X_8.png">
+    <div class="redmagnifying" id="SH1M_0" style="
+        height: 74px;
+        width: 50px;
+        top: 123px;
+        left: 86px;
+    "></div>`;
 
 let SH1X_9 = `
-    <img id="circlingPicture" src="pics/studio_half_circle/SH1X_9.png">`;
+    <img id="circlingPicture" src="pics/studio_half_circle/SH1X_9.png">
+    <div class="redmagnifying" id="SH1M_0" style="
+        height: 74px;
+        width: 50px;
+        top: 123px;
+        left: 223px;
+    "></div>
+    <div class="redmagnifying" id="SH2B_0" style="
+        height: 92px;
+        width: 122px;
+        top: 97px;
+        left: 70px;
+    "></div>`;
 
 let SH1X_10 = `
-    <img id="circlingPicture" src="pics/studio_half_circle/SH1X_10.png">`;
+    <img id="circlingPicture" src="pics/studio_half_circle/SH1X_10.png">
+    <div class="redmagnifying" id="SH1M_0" style="
+        height: 74px;
+        width: 50px;
+        top: 123px;
+        left: 358px;
+    "></div>
+    <div class="redmagnifying" id="SH2B_0" style="
+        height: 92px;
+        width: 122px;
+        top: 97px;
+        left: 206px;
+    "></div>`;
 
 let SH1X_11 = `
     <img id="circlingPicture" src="pics/studio_half_circle/SH1X_11.png">
+    <div class="redmagnifying" id="SH2B_0" style="
+        height: 92px;
+        width: 122px;
+        top: 97px;
+        left: 340px;
+    "></div>
     <div class="redmagnifying" id="SH1R_0" style="
         height: 59px;
         width: 48px;
