@@ -496,6 +496,7 @@ function goToADifferentScreenInStudio1(event) {
             };
         };
     };
+   
 
 document
     .getElementById("wrapper")
@@ -800,12 +801,118 @@ function goToADifferentScreenInStudioHalf(event) {
                     top: 225px;
                 "></div>`;
     };
+
+    if (event && event.target.id == 'StDoAc') {
+        if (isTheShowOnAir == true) {
+            document
+                .getElementById("video")
+                .innerHTML = `
+                    <div class="thisScreenThisTime">
+                    <img src="pics/studio_hallways/SH1K_0.png">
+                    <div id="swipeInStudio" class="redmagnifying" style="
+                        height: 169px;
+                        width: 64px;
+                        left: 316px;
+                        top: 90px;
+                        z-index: 2;
+                    "></div>
+                    <div id="SH1E_0" class="redmagnifying" style="
+                        height: 109px;
+                        width: 104px;
+                        left: 200px;
+                        top: 90px;
+                    "></div>
+                    <div class="backpointer" onclick="exploringTheStudio2Day();" style="
+                        height: 67px;
+                        width: 536px;
+                        left: 0px;
+                        top: 225px;
+                    "></div>
+                `
+            ;
+        } else {
+            document
+                .getElementById("video")
+                .innerHTML = `
+                    <div class="thisScreenThisTime">
+                    <img src="pics/studio_hallways/SH1L_0.png">
+                    <div id="SH1E_0" class="redmagnifying" style="
+                        height: 109px;
+                        width: 104px;
+                        left: 200px;
+                        top: 90px;
+                    "></div>
+                    <div class="backpointer" onclick="exploringTheStudio2Day();" style="
+                        height: 67px;
+                        width: 536px;
+                        left: 0px;
+                        top: 225px;
+                    "></div>
+                `
+            ;
+        };
+    }
+
+    if (event && event.target.id == 'SH1E_0') {
+        document
+            .getElementById("video")
+            .innerHTML = `
+                <div class="thisScreenThisTime">
+                <img src="pics/studio_hallways/SH1E_0.png">
+                <div class="backpointer" id="StDoAc" style="
+                    height: 67px;
+                    width: 536px;
+                    left: 0px;
+                    top: 225px;
+                "></div>
+            `
+        ;
+    };
+
+    if (event && event.target.id == 'swipeInStudio') {
+        if (onHandRightNow == 'pass') {
+            if (isTheShowOnAir == true) {
+                document
+                    .getElementById("media_elements")
+                    .innerHTML = `
+                        <audio autoplay="" controls="" class="SoundEffects" id="currentAudio">
+                            <source src="audio/SLIDER3.wav" type="audio/mpeg">
+                        </audio>
+                    `;
+                    setEffectsVolume()
+                ;
+            } else {
+                // TODO: what does happen in this scenario?
+            }
+        } else {
+            document
+                .getElementById("media_elements")
+                .innerHTML = `
+                    <audio autoplay="" controls="" onended="clearTheAudio();" class="SoundOfVoice" id="currentAudio">
+                        <source src="audio/Icant.wav" type="audio/mpeg">
+                    </audio>
+                `;
+                setVoiceVolume()
+            ;
+        }
+    };
+
+    if (event && event.target.id == 'SH1R_0') {
+        document
+            .getElementById("video")
+            .innerHTML = `
+                <div class="thisScreenThisTime">
+                <img src="pics/studio_hallways/SH1R_0.png">
+                <div class="backpointer" onclick="exploringTheHalfCircleDay();" style="
+                    height: 67px;
+                    width: 536px;
+                    left: 0px;
+                    top: 225px;
+                "></div>
+            `
+        ;
+    };
 };
-
-
-
-
-
 
 
 
@@ -871,7 +978,7 @@ let SH2X_8 = `
 
 let SH2X_9 = `
     <img id="circlingPicture" src="pics/studio_second_circle/SH2X_9.png">
-    <div class="redmagnifying" onclick="s = 10; exploringTheStudioDay()" style="
+    <div class="redmagnifying" onclick="z = 17; s = 10; exploringTheStudioDay()" style="
         height: 163px;
         width: 168px;
         top: 42px;
@@ -881,7 +988,7 @@ let SH2X_9 = `
 
 let SH2X_10 = `
     <img id="circlingPicture" src="pics/studio_second_circle/SH2X_10.png">
-    <div class="redmagnifying" onclick="s = 10; exploringTheStudioDay()" style="
+    <div class="redmagnifying" onclick="z = 17; s = 10; exploringTheStudioDay()" style="
         height: 163px;
         width: 168px;
         top: 42px;
@@ -891,7 +998,7 @@ let SH2X_10 = `
 
 let SH2X_11 = `
     <img id="circlingPicture" src="pics/studio_second_circle/SH2X_11.png">
-    <div class="redmagnifying" onclick="s = 10; exploringTheStudioDay()" style="
+    <div class="redmagnifying" onclick="z = 17; s = 10; exploringTheStudioDay()" style="
         height: 163px;
         width: 168px;
         top: 42px;
@@ -915,13 +1022,34 @@ let SH2X_16 = `
     <img id="circlingPicture" src="pics/studio_second_circle/SH2X_16.png">`;
 
 let SH2X_17 = `
-    <img id="circlingPicture" src="pics/studio_second_circle/SH2X_17.png">`;
+    <img id="circlingPicture" src="pics/studio_second_circle/SH2X_17.png">
+    <div class="redmagnifying" id="StDoAc" style="
+        width: 77px;
+        height: 95px;
+        top: 115px;
+        left: 122px;
+        z-index: 3;
+    "></div>`;
 
 let SH2X_18 = `
-    <img id="circlingPicture" src="pics/studio_second_circle/SH2X_18.png">`;
+    <img id="circlingPicture" src="pics/studio_second_circle/SH2X_18.png">
+    <div class="redmagnifying" id="StDoAc" style="
+        width: 77px;
+        height: 95px;
+        top: 115px;
+        left: 258px;
+        z-index: 3;
+    "></div>`;
 
 let SH2X_19 = `
-    <img id="circlingPicture" src="pics/studio_second_circle/SH2X_19.png">`;
+    <img id="circlingPicture" src="pics/studio_second_circle/SH2X_19.png">
+    <div class="redmagnifying" id="StDoAc" style="
+        width: 77px;
+        height: 95px;
+        top: 115px;
+        left: 395px;
+        z-index: 3;
+    "></div>`;
 
 let sequenceOfScreensInStudio2 = [SH2X_0, SH2X_1, SH2X_2, SH2X_3, SH2X_4, SH2X_5, SH2X_6, SH2X_7, SH2X_8, SH2X_9, SH2X_10, SH2X_11, SH2X_12, SH2X_13, SH2X_14, SH2X_15, SH2X_16, SH2X_17, SH2X_18, SH2X_19];
 
@@ -936,7 +1064,48 @@ function exploringTheStudio2Day() {
     document
         .getElementById("activelocationspot")
         .innerHTML = sequenceOfScreensInStudio2[z]; 
-};
+    if (isTheShowOnAir == true) {
+        if (z == 17) {
+            document
+                .getElementById("activelocationspot")
+                .innerHTML = document
+                .getElementById("activelocationspot")
+                .innerHTML + `
+                    <img id="onair_17" src="pics/studio_second_circle/onair_17.png" style="
+                        position: absolute;
+                        left: 143px;
+                        top: 128px;
+                    ">
+                `
+            ;
+        } else if (z == 18 && isTheShowOnAir == true) {
+            document
+                .getElementById("activelocationspot")
+                .innerHTML = document
+                .getElementById("activelocationspot")
+                .innerHTML + `
+                    <img id="onair_18" src="pics/studio_second_circle/onair_18.png" style="
+                        position: absolute;
+                        left: 277px;
+                        top: 129px;
+                    ">
+                `
+            ;
+        } else if (z == 19 && isTheShowOnAir == true) {
+            document
+                .getElementById("activelocationspot")
+                .innerHTML = document
+                .getElementById("activelocationspot")
+                .innerHTML + `
+                    <img id="onair_19" src="pics/studio_second_circle/onair_19.png" style="
+                        position: absolute;
+                        left: 408px;
+                        top: 122px;
+                    ">
+                `
+            ;
+        }}
+    };
 
 let z = 17;
 document
@@ -957,7 +1126,13 @@ async function startTheCycleInStudio2(event) {
                 .innerHTML = sequenceOfScreensInStudio2[++z];
             if (isTheShowOnAir == true) {
                 if (z == 16) {
-                    //
+                    document
+                        .getElementById("activelocationspot")
+                        .innerHTML += `<img id="onair_16" src="pics/studio_second_circle/onair_16.png" style="
+                            position: absolute;
+                            left: 0px;
+                            top: 120px;
+                        ">`
                 }
                 if (z == 17) {
                     document
@@ -1001,7 +1176,13 @@ async function startTheCycleInStudio2(event) {
                 .innerHTML = sequenceOfScreensInStudio2[--z];
             if (isTheShowOnAir == true) {
                 if (z == 16) {
-                    //
+                    document
+                        .getElementById("activelocationspot")
+                        .innerHTML += `<img id="onair_16" src="pics/studio_second_circle/onair_16.png" style="
+                            position: absolute;
+                            left: 0px;
+                            top: 120px;
+                        ">`
                 }
                 if (z == 17) {
                     document
@@ -1145,16 +1326,40 @@ let SH1X_10 = `
     <img id="circlingPicture" src="pics/studio_half_circle/SH1X_10.png">`;
 
 let SH1X_11 = `
-    <img id="circlingPicture" src="pics/studio_half_circle/SH1X_11.png">`;
+    <img id="circlingPicture" src="pics/studio_half_circle/SH1X_11.png">
+    <div class="redmagnifying" id="SH1R_0" style="
+        height: 59px;
+        width: 48px;
+        top: 106px;
+        left: 50px;
+    "></div>`;
 
 let SH1X_12 = `
-    <img id="circlingPicture" src="pics/studio_half_circle/SH1X_12.png">`;
+    <img id="circlingPicture" src="pics/studio_half_circle/SH1X_12.png">
+    <div class="redmagnifying" id="SH1R_0" style="
+        height: 59px;
+        width: 71px;
+        top: 106px;
+        left: 169px;
+    "></div>`;
 
 let SH1X_13 = `
-    <img id="circlingPicture" src="pics/studio_half_circle/SH1X_13.png">`;
+    <img id="circlingPicture" src="pics/studio_half_circle/SH1X_13.png">
+    <div class="redmagnifying" id="SH1R_0" style="
+        height: 59px;
+        width: 71px;
+        top: 106px;
+        left: 303px;
+    "></div>`;
 
 let SH1X_14 = `
-    <img id="circlingPicture" src="pics/studio_half_circle/SH1X_14.png">`;
+    <img id="circlingPicture" src="pics/studio_half_circle/SH1X_14.png">
+    <div class="redmagnifying" id="SH1R_0" style="
+        height: 59px;
+        width: 41px;
+        top: 106px;
+        left: 445px;
+    "></div>`;
 
 let SH1X_15 = `
     <img id="circlingPicture" src="pics/studio_half_circle/SH1X_15.png">
