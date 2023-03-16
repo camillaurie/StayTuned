@@ -903,7 +903,7 @@ function goToADifferentScreenInStudioHalf(event) {
             .innerHTML = `
                 <div class="thisScreenThisTime">
                 <img src="pics/studio_hallways/SH1R_0.png">
-                <div class="backpointer" onclick="exploringTheHalfCircleDay()" style="
+                <div class="backpointer" onclick="h=10;exploringTheHalfCircleDay()" style="
                     height: 67px;
                     width: 536px;
                     left: 0px;
@@ -927,32 +927,39 @@ function goToADifferentScreenInStudioHalf(event) {
                 "></div>
             `
         ;
-    };
+    }
 
     if (event && event.target.id == 'SH2B_0') {
         document
             .getElementById("video")
             .innerHTML = `
                 <div class="thisScreenThisTime">
-                <img src="pics/studio_hallways/SH2B_0.png">
-                <div class="backpointer" id="SH2G_0" style="
-                    height: 67px;
-                    width: 536px;
-                    left: 0px;
-                    top: 225px;
-                "></div>
-                <div class="redmagnifying" id="SH2C_0" style="
-                    height: 109px;
-                    width: 104px;
-                    left: 200px;
-                    top: 90px;
-                "></div>
-                <div class="redmagnifying" id="SH1B_0" style="
-                    height: 219px;
-                    width: 54px;
-                    left: 60px;
-                    top: 50px;
-                "></div>
+                    <img src="pics/studio_hallways/SH2B_0.png">
+                    <div class="backpointer" onclick="h=10; exploringTheHalfCircleDay()" style="
+                        height: 67px;
+                        width: 536px;
+                        left: 0px;
+                        top: 225px;
+                    "></div>
+                    <div class="redmagnifying" id="SH2C_0" style="
+                        height: 109px;
+                        width: 104px;
+                        left: 200px;
+                        top: 90px;
+                    "></div>
+                    <div class="redmagnifying" id="SH1B_0" style="
+                        height: 219px;
+                        width: 54px;
+                        left: 60px;
+                        top: 50px;
+                    "></div>
+                    <div class="redmagnifying" id="SH1D_0" style="
+                        height: 122px;
+                        width: 20px;
+                        left: 167px;
+                        top: 96px;
+                    "></div>
+                </div>
             `
         ;
     };
@@ -984,19 +991,20 @@ function goToADifferentScreenInStudioHalf(event) {
             .getElementById("video")
             .innerHTML = `
                 <div class="thisScreenThisTime">
-                <img src="pics/studio_hallways/SH2C_0.png">
-                <div class="backpointer" id="SH1F_0" style="
-                    height: 67px;
-                    width: 536px;
-                    left: 0px;
-                    top: 225px;
-                "></div>
-                <div class="redmagnifying" id="SH3D_0" style="
-                    height: 267px;
-                    width: 193px;
-                    left: 47px;
-                    top: 0px;
-                "></div>
+                    <img src="pics/studio_hallways/SH2C_0.png">
+                    <div class="backpointer" id="SH2B_0" style="
+                        height: 67px;
+                        width: 536px;
+                        left: 0px;
+                        top: 225px;
+                    "></div>
+                    <div class="redmagnifying" id="SH3D_0" style="
+                        height: 267px;
+                        width: 193px;
+                        left: 47px;
+                        top: 0px;
+                    "></div>
+                </div>
             `
         ;
     };
@@ -1006,25 +1014,26 @@ function goToADifferentScreenInStudioHalf(event) {
             .getElementById("video")
             .innerHTML = `
                 <div class="thisScreenThisTime">
-                <img src="pics/studio_hallways/SH1F_0.png">
-                <div class="backpointer" id="SH2C_0" style="
-                    height: 67px;
-                    width: 536px;
-                    left: 0px;
-                    top: 225px;
-                "></div>
-                <div class="redmagnifying" id="SH2G_0" style="
-                    height: 109px;
-                    width: 123px;
-                    left: 200px;
-                    top: 90px;
-                "></div>
-                <div class="redmagnifying" id="SH1B_0" style="
-                    height: 115px;
-                    width: 17px;
-                    left: 348px;
-                    top: 79px;
-                "></div>
+                    <img src="pics/studio_hallways/SH1F_0.png">
+                    <div class="backpointer" id="SH2C_0" style="
+                        height: 67px;
+                        width: 536px;
+                        left: 0px;
+                        top: 225px;
+                    "></div>
+                    <div class="redmagnifying" id="SH2G_0" style="
+                        height: 109px;
+                        width: 123px;
+                        left: 200px;
+                        top: 90px;
+                    "></div>
+                    <div class="redmagnifying" id="SH1B_0" style="
+                        height: 115px;
+                        width: 17px;
+                        left: 348px;
+                        top: 79px;
+                    "></div>
+                </div>
             `
         ;
     };
@@ -1034,19 +1043,43 @@ function goToADifferentScreenInStudioHalf(event) {
             .getElementById("video")
             .innerHTML = `
                 <div class="thisScreenThisTime">
-                <img src="pics/studio_hallways/SH1B_0.png">
-                <div class="backpointer" id="SH2B_0" style="
-                    height: 67px;
-                    width: 536px;
-                    left: 0px;
-                    top: 225px;
-                "></div>
-                <div class="redmagnifying" id="!!!" style="
-                    height: 109px;
-                    width: 123px;
-                    left: 200px;
-                    top: 90px;
-                "></div>
+                    <img src="pics/studio_hallways/SH1B_0.png">
+                    <div class="backpointer" id="SH2B_0" style="
+                        height: 67px;
+                        width: 536px;
+                        left: 0px;
+                        top: 225px;
+                    "></div>
+                    <div class="redmagnifying" id="!!!" style="
+                        height: 109px;
+                        width: 123px;
+                        left: 200px;
+                        top: 90px;
+                    "></div>
+                </div>
+            `
+        ;
+    }
+
+    if (event && event.target.id == 'SH1D_0') {
+        document
+            .getElementById("video")
+            .innerHTML = `
+                <div class="thisScreenThisTime">
+                    <img src="pics/studio_hallways/SH1D_0.png">
+                    <div class="backpointer" id="SH2B_0" style="
+                        height: 67px;
+                        width: 536px;
+                        left: 0px;
+                        top: 225px;
+                    "></div>
+                    <div class="redmagnifying" id="!!!" style="
+                        height: 109px;
+                        width: 123px;
+                        left: 200px;
+                        top: 90px;
+                    "></div>
+                </div>
             `
         ;
     };
@@ -1057,21 +1090,21 @@ function goToADifferentScreenInStudioHalf(event) {
             .innerHTML = `
                 <div class="thisScreenThisTime">
                 <img src="pics/studio_hallways/SH3D_0.png">
-                <div class="backpointer" id="SH3E_0" style="
+                <div class="backpointer" id="SH2C_0" style="
                     height: 67px;
                     width: 536px;
                     left: 0px;
                     top: 225px;
                 "></div>
-                <div class="redmagnifying" id="!!!" style="
-                    height: 109px;
-                    width: 123px;
-                    left: 200px;
-                    top: 90px;
+                <div class="redmagnifying" onclick="z=17; goBackToMap(); currentMusicFile.innerHTML = musicOnTheMapScreen; setMusicVolume();" style="
+                    height: 205px;
+                    width: 50px;
+                    left: 240px;
+                    top: 20px;
                 "></div>
             `
         ;
-    };
+    }; 
 
     if (event && event.target.id == 'SH3E_0') {
         document
@@ -1123,7 +1156,7 @@ function goToADifferentScreenInStudioHalf(event) {
             .innerHTML = `
                 <div class="thisScreenThisTime">
                 <img src="pics/studio_hallways/SH3I_0.png">
-                <div class="backpointer" onclick="exploringTheStudio2Day();" style="
+                <div class="backpointer" onclick="z = 15; exploringTheStudio2Day();" style="
                     height: 67px;
                     width: 536px;
                     left: 0px;
@@ -1136,7 +1169,6 @@ function goToADifferentScreenInStudioHalf(event) {
                     top: 90px;
                 "></div>
             `
-            // TODO: exploringTheHalfCircle2Day() doesn't exist, it should be made. 
         ;
     };
 };
@@ -1704,6 +1736,232 @@ async function startTheCycleInHalfACircleStudio(event) {
 function endTheCycleInHalfACircleStudio() {
     isSidePressed = false;
 }
+
+
+
+
+
+
+
+
+
+
+let SH3X_all = `
+    <div>
+        <div id="activelocationspot">
+        </div>
+        <div id="turnleftincirclehalf2" class ="activesides activeleftside"></div>
+        <div id="turnrightincirclehalf2" class ="activesides activerightside"></div>
+    </div>`;
+
+let SH3X_0 = `
+    <img id="circlingPicture" src="pics/studio_half_circle2/SH3X_0.png">
+    <div id="turnrightincirclehalf" class ="greymagnifying greymagnifyingright"></div>`;
+
+let SH3X_1 = `
+    <img id="circlingPicture" src="pics/studio_half_circle2/SH3X_1.png">`;
+
+let SH3X_2 = `
+    <img id="circlingPicture" src="pics/studio_half_circle2/SH3X_2.png">`;
+
+let SH3X_3 = `
+    <img id="circlingPicture" src="pics/studio_half_circle2/SH3X_3.png">`;
+
+let SH3X_4 = `
+    <img id="circlingPicture" src="pics/studio_half_circle2/SH3X_4.png">
+    <div class="redmagnifying" id="SH3H_0" style="
+        height: 122px;
+        width: 152px;
+        top: 80px;
+        left: 56px;
+        ">
+    </div>`;
+
+let SH3X_5 = `
+    <img id="circlingPicture" src="pics/studio_half_circle2/SH3X_5.png">
+    <div class="redmagnifying" id="SH3H_0" style="
+        height: 122px;
+        width: 152px;
+        top: 80px;
+        left: 190px;
+        ">
+    </div>
+    <div class="redmagnifying" id="SH1N_0_fromHalf" style="
+        height: 89px;
+        width: 73px;
+        top: 120px;
+        left: 93px;
+    "></div>`;
+
+let SH3X_6 = `
+    <img id="circlingPicture" src="pics/studio_half_circle2/SH3X_6.png">
+    <div class="redmagnifying" id="SH3H_0" style="
+        height: 122px;
+        width: 152px;
+        top: 80px;
+        left: 328px;
+        ">
+    </div>
+    <div class="redmagnifying" id="SH1N_0_fromHalf" style="
+        height: 89px;
+        width: 73px;
+        top: 120px;
+        left: 230px;
+    "></div>`;
+
+let SH3X_7 = `
+    <img id="circlingPicture" src="pics/studio_half_circle2/SH3X_7.png">
+    <div class="redmagnifying" id="SH1N_0_fromHalf" style="
+        height: 89px;
+        width: 73px;
+        top: 120px;
+        left: 366px;
+    "></div>`;
+
+let SH3X_8 = `
+    <img id="circlingPicture" src="pics/studio_half_circle2/SH3X_8.png">
+    <div class="redmagnifying" id="SH1M_0" style="
+        height: 74px;
+        width: 50px;
+        top: 123px;
+        left: 86px;
+    "></div>`;
+
+let SH3X_9 = `
+    <img id="circlingPicture" src="pics/studio_half_circle2/SH3X_9.png">
+    <div class="redmagnifying" id="SH1M_0" style="
+        height: 74px;
+        width: 50px;
+        top: 123px;
+        left: 223px;
+    "></div>
+    <div class="redmagnifying" id="SH2B_0" style="
+        height: 92px;
+        width: 122px;
+        top: 97px;
+        left: 70px;
+    "></div>`;
+
+let SH3X_10 = `
+    <img id="circlingPicture" src="pics/studio_half_circle2/SH3X_10.png">
+    <div class="redmagnifying" id="SH1M_0" style="
+        height: 74px;
+        width: 50px;
+        top: 123px;
+        left: 358px;
+    "></div>
+    <div class="redmagnifying" id="SH2B_0" style="
+        height: 92px;
+        width: 122px;
+        top: 97px;
+        left: 206px;
+    "></div>`;
+
+let SH3X_11 = `
+    <img id="circlingPicture" src="pics/studio_half_circle2/SH3X_11.png">
+    <div class="redmagnifying" id="SH2B_0" style="
+        height: 92px;
+        width: 122px;
+        top: 97px;
+        left: 340px;
+    "></div>
+    <div class="redmagnifying" id="SH1R_0" style="
+        height: 59px;
+        width: 48px;
+        top: 106px;
+        left: 50px;
+    "></div>`;
+
+let SH3X_12 = `
+    <img id="circlingPicture" src="pics/studio_half_circle2/SH3X_12.png">
+    <div class="redmagnifying" id="SH1R_0" style="
+        height: 59px;
+        width: 71px;
+        top: 106px;
+        left: 169px;
+    "></div>`;
+
+let SH3X_13 = `
+    <img id="circlingPicture" src="pics/studio_half_circle2/SH3X_13.png">
+    <div class="redmagnifying" id="SH1R_0" style="
+        height: 59px;
+        width: 71px;
+        top: 106px;
+        left: 303px;
+    "></div>`;
+
+let SH3X_14 = `
+    <img id="circlingPicture" src="pics/studio_half_circle2/SH3X_14.png">
+    <div class="redmagnifying" id="SH1R_0" style="
+        height: 59px;
+        width: 41px;
+        top: 106px;
+        left: 445px;
+    "></div>`;
+
+let SH3X_15 = `
+    <img id="circlingPicture" src="pics/studio_half_circle2/SH3X_15.png">
+    <div id="turnleftincirclehalf" class ="greymagnifying greymagnifyingleft"></div>`;
+
+let sequenceOfScreensInTheHalf2 = [SH3X_0, SH3X_1, SH3X_2, SH3X_3, SH3X_4, SH3X_5, SH3X_6, SH3X_7, SH3X_8, SH3X_9, SH3X_10, SH3X_11, SH3X_12, SH3X_13, SH3X_14, SH3X_15];
+
+
+
+
+function exploringTheHalfCircle2Day() {
+    document.getElementById("wholedialogue")
+        .innerHTML = ``;
+    document
+        .getElementById("video")
+        .innerHTML = SH3X_all;
+    document
+        .getElementById("activelocationspot")
+        .innerHTML = sequenceOfScreensInTheHalf2[g]; 
+};
+
+let g = 0;
+document
+    .getElementById("wrapper")
+    .addEventListener("mousedown", startTheCycleInHalfACircleStudio2);
+document
+    .getElementById("wrapper")
+    .addEventListener("mouseup", endTheCycleInHalfACircleStudio2);
+async function startTheCycleInHalfACircleStudio2(event) {
+    if (event && event.target.id == 'turnleftincirclehalf2') {
+        isSidePressed = true;
+        while (isSidePressed == true) {
+            if (g > 14) {
+                // TODO: block the side bar on both ends of the turning point.
+                return;
+                // or break; in this case doesn't really matter. 
+                // Although return in this case is better because 
+                // it doesn't check if the next condition is true.
+            }
+            document
+                .getElementById("activelocationspot")
+                .innerHTML = sequenceOfScreensInTheHalf2[++g];
+            console.log(g);
+            await delay(500);
+        }
+    } else if (event && event.target.id == 'turnrightincirclehalf2') {
+        isSidePressed = true;
+        while (isSidePressed == true) {
+            if (g < 1) {
+                return;
+                // here doesn't matter since there are no conditions further.
+            }
+            document
+                .getElementById("activelocationspot")
+                .innerHTML = sequenceOfScreensInTheHalf2[--g];
+            console.log(g);
+            await delay(500);
+        }
+    }
+}
+function endTheCycleInHalfACircleStudio2() {
+    isSidePressed = false;
+}
+
 
 
 
