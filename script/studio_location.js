@@ -1756,7 +1756,7 @@ let SH3X_all = `
 
 let SH3X_0 = `
     <img id="circlingPicture" src="pics/studio_half_circle2/SH3X_0.png">
-    <div id="turnrightincirclehalf" class ="greymagnifying greymagnifyingright"></div>`;
+    <div id="turnrightincirclehalf2" class ="greymagnifying greymagnifyingright"></div>`;
 
 let SH3X_1 = `
     <img id="circlingPicture" src="pics/studio_half_circle2/SH3X_1.png">`;
@@ -1901,7 +1901,7 @@ let SH3X_14 = `
 
 let SH3X_15 = `
     <img id="circlingPicture" src="pics/studio_half_circle2/SH3X_15.png">
-    <div id="turnleftincirclehalf" class ="greymagnifying greymagnifyingleft"></div>`;
+    <div id="turnleftincirclehalf2" class ="greymagnifying greymagnifyingleft"></div>`;
 
 let sequenceOfScreensInTheHalf2 = [SH3X_0, SH3X_1, SH3X_2, SH3X_3, SH3X_4, SH3X_5, SH3X_6, SH3X_7, SH3X_8, SH3X_9, SH3X_10, SH3X_11, SH3X_12, SH3X_13, SH3X_14, SH3X_15];
 
