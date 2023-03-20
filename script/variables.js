@@ -1,9 +1,10 @@
 let haveISpokenWithMattie = false; // false
-let noteNextToThePhone = 'Ned'; // Ned
+let noteNextToThePhone = 'Ned'; // 'Ned'
 let doIKnowDwaynePlace = false; // false
 let hasWilliamPappasComplained = false; // false
 let onHandRightNow = ''; // ''
 let doIHaveAVisitorsPass = false // false
 let isTheShowOnAir = true; // true
 let acquiredRemoteControl = false; // false
-let myLocationRightNow = '';
+let myLocationRightNow = ''; // ''
+let mattieSaidItsOpen = false; // false

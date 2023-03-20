@@ -930,6 +930,7 @@ function goToADifferentScreenInStudioHalf(event) {
     }
 
     if (event && event.target.id == 'SH2B_0') {
+        mattieSaidItsOpen = false;
         document
             .getElementById("video")
             .innerHTML = `
@@ -955,8 +956,8 @@ function goToADifferentScreenInStudioHalf(event) {
                     "></div>
                     <div class="redmagnifying" id="SH1D_0" style="
                         height: 122px;
-                        width: 20px;
-                        left: 167px;
+                        width: 30px;
+                        left: 157px;
                         top: 96px;
                     "></div>
                 </div>
@@ -1046,19 +1047,76 @@ function goToADifferentScreenInStudioHalf(event) {
                     <img src="pics/studio_hallways/SH1B_0.png">
                     <div class="backpointer" id="SH2B_0" style="
                         height: 67px;
-                        width: 536px;
+                        width: 116px;
                         left: 0px;
                         top: 225px;
                     "></div>
+                    <div class="redmagnifying" id="knockingOnMattiesDoor" style="
+                        height: 169px;
+                        width: 203px;
+                        left: 170px;
+                        top: 10px;
+                    "></div>
+                    <div class="backpointer" id="SH2B_0" style="
+                        height: 67px;
+                        width: 346px;
+                        left: 190px;
+                        top: 225px;
+                    "></div>
                     <div class="redmagnifying" id="!!!" style="
-                        height: 109px;
-                        width: 123px;
-                        left: 200px;
-                        top: 90px;
+                        height: 67px;
+                        width: 74px;
+                        left: 116px;
+                        top: 225px;
                     "></div>
                 </div>
             `
         ;
+    }
+
+    if (event && event.target.id == 'knockingOnMattiesDoor') {
+        if (mattieSaidItsOpen == false) {
+            document
+                .getElementById("media_elements")
+                .innerHTML = `
+                    <audio 
+                        controls 
+                        autoplay 
+                        class="SoundOfVoice" 
+                        onended="clearTheAudio(); mattieSaidItsOpen = true;">
+                        <source 
+                            src="audio/Mv19.wav" 
+                            type="audio/mpeg">
+                    </audio>
+                    <audio 
+                        controls 
+                        autoplay 
+                        class="SoundEffects">
+                        <source 
+                            src="audio/knock.wav" 
+                            type="audio/mpeg">
+                    </audio>
+                `
+            ;
+            mattieSaidItsOpen = true;
+        } else {
+            document
+                .getElementById("media_elements")
+                .innerHTML = `
+                    <audio 
+                        controls 
+                        autoplay 
+                        class="SoundOfVoice" 
+                        onended="clearTheAudio(); mattieSaidItsOpen = true;">
+                        <source 
+                            src="audio/knock.wav" 
+                            type="audio/mpeg">
+                    </audio>
+                `
+            ;
+        }
+        setVoiceVolume();
+        setEffectsVolume();
     }
 
     if (event && event.target.id == 'SH1D_0') {
@@ -1069,15 +1127,27 @@ function goToADifferentScreenInStudioHalf(event) {
                     <img src="pics/studio_hallways/SH1D_0.png">
                     <div class="backpointer" id="SH2B_0" style="
                         height: 67px;
-                        width: 536px;
+                        width: 116px;
                         left: 0px;
                         top: 225px;
                     "></div>
                     <div class="redmagnifying" id="!!!" style="
-                        height: 109px;
-                        width: 123px;
-                        left: 200px;
-                        top: 90px;
+                        height: 169px;
+                        width: 203px;
+                        left: 170px;
+                        top: 10px;
+                    "></div>
+                    <div class="backpointer" id="SH2B_0" style="
+                        height: 67px;
+                        width: 346px;
+                        left: 190px;
+                        top: 225px;
+                    "></div>
+                    <div class="redmagnifying" id="!!!" style="
+                        height: 67px;
+                        width: 74px;
+                        left: 116px;
+                        top: 225px;
                     "></div>
                 </div>
             `
@@ -1768,55 +1838,16 @@ let SH3X_3 = `
     <img id="circlingPicture" src="pics/studio_half_circle2/SH3X_3.png">`;
 
 let SH3X_4 = `
-    <img id="circlingPicture" src="pics/studio_half_circle2/SH3X_4.png">
-    <div class="redmagnifying" id="SH3H_0" style="
-        height: 122px;
-        width: 152px;
-        top: 80px;
-        left: 56px;
-        ">
-    </div>`;
+    <img id="circlingPicture" src="pics/studio_half_circle2/SH3X_4.png">`;
 
 let SH3X_5 = `
-    <img id="circlingPicture" src="pics/studio_half_circle2/SH3X_5.png">
-    <div class="redmagnifying" id="SH3H_0" style="
-        height: 122px;
-        width: 152px;
-        top: 80px;
-        left: 190px;
-        ">
-    </div>
-    <div class="redmagnifying" id="SH1N_0_fromHalf" style="
-        height: 89px;
-        width: 73px;
-        top: 120px;
-        left: 93px;
-    "></div>`;
+    <img id="circlingPicture" src="pics/studio_half_circle2/SH3X_5.png">`;
 
 let SH3X_6 = `
-    <img id="circlingPicture" src="pics/studio_half_circle2/SH3X_6.png">
-    <div class="redmagnifying" id="SH3H_0" style="
-        height: 122px;
-        width: 152px;
-        top: 80px;
-        left: 328px;
-        ">
-    </div>
-    <div class="redmagnifying" id="SH1N_0_fromHalf" style="
-        height: 89px;
-        width: 73px;
-        top: 120px;
-        left: 230px;
-    "></div>`;
+    <img id="circlingPicture" src="pics/studio_half_circle2/SH3X_6.png">`;
 
 let SH3X_7 = `
-    <img id="circlingPicture" src="pics/studio_half_circle2/SH3X_7.png">
-    <div class="redmagnifying" id="SH1N_0_fromHalf" style="
-        height: 89px;
-        width: 73px;
-        top: 120px;
-        left: 366px;
-    "></div>`;
+    <img id="circlingPicture" src="pics/studio_half_circle2/SH3X_7.png">`;
 
 let SH3X_8 = `
     <img id="circlingPicture" src="pics/studio_half_circle2/SH3X_8.png">
