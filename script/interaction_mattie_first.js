@@ -283,7 +283,7 @@ function someoneSentHimABrokenWatch() {
 function nancyImRunningLate() {
     document.getElementById("video")
         .innerHTML = `
-            <video class="SoundOfVoice" id="currentVideo" playsinline controls autoplay onended="defaultMattieImage();">
+            <video class="SoundOfVoice" id="currentVideo" playsinline controls autoplay">
                 <source src="video/mattie_nancyimrunninglate.webm" type="video/webm">
             </video>
             `
@@ -302,7 +302,7 @@ function nancyImRunningLate() {
 function ohBeforeIForget() {
     document.getElementById("video")
         .innerHTML = `
-            <video class="SoundOfVoice" id="currentVideo" onended="removeInventoryGif(); defaultMattieImage();" playsinline controls autoplay>
+            <video class="SoundOfVoice" id="currentVideo" onended="removeInventoryGif();" playsinline controls autoplay>
                 <source src="video/mattie_ohbeforeiforget.webm" type="video/webm">
             </video>`
         setVoiceVolume();
