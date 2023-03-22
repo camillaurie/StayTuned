@@ -1,13 +1,13 @@
 let currentMusicFile = document.getElementById('game_music');
 
 let musicOnTheMapScreen = `
-    <audio controls  autoplay loop class="SoundOfMusic"">
+    <audio controls autoplay loop class="SoundOfMusic"">
         <source 
             src="audio/Music_Intrigue.mp3" 
             type="audio/mpeg">
         </source>
     </audio>
-    <audio controls  autoplay loop class="SoundEffects"">
+    <audio controls autoplay loop class="SoundEffects"">
         <source 
             src="audio/Ambday.wav" 
             type="audio/mpeg">
@@ -17,7 +17,7 @@ let musicOnTheMapScreen = `
 
     
 let musicInMattiesApartmentDay = `
-    <audio controls  autoplay loop class="SoundOfMusic"">
+    <audio controls autoplay loop class="SoundOfMusic"">
         <source 
             src="audio/music__apartment_day.wav" 
             type="audio/mpeg">
@@ -26,7 +26,7 @@ let musicInMattiesApartmentDay = `
 `;
 
 let musicInTheStudio = `
-    <audio controls  autoplay loop class="SoundOfMusic"">
+    <audio controls autoplay loop class="SoundOfMusic"">
         <source 
             src="audio/Music_Calm.mp3" 
             type="audio/mpeg">

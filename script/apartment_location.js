@@ -284,7 +284,7 @@ function goToADifferentScreenInMattiesHallway(event) {
                     left: 0;
                 "></div>
             </div>
-        `;  
+        `;
     }
 
     if (event && event.target.id == 'ME1A_0') {
@@ -370,39 +370,45 @@ function goToADifferentScreenInMattiesHallway(event) {
         .getElementById("video")
         .innerHTML = `
             <div class="thisScreenThisTime">
-            <img src="pics/apartment/ME4A_0.png">
-            <div class="backpointer" id="ME4D_0" style="
-                height: 67px;
-                width: 536px;
-                left: 0px;
-                top: 225px;
-            "></div>`
+                <img src="pics/apartment/ME4A_0.png">
+                <div class="backpointer" id="ME4D_0" style="
+                    height: 67px;
+                    width: 536px;
+                    left: 0px;
+                    top: 225px;
+                "></div>
+            </div>
+        `;
     }
     if (event && event.target.id == 'ME4B_0') {
         document
         .getElementById("video")
         .innerHTML = `
             <div class="thisScreenThisTime">
-            <img src="pics/apartment/ME4B_0.png">
-            <div class="backpointer" id="ME4D_0" style="
-                height: 67px;
-                width: 536px;
-                left: 0px;
-                top: 225px;
-            "></div>`
+                <img src="pics/apartment/ME4B_0.png">
+                <div class="backpointer" id="ME4D_0" style="
+                    height: 67px;
+                    width: 536px;
+                    left: 0px;
+                    top: 225px;
+                "></div>
+            </div>
+        `
     }
     if (event && event.target.id == 'ME4C_0') {
         document
         .getElementById("video")
         .innerHTML = `
             <div class="thisScreenThisTime">
-            <img src="pics/apartment/ME4C_0.png">
-            <div class="backpointer" id="ME4D_0" style="
-                height: 67px;
-                width: 536px;
-                left: 0px;
-                top: 225px;
-            "></div>`
+                <img src="pics/apartment/ME4C_0.png">
+                <div class="backpointer" id="ME4D_0" style="
+                    height: 67px;
+                    width: 536px;
+                    left: 0px;
+                    top: 225px;
+                "></div>
+            </div>
+        `
     }
 
     if (event && event.target.id == 'ME1L_0') {
@@ -415,146 +421,161 @@ function goToADifferentScreenInMattiesHallway(event) {
         document
             .getElementById("video")
             .innerHTML = `
-            <div class="thisScreenThisTime">
-            <img src="pics/apartment/ME1L_0.png">
-            <div class="redmagnifying" id="ME1M_0" style="
-                height: 150px;
-                width: 142px;
-                left: 245px;
-                top: 75px;
-            "></div>
-            <div class="redmagnifying" id="noteNextToPhone" style="
-                height: 116px;
-                width: 128px;
-                left: 408px;
-                top: 109px;
-            "></div>
-            <div class="backpointer" id="ME1A_0" style="
-                height: 67px;
-                width: 536px;
-                left: 0px;
-                top: 225px;
-            "></div>`
+                <div class="thisScreenThisTime">
+                    <img src="pics/apartment/ME1L_0.png">
+                    <div class="redmagnifying" id="ME1M_0" style="
+                        height: 150px;
+                        width: 142px;
+                        left: 245px;
+                        top: 75px;
+                    "></div>
+                    <div class="redmagnifying" id="noteNextToPhone" style="
+                        height: 116px;
+                        width: 128px;
+                        left: 408px;
+                        top: 109px;
+                    "></div>
+                    <div class="backpointer" id="ME1A_0" style="
+                        height: 67px;
+                        width: 536px;
+                        left: 0px;
+                        top: 225px;
+                    "></div>
+                </div>
+            `
+        ;
     }
 
     if (event && event.target.id == 'noteNextToPhone') {
         if (noteNextToThePhone == 'Ned') {
             document
-            .getElementById("video")
-            .innerHTML = `
-            <div class="thisScreenThisTime">
-            <img src="pics/apartment/ME1P_0.png">
-            <div class="backpointer" id="ME1L_0" style="
-                height: 67px;
-                width: 536px;
-                left: 0px;
-                top: 225px;
-            "></div>`
+                .getElementById("video")
+                .innerHTML = `
+                    <div class="thisScreenThisTime">
+                        <img src="pics/apartment/ME1P_0.png">
+                        <div class="backpointer" id="ME1L_0" style="
+                            height: 67px;
+                            width: 536px;
+                            left: 0px;
+                            top: 225px;
+                        "></div>
+                    </div>
+                `
+            ;
         } else if (noteNextToThePhone == 'Bess') {
             document
-            .getElementById("video")
-            .innerHTML = `
-            <div class="thisScreenThisTime">
-            <img src="pics/apartment/ME1N_0.png">
-            <div class="backpointer" id="ME1L_0" style="
-                height: 67px;
-                width: 536px;
-                left: 0px;
-                top: 225px;
-            "></div>`            
+                .getElementById("video")
+                .innerHTML = `
+                    <div class="thisScreenThisTime">
+                        <img src="pics/apartment/ME1N_0.png">
+                        <div class="backpointer" id="ME1L_0" style="
+                            height: 67px;
+                            width: 536px;
+                            left: 0px;
+                            top: 225px;
+                        "></div>
+                    </div>
+                `
+            ;
         } else if (noteNextToThePhone == 'George') {
             document
-            .getElementById("video")
-            .innerHTML = `
-            <div class="thisScreenThisTime">
-            <img src="pics/apartment/ME1O_0.png">
-            <div class="backpointer" id="ME1L_0" style="
-                height: 67px;
-                width: 536px;
-                left: 0px;
-                top: 225px;
-            "></div>`        
+                .getElementById("video")
+                .innerHTML = `
+                    <div class="thisScreenThisTime">
+                        <img src="pics/apartment/ME1O_0.png">
+                        <div class="backpointer" id="ME1L_0" style="
+                            height: 67px;
+                            width: 536px;
+                            left: 0px;
+                            top: 225px;
+                        "></div>
+                    </div>
+                `
+            ;
         }
     }
 
     if (event && event.target.id == 'ME1M_0') {
         document
-        .getElementById("video")
-        .innerHTML = `
-        <div class="thisScreenThisTime">
-        <img src="pics/apartment/ME1M_0.png">
-        <div class="redmagnifying" id="phoneButton1" style="
-            height: 32px;
-            width: 63px;
-            left: 164px;
-            top: 117px;
-        "></div>
-        <div class="redmagnifying" id="phoneButton2" style="
-            height: 32px;
-            width: 63px;
-            left: 236px;
-            top: 117px;
-        "></div>
-        <div class="redmagnifying" id="phoneButton3" style="
-            height: 32px;
-            width: 63px;
-            left: 309px;
-            top: 117px;
-        "></div>
-        <div class="redmagnifying" id="phoneButton4" style="
-            height: 32px;
-            width: 63px;
-            left: 160px;
-            top: 156px;
-        "></div>
-        <div class="redmagnifying" id="phoneButton5" style="
-            height: 32px;
-            width: 63px;
-            left: 237px;
-            top: 156px;
-        "></div>
-        <div class="redmagnifying" id="phoneButton6" style="
-            height: 32px;
-            width: 63px;
-            left: 313px;
-            top: 156px;
-        "></div>
-        <div class="redmagnifying" id="phoneButton7" style="
-            height: 32px;
-            width: 63px;
-            left: 155px;
-            top: 198px;
-        "></div>
-        <div class="redmagnifying" id="phoneButton8" style="
-            height: 32px;
-            width: 63px;
-            left: 236px;
-            top: 198px;
-        "></div>
-        <div class="redmagnifying" id="phoneButton9" style="
-            height: 32px;
-            width: 63px;
-            left: 319px;
-            top: 198px;
-        "></div>
-        <div class="redmagnifying" id="phoneButton0" style="
-            height: 32px;
-            width: 63px;
-            left: 237px;
-            top: 242px;
-        "></div>
-        <div class="backpointer" id="ME1L_0" style="
-            height: 67px;
-            width: 139px;
-            left: 0px;
-            top: 225px;
-        "></div>
-        <div class="backpointer" id="ME1L_0" style="
-            height: 67px;
-            width: 139px;
-            left: 397px;
-            top: 225px;
-        "></div>`
+            .getElementById("video")
+            .innerHTML = `
+                <div class="thisScreenThisTime">
+                    <img src="pics/apartment/ME1M_0.png">
+                    <div class="redmagnifying" id="phoneButton1" style="
+                        height: 32px;
+                        width: 63px;
+                        left: 164px;
+                        top: 117px;
+                    "></div>
+                    <div class="redmagnifying" id="phoneButton2" style="
+                        height: 32px;
+                        width: 63px;
+                        left: 236px;
+                        top: 117px;
+                    "></div>
+                    <div class="redmagnifying" id="phoneButton3" style="
+                        height: 32px;
+                        width: 63px;
+                        left: 309px;
+                        top: 117px;
+                    "></div>
+                    <div class="redmagnifying" id="phoneButton4" style="
+                        height: 32px;
+                        width: 63px;
+                        left: 160px;
+                        top: 156px;
+                    "></div>
+                    <div class="redmagnifying" id="phoneButton5" style="
+                        height: 32px;
+                        width: 63px;
+                        left: 237px;
+                        top: 156px;
+                    "></div>
+                    <div class="redmagnifying" id="phoneButton6" style="
+                        height: 32px;
+                        width: 63px;
+                        left: 313px;
+                        top: 156px;
+                    "></div>
+                    <div class="redmagnifying" id="phoneButton7" style="
+                        height: 32px;
+                        width: 63px;
+                        left: 155px;
+                        top: 198px;
+                    "></div>
+                    <div class="redmagnifying" id="phoneButton8" style="
+                        height: 32px;
+                        width: 63px;
+                        left: 236px;
+                        top: 198px;
+                    "></div>
+                    <div class="redmagnifying" id="phoneButton9" style="
+                        height: 32px;
+                        width: 63px;
+                        left: 319px;
+                        top: 198px;
+                    "></div>
+                    <div class="redmagnifying" id="phoneButton0" style="
+                        height: 32px;
+                        width: 63px;
+                        left: 237px;
+                        top: 242px;
+                    "></div>
+                    <div class="backpointer" id="ME1L_0" style="
+                        height: 67px;
+                        width: 139px;
+                        left: 0px;
+                        top: 225px;
+                    "></div>
+                    <div class="backpointer" id="ME1L_0" style="
+                        height: 67px;
+                        width: 139px;
+                        left: 397px;
+                        top: 225px;
+                    "></div>
+                </div>
+            `
+        ;
         console.log('phoneCalling');
         phoneCalling();
     }
@@ -566,15 +587,15 @@ document
     .getElementById("wrapper")
     .addEventListener("click", phoneCalling); 
 function phoneCalling(event) {
-    if (event && event.target.id == 'ME1M_0')  {
+    if (event && event.target.id == 'ME1M_0') {
         currentPhoneNumber = '';
         document
         .getElementById("media_elements")
         .innerHTML = `
-            <audio controls autoplay loop  class="PersistentSoundEffects SoundEffects" id="currentAudio">
-            <source 
-                src="audio/DialTone.wav" 
-                type="audio/mpeg">
+            <audio controls autoplay loop class="PersistentSoundEffects SoundEffects" id="currentAudio">
+                <source 
+                    src="audio/DialTone.wav" 
+                    type="audio/mpeg">
             </audio> 
         `
         setEffectsVolume();
@@ -586,15 +607,16 @@ function phoneCalling(event) {
                 <p class="dialogue__character">George Fayne&nbsp;&nbsp;&nbsp;&nbsp;1-523-555-2583</p>
                 <p class="dialogue__character">Ned Nickerson&nbsp;&nbsp;&nbsp;1-523-555-4357</p>
             `
+        ;
     }
     if (event && event.target.id == 'phoneButton1') {
         document
         .getElementById("media_elements")
         .innerHTML = `
-            <audio controls autoplay  class="SoundEffects" id="currentAudio">
-            <source 
-                src="audio/Dial1.wav" 
-                type="audio/mpeg">
+            <audio controls autoplay class="SoundEffects" id="currentAudio">
+                <source 
+                    src="audio/Dial1.wav" 
+                    type="audio/mpeg">
             </audio>
         `
         setEffectsVolume();
@@ -605,10 +627,10 @@ function phoneCalling(event) {
         document
         .getElementById("media_elements")
         .innerHTML = `
-            <audio controls autoplay  class="SoundEffects" id="currentAudio">
-            <source 
-                src="audio/Dial2.wav" 
-                type="audio/mpeg">
+            <audio controls autoplay class="SoundEffects" id="currentAudio">
+                <source 
+                    src="audio/Dial2.wav" 
+                    type="audio/mpeg">
             </audio>
         `
         setEffectsVolume();
@@ -619,10 +641,10 @@ function phoneCalling(event) {
         document
         .getElementById("media_elements")
         .innerHTML = `
-            <audio controls autoplay  class="SoundEffects" id="currentAudio">
-            <source 
-                src="audio/Dial3.wav" 
-                type="audio/mpeg">
+            <audio controls autoplay class="SoundEffects" id="currentAudio">
+                <source 
+                    src="audio/Dial3.wav" 
+                    type="audio/mpeg">
             </audio>
         `
         setEffectsVolume();
@@ -633,7 +655,7 @@ function phoneCalling(event) {
         document
         .getElementById("media_elements")
         .innerHTML = `
-            <audio controls autoplay  class="SoundEffects" id="currentAudio">
+            <audio controls autoplay class="SoundEffects" id="currentAudio">
             <source 
                 src="audio/Dial4.wav" 
                 type="audio/mpeg">
@@ -647,7 +669,7 @@ function phoneCalling(event) {
         document
         .getElementById("media_elements")
         .innerHTML = `
-            <audio controls autoplay  class="SoundEffects" id="currentAudio">
+            <audio controls autoplay class="SoundEffects" id="currentAudio">
             <source 
                 src="audio/Dial5.wav" 
                 type="audio/mpeg">
@@ -661,7 +683,7 @@ function phoneCalling(event) {
         document
         .getElementById("media_elements")
         .innerHTML = `
-            <audio controls autoplay  class="SoundEffects" id="currentAudio">
+            <audio controls autoplay class="SoundEffects" id="currentAudio">
             <source 
                 src="audio/Dial6.wav" 
                 type="audio/mpeg">
@@ -675,7 +697,7 @@ function phoneCalling(event) {
         document
         .getElementById("media_elements")
         .innerHTML = `
-            <audio controls autoplay  class="SoundEffects" id="currentAudio">
+            <audio controls autoplay class="SoundEffects" id="currentAudio">
             <source 
                 src="audio/Dial7.wav" 
                 type="audio/mpeg">
@@ -689,7 +711,7 @@ function phoneCalling(event) {
         document
         .getElementById("media_elements")
         .innerHTML = `
-            <audio controls autoplay  class="SoundEffects" id="currentAudio">
+            <audio controls autoplay class="SoundEffects" id="currentAudio">
             <source 
                 src="audio/Dial8.wav" 
                 type="audio/mpeg">
@@ -703,7 +725,7 @@ function phoneCalling(event) {
         document
         .getElementById("media_elements")
         .innerHTML = `
-            <audio controls autoplay  class="SoundEffects" id="currentAudio">
+            <audio controls autoplay class="SoundEffects" id="currentAudio">
             <source 
                 src="audio/Dial9.wav" 
                 type="audio/mpeg">
@@ -717,7 +739,7 @@ function phoneCalling(event) {
         document
         .getElementById("media_elements")
         .innerHTML = `
-            <audio controls autoplay  class="SoundEffects" id="currentAudio">
+            <audio controls autoplay class="SoundEffects" id="currentAudio">
             <source 
                 src="audio/Dial0.wav" 
                 type="audio/mpeg">
@@ -732,7 +754,7 @@ function phoneCalling(event) {
             document
             .getElementById("media_elements")
             .innerHTML = `
-                <audio controls autoplay  class="SoundEffects" id="currentAudio">
+                <audio controls autoplay class="SoundEffects" id="currentAudio">
                 <source 
                     src="audio/TelRing.wav" 
                     type="audio/mpeg">
@@ -745,7 +767,7 @@ function phoneCalling(event) {
             document
             .getElementById("media_elements")
             .innerHTML = `
-                <audio controls autoplay  class="SoundEffects" id="currentAudio">
+                <audio controls autoplay class="SoundEffects" id="currentAudio">
                 <source 
                     src="audio/TelRing.wav" 
                     type="audio/mpeg">
@@ -758,7 +780,7 @@ function phoneCalling(event) {
             document
             .getElementById("media_elements")
             .innerHTML = `
-                <audio controls autoplay  class="SoundEffects"o id="currentAudio">
+                <audio controls autoplay class="SoundEffects"o id="currentAudio">
                 <source 
                     src="audio/TelRing.wav" 
                     type="audio/mpeg">
@@ -772,7 +794,7 @@ function phoneCalling(event) {
             document
             .getElementById("media_elements")
             .innerHTML = `
-                <audio controls autoplay  class="SoundEffects" id="currentAudio">
+                <audio controls autoplay class="SoundEffects" id="currentAudio">
                 <source 
                     src="audio/TelRing.wav" 
                     type="audio/mpeg">
@@ -803,7 +825,7 @@ function dialAgain() {
     document
         .getElementById("media_elements")
         .innerHTML = `
-            <audio controls autoplay  class="SoundEffects" id="currentAudio">
+            <audio controls autoplay class="SoundEffects" id="currentAudio">
             <source 
                 src="audio/DialAgin.wav" 
                 type="audio/mpeg">
@@ -827,7 +849,7 @@ function tryDialingAgain() {
         document
         .getElementById("media_elements")
         .innerHTML = `
-            <audio controls autoplay loop  class="SoundEffects" id="currentAudio">
+            <audio controls autoplay loop class="SoundEffects" id="currentAudio">
             <source 
                 src="audio/DialTone.wav" 
                 type="audio/mpeg">
@@ -943,7 +965,7 @@ function invitationIntoTheApartment() {
     document
     .getElementById("media_elements")
     .innerHTML = `
-        <audio controls autoplay  onended="currentMusicFile.innerHTML = musicInMattiesApartmentDay; setMusicVolume(); clearTheAudio();" class="SoundOfVoice" id="currentAudio">
+        <audio controls autoplay onended="currentMusicFile.innerHTML = musicInMattiesApartmentDay; setMusicVolume(); clearTheAudio();" class="SoundOfVoice" id="currentAudio">
         <source 
             src="audio/mattie_comeoninnancy.mp3" 
             type="audio/mpeg">
@@ -1435,7 +1457,7 @@ function goToADifferentScreenInMattiesRoom(event) {
         document
             .getElementById("media_elements")
             .innerHTML = `
-                <audio controls autoplay  onended="showClosedDrawer(); clearTheAudio();" class="SoundEffects" id="currentAudio">
+                <audio controls autoplay onended="showClosedDrawer(); clearTheAudio();" class="SoundEffects" id="currentAudio">
                     <source 
                         src="audio/drwropen.wav" 
                         type="audio/mpeg">
@@ -1448,7 +1470,7 @@ function goToADifferentScreenInMattiesRoom(event) {
         document
             .getElementById("media_elements")
             .innerHTML = `
-                <audio controls autoplay  onended="showOpenedDrawer(); clearTheAudio();" class="SoundEffects" id="currentAudio">
+                <audio controls autoplay onended="showOpenedDrawer(); clearTheAudio();" class="SoundEffects" id="currentAudio">
                     <source 
                         src="audio/drwropen.wav" 
                         type="audio/mpeg">
@@ -1467,7 +1489,7 @@ function goToADifferentScreenInMattiesRoom(event) {
         document
             .getElementById("media_elements")
             .innerHTML = `
-                <audio controls autoplay  onended="letterFromTallDrawer(); clearTheAudio();" class="SoundEffects" id="currentAudio">
+                <audio controls autoplay onended="letterFromTallDrawer(); clearTheAudio();" class="SoundEffects" id="currentAudio">
                     <source 
                         src="audio/mag.wav" 
                         type="audio/mpeg">
@@ -1588,7 +1610,7 @@ function goToADifferentScreenInMattiesRoom(event) {
         document
             .getElementById("media_elements")
             .innerHTML = `
-                <audio controls autoplay  onended="showEnvelopeAfterLetter(); clearTheAudio();" class="SoundEffects" id="currentAudio">
+                <audio controls autoplay onended="showEnvelopeAfterLetter(); clearTheAudio();" class="SoundEffects" id="currentAudio">
                     <source 
                         src="audio/envelope.wav" 
                         type="audio/mpeg">
@@ -1601,7 +1623,7 @@ function goToADifferentScreenInMattiesRoom(event) {
         document
             .getElementById("media_elements")
             .innerHTML = `
-                <audio controls autoplay  onended="showLetterFromEnvelope(); clearTheAudio();" class="SoundEffects" id="currentAudio">
+                <audio controls autoplay onended="showLetterFromEnvelope(); clearTheAudio();" class="SoundEffects" id="currentAudio">
                     <source 
                         src="audio/envelope.wav" 
                         type="audio/mpeg">
@@ -1813,7 +1835,7 @@ function goToADifferentScreenInMattiesRoom(event) {
         document
             .getElementById("media_elements")
             .innerHTML = `
-                <audio controls autoplay  onended="showClosedBasket(); clearTheAudio();" class="SoundEffects" id="currentAudio">
+                <audio controls autoplay onended="showClosedBasket(); clearTheAudio();" class="SoundEffects" id="currentAudio">
                     <source 
                         src="audio/lidclse.wav" 
                         type="audio/mpeg">
@@ -1831,7 +1853,7 @@ function goToADifferentScreenInMattiesRoom(event) {
         document
             .getElementById("media_elements")
             .innerHTML = `
-                <audio controls autoplay  onended="willIseeRemoteScreen(); clearTheAudio();" class="SoundEffects" id="currentAudio">
+                <audio controls autoplay onended="willIseeRemoteScreen(); clearTheAudio();" class="SoundEffects" id="currentAudio">
                     <source 
                         src="audio/lidopen.wav" 
                         type="audio/mpeg">
@@ -1849,7 +1871,7 @@ function goToADifferentScreenInMattiesRoom(event) {
         document
             .getElementById("media_elements")
             .innerHTML = `
-                <audio controls autoplay  onended="magazineUnderTheRemoteCover(); clearTheAudio();" class="SoundEffects" id="currentAudio">
+                <audio controls autoplay onended="magazineUnderTheRemoteCover(); clearTheAudio();" class="SoundEffects" id="currentAudio">
                     <source 
                         src="audio/Magazine.wav" 
                         type="audio/mpeg">
@@ -1863,7 +1885,7 @@ function goToADifferentScreenInMattiesRoom(event) {
         document
             .getElementById("media_elements")
             .innerHTML = `
-                <audio controls autoplay  onended="magazineUnderTheRemotePage(); clearTheAudio();" class="SoundEffects" id="currentAudio">
+                <audio controls autoplay onended="magazineUnderTheRemotePage(); clearTheAudio();" class="SoundEffects" id="currentAudio">
                     <source 
                         src="audio/Magazine.wav" 
                         type="audio/mpeg">
@@ -1881,7 +1903,7 @@ function goToADifferentScreenInMattiesRoom(event) {
         document
             .getElementById("media_elements")
             .innerHTML = `
-                <audio controls autoplay  onended="openedTheAlbumScreenPage2(); clearTheAudio();" class="SoundEffects" id="currentAudio">
+                <audio controls autoplay onended="openedTheAlbumScreenPage2(); clearTheAudio();" class="SoundEffects" id="currentAudio">
                     <source 
                         src="audio/wickclse.wav" 
                         type="audio/mpeg">
@@ -1899,7 +1921,7 @@ function goToADifferentScreenInMattiesRoom(event) {
         document
             .getElementById("media_elements")
             .innerHTML = `
-                <audio controls autoplay  onended="openedTheAlbumScreen(); clearTheAudio();" class="SoundEffects" id="currentAudio">
+                <audio controls autoplay onended="openedTheAlbumScreen(); clearTheAudio();" class="SoundEffects" id="currentAudio">
                     <source 
                         src="audio/paper2.wav" 
                         type="audio/mpeg">
@@ -1913,7 +1935,7 @@ function goToADifferentScreenInMattiesRoom(event) {
         document
             .getElementById("media_elements")
             .innerHTML = `
-                <audio controls autoplay  onended="openedTheAlbumScreen(); clearTheAudio();" class="SoundEffects" id="currentAudio">
+                <audio controls autoplay onended="openedTheAlbumScreen(); clearTheAudio();" class="SoundEffects" id="currentAudio">
                     <source 
                         src="audio/wickopn.wav" 
                         type="audio/mpeg">
@@ -1926,7 +1948,7 @@ function goToADifferentScreenInMattiesRoom(event) {
         document
             .getElementById("media_elements")
             .innerHTML = `
-                <audio controls autoplay  onended="openedTheAlbumScreenPage3(); clearTheAudio();" class="SoundEffects" id="currentAudio">
+                <audio controls autoplay onended="openedTheAlbumScreenPage3(); clearTheAudio();" class="SoundEffects" id="currentAudio">
                     <source 
                         src="audio/paper2.wav" 
                         type="audio/mpeg">
@@ -1939,7 +1961,7 @@ function goToADifferentScreenInMattiesRoom(event) {
         document
             .getElementById("media_elements")
             .innerHTML = `
-                <audio controls autoplay  onended="openedTheAlbumScreenPage4(); clearTheAudio();" class="SoundEffects" id="currentAudio">
+                <audio controls autoplay onended="openedTheAlbumScreenPage4(); clearTheAudio();" class="SoundEffects" id="currentAudio">
                     <source 
                         src="audio/paper2.wav" 
                         type="audio/mpeg">
@@ -1977,7 +1999,7 @@ function goToADifferentScreenInMattiesRoom(event) {
         document
             .getElementById("media_elements")
             .innerHTML = `
-                <audio controls autoplay  onended="closedMagazine3(); clearTheAudio();" class="SoundEffects" id="currentAudio">
+                <audio controls autoplay onended="closedMagazine3(); clearTheAudio();" class="SoundEffects" id="currentAudio">
                     <source 
                         src="audio/Magazine.wav" 
                         type="audio/mpeg">
@@ -1990,7 +2012,7 @@ function goToADifferentScreenInMattiesRoom(event) {
         document
             .getElementById("media_elements")
             .innerHTML = `
-                <audio controls autoplay  onended="magazine3page1(); clearTheAudio();" class="SoundEffects" id="currentAudio">
+                <audio controls autoplay onended="magazine3page1(); clearTheAudio();" class="SoundEffects" id="currentAudio">
                     <source 
                         src="audio/Magazine.wav" 
                         type="audio/mpeg">
@@ -2482,7 +2504,7 @@ function usingTheTV() {
                         top: 10px;
                         z-index: 5;
                     "></div>
-                    <video playsinline autoplay controls  mute loop  style="
+                    <video playsinline autoplay controls mute loop style="
                         position: absolute;
                         top: 115px;
                         left: 178px;">

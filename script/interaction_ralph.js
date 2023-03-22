@@ -13,7 +13,7 @@ function signTheListScreen1() {
         `
     document.getElementById("media_elements")
         .innerHTML = `
-        <audio controls  autoplay class="SoundOfVoice" onended="getCloserToLogInPaper();"><source src="audio/Ral05.wav" type="audio/mpeg"></audio>
+        <audio controls autoplay class="SoundOfVoice" onended="getCloserToLogInPaper();"><source src="audio/Ral05.wav" type="audio/mpeg"></audio>
         `;
         setVoiceVolume();
     z = 17;
@@ -24,7 +24,7 @@ function getCloserToLogInPaper() {
         .innerHTML = ``
     document.getElementById("video")
         .innerHTML = `
-            <img src="pics/studio_hallways/SE2F_0.png">            
+            <img src="pics/studio_hallways/SE2F_0.png"> 
             <div class="redmagnifying" onclick="signThePaper();" style="
                 height: 30px;
                 width: 410px;
@@ -41,7 +41,7 @@ function signThePaper() {
             </p>`;
     document.getElementById("media_elements")
         .innerHTML = `
-            <audio controls  autoplay class="SoundOfVoice" onended="RalphJustLetUsIn();"><source src="audio/Ral07.wav" type="audio/mpeg"></audio>`;
+            <audio controls autoplay class="SoundOfVoice" onended="RalphJustLetUsIn();"><source src="audio/Ral07.wav" type="audio/mpeg"></audio>`;
             setVoiceVolume();
     document.getElementById("video")
         .innerHTML = `
@@ -175,14 +175,14 @@ function interaction_ralph() {
     function yesMattieJensenLeftAVisitorsPassForMe() {
         document.getElementById("media_elements")
             .innerHTML = `
-            <audio controls  autoplay class="SoundOfVoice" onended="clearTheAudio(); hereYouAre()"><source src="audio/Ng01.wav" type="audio/mpeg"></audio>
+            <audio controls autoplay class="SoundOfVoice" onended="clearTheAudio(); hereYouAre()"><source src="audio/Ng01.wav" type="audio/mpeg"></audio>
             `
             setVoiceVolume();
     }
     function helloHereIsMyPass() {
         document.getElementById("media_elements")
             .innerHTML = `
-            <audio controls  autoplay class="SoundOfVoice" onended="clearTheAudio(); youMayProceed()"><source src="audio/Ng04.wav" type="audio/mpeg"></audio>
+            <audio controls autoplay class="SoundOfVoice" onended="clearTheAudio(); youMayProceed()"><source src="audio/Ng04.wav" type="audio/mpeg"></audio>
             `
             setVoiceVolume();
     }
@@ -193,7 +193,7 @@ function youMayProceed() {
         .innerHTML = 
         document.getElementById("video")
             .innerHTML = `
-            <video playsinline autoplay controls    class="SoundOfVoice" id="currentVideo" onended="RalphJustLetUsIn();">
+            <video playsinline autoplay controls class="SoundOfVoice" id="currentVideo" onended="RalphJustLetUsIn();">
                 <source src="video/ralph_hellomissdrew.webm" type="video/webm">
             </video>`
         setVoiceVolume();

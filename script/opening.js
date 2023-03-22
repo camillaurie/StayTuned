@@ -9,7 +9,7 @@ function theOpeningLetter(event) {
         document
             .getElementById('game_music')
             .innerHTML = `
-                <audio controls  autoplay loop class="SoundOfMusic"">
+                <audio controls autoplay loop class="SoundOfMusic"">
                     <source 
                         src="audio/Music_Stage.mp3" 
                         type="audio/mpeg">
