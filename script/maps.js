@@ -16,6 +16,7 @@ function goToMap(event) {
         }
         currentMusicFile.innerHTML = musicOnTheMapScreen;
         setMusicVolume();
+        setEffectsVolume();
     }
 }
 
@@ -62,6 +63,7 @@ function map1() {
     ;
     currentMusicFile.innerHTML = musicOnTheMapScreen;
     setMusicVolume();
+    setEffectsVolume();
 }
 function map2() {
     document

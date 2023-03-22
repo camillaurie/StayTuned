@@ -13,7 +13,7 @@
 function wellIwasReadingATeleprompter() {
     document.getElementById("video")
         .innerHTML = `
-        <video class="SoundOfVoice" id="currentVideo" playsinline controls autoplay>
+        <video class="SoundOfVoice" id="currentVideo" playsinline controls autoplay onended="defaultMattieImage();">
             <source src="video/mattie_welliwasreading.webm" type="video/webm">
         </video>
         `
@@ -37,7 +37,7 @@ function wellIwasReadingATeleprompter() {
 function wellTheFirstOnes1() {
     document.getElementById("video")
         .innerHTML = `
-        <video class="SoundOfVoice" id="currentVideo" playsinline controls autoplay>
+        <video class="SoundOfVoice" id="currentVideo" playsinline controls autoplay onended="defaultMattieImage();">
             <source src="video/mattie_wellthefirstoneshadtheletters.webm" type="video/webm">
         </video>
         `
@@ -58,7 +58,7 @@ function wellTheFirstOnes1() {
 function wellTheFirstOnes2() {
     document.getElementById("video")
         .innerHTML = `
-        <video class="SoundOfVoice" id="currentVideo" playsinline controls autoplay>
+        <video class="SoundOfVoice" id="currentVideo" playsinline controls autoplay onended="defaultMattieImage();">
             <source src="video/mattie_wellthefirstoneshadtheletters.webm" type="video/webm">
         </video>
         `
@@ -76,7 +76,7 @@ function wellTheFirstOnes2() {
 function wellTheFirstOnes3() {
     document.getElementById("video")
         .innerHTML = `
-        <video class="SoundOfVoice" id="currentVideo" playsinline controls autoplay>
+        <video class="SoundOfVoice" id="currentVideo" playsinline controls autoplay onended="defaultMattieImage();">
             <source src="video/mattie_wellthefirstoneshadtheletters.webm" type="video/webm">
         </video>
         `
@@ -93,7 +93,7 @@ function wellTheFirstOnes3() {
 function wellTheFirstOnes4() {
     document.getElementById("video")
         .innerHTML = `
-        <video class="SoundOfVoice" id="currentVideo" playsinline controls autoplay>
+        <video class="SoundOfVoice" id="currentVideo" playsinline controls autoplay onended="defaultMattieImage();">
             <source src="video/mattie_wellthefirstoneshadtheletters.webm" type="video/webm">
         </video>
         `
@@ -111,7 +111,7 @@ function wellTheFirstOnes4() {
 function noAndThatsTheProblem0() {
     document.getElementById("video")
         .innerHTML = `
-        <video class="SoundOfVoice" id="currentVideo" playsinline controls autoplay>
+        <video class="SoundOfVoice" id="currentVideo" playsinline controls autoplay onended="defaultMattieImage();">
             <source src="video/mattie_noandthatstheproblem.webm" type="video/webm">
         </video>
         `
@@ -132,7 +132,7 @@ function noAndThatsTheProblem0() {
 function noAndThatsTheProblem1() {
     document.getElementById("video")
         .innerHTML = `
-        <video class="SoundOfVoice" id="currentVideo" playsinline controls autoplay>
+        <video class="SoundOfVoice" id="currentVideo" playsinline controls autoplay onended="defaultMattieImage();">
             <source src="video/mattie_noandthatstheproblem.webm" type="video/webm">
         </video>
         `
@@ -150,7 +150,7 @@ function noAndThatsTheProblem1() {
 function noAndThatsTheProblem2() {
     document.getElementById("video")
         .innerHTML = `
-        <video class="SoundOfVoice" id="currentVideo" playsinline controls autoplay>
+        <video class="SoundOfVoice" id="currentVideo" playsinline controls autoplay onended="defaultMattieImage();">
             <source src="video/mattie_noandthatstheproblem.webm" type="video/webm">
         </video>
         `
@@ -168,7 +168,7 @@ function noAndThatsTheProblem2() {
 function noAndThatsTheProblem3() {
     document.getElementById("video")
         .innerHTML = `
-        <video class="SoundOfVoice" id="currentVideo" playsinline controls autoplay>
+        <video class="SoundOfVoice" id="currentVideo" playsinline controls autoplay onended="defaultMattieImage();">
             <source src="video/mattie_noandthatstheproblem.webm" type="video/webm">
         </video>
         `
@@ -185,7 +185,7 @@ function noAndThatsTheProblem3() {
 function ricksaMajorChocoholic1() {
     document.getElementById("video")
         .innerHTML = `
-        <video class="SoundOfVoice" id="currentVideo" playsinline controls autoplay>
+        <video class="SoundOfVoice" id="currentVideo" playsinline controls autoplay onended="defaultMattieImage();">
             <source src="video/mattie_ricksamajorchocoholic.webm" type="video/webm">
         </video>
         `
@@ -206,7 +206,7 @@ function ricksaMajorChocoholic1() {
 function ricksaMajorChocoholic2() {
     document.getElementById("video")
         .innerHTML = `
-        <video class="SoundOfVoice" id="currentVideo" playsinline controls autoplay>
+        <video class="SoundOfVoice" id="currentVideo" playsinline controls autoplay onended="defaultMattieImage();">
             <source src="video/mattie_ricksamajorchocoholic.webm" type="video/webm">
         </video>
         `
@@ -224,7 +224,7 @@ function ricksaMajorChocoholic2() {
 function ricksaMajorChocoholic3() {
     document.getElementById("video")
         .innerHTML = `
-        <video class="SoundOfVoice" id="currentVideo" playsinline controls autoplay>
+        <video class="SoundOfVoice" id="currentVideo" playsinline controls autoplay onended="defaultMattieImage();">
             <source src="video/mattie_ricksamajorchocoholic.webm" type="video/webm">
         </video>
         `
@@ -241,7 +241,7 @@ function ricksaMajorChocoholic3() {
 function ricksaMajorChocoholic4() {
     document.getElementById("video")
         .innerHTML = `
-        <video class="SoundOfVoice" id="currentVideo" playsinline controls autoplay>
+        <video class="SoundOfVoice" id="currentVideo" playsinline controls autoplay onended="defaultMattieImage();">
             <source src="video/mattie_ricksamajorchocoholic.webm" type="video/webm">
         </video>
         `
@@ -259,7 +259,7 @@ function ricksaMajorChocoholic4() {
 function someoneSentHimABrokenWatch() {
     document.getElementById("video")
         .innerHTML = `
-        <video class="SoundOfVoice" id="currentVideo" playsinline controls autoplay>
+        <video class="SoundOfVoice" id="currentVideo" playsinline controls autoplay onended="defaultMattieImage();">
             <source src="video/mattie_someonesenthimabrokenwatch.webm" type="video/webm">
         </video>
         `
@@ -283,7 +283,7 @@ function someoneSentHimABrokenWatch() {
 function nancyImRunningLate() {
     document.getElementById("video")
         .innerHTML = `
-            <video class="SoundOfVoice" id="currentVideo" playsinline controls autoplay>
+            <video class="SoundOfVoice" id="currentVideo" playsinline controls autoplay onended="defaultMattieImage();">
                 <source src="video/mattie_nancyimrunninglate.webm" type="video/webm">
             </video>
             `
@@ -302,7 +302,7 @@ function nancyImRunningLate() {
 function ohBeforeIForget() {
     document.getElementById("video")
         .innerHTML = `
-            <video class="SoundOfVoice" id="currentVideo" onended="removeInventoryGif()" playsinline controls autoplay>
+            <video class="SoundOfVoice" id="currentVideo" onended="removeInventoryGif(); defaultMattieImage();" playsinline controls autoplay>
                 <source src="video/mattie_ohbeforeiforget.webm" type="video/webm">
             </video>`
         setVoiceVolume();
@@ -338,7 +338,7 @@ function removeInventoryGif() {
 function wellForThePastMonth() {
     document.getElementById("video")
         .innerHTML = `
-        <video class="SoundOfVoice" id="currentVideo" playsinline controls autoplay>
+        <video class="SoundOfVoice" id="currentVideo" playsinline controls autoplay onended="defaultMattieImage();">
             <source src="video/mattie_wellforthepast.webm" type="video/webm">
         </video>
         `
@@ -359,7 +359,7 @@ function wellForThePastMonth() {
 function  yesItCanBeAllThatBad() {
     document.getElementById("video")
         .innerHTML = `
-        <video class="SoundOfVoice" id="currentVideo" playsinline controls autoplay>
+        <video class="SoundOfVoice" id="currentVideo" playsinline controls autoplay onended="defaultMattieImage();">
             <source src="video/mattie_yesitcan.webm" type="video/webm">
         </video>
         `
@@ -377,7 +377,7 @@ function  yesItCanBeAllThatBad() {
 function  believeMe() {
     document.getElementById("video")
         .innerHTML = `
-        <video class="SoundOfVoice" id="currentVideo" playsinline controls autoplay>
+        <video class="SoundOfVoice" id="currentVideo" playsinline controls autoplay onended="defaultMattieImage();">
             <source src="video/mattie_believeme.webm" type="video/webm">
         </video>
         `
@@ -398,7 +398,7 @@ function  believeMe() {
 function ohIveGottenSomeOdd() {
     document.getElementById("video")
         .innerHTML = `
-        <video class="SoundOfVoice" id="currentVideo" playsinline controls autoplay>
+        <video class="SoundOfVoice" id="currentVideo" playsinline controls autoplay onended="defaultMattieImage();">
             <source src="video/mattie_ohivegottensomeodd.webm" type="video/webm">
         </video>
         `
@@ -416,7 +416,7 @@ function ohIveGottenSomeOdd() {
 function theyreTotallyBizarre() {
     document.getElementById("video")
         .innerHTML = `
-        <video class="SoundOfVoice" id="currentVideo" playsinline controls autoplay>
+        <video class="SoundOfVoice" id="currentVideo" playsinline controls autoplay onended="defaultMattieImage();">
             <source src="video/mattie_theyretotallybizarre.webm" type="video/webm">
         </video>
         `
@@ -441,7 +441,16 @@ function theyreTotallyBizarre() {
         `
 }
 
-
+function seeingMattieForTheFirstTime() {
+    document
+        .getElementById("video")
+        .innerHTML = `
+                    <video class="SoundOfVoice" id="currentVideo" controls autoplay onended="interaction_mattie_first();">
+                        <source src="video/mattie_welcome_2.webm" type="video/webm">
+                    </video>
+                
+            `
+}
 
 function interaction_mattie_first() {
     document
@@ -450,7 +459,7 @@ function interaction_mattie_first() {
             <div class="game">
                 <div id="menu_button" class="game__menu"></div>
                 <div id='video' class="game__scene">
-                    <video class="SoundOfVoice" id="currentVideo" controls autoplay >
+                    <video class="SoundOfVoice" id="currentVideo" controls autoplay  onended="defaultMattieImage();">
                         <source src="video/mattie_welcome.webm" type="video/webm">
                     </video>
                 </div>
@@ -479,7 +488,7 @@ function interaction_mattie_first() {
         if (event) {
             dialogueOptionId = event.target.id;
         }
-        if (video && video.ended) {
+        if (document.getElementById("video").innerHTML.includes('mattie-default.png') == true) {
             //in case we're slow and we make our choice after the video has already ended
             myHandler();
         } else if (video) {
@@ -701,4 +710,12 @@ function interaction_mattie_first() {
             `
             setVoiceVolume();
     }
+}
+
+function defaultMattieImage() {
+document
+    .getElementById("video")
+    .innerHTML = `
+        <img src="pics/mattie-default.png">
+    `;
 }

@@ -6,7 +6,14 @@ let musicOnTheMapScreen = `
             src="audio/Music_Intrigue.mp3" 
             type="audio/mpeg">
         </source>
-    </audio>`
+    </audio>
+    <audio controls autoplay loop class="SoundEffects"">
+        <source 
+            src="audio/Ambday.wav" 
+            type="audio/mpeg">
+        </source>
+    </audio>
+`;
 
     
 let musicInMattiesApartmentDay = `
@@ -15,13 +22,15 @@ let musicInMattiesApartmentDay = `
             src="audio/music__apartment_day.wav" 
             type="audio/mpeg">
         </source>
-    </audio>`
+    </audio>
+`;
 
-    let musicInTheStudio = `
+let musicInTheStudio = `
     <audio controls autoplay loop class="SoundOfMusic"">
         <source 
             src="audio/Music_Calm.mp3" 
             type="audio/mpeg">
         </source>
-    </audio>`
+    </audio>
+`;
 

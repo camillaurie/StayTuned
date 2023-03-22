@@ -325,7 +325,7 @@ function goToADifferentScreenInMattiesHallway(event) {
 
     if (event && event.target.id == 'MD1X_6') {
         if (haveISpokenWithMattie == false) {
-            interaction_mattie_first();
+            seeingMattieForTheFirstTime();
         } else if (haveISpokenWithMattie == true) {
             exploringTheRoomDay();
         }
@@ -930,6 +930,8 @@ function doorToTheApartmentOpened() {
     onHandRightNow = '';
     if (inventoryContains.length == 0) {
         closedInventoryToInventoryWithKeys();
+    } else if (inventoryContains.includes('keys') == true) {
+        return;
     } else {
         document.getElementById('inventory__place').innerHTML = keysInInventory + document.getElementById('inventory__place').innerHTML;
         document.getElementById("pointers").href = "style/pointers_default.css";

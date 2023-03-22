@@ -53,11 +53,6 @@ function seeStudioEntrance() {
     ;
 }
 
-// TODO: check if in the game you have to catch a taxi again if you're coming back to where you just left. For instance, I left Mattie's apartment, but realized I have to come back. I haven't gone to the studio. Do I have to hear the taxi catching audio again?
-// checked! You don't have to call a cab again if you're already there.
-// Side note: if you call the cab to go somewhere else and then decide you want to go to the place you're at, the audio will continue till the end, but you'll stay in place. 
-// If you return to the map view again, you'll have to listen to the same audio if you want to go there anyway.
-
 function getInsideTheStudio() {
     currentMusicFile.innerHTML = musicInTheStudio;
     setMusicVolume();
@@ -1063,7 +1058,7 @@ function goToADifferentScreenInStudioHalf(event) {
                         left: 190px;
                         top: 225px;
                     "></div>
-                    <div class="redmagnifying" id="!!!" style="
+                    <div class="theendpointer" id="!!!" style="
                         height: 67px;
                         width: 74px;
                         left: 116px;
@@ -1188,7 +1183,7 @@ function goToADifferentScreenInStudioHalf(event) {
                         left: 420px;
                         top: 225px;
                     "></div>
-                    <div class="redmagnifying" id="!!!" style="
+                    <div class="theendpointer" id="!!!" style="
                         height: 67px;
                         width: 74px;
                         left: 346px;
@@ -1229,7 +1224,7 @@ function goToADifferentScreenInStudioHalf(event) {
                     left: 0px;
                     top: 225px;
                 "></div>
-                <div class="redmagnifying" onclick="z=17; goBackToMap(); currentMusicFile.innerHTML = musicOnTheMapScreen; setMusicVolume();" style="
+                <div class="redmagnifying" onclick="z=17; goBackToMap(); currentMusicFile.innerHTML = musicOnTheMapScreen; setMusicVolume(); setEffectsVolume();" style="
                     height: 205px;
                     width: 50px;
                     left: 240px;
@@ -1400,7 +1395,7 @@ function goToADifferentScreenInStudioHalf(event) {
                         left: 100px;
                         top: 0px;
                     "></div>
-                    <div class="redmagnifying" id="!!!" style="
+                    <div class="theendpointer" id="!!!" style="
                         height: 67px;
                         width: 94px;
                         left: 106px;
@@ -1435,7 +1430,7 @@ function goToADifferentScreenInStudioHalf(event) {
                         left: 420px;
                         top: 225px;
                     "></div>
-                    <div class="redmagnifying" id="!!!" style="
+                    <div class="theendpointer" id="!!!" style="
                         height: 67px;
                         width: 74px;
                         left: 346px;
@@ -1980,7 +1975,6 @@ async function startTheCycleInHalfACircleStudio(event) {
         isSidePressed = true;
         while (isSidePressed == true) {
             if (h > 14) {
-                // TODO: block the side bar on both ends of the turning point.
                 return;
                 // or break; in this case doesn't really matter. 
                 // Although return in this case is better because 
@@ -2220,7 +2214,6 @@ async function startTheCycleInHalfACircleStudio2(event) {
         isSidePressed = true;
         while (isSidePressed == true) {
             if (g > 14) {
-                // TODO: block the side bar on both ends of the turning point.
                 return;
                 // or break; in this case doesn't really matter. 
                 // Although return in this case is better because 
