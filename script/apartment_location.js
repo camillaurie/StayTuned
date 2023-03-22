@@ -1807,86 +1807,71 @@ function goToADifferentScreenInMattiesRoom(event) {
             </div>
         `    
     }
+
+    if (event && event.target.id == 'MD3C_0_close') {
+        document
+            .getElementById("media_elements")
+            .innerHTML = `
+                <audio autoplay controls onended="showClosedBasket();" class="SoundEffects" id="currentAudio">
+                    <source 
+                        src="audio/lidclse.wav" 
+                        type="audio/mpeg">
+                </audio>
+            `
+        ;
+        setEffectsVolume();
+    }
+
     if (event && event.target.id == 'MD3C_0') {
+        showClosedBasket();
+    }
+
+    if (event && event.target.id == 'willISeeRemote') {
         document
-            .getElementById("video")
+            .getElementById("media_elements")
             .innerHTML = `
-            <div class="thisScreenThisTime">
-            <img src="pics/apartment/MD3C_0.png">
-            <div class="backpointer" id="MD3E_0" style="
-                height: 58px;
-                width: 536px;
-                left: 0px;
-                top: 234px;
-            "></div>
-            <div class="redmagnifying" id="willISeeRemote" style="
-                height: 110px;
-                width: 146px;
-                left: 196px;
-                top: 124px;
-            "></div>`    
+                <audio autoplay controls onended="willIseeRemoteScreen();" class="SoundEffects" id="currentAudio">
+                    <source 
+                        src="audio/lidopen.wav" 
+                        type="audio/mpeg">
+                </audio>
+            `
+        ;
+        setEffectsVolume();
     }
-    if (event && event.target.id == 'willISeeRemote' && acquiredRemoteControl == false) {
-        document
-            .getElementById("video")
-            .innerHTML = `
-            <div class="thisScreenThisTime">
-            <img src="pics/apartment/MD3A_0.png">
-            <div class="redmagnifying" id="MD3C_0" style="
-                height: 58px;
-                width: 300px;
-                left: 118px;
-                top: 0px;
-            "></div>
-            <div class="redmagnifying" onclick="gettingTheRemoteControl(); showBasketWithNoRemote();" style="
-                height: 80px;
-                width: 196px;
-                left: 170px;
-                top: 95px;
-            "></div>`    
-    }
-    if (event && event.target.id == 'willISeeRemote' && acquiredRemoteControl == true) {
-        showBasketWithNoRemote();
-    }
+
     if (event && event.target.id == 'MD3N_0') {
-        document
-            .getElementById("video")
-            .innerHTML = `
-            <div class="thisScreenThisTime">
-                <img src="pics/apartment/MD3N_0.png">
-                <div class="backpointer" id="willISeeRemote" style="
-                    height: 67px;
-                    width: 536px;
-                    left: 0px;
-                    top: 225px;
-                    ">
-                </div>
-                <div class="redmagnifying" id="MD3O_0" style="
-                    height: 225px;
-                    width: 212px;
-                    left: 157px;
-                    top: 0px;
-                    ">
-                </div>
-            </div>
-        `  
+        magazineUnderTheRemoteCover();
     }
+
+    if (event && event.target.id == 'MD3N_0_close') {
+        document
+            .getElementById("media_elements")
+            .innerHTML = `
+                <audio autoplay controls onended="magazineUnderTheRemoteCover();" class="SoundEffects" id="currentAudio">
+                    <source 
+                        src="audio/Magazine.wav" 
+                        type="audio/mpeg">
+                </audio>
+            `
+        ;
+        setEffectsVolume();
+    }
+
     if (event && event.target.id == 'MD3O_0') {
         document
-            .getElementById("video")
+            .getElementById("media_elements")
             .innerHTML = `
-            <div class="thisScreenThisTime">
-                <img src="pics/apartment/MD3O_0.png">
-                <div class="redmagnifying" id="MD3N_0" style="
-                    height: 292px;
-                    width: 196px;
-                    left: 68px;
-                    top: 0px;
-                    ">
-                </div>
-            </div>
-        `  
+                <audio autoplay controls onended="magazineUnderTheRemotePage();" class="SoundEffects" id="currentAudio">
+                    <source 
+                        src="audio/Magazine.wav" 
+                        type="audio/mpeg">
+                </audio>
+            `
+        ;
+        setEffectsVolume();
     }
+
     if (event && event.target.id == 'MD6W_0') {
         document
             .getElementById("video")
@@ -2370,7 +2355,7 @@ function showBasketWithNoRemote() {
         .innerHTML = `
             <div class="thisScreenThisTime">
                 <img src="pics/apartment/MD3G_0.png">
-                <div class="redmagnifying" id="MD3C_0" style="
+                <div class="redmagnifying" id="MD3C_0_close" style="
                     height: 58px;
                     width: 300px;
                     left: 118px;
@@ -2736,6 +2721,98 @@ function MattiesMomLetter1page() {
                     width: 130px;
                     left: 352px;
                     top: 0px;
+                "></div>
+            </div>
+        `
+    ;
+}
+
+function magazineUnderTheRemoteCover() {
+    document
+            .getElementById("video")
+            .innerHTML = `
+            <div class="thisScreenThisTime">
+                <img src="pics/apartment/MD3N_0.png">
+                <div class="backpointer" onclick="showBasketWithNoRemote()" style="
+                    height: 67px;
+                    width: 536px;
+                    left: 0px;
+                    top: 225px;
+                    ">
+                </div>
+                <div class="redmagnifying" id="MD3O_0" style="
+                    height: 225px;
+                    width: 212px;
+                    left: 157px;
+                    top: 0px;
+                    ">
+                </div>
+            </div>
+        `  
+}
+
+function magazineUnderTheRemotePage() {
+    document
+        .getElementById("video")
+        .innerHTML = `
+            <div class="thisScreenThisTime">
+                <img src="pics/apartment/MD3O_0.png">
+                <div class="redmagnifying" id="MD3N_0_close" style="
+                    height: 292px;
+                    width: 196px;
+                    left: 68px;
+                    top: 0px;
+                    ">
+                </div>
+            </div>
+        `  
+    ;
+}
+
+function willIseeRemoteScreen() {
+    if (acquiredRemoteControl == false) {
+        document
+            .getElementById("video")
+            .innerHTML = `
+                <div class="thisScreenThisTime">
+                    <img src="pics/apartment/MD3A_0.png">
+                    <div class="redmagnifying" id="MD3C_0_close" style="
+                        height: 58px;
+                        width: 300px;
+                        left: 118px;
+                        top: 0px;
+                    "></div>
+                    <div class="redmagnifying" onclick="gettingTheRemoteControl(); showBasketWithNoRemote();" style="
+                        height: 80px;
+                        width: 196px;
+                        left: 170px;
+                        top: 95px;
+                    "></div>
+                </div>
+            `
+        ;
+    } else if (acquiredRemoteControl == true) {
+        showBasketWithNoRemote();
+    }
+}
+
+function showClosedBasket() {
+    document
+        .getElementById("video")
+        .innerHTML = `
+            <div class="thisScreenThisTime">
+                <img src="pics/apartment/MD3C_0.png">
+                <div class="backpointer" id="MD3E_0" style="
+                    height: 58px;
+                    width: 536px;
+                    left: 0px;
+                    top: 234px;
+                "></div>
+                <div class="redmagnifying" id="willISeeRemote" style="
+                    height: 110px;
+                    width: 146px;
+                    left: 196px;
+                    top: 124px;
                 "></div>
             </div>
         `
