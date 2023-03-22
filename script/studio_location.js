@@ -1127,11 +1127,11 @@ function goToADifferentScreenInStudioHalf(event) {
                     <img src="pics/studio_hallways/SH1D_0.png">
                     <div class="backpointer" id="SH2B_0" style="
                         height: 67px;
-                        width: 116px;
+                        width: 346px;
                         left: 0px;
                         top: 225px;
                     "></div>
-                    <div class="redmagnifying" id="!!!" style="
+                    <div class="redmagnifying" id="knockingOnRicksDoor" style="
                         height: 169px;
                         width: 203px;
                         left: 170px;
@@ -1139,19 +1139,37 @@ function goToADifferentScreenInStudioHalf(event) {
                     "></div>
                     <div class="backpointer" id="SH2B_0" style="
                         height: 67px;
-                        width: 346px;
-                        left: 190px;
+                        width: 116px;
+                        left: 420px;
                         top: 225px;
                     "></div>
                     <div class="redmagnifying" id="!!!" style="
                         height: 67px;
                         width: 74px;
-                        left: 116px;
+                        left: 346px;
                         top: 225px;
                     "></div>
                 </div>
             `
         ;
+    };
+
+    if (event && event.target.id == 'knockingOnRicksDoor') {
+        document
+            .getElementById("media_elements")
+            .innerHTML = `
+                <audio 
+                    controls 
+                    autoplay
+                    class="SoundEffects"
+                    onended="clearTheAudio();">
+                    <source 
+                        src="audio/knock.wav" 
+                        type="audio/mpeg">
+                </audio>
+            `
+        ;
+        setEffectsVolume();
     };
 
     if (event && event.target.id == 'SH3D_0') {
@@ -1232,12 +1250,135 @@ function goToADifferentScreenInStudioHalf(event) {
                     left: 0px;
                     top: 225px;
                 "></div>
-                <div class="redmagnifying" onclick="exploringTheHalfCircle2Day();" style="
+                <div class="redmagnifying" onclick="g = 0; exploringTheHalfCircle2Day();" style="
                     height: 121px;
                     width: 181px;
                     left: 173px;
                     top: 90px;
                 "></div>
+            `
+        ;
+    };
+
+    if (event && event.target.id == 'SH3K_0') {
+        document
+            .getElementById("video")
+            .innerHTML = `
+                <div class="thisScreenThisTime">
+                <img src="pics/studio_hallways/SH3K_0.png">
+                <div class="backpointer" onclick="g = 0; exploringTheHalfCircle2Day();" style="
+                    height: 67px;
+                    width: 536px;
+                    left: 0px;
+                    top: 225px;
+                "></div>
+                <div class="redmagnifying" onclick="z = 5; exploringTheStudio2Day();" style="
+                    height: 121px;
+                    width: 181px;
+                    left: 173px;
+                    top: 90px;
+                "></div>
+            `
+        ;
+    };
+
+    if (event && event.target.id == 'SH1O_0') {
+        document
+            .getElementById("video")
+            .innerHTML = `
+                <div class="thisScreenThisTime">
+                <img src="pics/studio_hallways/SH1O_0.png">
+                <div class="backpointer" onclick="exploringTheHalfCircle2Day();" style="
+                    height: 67px;
+                    width: 536px;
+                    left: 0px;
+                    top: 225px;
+                "></div>
+            `
+        ;
+    };
+
+    if (event && event.target.id == 'SH1P_0') {
+        document
+            .getElementById("video")
+            .innerHTML = `
+                <div class="thisScreenThisTime">
+                <img src="pics/studio_hallways/SH1P_0.png">
+                <div class="backpointer" onclick="exploringTheHalfCircle2Day();" style="
+                    height: 67px;
+                    width: 536px;
+                    left: 0px;
+                    top: 225px;
+                "></div>
+            `
+        ;
+    };
+
+    if (event && event.target.id == 'SH1S_0') {
+        document
+            .getElementById("video")
+            .innerHTML = `
+                <div class="thisScreenThisTime">
+                    <img src="pics/studio_hallways/SH1S_0.png">
+                    <div class="backpointer" onclick="exploringTheHalfCircle2Day();" style="
+                        height: 67px;
+                        width: 536px;
+                        left: 0px;
+                        top: 225px;
+                    "></div>
+                </div>
+            `
+        ;
+    };
+
+    if (event && event.target.id == 'SH1U_0') {
+        document
+            .getElementById("video")
+            .innerHTML = `
+                <div class="thisScreenThisTime">
+                    <img src="pics/studio_hallways/SH1U_0.png">
+                    <div class="backpointer" onclick="exploringTheHalfCircle2Day();" style="
+                        height: 67px;
+                        width: 536px;
+                        left: 0px;
+                        top: 225px;
+                    "></div>
+                </div>
+            `
+        ;
+    };
+
+    if (event && event.target.id == 'SH1G_0') {
+        document
+            .getElementById("video")
+            .innerHTML = `
+                <div class="thisScreenThisTime">
+                    <img src="pics/studio_hallways/SH1G_0.png">
+                    <div class="backpointer" onclick="exploringTheHalfCircle2Day();" style="
+                        height: 67px;
+                        width: 346px;
+                        left: 0px;
+                        top: 225px;
+                    "></div>
+                    <div class="redmagnifying" id="knockingOnRicksDoor" style="
+                        height: 169px;
+                        width: 203px;
+                        left: 170px;
+                        top: 10px;
+                    "></div>
+                    <div class="backpointer" onclick="exploringTheHalfCircle2Day();" style="
+                        height: 67px;
+                        width: 116px;
+                        left: 420px;
+                        top: 225px;
+                    "></div>
+                    <div class="redmagnifying" id="!!!" style="
+                        height: 67px;
+                        width: 74px;
+                        left: 346px;
+                        top: 225px;
+                    "></div>
+                </div>
             `
         ;
     };
@@ -1829,106 +1970,160 @@ let SH3X_0 = `
     <div id="turnrightincirclehalf2" class ="greymagnifying greymagnifyingright"></div>`;
 
 let SH3X_1 = `
-    <img id="circlingPicture" src="pics/studio_half_circle2/SH3X_1.png">`;
+    <img id="circlingPicture" src="pics/studio_half_circle2/SH3X_1.png">
+    <div id="SH1S_0" class="redmagnifying" style="
+        width: 43px;
+        height: 58px;
+        left: 50px;
+        top: 106px;
+    "></div>`;
 
 let SH3X_2 = `
-    <img id="circlingPicture" src="pics/studio_half_circle2/SH3X_2.png">`;
+    <img id="circlingPicture" src="pics/studio_half_circle2/SH3X_2.png">
+    <div id="SH1S_0" class="redmagnifying" style="
+        width: 68px;
+        height: 58px;
+        left: 166px;
+        top: 106px;
+    "></div>`;
 
 let SH3X_3 = `
-    <img id="circlingPicture" src="pics/studio_half_circle2/SH3X_3.png">`;
+    <img id="circlingPicture" src="pics/studio_half_circle2/SH3X_3.png">
+    <div id="SH1S_0" class="redmagnifying" style="
+        width: 68px;
+        height: 58px;
+        left: 298px;
+        top: 106px;
+    "></div>
+    <div id="SH1G_0" class="redmagnifying" style="
+        width: 48px;
+        height: 218px;
+        left: 134px;
+        top: 58px;
+    "></div>`;
 
 let SH3X_4 = `
-    <img id="circlingPicture" src="pics/studio_half_circle2/SH3X_4.png">`;
+    <img id="circlingPicture" src="pics/studio_half_circle2/SH3X_4.png">
+    <div id="SH1S_0" class="redmagnifying" style="
+        width: 48px;
+        height: 58px;
+        left: 438px;
+        top: 106px;
+    "></div>
+    <div id="SH1G_0" class="redmagnifying" style="
+        width: 48px;
+        height: 218px;
+        left: 266px;
+        top: 58px;
+    "></div>
+    <div id="SH1U_0" class="redmagnifying" style="
+        width: 52px;
+        height: 78px;
+        left: 108px;
+        top: 111px;
+    "></div>`;
 
 let SH3X_5 = `
-    <img id="circlingPicture" src="pics/studio_half_circle2/SH3X_5.png">`;
+    <img id="circlingPicture" src="pics/studio_half_circle2/SH3X_5.png">
+    <div id="SH1P_0" class="redmagnifying" style="
+        width: 55px;
+        height: 78px;
+        left: 126px;
+        top: 121px;
+    "></div>
+    <div id="SH1G_0" class="redmagnifying" style="
+        width: 48px;
+        height: 218px;
+        left: 406px;
+        top: 58px;
+    "></div>
+    <div id="SH1U_0" class="redmagnifying" style="
+        width: 52px;
+        height: 78px;
+        left: 245px;
+        top: 111px;
+    "></div>`;
 
 let SH3X_6 = `
-    <img id="circlingPicture" src="pics/studio_half_circle2/SH3X_6.png">`;
+    <img id="circlingPicture" src="pics/studio_half_circle2/SH3X_6.png">
+    <div id="SH1P_0" class="redmagnifying" style="
+        width: 55px;
+        height: 78px;
+        left: 259px;
+        top: 121px;
+    "></div>
+    <div id="SH1U_0" class="redmagnifying" style="
+        width: 52px;
+        height: 78px;
+        left: 380px;
+        top: 111px;
+    "></div>`;
 
 let SH3X_7 = `
-    <img id="circlingPicture" src="pics/studio_half_circle2/SH3X_7.png">`;
+    <img id="circlingPicture" src="pics/studio_half_circle2/SH3X_7.png">
+    <div id="SH1P_0" class="redmagnifying" style="
+        width: 55px;
+        height: 78px;
+        left: 398px;
+        top: 121px;
+    "></div>`;
 
 let SH3X_8 = `
     <img id="circlingPicture" src="pics/studio_half_circle2/SH3X_8.png">
-    <div class="redmagnifying" id="SH1M_0" style="
-        height: 74px;
-        width: 50px;
-        top: 123px;
-        left: 86px;
+    <div id="SH1O_0" class="redmagnifying" style="
+        width: 73px;
+        height: 93px;
+        left: 99px;
+        top: 118px;
     "></div>`;
 
 let SH3X_9 = `
     <img id="circlingPicture" src="pics/studio_half_circle2/SH3X_9.png">
-    <div class="redmagnifying" id="SH1M_0" style="
-        height: 74px;
-        width: 50px;
-        top: 123px;
-        left: 223px;
+    <div id="SH1O_0" class="redmagnifying" style="
+        width: 73px;
+        height: 93px;
+        left: 235px;
+        top: 118px;
     "></div>
-    <div class="redmagnifying" id="SH2B_0" style="
-        height: 92px;
-        width: 122px;
-        top: 97px;
-        left: 70px;
+    <div class="redmagnifying" id="SH3K_0" style="
+        width: 110px;
+        height: 90px;
+        left: 74px;
+        top: 100px;
     "></div>`;
 
 let SH3X_10 = `
     <img id="circlingPicture" src="pics/studio_half_circle2/SH3X_10.png">
-    <div class="redmagnifying" id="SH1M_0" style="
-        height: 74px;
-        width: 50px;
-        top: 123px;
-        left: 358px;
+    <div id="SH1O_0" class="redmagnifying" style="
+        width: 73px;
+        height: 93px;
+        left: 370px;
+        top: 118px;
     "></div>
-    <div class="redmagnifying" id="SH2B_0" style="
-        height: 92px;
-        width: 122px;
-        top: 97px;
-        left: 206px;
+    <div class="redmagnifying" id="SH3K_0" style="
+        width: 110px;
+        height: 90px;
+        left: 214px;
+        top: 100px;
     "></div>`;
 
 let SH3X_11 = `
     <img id="circlingPicture" src="pics/studio_half_circle2/SH3X_11.png">
-    <div class="redmagnifying" id="SH2B_0" style="
-        height: 92px;
-        width: 122px;
-        top: 97px;
-        left: 340px;
-    "></div>
-    <div class="redmagnifying" id="SH1R_0" style="
-        height: 59px;
-        width: 48px;
-        top: 106px;
-        left: 50px;
+    <div class="redmagnifying" id="SH3K_0" style="
+        width: 110px;
+        height: 90px;
+        left: 350px;
+        top: 100px;
     "></div>`;
 
 let SH3X_12 = `
-    <img id="circlingPicture" src="pics/studio_half_circle2/SH3X_12.png">
-    <div class="redmagnifying" id="SH1R_0" style="
-        height: 59px;
-        width: 71px;
-        top: 106px;
-        left: 169px;
-    "></div>`;
+    <img id="circlingPicture" src="pics/studio_half_circle2/SH3X_12.png">`;
 
 let SH3X_13 = `
-    <img id="circlingPicture" src="pics/studio_half_circle2/SH3X_13.png">
-    <div class="redmagnifying" id="SH1R_0" style="
-        height: 59px;
-        width: 71px;
-        top: 106px;
-        left: 303px;
-    "></div>`;
+    <img id="circlingPicture" src="pics/studio_half_circle2/SH3X_13.png">`;
 
 let SH3X_14 = `
-    <img id="circlingPicture" src="pics/studio_half_circle2/SH3X_14.png">
-    <div class="redmagnifying" id="SH1R_0" style="
-        height: 59px;
-        width: 41px;
-        top: 106px;
-        left: 445px;
-    "></div>`;
+    <img id="circlingPicture" src="pics/studio_half_circle2/SH3X_14.png">`;
 
 let SH3X_15 = `
     <img id="circlingPicture" src="pics/studio_half_circle2/SH3X_15.png">
