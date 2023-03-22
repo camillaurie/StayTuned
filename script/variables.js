@@ -8,3 +8,4 @@ let isTheShowOnAir = true; // true
 let acquiredRemoteControl = false; // false
 let myLocationRightNow = ''; // ''
 let mattieSaidItsOpen = false; // false
+let propSaidItsOpen = false; // false

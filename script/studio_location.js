@@ -1119,6 +1119,51 @@ function goToADifferentScreenInStudioHalf(event) {
         setEffectsVolume();
     }
 
+    if (event && event.target.id == 'knockingOnPropDoor') {
+        if (propSaidItsOpen == false) {
+            document
+                .getElementById("media_elements")
+                .innerHTML = `
+                    <audio 
+                        controls 
+                        autoplay 
+                        class="SoundOfVoice" 
+                        onended="clearTheAudio(); propSaidItsOpen = true;">
+                        <source 
+                            src="audio/Pv01.wav" 
+                            type="audio/mpeg">
+                    </audio>
+                    <audio 
+                        controls 
+                        autoplay 
+                        class="SoundEffects">
+                        <source 
+                            src="audio/knock.wav" 
+                            type="audio/mpeg">
+                    </audio>
+                `
+            ;
+            propSaidItsOpen = true;
+        } else {
+            document
+                .getElementById("media_elements")
+                .innerHTML = `
+                    <audio 
+                        controls 
+                        autoplay 
+                        class="SoundOfVoice" 
+                        onended="clearTheAudio(); propSaidItsOpen = true;">
+                        <source 
+                            src="audio/knock.wav" 
+                            type="audio/mpeg">
+                    </audio>
+                `
+            ;
+        }
+        setVoiceVolume();
+        setEffectsVolume();
+    }
+
     if (event && event.target.id == 'SH1D_0') {
         document
             .getElementById("video")
@@ -1337,10 +1382,28 @@ function goToADifferentScreenInStudioHalf(event) {
             .innerHTML = `
                 <div class="thisScreenThisTime">
                     <img src="pics/studio_hallways/SH1U_0.png">
-                    <div class="backpointer" onclick="exploringTheHalfCircle2Day();" style="
+                    <div class="backpointer" onclick="propSaidItsOpen = false; exploringTheHalfCircle2Day();" style="
                         height: 67px;
-                        width: 536px;
+                        width: 106px;
                         left: 0px;
+                        top: 225px;
+                    "></div>
+                    <div class="backpointer" onclick="propSaidItsOpen = false; exploringTheHalfCircle2Day();" style="
+                        height: 67px;
+                        width: 336px;
+                        left: 200px;
+                        top: 225px;
+                    "></div>
+                    <div class="redmagnifying" id="knockingOnPropDoor" style="
+                        height: 177px;
+                        width: 336px;
+                        left: 100px;
+                        top: 0px;
+                    "></div>
+                    <div class="redmagnifying" id="!!!" style="
+                        height: 67px;
+                        width: 94px;
+                        left: 106px;
                         top: 225px;
                     "></div>
                 </div>
