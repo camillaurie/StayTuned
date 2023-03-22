@@ -13,7 +13,7 @@ function signTheListScreen1() {
         `
     document.getElementById("media_elements")
         .innerHTML = `
-        <audio controls autoplay class="SoundOfVoice" onended="getCloserToLogInPaper();"><source src="audio/Ral05.wav" type="audio/mpeg"></audio>
+        <audio controls  autoplay class="SoundOfVoice" onended="getCloserToLogInPaper();"><source src="audio/Ral05.wav" type="audio/mpeg"></audio>
         `;
         setVoiceVolume();
     z = 17;
@@ -41,7 +41,7 @@ function signThePaper() {
             </p>`;
     document.getElementById("media_elements")
         .innerHTML = `
-            <audio controls autoplay class="SoundOfVoice" onended="RalphJustLetUsIn();"><source src="audio/Ral07.wav" type="audio/mpeg"></audio>`;
+            <audio controls  autoplay class="SoundOfVoice" onended="RalphJustLetUsIn();"><source src="audio/Ral07.wav" type="audio/mpeg"></audio>`;
             setVoiceVolume();
     document.getElementById("video")
         .innerHTML = `
@@ -55,7 +55,7 @@ function hereYouAre() {
     console.log(inventoryContains);
     document.getElementById("video")
         .innerHTML = `
-        <video class="SoundOfVoice" onplaying="setVoiceVolume()" onended="signTheListScreen1()" id="currentVideo" playsinline controls autoplay>
+        <video playsinline autoplay controls class="SoundOfVoice" onplaying="setVoiceVolume()" onended="signTheListScreen1()" id="currentVideo"   >
             <source src="video/ralph_hereyouare.webm" type="video/webm">
         </video>
         `
@@ -71,7 +71,7 @@ function hereYouAre() {
 function wellForThePastMonthchange() {
     document.getElementById("video")
         .innerHTML = `
-        <video class="SoundOfVoice" id="currentVideo" playsinline controls autoplay>
+        <video playsinline autoplay controls class="SoundOfVoice" id="currentVideo"   >
             <source src="video/mattie_theyretotallybizarre.webm" type="video/webm">
         </video>
         `
@@ -101,7 +101,7 @@ function wellForThePastMonthchange() {
 function interaction_ralph() {
     document.getElementById("video")
         .innerHTML = `
-        <video class="SoundOfVoice" id="currentVideo" playsinline controls autoplay>
+        <video playsinline autoplay controls class="SoundOfVoice" id="currentVideo"   >
             <source src="video/ralph_canihelpyou.webm" type="video/webm">
         </video>
     `
@@ -162,9 +162,9 @@ function interaction_ralph() {
     function noThankYouJustLooking() {
         document.getElementById("media_elements")
             .innerHTML = `
-            <audio 
+            <audio controls 
                 class="SoundOfVoice" 
-                controls 
+                 
                 autoplay 
                 onended="
                     exploringTheStudioDay();">
@@ -175,14 +175,14 @@ function interaction_ralph() {
     function yesMattieJensenLeftAVisitorsPassForMe() {
         document.getElementById("media_elements")
             .innerHTML = `
-            <audio controls autoplay class="SoundOfVoice" onended="clearTheAudio(); hereYouAre()"><source src="audio/Ng01.wav" type="audio/mpeg"></audio>
+            <audio controls  autoplay class="SoundOfVoice" onended="clearTheAudio(); hereYouAre()"><source src="audio/Ng01.wav" type="audio/mpeg"></audio>
             `
             setVoiceVolume();
     }
     function helloHereIsMyPass() {
         document.getElementById("media_elements")
             .innerHTML = `
-            <audio controls autoplay class="SoundOfVoice" onended="clearTheAudio(); youMayProceed()"><source src="audio/Ng04.wav" type="audio/mpeg"></audio>
+            <audio controls  autoplay class="SoundOfVoice" onended="clearTheAudio(); youMayProceed()"><source src="audio/Ng04.wav" type="audio/mpeg"></audio>
             `
             setVoiceVolume();
     }
@@ -193,7 +193,7 @@ function youMayProceed() {
         .innerHTML = 
         document.getElementById("video")
             .innerHTML = `
-            <video playsinline controls autoplay class="SoundOfVoice" id="currentVideo" onended="RalphJustLetUsIn();">
+            <video playsinline autoplay controls    class="SoundOfVoice" id="currentVideo" onended="RalphJustLetUsIn();">
                 <source src="video/ralph_hellomissdrew.webm" type="video/webm">
             </video>`
         setVoiceVolume();

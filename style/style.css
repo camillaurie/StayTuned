@@ -22,11 +22,11 @@ audio {
 }
 
 .SoundOfVoice {
-    top: 540px;
+    top: 70px;
 }
 
 .SoundEffects {
-    top: 510px;
+    top: 100px;
     left: 335px;
 }
 
@@ -118,6 +118,7 @@ body {
     top: 338px;
     left: 438px;
     overflow-y: scroll;
+    overflow-x: hidden;
     width: 183px;
     height: 123px;
     padding-right: 9px;
