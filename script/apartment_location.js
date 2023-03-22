@@ -1434,7 +1434,7 @@ function goToADifferentScreenInMattiesRoom(event) {
         document
             .getElementById("media_elements")
             .innerHTML = `
-                <audio autoplay controls onended="showClosedDrawer();" class="SoundEffects" id="currentAudio">
+                <audio autoplay controls onended="showClosedDrawer(); clearTheAudio();" class="SoundEffects" id="currentAudio">
                     <source 
                         src="audio/drwropen.wav" 
                         type="audio/mpeg">
@@ -1447,7 +1447,7 @@ function goToADifferentScreenInMattiesRoom(event) {
         document
             .getElementById("media_elements")
             .innerHTML = `
-                <audio autoplay controls onended="showOpenedDrawer();" class="SoundEffects" id="currentAudio">
+                <audio autoplay controls onended="showOpenedDrawer(); clearTheAudio();" class="SoundEffects" id="currentAudio">
                     <source 
                         src="audio/drwropen.wav" 
                         type="audio/mpeg">
@@ -1466,7 +1466,7 @@ function goToADifferentScreenInMattiesRoom(event) {
         document
             .getElementById("media_elements")
             .innerHTML = `
-                <audio autoplay controls onended="letterFromTallDrawer();" class="SoundEffects" id="currentAudio">
+                <audio autoplay controls onended="letterFromTallDrawer(); clearTheAudio();" class="SoundEffects" id="currentAudio">
                     <source 
                         src="audio/mag.wav" 
                         type="audio/mpeg">
@@ -1551,7 +1551,7 @@ function goToADifferentScreenInMattiesRoom(event) {
                 <audio 
                     autoplay 
                     controls 
-                    onended="MattiesMomLetter1page();" 
+                    onended="MattiesMomLetter1page(); clearTheAudio();" 
                     class="SoundEffects" 
                     id="currentAudio">
                     <source 
@@ -1569,7 +1569,7 @@ function goToADifferentScreenInMattiesRoom(event) {
                 <audio 
                     autoplay 
                     controls 
-                    onended="MattiesMomLetter2page();" 
+                    onended="MattiesMomLetter2page(); clearTheAudio();" 
                     class="SoundEffects" 
                     id="currentAudio">
                     <source 
@@ -1587,7 +1587,7 @@ function goToADifferentScreenInMattiesRoom(event) {
         document
             .getElementById("media_elements")
             .innerHTML = `
-                <audio autoplay controls onended="showEnvelopeAfterLetter();" class="SoundEffects" id="currentAudio">
+                <audio autoplay controls onended="showEnvelopeAfterLetter(); clearTheAudio();" class="SoundEffects" id="currentAudio">
                     <source 
                         src="audio/envelope.wav" 
                         type="audio/mpeg">
@@ -1600,7 +1600,7 @@ function goToADifferentScreenInMattiesRoom(event) {
         document
             .getElementById("media_elements")
             .innerHTML = `
-                <audio autoplay controls onended="showLetterFromEnvelope();" class="SoundEffects" id="currentAudio">
+                <audio autoplay controls onended="showLetterFromEnvelope(); clearTheAudio();" class="SoundEffects" id="currentAudio">
                     <source 
                         src="audio/envelope.wav" 
                         type="audio/mpeg">
@@ -1812,7 +1812,7 @@ function goToADifferentScreenInMattiesRoom(event) {
         document
             .getElementById("media_elements")
             .innerHTML = `
-                <audio autoplay controls onended="showClosedBasket();" class="SoundEffects" id="currentAudio">
+                <audio autoplay controls onended="showClosedBasket(); clearTheAudio();" class="SoundEffects" id="currentAudio">
                     <source 
                         src="audio/lidclse.wav" 
                         type="audio/mpeg">
@@ -1830,7 +1830,7 @@ function goToADifferentScreenInMattiesRoom(event) {
         document
             .getElementById("media_elements")
             .innerHTML = `
-                <audio autoplay controls onended="willIseeRemoteScreen();" class="SoundEffects" id="currentAudio">
+                <audio autoplay controls onended="willIseeRemoteScreen(); clearTheAudio();" class="SoundEffects" id="currentAudio">
                     <source 
                         src="audio/lidopen.wav" 
                         type="audio/mpeg">
@@ -1848,7 +1848,7 @@ function goToADifferentScreenInMattiesRoom(event) {
         document
             .getElementById("media_elements")
             .innerHTML = `
-                <audio autoplay controls onended="magazineUnderTheRemoteCover();" class="SoundEffects" id="currentAudio">
+                <audio autoplay controls onended="magazineUnderTheRemoteCover(); clearTheAudio();" class="SoundEffects" id="currentAudio">
                     <source 
                         src="audio/Magazine.wav" 
                         type="audio/mpeg">
@@ -1862,7 +1862,7 @@ function goToADifferentScreenInMattiesRoom(event) {
         document
             .getElementById("media_elements")
             .innerHTML = `
-                <audio autoplay controls onended="magazineUnderTheRemotePage();" class="SoundEffects" id="currentAudio">
+                <audio autoplay controls onended="magazineUnderTheRemotePage(); clearTheAudio();" class="SoundEffects" id="currentAudio">
                     <source 
                         src="audio/Magazine.wav" 
                         type="audio/mpeg">
@@ -1873,83 +1873,79 @@ function goToADifferentScreenInMattiesRoom(event) {
     }
 
     if (event && event.target.id == 'MD6W_0') {
-        document
-            .getElementById("video")
-            .innerHTML = `
-            <div class="thisScreenThisTime">
-            <img src="pics/apartment/MD6W_0.png">
-            <div class="backpointer" id="MD3E_0" style="
-                height: 58px;
-                width: 536px;
-                left: 0px;
-                top: 234px;
-            "></div>
-            <div class="redmagnifying" id="MD6X_0" style="
-                height: 210px;
-                width: 206px;
-                left: 150px;
-                top: 15px;
-            "></div>`    
+        openedTheAlbumScreenPage2();
     }
-    if (event && event.target.id == 'MD6X_0') {
+
+    if (event && event.target.id == 'MD6W_0_close') {
         document
-            .getElementById("video")
+            .getElementById("media_elements")
             .innerHTML = `
-                <div class="thisScreenThisTime">
-                    <img src="pics/apartment/MD6X_0.png">
-                    <div class="redmagnifying" id="MD6Y_0" style="
-                        height: 202px;
-                        width: 185px;
-                        left: 299px;
-                        top: 26px;
-                    "></div>
-                    <div class="redmagnifying" id="MD6W_0" style="
-                        height: 218px;
-                        width: 146px;
-                        left: 32px;
-                        top: 42px;
-                    "></div>
-                </div>
+                <audio autoplay controls onended="openedTheAlbumScreenPage2(); clearTheAudio();" class="SoundEffects" id="currentAudio">
+                    <source 
+                        src="audio/wickclse.wav" 
+                        type="audio/mpeg">
+                </audio>
             `
         ;
+        setEffectsVolume();
+    }
+
+    if (event && event.target.id == 'MD6X_0') {
+        openedTheAlbumScreen();
+    }
+
+    if (event && event.target.id == 'MD6X_0_fromFurther') {
+        document
+            .getElementById("media_elements")
+            .innerHTML = `
+                <audio autoplay controls onended="openedTheAlbumScreen(); clearTheAudio();" class="SoundEffects" id="currentAudio">
+                    <source 
+                        src="audio/paper2.wav" 
+                        type="audio/mpeg">
+                </audio>
+            `
+        ;
+        setEffectsVolume();
+    }
+
+    if (event && event.target.id == 'MD6X_0_open') {
+        document
+            .getElementById("media_elements")
+            .innerHTML = `
+                <audio autoplay controls onended="openedTheAlbumScreen(); clearTheAudio();" class="SoundEffects" id="currentAudio">
+                    <source 
+                        src="audio/wickopn.wav" 
+                        type="audio/mpeg">
+                </audio>
+            `
+        ;
+        setEffectsVolume();
     }
     if (event && event.target.id == 'MD6Y_0') {
         document
-            .getElementById("video")
+            .getElementById("media_elements")
             .innerHTML = `
-                <div class="thisScreenThisTime">
-                    <img src="pics/apartment/MD6Y_0.png">
-                    <div class="redmagnifying" id="MD6Z_0" style="
-                        height: 202px;
-                        width: 185px;
-                        left: 299px;
-                        top: 26px;
-                    "></div>
-                    <div class="redmagnifying" id="MD6X_0" style="
-                        height: 218px;
-                        width: 146px;
-                        left: 32px;
-                        top: 42px;
-                    "></div>
-                </div>
+                <audio autoplay controls onended="openedTheAlbumScreenPage3(); clearTheAudio();" class="SoundEffects" id="currentAudio">
+                    <source 
+                        src="audio/paper2.wav" 
+                        type="audio/mpeg">
+                </audio>
             `
         ;
+        setEffectsVolume();
     }
     if (event && event.target.id == 'MD6Z_0') {
         document
-            .getElementById("video")
+            .getElementById("media_elements")
             .innerHTML = `
-                <div class="thisScreenThisTime">
-                    <img src="pics/apartment/MD6Z_0.png">
-                    <div class="redmagnifying" id="MD6Y_0" style="
-                        height: 218px;
-                        width: 146px;
-                        left: 32px;
-                        top: 42px;
-                    "></div>
-                </div>
+                <audio autoplay controls onended="openedTheAlbumScreenPage4(); clearTheAudio();" class="SoundEffects" id="currentAudio">
+                    <source 
+                        src="audio/paper2.wav" 
+                        type="audio/mpeg">
+                </audio>
             `
         ;
+        setEffectsVolume();
     }
     if (event && event.target.id == 'MD6V_0') {
         document
@@ -1980,7 +1976,7 @@ function goToADifferentScreenInMattiesRoom(event) {
         document
             .getElementById("media_elements")
             .innerHTML = `
-                <audio autoplay controls onended="closedMagazine3();" class="SoundEffects" id="currentAudio">
+                <audio autoplay controls onended="closedMagazine3(); clearTheAudio();" class="SoundEffects" id="currentAudio">
                     <source 
                         src="audio/Magazine.wav" 
                         type="audio/mpeg">
@@ -1993,7 +1989,7 @@ function goToADifferentScreenInMattiesRoom(event) {
         document
             .getElementById("media_elements")
             .innerHTML = `
-                <audio autoplay controls onended="magazine3page1();" class="SoundEffects" id="currentAudio">
+                <audio autoplay controls onended="magazine3page1(); clearTheAudio();" class="SoundEffects" id="currentAudio">
                     <source 
                         src="audio/Magazine.wav" 
                         type="audio/mpeg">
@@ -2813,6 +2809,92 @@ function showClosedBasket() {
                     width: 146px;
                     left: 196px;
                     top: 124px;
+                "></div>
+            </div>
+        `
+    ;
+}
+
+function openedTheAlbumScreen() {
+    document
+        .getElementById("video")
+        .innerHTML = `
+            <div class="thisScreenThisTime">
+                <img src="pics/apartment/MD6X_0.png">
+                <div class="redmagnifying" id="MD6Y_0" style="
+                    height: 202px;
+                    width: 185px;
+                    left: 299px;
+                    top: 26px;
+                "></div>
+                <div class="redmagnifying" id="MD6W_0_close" style="
+                    height: 218px;
+                    width: 146px;
+                    left: 32px;
+                    top: 42px;
+                "></div>
+            </div>
+        `
+    ;
+}
+
+function openedTheAlbumScreenPage2() {
+    document
+        .getElementById("video")
+        .innerHTML = `
+            <div class="thisScreenThisTime">
+                <img src="pics/apartment/MD6W_0.png">
+                <div class="backpointer" id="MD3E_0" style="
+                    height: 58px;
+                    width: 536px;
+                    left: 0px;
+                    top: 234px;
+                "></div>
+                <div class="redmagnifying" id="MD6X_0_open" style="
+                    height: 210px;
+                    width: 206px;
+                    left: 150px;
+                    top: 15px;
+                "></div>
+            </div>
+        `
+    ;
+}
+
+function openedTheAlbumScreenPage3() {
+    document
+        .getElementById("video")
+        .innerHTML = `
+            <div class="thisScreenThisTime">
+                <img src="pics/apartment/MD6Y_0.png">
+                <div class="redmagnifying" id="MD6Z_0" style="
+                    height: 202px;
+                    width: 185px;
+                    left: 299px;
+                    top: 26px;
+                "></div>
+                <div class="redmagnifying" id="MD6X_0_fromFurther" style="
+                    height: 218px;
+                    width: 146px;
+                    left: 32px;
+                    top: 42px;
+                "></div>
+            </div>
+        `
+    ;
+}
+
+function openedTheAlbumScreenPage4() {
+    document
+        .getElementById("video")
+        .innerHTML = `
+            <div class="thisScreenThisTime">
+                <img src="pics/apartment/MD6Z_0.png">
+                <div class="redmagnifying" id="MD6Y_0" style="
+                    height: 218px;
+                    width: 146px;
+                    left: 32px;
+                    top: 42px;
                 "></div>
             </div>
         `
