@@ -297,7 +297,8 @@ function exploringTheStudioDay() {
         .innerHTML = ME1X_all;
     document
         .getElementById("activelocationspot")
-        .innerHTML = sequenceOfScreensInHallway[i]; 
+        .innerHTML = sequenceOfScreensInHallway[i]
+    ; 
 };
 
 
@@ -319,7 +320,6 @@ async function startTheCycleInStudio1(event) {
                 .getElementById("activelocationspot")
                 .innerHTML = sequenceOfScreensInStudio1[++s];
             console.log(s);
-
             if (s == 2) {
                 if (document.getElementById("talkToRalph")) {
                     document
@@ -328,7 +328,9 @@ async function startTheCycleInStudio1(event) {
                             position: absolute;
                             top: 70px;
                             left: 0px;
-                            width: 145px;`;
+                            width: 145px;
+                        `
+                    ;
                 };
             } else if (s == 3) {
                 document
@@ -337,7 +339,9 @@ async function startTheCycleInStudio1(event) {
                         position: absolute;
                         top: 70px;
                         left: 204px;
-                        width: 145px;`;
+                        width: 145px;
+                    `
+                ;
             } else if (s == 4) {
                 document
                     .getElementById("talkToRalph")
@@ -345,18 +349,22 @@ async function startTheCycleInStudio1(event) {
                         position: absolute;
                         top: 70px;
                         left: 391px;
-                        width: 145px;`;
+                        width: 145px;
+                    `
+                ;
             } else {
                 if (document
                         .getElementById("talkToRalph")) {
                     document
                         .getElementById("talkToRalph")
-                        .style = `display: none;`;
+                        .style = `display: none;`
+                    ;
                 };
             };
             await delay(500);
         }
     }
+
     if (event && event.target.id == 'turnrightincirclestudio1') {
         isSidePressed = true;
         while (isSidePressed == true) {
@@ -375,7 +383,9 @@ async function startTheCycleInStudio1(event) {
                             position: absolute;
                             top: 70px;
                             left: 0px;
-                            width: 145px;`;
+                            width: 145px;
+                        `
+                    ;
                 } else if (s == 3) {
                     document
                         .getElementById("talkToRalph")
@@ -383,7 +393,9 @@ async function startTheCycleInStudio1(event) {
                             position: absolute;
                             top: 70px;
                             left: 200px;
-                            width: 145px;`;
+                            width: 145px;
+                        `
+                    ;
                 } else if (s == 4) {
                     document
                         .getElementById("talkToRalph")
@@ -391,13 +403,16 @@ async function startTheCycleInStudio1(event) {
                             position: absolute;
                             top: 70px;
                             left: 391px;
-                            width: 145px;`;
+                            width: 145px;
+                        `
+                    ;
                 } else {
                     if (document
                             .getElementById("talkToRalph")) {
                         document
                             .getElementById("talkToRalph")
-                            .style = `display: none;`;
+                            .style = `display: none;`
+                        ;
                     };
                 };
                 await delay(500);
@@ -420,25 +435,29 @@ function exploringTheStudioDay() {
             position: absolute;
             top: 70px;
             left: 391px;
-            width: 145px;`;
+            width: 145px;`
+        ;
     } else if (s == 3) {
         document.getElementById('talkToRalph').style = `
             position: absolute;
             top: 70px;
             left: 200px;
-            width: 145px;`;
+            width: 145px;`
+        ;
     } else if (s == 2) {
         document.getElementById('talkToRalph').style = `
             position: absolute;
             top: 70px;
             left: 0px;
-            width: 145px;`;
+            width: 145px;`
+        ;
     } else {
         document.getElementById('talkToRalph').style = `display: none;`
     }
     document
         .getElementById("activelocationspot")
-        .innerHTML = sequenceOfScreensInStudio1[s]; 
+        .innerHTML = sequenceOfScreensInStudio1[s]
+    ; 
 };
 
 function RalphJustLetUsIn() {
@@ -452,25 +471,28 @@ function RalphJustLetUsIn() {
         .getElementById("video")
         .innerHTML = `
             <div class="thisScreenThisTime">
-            <img src="pics/studio_hallways/SE1R_0.png">
-            <div class="backpointer" onclick="s = 0; exploringTheStudioDay()" style="
-                height: 67px;
-                width: 536px;
-                left: 0px;
-                top: 225px;
-            "></div>
-            <div class="redmagnifying" id="SE1Z_0" style="
-                height: 70px;
-                width: 52px;
-                top: 89px;
-                left: 306px;
-            "></div>
-            <div class="redmagnifying" onclick="exploringTheStudio2Day()" id="SH2X_17" style="
-                height: 159px;
-                width: 112px;
-                top: 66px;
-                left: 86px;
-            "></div>`;
+                <img src="pics/studio_hallways/SE1R_0.png">
+                <div class="backpointer" onclick="s = 0; exploringTheStudioDay()" style="
+                    height: 67px;
+                    width: 536px;
+                    left: 0px;
+                    top: 225px;
+                "></div>
+                <div class="redmagnifying" id="SE1Z_0" style="
+                    height: 70px;
+                    width: 52px;
+                    top: 89px;
+                    left: 306px;
+                "></div>
+                <div class="redmagnifying" onclick="exploringTheStudio2Day()" id="SH2X_17" style="
+                    height: 159px;
+                    width: 112px;
+                    top: 66px;
+                    left: 86px;
+                "></div>
+            </div>
+        `
+    ;
 };
 
 document
@@ -487,7 +509,9 @@ function goToADifferentScreenInStudio1(event) {
                         position: absolute;
                         top: 70px;
                         left: 0px;
-                        width: 145px;`;
+                        width: 145px;
+                    `
+                ;
             };
         };
     };
@@ -507,13 +531,16 @@ function goToADifferentScreenInStudioHalf(event) {
             .getElementById("video")
             .innerHTML = `
                 <div class="thisScreenThisTime">
-                <img src="pics/studio_hallways/SE1W_0.png">
-                <div class="backpointer" id="goBackToSpinningStudio1" style="
-                    height: 67px;
-                    width: 536px;
-                    left: 0px;
-                    top: 225px;
-                "></div>`;
+                    <img src="pics/studio_hallways/SE1W_0.png">
+                    <div class="backpointer" id="goBackToSpinningStudio1" style="
+                        height: 67px;
+                        width: 536px;
+                        left: 0px;
+                        top: 225px;
+                    "></div>
+                </div>
+            `
+        ;
     };
 
     if (event && event.target.id == 'SE1H_0') {
@@ -521,30 +548,35 @@ function goToADifferentScreenInStudioHalf(event) {
             .getElementById("video")
             .innerHTML = `
                 <div class="thisScreenThisTime">
-                <img src="pics/studio_hallways/SE1H_0.png">
-                <div class="redmagnifying" id="SE1J_0" style="
-                    height: 110px;
-                    width: 129px;
-                    top: 55px;
-                    left: 288px;
-                "></div>
-                <div class="backpointer" id="goBackToSpinningStudio1" style="
-                    height: 67px;
-                    width: 536px;
-                    left: 0px;
-                    top: 225px;
-                "></div>`;
+                    <img src="pics/studio_hallways/SE1H_0.png">
+                    <div class="redmagnifying" id="SE1J_0" style="
+                        height: 110px;
+                        width: 129px;
+                        top: 55px;
+                        left: 288px;
+                    "></div>
+                    <div class="backpointer" id="goBackToSpinningStudio1" style="
+                        height: 67px;
+                        width: 536px;
+                        left: 0px;
+                        top: 225px;
+                    "></div>
+                </div>
+            `
+        ;
     };
 
     if (event && event.target.id == 'SE1J_0_fromInside') {
         document
             .getElementById("media_elements")
             .innerHTML = `
-                <audio controls autoplay onended="magazine2Cover(); clearTheAudio();" class="SoundEffects" id="currentAudio"">
+                <audio controls autoplay onended="magazine2Cover(); clearTheAudio();" class="SoundEffects" id="currentAudio">
                     <source 
                         src="audio/Magazine.wav" 
                         type="audio/mpeg">
-                </audio>`
+                </audio>
+            `
+        ;
         setEffectsVolume();
     };
 
@@ -568,7 +600,7 @@ function goToADifferentScreenInStudioHalf(event) {
         document
             .getElementById("media_elements")
             .innerHTML = `
-                <audio controls autoplay onended="magazine2Page2(); clearTheAudio();" class="SoundEffects" id="currentAudio"">
+                <audio controls autoplay onended="magazine2Page2(); clearTheAudio();" class="SoundEffects" id="currentAudio">
                     <source 
                         src="audio/Magazine.wav" 
                         type="audio/mpeg">
@@ -581,26 +613,29 @@ function goToADifferentScreenInStudioHalf(event) {
             .getElementById("video")
             .innerHTML = `
                 <div class="thisScreenThisTime">
-                <img src="pics/studio_hallways/SE1G_0.png">
-                <div class="redmagnifying" id="SE1M_0" style="
-                    height: 94px;
-                    width: 127px;
-                    top: 102px;
-                    left: 111px;
-                "></div>
-                <div class="backpointer" id="goBackToSpinningStudio1" style="
-                    height: 67px;
-                    width: 536px;
-                    left: 0px;
-                    top: 225px;
-                "></div>`;
+                    <img src="pics/studio_hallways/SE1G_0.png">
+                    <div class="redmagnifying" id="SE1M_0" style="
+                        height: 94px;
+                        width: 127px;
+                        top: 102px;
+                        left: 111px;
+                    "></div>
+                    <div class="backpointer" id="goBackToSpinningStudio1" style="
+                        height: 67px;
+                        width: 536px;
+                        left: 0px;
+                        top: 225px;
+                    "></div>
+                </div>
+            `
+        ;
     };
 
     if (event && event.target.id == 'SE1M_0_fromInside') {
         document
             .getElementById("media_elements")
             .innerHTML = `
-                <audio controls autoplay onended="magazineCover(); clearTheAudio();" class="SoundEffects" id="currentAudio"">
+                <audio controls autoplay onended="magazineCover(); clearTheAudio();" class="SoundEffects" id="currentAudio">
                     <source 
                         src="audio/Magazine.wav" 
                         type="audio/mpeg">
@@ -616,24 +651,28 @@ function goToADifferentScreenInStudioHalf(event) {
         document
             .getElementById("media_elements")
             .innerHTML = `
-                <audio controls autoplay onended="magazinePage1(); clearTheAudio();" class="SoundEffects" id="currentAudio"">
+                <audio controls autoplay onended="magazinePage1(); clearTheAudio();" class="SoundEffects" id="currentAudio">
                     <source 
                         src="audio/Magazine.wav" 
                         type="audio/mpeg">
-                </audio>`
-                setEffectsVolume();
+                </audio>
+            `
+        ;
+        setEffectsVolume();
     };
 
     if (event && event.target.id == 'SE1O_0') {
         document
             .getElementById("media_elements")
             .innerHTML = `
-                <audio controls autoplay onended="magazinePage2(); clearTheAudio();" class="SoundEffects" id="currentAudio"">
+                <audio controls autoplay onended="magazinePage2(); clearTheAudio();" class="SoundEffects" id="currentAudio">
                     <source 
                         src="audio/Magazine.wav" 
                         type="audio/mpeg">
-                </audio>`
-                setEffectsVolume();
+                </audio>
+            `
+        ;
+        setEffectsVolume();
     };
     
     if (event && event.target.id == 'SE1U_0') {
@@ -641,13 +680,16 @@ function goToADifferentScreenInStudioHalf(event) {
             .getElementById("video")
             .innerHTML = `
                 <div class="thisScreenThisTime">
-                <img src="pics/studio_hallways/SE1U_0.png">
-                <div class="backpointer" id="goBackToSpinningStudio1" style="
-                    height: 67px;
-                    width: 536px;
-                    left: 0px;
-                    top: 225px;
-                "></div>`;
+                    <img src="pics/studio_hallways/SE1U_0.png">
+                    <div class="backpointer" id="goBackToSpinningStudio1" style="
+                        height: 67px;
+                        width: 536px;
+                        left: 0px;
+                        top: 225px;
+                    "></div>
+                </div>
+            `
+        ;
     };
 
     if (event && event.target.id == 'SE1R_0') {
