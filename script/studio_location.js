@@ -31,7 +31,7 @@ function seeStudioEntrance() {
         .getElementById("video")
         .innerHTML = `
             <div class="thisScreenThisTime">
-                <img src="pics/studio_hallways/SE0A_0.png">
+                <img src="pics/studio_hallways/SE0A_0.webp">
                 <div class="backpointer" onclick="goBackToMap()" style="
                     height: 80px;
                     width: 536px;
@@ -61,7 +61,7 @@ function getInsideTheStudio() {
         .getElementById("video")
         .innerHTML = `
             <div class="thisScreenThisTime">
-                <img src="pics/studio_hallways/SE1V_0.png">
+                <img src="pics/studio_hallways/SE1V_0.webp">
                 <div class="redmagnifying" id="exploringTheStudioDay" style="
                     height: 172px;
                     width: 210px;
@@ -98,7 +98,7 @@ let SE1X_all = `
 ;
 
 let SE1X_0 = `
-    <img id="circlingPicture" src="pics/studio_first_circle/SE1X_0.png">
+    <img id="circlingPicture" src="pics/studio_first_circle/SE1X_0.webp">
     <div class="redmagnifying" id="beStoppedByRalph" style="
         height: 217px;
         width: 355px;
@@ -108,7 +108,7 @@ let SE1X_0 = `
     </div>`;
 
 let SE1X_1 = `
-    <img id="circlingPicture" src="pics/studio_first_circle/SE1X_1.png">
+    <img id="circlingPicture" src="pics/studio_first_circle/SE1X_1.webp">
     <div class="redmagnifying" id="SE1W_0" style="
         height: 136px;
         width: 118px;
@@ -125,7 +125,7 @@ let SE1X_1 = `
     </div>`;
 
 let SE1X_2 = `
-    <img id="circlingPicture" src="pics/studio_first_circle/SE1X_2.png">
+    <img id="circlingPicture" src="pics/studio_first_circle/SE1X_2.webp">
     <div class="redmagnifying" id="SE1W_0" style="
         height: 136px;
         width: 118px;
@@ -141,7 +141,7 @@ let SE1X_2 = `
     //     <source src="video/ralph.webm" type="video/webm">
     // </video>
 
-let SE1X_3 = `<img id="circlingPicture" src="pics/studio_first_circle/SE1X_3.png">`;
+let SE1X_3 = `<img id="circlingPicture" src="pics/studio_first_circle/SE1X_3.webp">`;
     // <video playsinline autoplay controls id="talkToRalph"  mute loop style="
     //     position: absolute;
     //     top: 70px;
@@ -150,7 +150,7 @@ let SE1X_3 = `<img id="circlingPicture" src="pics/studio_first_circle/SE1X_3.png
     //     <source src="video/ralph.webm" type="video/webm">
     // </video>;
 
-let SE1X_4 = `<img id="circlingPicture" src="pics/studio_first_circle/SE1X_4.png">`;
+let SE1X_4 = `<img id="circlingPicture" src="pics/studio_first_circle/SE1X_4.webp">`;
     // <video playsinline autoplay controls id="talkToRalph"  mute loop style="
     //     position: absolute;
     //     top: 70px;
@@ -159,10 +159,10 @@ let SE1X_4 = `<img id="circlingPicture" src="pics/studio_first_circle/SE1X_4.png
     //     <source src="video/ralph.webm" type="video/webm">
     // </video>;
 
-let SE1X_5 = `<img id="circlingPicture" src="pics/studio_first_circle/SE1X_5.png">`;
+let SE1X_5 = `<img id="circlingPicture" src="pics/studio_first_circle/SE1X_5.webp">`;
 
 let SE1X_6 = `
-    <img id="circlingPicture" src="pics/studio_first_circle/SE1X_6.png">
+    <img id="circlingPicture" src="pics/studio_first_circle/SE1X_6.webp">
     <div class="redmagnifying" id="SE1G_0" style="
         height: 94px;
         width: 75px;
@@ -172,7 +172,7 @@ let SE1X_6 = `
     </div>`;
 
 let SE1X_7 = `
-    <img id="circlingPicture" src="pics/studio_first_circle/SE1X_7.png">
+    <img id="circlingPicture" src="pics/studio_first_circle/SE1X_7.webp">
     <div class="redmagnifying" id="SE1G_0" style="
         height: 94px;
         width: 81px;
@@ -182,7 +182,7 @@ let SE1X_7 = `
     </div>`;
 
 let SE1X_8 = `
-    <img id="circlingPicture" src="pics/studio_first_circle/SE1X_8.png">
+    <img id="circlingPicture" src="pics/studio_first_circle/SE1X_8.webp">
     <div class="redmagnifying" id="SE1G_0" style="
         height: 94px;
         width: 51px;
@@ -192,7 +192,7 @@ let SE1X_8 = `
     </div>`;
 
 let SE1X_9 = `
-    <img id="circlingPicture" src="pics/studio_first_circle/SE1X_9.png">
+    <img id="circlingPicture" src="pics/studio_first_circle/SE1X_9.webp">
     <div class="redmagnifying" id="goToMap" style="
         height: 241px;
         width: 135px;
@@ -202,7 +202,7 @@ let SE1X_9 = `
     </div>`;
 
 let SE1X_10 = `
-    <img id="circlingPicture" src="pics/studio_first_circle/SE1X_10.png">
+    <img id="circlingPicture" src="pics/studio_first_circle/SE1X_10.webp">
     <div class="redmagnifying" id="goToMap" style="
         height: 241px;
         width: 195px;
@@ -212,7 +212,7 @@ let SE1X_10 = `
     </div>`;
 
 let SE1X_11 = `
-    <img id="circlingPicture" src="pics/studio_first_circle/SE1X_11.png">
+    <img id="circlingPicture" src="pics/studio_first_circle/SE1X_11.webp">
     <div class="redmagnifying" id="goToMap" style="
         height: 241px;
         width: 125px;
@@ -221,10 +221,10 @@ let SE1X_11 = `
         ">
     </div>`;
 
-let SE1X_12 = `<img id="circlingPicture" src="pics/studio_first_circle/SE1X_12.png">`;
+let SE1X_12 = `<img id="circlingPicture" src="pics/studio_first_circle/SE1X_12.webp">`;
 
 let SE1X_13 = `
-    <img id="circlingPicture" src="pics/studio_first_circle/SE1X_13.png">
+    <img id="circlingPicture" src="pics/studio_first_circle/SE1X_13.webp">
     <div class="redmagnifying" id="SE1H_0" style="
         height: 94px;
         width: 120px;
@@ -234,7 +234,7 @@ let SE1X_13 = `
     </div>`;
 
 let SE1X_14 = `
-    <img id="circlingPicture" src="pics/studio_first_circle/SE1X_14.png">
+    <img id="circlingPicture" src="pics/studio_first_circle/SE1X_14.webp">
     <div class="redmagnifying" id="SE1H_0" style="
         height: 94px;
         width: 120px;
@@ -243,10 +243,10 @@ let SE1X_14 = `
         ">
     </div>`;
 
-let SE1X_15 = `<img id="circlingPicture" src="pics/studio_first_circle/SE1X_15.png">`;
+let SE1X_15 = `<img id="circlingPicture" src="pics/studio_first_circle/SE1X_15.webp">`;
 
 let SE1X_16 = `
-    <img id="circlingPicture" src="pics/studio_first_circle/SE1X_16.png">
+    <img id="circlingPicture" src="pics/studio_first_circle/SE1X_16.webp">
     <div class="redmagnifying" id="SE1U_0" style="
         height: 68px;
         width: 119px;
@@ -256,7 +256,7 @@ let SE1X_16 = `
     </div>`;
 
 let SE1X_17 = `
-    <img id="circlingPicture" src="pics/studio_first_circle/SE1X_17.png">
+    <img id="circlingPicture" src="pics/studio_first_circle/SE1X_17.webp">
     <div class="redmagnifying" id="SE1U_0" style="
         height: 68px;
         width: 119px;
@@ -266,7 +266,7 @@ let SE1X_17 = `
     </div>`;
 
 let SE1X_18 = `
-    <img id="circlingPicture" src="pics/studio_first_circle/SE1X_18.png">
+    <img id="circlingPicture" src="pics/studio_first_circle/SE1X_18.webp">
     <div class="redmagnifying" id="SE1U_0" style="
         height: 68px;
         width: 40px;
@@ -276,7 +276,7 @@ let SE1X_18 = `
     </div>`;
 
 let SE1X_19 = `
-    <img id="circlingPicture" src="pics/studio_first_circle/SE1X_19.png">
+    <img id="circlingPicture" src="pics/studio_first_circle/SE1X_19.webp">
     <div class="redmagnifying" id="beStoppedByRalph" style="
         height: 189px;
         width: 210px;
@@ -471,7 +471,7 @@ function RalphJustLetUsIn() {
         .getElementById("video")
         .innerHTML = `
             <div class="thisScreenThisTime">
-                <img src="pics/studio_hallways/SE1R_0.png">
+                <img src="pics/studio_hallways/SE1R_0.webp">
                 <div class="backpointer" onclick="s = 0; exploringTheStudioDay()" style="
                     height: 67px;
                     width: 536px;
@@ -531,7 +531,7 @@ function goToADifferentScreenInStudioHalf(event) {
             .getElementById("video")
             .innerHTML = `
                 <div class="thisScreenThisTime">
-                    <img src="pics/studio_hallways/SE1W_0.png">
+                    <img src="pics/studio_hallways/SE1W_0.webp">
                     <div class="backpointer" id="goBackToSpinningStudio1" style="
                         height: 67px;
                         width: 536px;
@@ -548,7 +548,7 @@ function goToADifferentScreenInStudioHalf(event) {
             .getElementById("video")
             .innerHTML = `
                 <div class="thisScreenThisTime">
-                    <img src="pics/studio_hallways/SE1H_0.png">
+                    <img src="pics/studio_hallways/SE1H_0.webp">
                     <div class="redmagnifying" id="SE1J_0" style="
                         height: 110px;
                         width: 129px;
@@ -613,7 +613,7 @@ function goToADifferentScreenInStudioHalf(event) {
             .getElementById("video")
             .innerHTML = `
                 <div class="thisScreenThisTime">
-                    <img src="pics/studio_hallways/SE1G_0.png">
+                    <img src="pics/studio_hallways/SE1G_0.webp">
                     <div class="redmagnifying" id="SE1M_0" style="
                         height: 94px;
                         width: 127px;
@@ -680,7 +680,7 @@ function goToADifferentScreenInStudioHalf(event) {
             .getElementById("video")
             .innerHTML = `
                 <div class="thisScreenThisTime">
-                    <img src="pics/studio_hallways/SE1U_0.png">
+                    <img src="pics/studio_hallways/SE1U_0.webp">
                     <div class="backpointer" id="goBackToSpinningStudio1" style="
                         height: 67px;
                         width: 536px;
@@ -701,7 +701,7 @@ function goToADifferentScreenInStudioHalf(event) {
             .getElementById("video")
             .innerHTML = `
                 <div class="thisScreenThisTime">
-                <img src="pics/studio_hallways/SE1Z_0.png">
+                <img src="pics/studio_hallways/SE1Z_0.webp">
                 <div class="backpointer" id="SE1R_0" style="
                     height: 67px;
                     width: 159px;
@@ -725,7 +725,7 @@ function goToADifferentScreenInStudioHalf(event) {
             .getElementById("video")
             .innerHTML = `
                 <div class="thisScreenThisTime">
-                <img src="pics/studio_hallways/SE2B_0.png">
+                <img src="pics/studio_hallways/SE2B_0.webp">
                 <div class="backpointer" id="SE1Z_0" style="
                     height: 67px;
                     width: 536px;
@@ -739,7 +739,7 @@ function goToADifferentScreenInStudioHalf(event) {
             .getElementById("video")
             .innerHTML = `
                 <div class="thisScreenThisTime">
-                <img src="pics/studio_hallways/SH1N_0.png">
+                <img src="pics/studio_hallways/SH1N_0.webp">
                 <div class="backpointer" id="SH3A_0" style="
                     height: 67px;
                     width: 536px;
@@ -753,7 +753,7 @@ function goToADifferentScreenInStudioHalf(event) {
             .getElementById("video")
             .innerHTML = `
                 <div class="thisScreenThisTime">
-                <img src="pics/studio_hallways/SH1N_0.png">
+                <img src="pics/studio_hallways/SH1N_0.webp">
                 <div class="backpointer" id="goBackToSpinningStudioHalf" style="
                     height: 67px;
                     width: 536px;
@@ -767,7 +767,7 @@ function goToADifferentScreenInStudioHalf(event) {
             .getElementById("video")
             .innerHTML = `
                 <div class="thisScreenThisTime">
-                <img src="pics/studio_hallways/SH3A_0.png">
+                <img src="pics/studio_hallways/SH3A_0.webp">
                 <div class="redmagnifying" id="exploringTheHalfCircleDay" style="
                     height: 181px;
                     width: 206px;
@@ -824,7 +824,7 @@ function goToADifferentScreenInStudioHalf(event) {
             .getElementById("video")
             .innerHTML = `
                 <div class="thisScreenThisTime">
-                <img src="pics/studio_hallways/SH3H_0.png">
+                <img src="pics/studio_hallways/SH3H_0.webp">
                 <div class="redmagnifying" onclick="z = 15; exploringTheStudio2Day()" style="
                     height: 163px;
                     width: 196px;
@@ -845,7 +845,7 @@ function goToADifferentScreenInStudioHalf(event) {
                 .getElementById("video")
                 .innerHTML = `
                     <div class="thisScreenThisTime">
-                    <img src="pics/studio_hallways/SH1K_0.png">
+                    <img src="pics/studio_hallways/SH1K_0.webp">
                     <div id="swipeInStudio" class="redmagnifying" style="
                         height: 169px;
                         width: 64px;
@@ -872,7 +872,7 @@ function goToADifferentScreenInStudioHalf(event) {
                 .getElementById("video")
                 .innerHTML = `
                     <div class="thisScreenThisTime">
-                    <img src="pics/studio_hallways/SH1L_0.png">
+                    <img src="pics/studio_hallways/SH1L_0.webp">
                     <div id="SH1E_0" class="redmagnifying" style="
                         height: 109px;
                         width: 104px;
@@ -895,7 +895,7 @@ function goToADifferentScreenInStudioHalf(event) {
             .getElementById("video")
             .innerHTML = `
                 <div class="thisScreenThisTime">
-                <img src="pics/studio_hallways/SH1E_0.png">
+                <img src="pics/studio_hallways/SH1E_0.webp">
                 <div class="backpointer" id="StDoAc" style="
                     height: 67px;
                     width: 536px;
@@ -939,7 +939,7 @@ function goToADifferentScreenInStudioHalf(event) {
             .getElementById("video")
             .innerHTML = `
                 <div class="thisScreenThisTime">
-                <img src="pics/studio_hallways/SH1R_0.png">
+                <img src="pics/studio_hallways/SH1R_0.webp">
                 <div class="backpointer" onclick="h=10;exploringTheHalfCircleDay()" style="
                     height: 67px;
                     width: 536px;
@@ -955,7 +955,7 @@ function goToADifferentScreenInStudioHalf(event) {
             .getElementById("video")
             .innerHTML = `
                 <div class="thisScreenThisTime">
-                <img src="pics/studio_hallways/SH1M_0.png">
+                <img src="pics/studio_hallways/SH1M_0.webp">
                 <div class="backpointer" onclick="exploringTheHalfCircleDay();" style="
                     height: 67px;
                     width: 536px;
@@ -972,7 +972,7 @@ function goToADifferentScreenInStudioHalf(event) {
             .getElementById("video")
             .innerHTML = `
                 <div class="thisScreenThisTime">
-                    <img src="pics/studio_hallways/SH2B_0.png">
+                    <img src="pics/studio_hallways/SH2B_0.webp">
                     <div class="backpointer" onclick="h=10; exploringTheHalfCircleDay()" style="
                         height: 67px;
                         width: 536px;
@@ -1007,7 +1007,7 @@ function goToADifferentScreenInStudioHalf(event) {
             .getElementById("video")
             .innerHTML = `
                 <div class="thisScreenThisTime">
-                <img src="pics/studio_hallways/SH2G_0.png">
+                <img src="pics/studio_hallways/SH2G_0.webp">
                 <div class="backpointer" id="SH2B_0" style="
                     height: 67px;
                     width: 536px;
@@ -1029,7 +1029,7 @@ function goToADifferentScreenInStudioHalf(event) {
             .getElementById("video")
             .innerHTML = `
                 <div class="thisScreenThisTime">
-                    <img src="pics/studio_hallways/SH2C_0.png">
+                    <img src="pics/studio_hallways/SH2C_0.webp">
                     <div class="backpointer" id="SH2B_0" style="
                         height: 67px;
                         width: 536px;
@@ -1052,7 +1052,7 @@ function goToADifferentScreenInStudioHalf(event) {
             .getElementById("video")
             .innerHTML = `
                 <div class="thisScreenThisTime">
-                    <img src="pics/studio_hallways/SH1F_0.png">
+                    <img src="pics/studio_hallways/SH1F_0.webp">
                     <div class="backpointer" id="SH2C_0" style="
                         height: 67px;
                         width: 536px;
@@ -1081,7 +1081,7 @@ function goToADifferentScreenInStudioHalf(event) {
             .getElementById("video")
             .innerHTML = `
                 <div class="thisScreenThisTime">
-                    <img src="pics/studio_hallways/SH1B_0.png">
+                    <img src="pics/studio_hallways/SH1B_0.webp">
                     <div class="backpointer" id="SH2B_0" style="
                         height: 67px;
                         width: 116px;
@@ -1206,7 +1206,7 @@ function goToADifferentScreenInStudioHalf(event) {
             .getElementById("video")
             .innerHTML = `
                 <div class="thisScreenThisTime">
-                    <img src="pics/studio_hallways/SH1D_0.png">
+                    <img src="pics/studio_hallways/SH1D_0.webp">
                     <div class="backpointer" id="SH2B_0" style="
                         height: 67px;
                         width: 346px;
@@ -1259,7 +1259,7 @@ function goToADifferentScreenInStudioHalf(event) {
             .getElementById("video")
             .innerHTML = `
                 <div class="thisScreenThisTime">
-                <img src="pics/studio_hallways/SH3D_0.png">
+                <img src="pics/studio_hallways/SH3D_0.webp">
                 <div class="backpointer" id="SH2C_0" style="
                     height: 67px;
                     width: 536px;
@@ -1281,7 +1281,7 @@ function goToADifferentScreenInStudioHalf(event) {
             .getElementById("video")
             .innerHTML = `
                 <div class="thisScreenThisTime">
-                <img src="pics/studio_hallways/SH3E_0.png">
+                <img src="pics/studio_hallways/SH3E_0.webp">
                 <div class="backpointer" id="SH3D_0" style="
                     height: 67px;
                     width: 536px;
@@ -1309,7 +1309,7 @@ function goToADifferentScreenInStudioHalf(event) {
             .getElementById("video")
             .innerHTML = `
                 <div class="thisScreenThisTime">
-                <img src="pics/studio_hallways/SH1Q_0.png">
+                <img src="pics/studio_hallways/SH1Q_0.webp">
                 <div class="backpointer" id="SH3E_0" style="
                     height: 67px;
                     width: 536px;
@@ -1325,7 +1325,7 @@ function goToADifferentScreenInStudioHalf(event) {
             .getElementById("video")
             .innerHTML = `
                 <div class="thisScreenThisTime">
-                <img src="pics/studio_hallways/SH3I_0.png">
+                <img src="pics/studio_hallways/SH3I_0.webp">
                 <div class="backpointer" onclick="z = 15; exploringTheStudio2Day();" style="
                     height: 67px;
                     width: 536px;
@@ -1347,7 +1347,7 @@ function goToADifferentScreenInStudioHalf(event) {
             .getElementById("video")
             .innerHTML = `
                 <div class="thisScreenThisTime">
-                <img src="pics/studio_hallways/SH3K_0.png">
+                <img src="pics/studio_hallways/SH3K_0.webp">
                 <div class="backpointer" onclick="g = 0; exploringTheHalfCircle2Day();" style="
                     height: 67px;
                     width: 536px;
@@ -1369,7 +1369,7 @@ function goToADifferentScreenInStudioHalf(event) {
             .getElementById("video")
             .innerHTML = `
                 <div class="thisScreenThisTime">
-                <img src="pics/studio_hallways/SH1O_0.png">
+                <img src="pics/studio_hallways/SH1O_0.webp">
                 <div class="backpointer" onclick="exploringTheHalfCircle2Day();" style="
                     height: 67px;
                     width: 536px;
@@ -1385,7 +1385,7 @@ function goToADifferentScreenInStudioHalf(event) {
             .getElementById("video")
             .innerHTML = `
                 <div class="thisScreenThisTime">
-                <img src="pics/studio_hallways/SH1P_0.png">
+                <img src="pics/studio_hallways/SH1P_0.webp">
                 <div class="backpointer" onclick="exploringTheHalfCircle2Day();" style="
                     height: 67px;
                     width: 536px;
@@ -1401,7 +1401,7 @@ function goToADifferentScreenInStudioHalf(event) {
             .getElementById("video")
             .innerHTML = `
                 <div class="thisScreenThisTime">
-                    <img src="pics/studio_hallways/SH1S_0.png">
+                    <img src="pics/studio_hallways/SH1S_0.webp">
                     <div class="backpointer" onclick="exploringTheHalfCircle2Day();" style="
                         height: 67px;
                         width: 536px;
@@ -1418,7 +1418,7 @@ function goToADifferentScreenInStudioHalf(event) {
             .getElementById("video")
             .innerHTML = `
                 <div class="thisScreenThisTime">
-                    <img src="pics/studio_hallways/SH1U_0.png">
+                    <img src="pics/studio_hallways/SH1U_0.webp">
                     <div class="backpointer" onclick="propSaidItsOpen = false; exploringTheHalfCircle2Day();" style="
                         height: 67px;
                         width: 106px;
@@ -1453,7 +1453,7 @@ function goToADifferentScreenInStudioHalf(event) {
             .getElementById("video")
             .innerHTML = `
                 <div class="thisScreenThisTime">
-                    <img src="pics/studio_hallways/SH1G_0.png">
+                    <img src="pics/studio_hallways/SH1G_0.webp">
                     <div class="backpointer" onclick="exploringTheHalfCircle2Day();" style="
                         height: 67px;
                         width: 346px;
@@ -1499,19 +1499,19 @@ let SH2X_all = `
     </div>`;
 
 let SH2X_0 = `
-    <img id="circlingPicture" src="pics/studio_second_circle/SH2X_0.png">`;
+    <img id="circlingPicture" src="pics/studio_second_circle/SH2X_0.webp">`;
 
 let SH2X_1 = `
-    <img id="circlingPicture" src="pics/studio_second_circle/SH2X_1.png">`;
+    <img id="circlingPicture" src="pics/studio_second_circle/SH2X_1.webp">`;
 
 let SH2X_2 = `
-    <img id="circlingPicture" src="pics/studio_second_circle/SH2X_2.png">`;
+    <img id="circlingPicture" src="pics/studio_second_circle/SH2X_2.webp">`;
 
 let SH2X_3 = `
-    <img id="circlingPicture" src="pics/studio_second_circle/SH2X_3.png">`;
+    <img id="circlingPicture" src="pics/studio_second_circle/SH2X_3.webp">`;
 
 let SH2X_4 = `
-    <img id="circlingPicture" src="pics/studio_second_circle/SH2X_4.png">
+    <img id="circlingPicture" src="pics/studio_second_circle/SH2X_4.webp">
     <div class="redmagnifying" id="SH3A_0" style="
         height: 183px;
         width: 177px;
@@ -1521,7 +1521,7 @@ let SH2X_4 = `
     </div>`;
 
 let SH2X_5 = `
-    <img id="circlingPicture" src="pics/studio_second_circle/SH2X_5.png">
+    <img id="circlingPicture" src="pics/studio_second_circle/SH2X_5.webp">
     <div class="redmagnifying" id="SH3A_0" style="   
         height: 183px;
         width: 206px;
@@ -1531,7 +1531,7 @@ let SH2X_5 = `
     </div>`;
 
 let SH2X_6 = `
-    <img id="circlingPicture" src="pics/studio_second_circle/SH2X_6.png">
+    <img id="circlingPicture" src="pics/studio_second_circle/SH2X_6.webp">
     <div class="redmagnifying" id="SH3A_0" style="
         height: 183px;
         width: 167px;
@@ -1541,13 +1541,13 @@ let SH2X_6 = `
     </div>`;
 
 let SH2X_7 = `
-    <img id="circlingPicture" src="pics/studio_second_circle/SH2X_7.png">`;
+    <img id="circlingPicture" src="pics/studio_second_circle/SH2X_7.webp">`;
 
 let SH2X_8 = `
-    <img id="circlingPicture" src="pics/studio_second_circle/SH2X_8.png">`;
+    <img id="circlingPicture" src="pics/studio_second_circle/SH2X_8.webp">`;
 
 let SH2X_9 = `
-    <img id="circlingPicture" src="pics/studio_second_circle/SH2X_9.png">
+    <img id="circlingPicture" src="pics/studio_second_circle/SH2X_9.webp">
     <div class="redmagnifying" onclick="z = 17; s = 10; exploringTheStudioDay()" style="
         height: 163px;
         width: 168px;
@@ -1557,7 +1557,7 @@ let SH2X_9 = `
     </div>`;
 
 let SH2X_10 = `
-    <img id="circlingPicture" src="pics/studio_second_circle/SH2X_10.png">
+    <img id="circlingPicture" src="pics/studio_second_circle/SH2X_10.webp">
     <div class="redmagnifying" onclick="z = 17; s = 10; exploringTheStudioDay()" style="
         height: 163px;
         width: 168px;
@@ -1567,7 +1567,7 @@ let SH2X_10 = `
     </div>`;
 
 let SH2X_11 = `
-    <img id="circlingPicture" src="pics/studio_second_circle/SH2X_11.png">
+    <img id="circlingPicture" src="pics/studio_second_circle/SH2X_11.webp">
     <div class="redmagnifying" onclick="z = 17; s = 10; exploringTheStudioDay()" style="
         height: 163px;
         width: 168px;
@@ -1577,13 +1577,13 @@ let SH2X_11 = `
     </div>`;
 
 let SH2X_12 = `
-    <img id="circlingPicture" src="pics/studio_second_circle/SH2X_12.png">`;
+    <img id="circlingPicture" src="pics/studio_second_circle/SH2X_12.webp">`;
 
 let SH2X_13 = `
-    <img id="circlingPicture" src="pics/studio_second_circle/SH2X_13.png">`;
+    <img id="circlingPicture" src="pics/studio_second_circle/SH2X_13.webp">`;
 
 let SH2X_14 = `
-    <img id="circlingPicture" src="pics/studio_second_circle/SH2X_14.png">
+    <img id="circlingPicture" src="pics/studio_second_circle/SH2X_14.webp">
     <div class="redmagnifying" id="SH3I_0" style="
         width: 127px;
         height: 95px;
@@ -1592,7 +1592,7 @@ let SH2X_14 = `
     "></div>`;
 
 let SH2X_15 = `
-    <img id="circlingPicture" src="pics/studio_second_circle/SH2X_15.png">
+    <img id="circlingPicture" src="pics/studio_second_circle/SH2X_15.webp">
     <div class="redmagnifying" id="SH3I_0" style="
         width: 127px;
         height: 95px;
@@ -1601,7 +1601,7 @@ let SH2X_15 = `
     "></div>`;
 
 let SH2X_16 = `
-    <img id="circlingPicture" src="pics/studio_second_circle/SH2X_16.png">
+    <img id="circlingPicture" src="pics/studio_second_circle/SH2X_16.webp">
     <div class="redmagnifying" id="SH3I_0" style="
         width: 127px;
         height: 95px;
@@ -1610,7 +1610,7 @@ let SH2X_16 = `
     "></div>`;
 
 let SH2X_17 = `
-    <img id="circlingPicture" src="pics/studio_second_circle/SH2X_17.png">
+    <img id="circlingPicture" src="pics/studio_second_circle/SH2X_17.webp">
     <div class="redmagnifying" id="StDoAc" style="
         width: 77px;
         height: 95px;
@@ -1620,7 +1620,7 @@ let SH2X_17 = `
     "></div>`;
 
 let SH2X_18 = `
-    <img id="circlingPicture" src="pics/studio_second_circle/SH2X_18.png">
+    <img id="circlingPicture" src="pics/studio_second_circle/SH2X_18.webp">
     <div class="redmagnifying" id="StDoAc" style="
         width: 77px;
         height: 95px;
@@ -1630,7 +1630,7 @@ let SH2X_18 = `
     "></div>`;
 
 let SH2X_19 = `
-    <img id="circlingPicture" src="pics/studio_second_circle/SH2X_19.png">
+    <img id="circlingPicture" src="pics/studio_second_circle/SH2X_19.webp">
     <div class="redmagnifying" id="StDoAc" style="
         width: 77px;
         height: 95px;
@@ -1659,7 +1659,7 @@ function exploringTheStudio2Day() {
                 .innerHTML = document
                 .getElementById("activelocationspot")
                 .innerHTML + `
-                    <img id="onair_17" src="pics/studio_second_circle/onair_17.png" style="
+                    <img id="onair_17" src="pics/studio_second_circle/onair_17.webp" style="
                         position: absolute;
                         left: 143px;
                         top: 128px;
@@ -1672,7 +1672,7 @@ function exploringTheStudio2Day() {
                 .innerHTML = document
                 .getElementById("activelocationspot")
                 .innerHTML + `
-                    <img id="onair_18" src="pics/studio_second_circle/onair_18.png" style="
+                    <img id="onair_18" src="pics/studio_second_circle/onair_18.webp" style="
                         position: absolute;
                         left: 277px;
                         top: 129px;
@@ -1685,7 +1685,7 @@ function exploringTheStudio2Day() {
                 .innerHTML = document
                 .getElementById("activelocationspot")
                 .innerHTML + `
-                    <img id="onair_19" src="pics/studio_second_circle/onair_19.png" style="
+                    <img id="onair_19" src="pics/studio_second_circle/onair_19.webp" style="
                         position: absolute;
                         left: 408px;
                         top: 122px;
@@ -1716,7 +1716,7 @@ async function startTheCycleInStudio2(event) {
                 if (z == 16) {
                     document
                         .getElementById("activelocationspot")
-                        .innerHTML += `<img id="onair_16" src="pics/studio_second_circle/onair_16.png" style="
+                        .innerHTML += `<img id="onair_16" src="pics/studio_second_circle/onair_16.webp" style="
                             position: absolute;
                             left: 0px;
                             top: 120px;
@@ -1725,7 +1725,7 @@ async function startTheCycleInStudio2(event) {
                 if (z == 17) {
                     document
                         .getElementById("activelocationspot")
-                        .innerHTML += `<img id="onair_17" src="pics/studio_second_circle/onair_17.png" style="
+                        .innerHTML += `<img id="onair_17" src="pics/studio_second_circle/onair_17.webp" style="
                             position: absolute;
                             left: 143px;
                             top: 128px;
@@ -1734,7 +1734,7 @@ async function startTheCycleInStudio2(event) {
                 if (z == 18) {
                     document
                         .getElementById("activelocationspot")
-                        .innerHTML += `<img id="onair_18" src="pics/studio_second_circle/onair_18.png" style="
+                        .innerHTML += `<img id="onair_18" src="pics/studio_second_circle/onair_18.webp" style="
                             position: absolute;
                             left: 277px;
                             top: 129px;
@@ -1743,7 +1743,7 @@ async function startTheCycleInStudio2(event) {
                 if (z == 19) {
                     document
                         .getElementById("activelocationspot")
-                        .innerHTML += `<img id="onair_19" src="pics/studio_second_circle/onair_19.png" style="
+                        .innerHTML += `<img id="onair_19" src="pics/studio_second_circle/onair_19.webp" style="
                             position: absolute;
                             left: 408px;
                             top: 122px;
@@ -1766,7 +1766,7 @@ async function startTheCycleInStudio2(event) {
                 if (z == 16) {
                     document
                         .getElementById("activelocationspot")
-                        .innerHTML += `<img id="onair_16" src="pics/studio_second_circle/onair_16.png" style="
+                        .innerHTML += `<img id="onair_16" src="pics/studio_second_circle/onair_16.webp" style="
                             position: absolute;
                             left: 0px;
                             top: 120px;
@@ -1775,7 +1775,7 @@ async function startTheCycleInStudio2(event) {
                 if (z == 17) {
                     document
                         .getElementById("activelocationspot")
-                        .innerHTML += `<img id="onair_17" src="pics/studio_second_circle/onair_17.png" style="
+                        .innerHTML += `<img id="onair_17" src="pics/studio_second_circle/onair_17.webp" style="
                             position: absolute;
                             left: 143px;
                             top: 128px;
@@ -1784,7 +1784,7 @@ async function startTheCycleInStudio2(event) {
                 if (z == 18) {
                     document
                         .getElementById("activelocationspot")
-                        .innerHTML += `<img id="onair_18" src="pics/studio_second_circle/onair_18.png" style="
+                        .innerHTML += `<img id="onair_18" src="pics/studio_second_circle/onair_18.webp" style="
                             position: absolute;
                             left: 277px;
                             top: 129px;
@@ -1793,7 +1793,7 @@ async function startTheCycleInStudio2(event) {
                 if (z == 19) {
                     document
                         .getElementById("activelocationspot")
-                        .innerHTML += `<img id="onair_19" src="pics/studio_second_circle/onair_19.png" style="
+                        .innerHTML += `<img id="onair_19" src="pics/studio_second_circle/onair_19.webp" style="
                             position: absolute;
                             left: 408px;
                             top: 122px;
@@ -1841,20 +1841,20 @@ let SH1X_all = `
     </div>`;
 
 let SH1X_0 = `
-    <img id="circlingPicture" src="pics/studio_half_circle/SH1X_0.png">
+    <img id="circlingPicture" src="pics/studio_half_circle/SH1X_0.webp">
     <div id="turnrightincirclehalf" class ="greymagnifying greymagnifyingright"></div>`;
 
 let SH1X_1 = `
-    <img id="circlingPicture" src="pics/studio_half_circle/SH1X_1.png">`;
+    <img id="circlingPicture" src="pics/studio_half_circle/SH1X_1.webp">`;
 
 let SH1X_2 = `
-    <img id="circlingPicture" src="pics/studio_half_circle/SH1X_2.png">`;
+    <img id="circlingPicture" src="pics/studio_half_circle/SH1X_2.webp">`;
 
 let SH1X_3 = `
-    <img id="circlingPicture" src="pics/studio_half_circle/SH1X_3.png">`;
+    <img id="circlingPicture" src="pics/studio_half_circle/SH1X_3.webp">`;
 
 let SH1X_4 = `
-    <img id="circlingPicture" src="pics/studio_half_circle/SH1X_4.png">
+    <img id="circlingPicture" src="pics/studio_half_circle/SH1X_4.webp">
     <div class="redmagnifying" id="SH3H_0" style="
         height: 122px;
         width: 152px;
@@ -1864,7 +1864,7 @@ let SH1X_4 = `
     </div>`;
 
 let SH1X_5 = `
-    <img id="circlingPicture" src="pics/studio_half_circle/SH1X_5.png">
+    <img id="circlingPicture" src="pics/studio_half_circle/SH1X_5.webp">
     <div class="redmagnifying" id="SH3H_0" style="
         height: 122px;
         width: 152px;
@@ -1880,7 +1880,7 @@ let SH1X_5 = `
     "></div>`;
 
 let SH1X_6 = `
-    <img id="circlingPicture" src="pics/studio_half_circle/SH1X_6.png">
+    <img id="circlingPicture" src="pics/studio_half_circle/SH1X_6.webp">
     <div class="redmagnifying" id="SH3H_0" style="
         height: 122px;
         width: 152px;
@@ -1896,7 +1896,7 @@ let SH1X_6 = `
     "></div>`;
 
 let SH1X_7 = `
-    <img id="circlingPicture" src="pics/studio_half_circle/SH1X_7.png">
+    <img id="circlingPicture" src="pics/studio_half_circle/SH1X_7.webp">
     <div class="redmagnifying" id="SH1N_0_fromHalf" style="
         height: 89px;
         width: 73px;
@@ -1905,7 +1905,7 @@ let SH1X_7 = `
     "></div>`;
 
 let SH1X_8 = `
-    <img id="circlingPicture" src="pics/studio_half_circle/SH1X_8.png">
+    <img id="circlingPicture" src="pics/studio_half_circle/SH1X_8.webp">
     <div class="redmagnifying" id="SH1M_0" style="
         height: 74px;
         width: 50px;
@@ -1914,7 +1914,7 @@ let SH1X_8 = `
     "></div>`;
 
 let SH1X_9 = `
-    <img id="circlingPicture" src="pics/studio_half_circle/SH1X_9.png">
+    <img id="circlingPicture" src="pics/studio_half_circle/SH1X_9.webp">
     <div class="redmagnifying" id="SH1M_0" style="
         height: 74px;
         width: 50px;
@@ -1929,7 +1929,7 @@ let SH1X_9 = `
     "></div>`;
 
 let SH1X_10 = `
-    <img id="circlingPicture" src="pics/studio_half_circle/SH1X_10.png">
+    <img id="circlingPicture" src="pics/studio_half_circle/SH1X_10.webp">
     <div class="redmagnifying" id="SH1M_0" style="
         height: 74px;
         width: 50px;
@@ -1944,7 +1944,7 @@ let SH1X_10 = `
     "></div>`;
 
 let SH1X_11 = `
-    <img id="circlingPicture" src="pics/studio_half_circle/SH1X_11.png">
+    <img id="circlingPicture" src="pics/studio_half_circle/SH1X_11.webp">
     <div class="redmagnifying" id="SH2B_0" style="
         height: 92px;
         width: 122px;
@@ -1959,7 +1959,7 @@ let SH1X_11 = `
     "></div>`;
 
 let SH1X_12 = `
-    <img id="circlingPicture" src="pics/studio_half_circle/SH1X_12.png">
+    <img id="circlingPicture" src="pics/studio_half_circle/SH1X_12.webp">
     <div class="redmagnifying" id="SH1R_0" style="
         height: 59px;
         width: 71px;
@@ -1968,7 +1968,7 @@ let SH1X_12 = `
     "></div>`;
 
 let SH1X_13 = `
-    <img id="circlingPicture" src="pics/studio_half_circle/SH1X_13.png">
+    <img id="circlingPicture" src="pics/studio_half_circle/SH1X_13.webp">
     <div class="redmagnifying" id="SH1R_0" style="
         height: 59px;
         width: 71px;
@@ -1977,7 +1977,7 @@ let SH1X_13 = `
     "></div>`;
 
 let SH1X_14 = `
-    <img id="circlingPicture" src="pics/studio_half_circle/SH1X_14.png">
+    <img id="circlingPicture" src="pics/studio_half_circle/SH1X_14.webp">
     <div class="redmagnifying" id="SH1R_0" style="
         height: 59px;
         width: 41px;
@@ -1986,7 +1986,7 @@ let SH1X_14 = `
     "></div>`;
 
 let SH1X_15 = `
-    <img id="circlingPicture" src="pics/studio_half_circle/SH1X_15.png">
+    <img id="circlingPicture" src="pics/studio_half_circle/SH1X_15.webp">
     <div id="turnleftincirclehalf" class ="greymagnifying greymagnifyingleft"></div>`;
 
 let sequenceOfScreensInTheHalf = [SH1X_0, SH1X_1, SH1X_2, SH1X_3, SH1X_4, SH1X_5, SH1X_6, SH1X_7, SH1X_8, SH1X_9, SH1X_10, SH1X_11, SH1X_12, SH1X_13, SH1X_14, SH1X_15];
@@ -2065,11 +2065,11 @@ let SH3X_all = `
     </div>`;
 
 let SH3X_0 = `
-    <img id="circlingPicture" src="pics/studio_half_circle2/SH3X_0.png">
+    <img id="circlingPicture" src="pics/studio_half_circle2/SH3X_0.webp">
     <div id="turnrightincirclehalf2" class ="greymagnifying greymagnifyingright"></div>`;
 
 let SH3X_1 = `
-    <img id="circlingPicture" src="pics/studio_half_circle2/SH3X_1.png">
+    <img id="circlingPicture" src="pics/studio_half_circle2/SH3X_1.webp">
     <div id="SH1S_0" class="redmagnifying" style="
         width: 43px;
         height: 58px;
@@ -2078,7 +2078,7 @@ let SH3X_1 = `
     "></div>`;
 
 let SH3X_2 = `
-    <img id="circlingPicture" src="pics/studio_half_circle2/SH3X_2.png">
+    <img id="circlingPicture" src="pics/studio_half_circle2/SH3X_2.webp">
     <div id="SH1S_0" class="redmagnifying" style="
         width: 68px;
         height: 58px;
@@ -2087,7 +2087,7 @@ let SH3X_2 = `
     "></div>`;
 
 let SH3X_3 = `
-    <img id="circlingPicture" src="pics/studio_half_circle2/SH3X_3.png">
+    <img id="circlingPicture" src="pics/studio_half_circle2/SH3X_3.webp">
     <div id="SH1S_0" class="redmagnifying" style="
         width: 68px;
         height: 58px;
@@ -2102,7 +2102,7 @@ let SH3X_3 = `
     "></div>`;
 
 let SH3X_4 = `
-    <img id="circlingPicture" src="pics/studio_half_circle2/SH3X_4.png">
+    <img id="circlingPicture" src="pics/studio_half_circle2/SH3X_4.webp">
     <div id="SH1S_0" class="redmagnifying" style="
         width: 48px;
         height: 58px;
@@ -2123,7 +2123,7 @@ let SH3X_4 = `
     "></div>`;
 
 let SH3X_5 = `
-    <img id="circlingPicture" src="pics/studio_half_circle2/SH3X_5.png">
+    <img id="circlingPicture" src="pics/studio_half_circle2/SH3X_5.webp">
     <div id="SH1P_0" class="redmagnifying" style="
         width: 55px;
         height: 78px;
@@ -2144,7 +2144,7 @@ let SH3X_5 = `
     "></div>`;
 
 let SH3X_6 = `
-    <img id="circlingPicture" src="pics/studio_half_circle2/SH3X_6.png">
+    <img id="circlingPicture" src="pics/studio_half_circle2/SH3X_6.webp">
     <div id="SH1P_0" class="redmagnifying" style="
         width: 55px;
         height: 78px;
@@ -2159,7 +2159,7 @@ let SH3X_6 = `
     "></div>`;
 
 let SH3X_7 = `
-    <img id="circlingPicture" src="pics/studio_half_circle2/SH3X_7.png">
+    <img id="circlingPicture" src="pics/studio_half_circle2/SH3X_7.webp">
     <div id="SH1P_0" class="redmagnifying" style="
         width: 55px;
         height: 78px;
@@ -2168,7 +2168,7 @@ let SH3X_7 = `
     "></div>`;
 
 let SH3X_8 = `
-    <img id="circlingPicture" src="pics/studio_half_circle2/SH3X_8.png">
+    <img id="circlingPicture" src="pics/studio_half_circle2/SH3X_8.webp">
     <div id="SH1O_0" class="redmagnifying" style="
         width: 73px;
         height: 93px;
@@ -2177,7 +2177,7 @@ let SH3X_8 = `
     "></div>`;
 
 let SH3X_9 = `
-    <img id="circlingPicture" src="pics/studio_half_circle2/SH3X_9.png">
+    <img id="circlingPicture" src="pics/studio_half_circle2/SH3X_9.webp">
     <div id="SH1O_0" class="redmagnifying" style="
         width: 73px;
         height: 93px;
@@ -2192,7 +2192,7 @@ let SH3X_9 = `
     "></div>`;
 
 let SH3X_10 = `
-    <img id="circlingPicture" src="pics/studio_half_circle2/SH3X_10.png">
+    <img id="circlingPicture" src="pics/studio_half_circle2/SH3X_10.webp">
     <div id="SH1O_0" class="redmagnifying" style="
         width: 73px;
         height: 93px;
@@ -2207,7 +2207,7 @@ let SH3X_10 = `
     "></div>`;
 
 let SH3X_11 = `
-    <img id="circlingPicture" src="pics/studio_half_circle2/SH3X_11.png">
+    <img id="circlingPicture" src="pics/studio_half_circle2/SH3X_11.webp">
     <div class="redmagnifying" id="SH3K_0" style="
         width: 110px;
         height: 90px;
@@ -2216,16 +2216,16 @@ let SH3X_11 = `
     "></div>`;
 
 let SH3X_12 = `
-    <img id="circlingPicture" src="pics/studio_half_circle2/SH3X_12.png">`;
+    <img id="circlingPicture" src="pics/studio_half_circle2/SH3X_12.webp">`;
 
 let SH3X_13 = `
-    <img id="circlingPicture" src="pics/studio_half_circle2/SH3X_13.png">`;
+    <img id="circlingPicture" src="pics/studio_half_circle2/SH3X_13.webp">`;
 
 let SH3X_14 = `
-    <img id="circlingPicture" src="pics/studio_half_circle2/SH3X_14.png">`;
+    <img id="circlingPicture" src="pics/studio_half_circle2/SH3X_14.webp">`;
 
 let SH3X_15 = `
-    <img id="circlingPicture" src="pics/studio_half_circle2/SH3X_15.png">
+    <img id="circlingPicture" src="pics/studio_half_circle2/SH3X_15.webp">
     <div id="turnleftincirclehalf2" class ="greymagnifying greymagnifyingleft"></div>`;
 
 let sequenceOfScreensInTheHalf2 = [SH3X_0, SH3X_1, SH3X_2, SH3X_3, SH3X_4, SH3X_5, SH3X_6, SH3X_7, SH3X_8, SH3X_9, SH3X_10, SH3X_11, SH3X_12, SH3X_13, SH3X_14, SH3X_15];
@@ -2295,7 +2295,7 @@ function magazineCover() {
         .getElementById("video")
         .innerHTML = `
             <div class="thisScreenThisTime">
-                <img src="pics/studio_hallways/SE1M_0.png">
+                <img src="pics/studio_hallways/SE1M_0.webp">
                 <div class="redmagnifying" id="SE1N_0" style="
                     height: 225px;
                     width: 225px;
@@ -2316,7 +2316,7 @@ function magazinePage1() {
         .getElementById("video")
         .innerHTML = `
             <div class="thisScreenThisTime">
-                <img src="pics/studio_hallways/SE1N_0.png">
+                <img src="pics/studio_hallways/SE1N_0.webp">
                 <div class="redmagnifying" id="SE1O_0" style="
                     height: 292px;
                     width: 129px;
@@ -2338,7 +2338,7 @@ function magazinePage2() {
         .getElementById("video")
         .innerHTML = `
             <div class="thisScreenThisTime">
-            <img src="pics/studio_hallways/SE1O_0.png">
+            <img src="pics/studio_hallways/SE1O_0.webp">
             <div class="redmagnifying" id="SE1N_0" style="
                 height: 292px;
                 width: 130px;
@@ -2352,7 +2352,7 @@ function magazine2Page1() {
         .getElementById("video")
         .innerHTML = `
             <div class="thisScreenThisTime">
-            <img src="pics/studio_hallways/SE1K_0.png">
+            <img src="pics/studio_hallways/SE1K_0.webp">
             <div class="redmagnifying" id="SE1L_0" style="
                 height: 292px;
                 width: 129px;
@@ -2372,7 +2372,7 @@ function magazine2Page2() {
         .getElementById("video")
         .innerHTML = `
             <div class="thisScreenThisTime">
-            <img src="pics/studio_hallways/SE1L_0.png">
+            <img src="pics/studio_hallways/SE1L_0.webp">
             <div class="redmagnifying" id="SE1K_0" style="
                 height: 292px;
                 width: 70px;
@@ -2386,7 +2386,7 @@ function magazine2Cover() {
     .getElementById("video")
     .innerHTML = `
         <div class="thisScreenThisTime">
-        <img src="pics/studio_hallways/SE1J_0.png">
+        <img src="pics/studio_hallways/SE1J_0.webp">
         <div class="redmagnifying" id="SE1K_0" style="
             height: 225px;
             width: 224px;

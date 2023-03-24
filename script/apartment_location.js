@@ -12,7 +12,7 @@ let ME1X_all = `
 </div>`;
 
 let ME1X_0 = `
-    <img id="circlingPicture" src="pics/mattie_day_circle/ME1X_0.png">
+    <img id="circlingPicture" src="pics/mattie_day_circle/ME1X_0.webp">
     <div class="redmagnifying" id="ME1S_0" style="
         height: 201px;
         width: 133px;
@@ -21,7 +21,7 @@ let ME1X_0 = `
     </div>`;
 
 let ME1X_1 = `
-    <img id="circlingPicture" src="pics/mattie_day_circle/ME1X_1.png">
+    <img id="circlingPicture" src="pics/mattie_day_circle/ME1X_1.webp">
     <div class="redmagnifying" id="ME1S_0" style="
         height: 194px;
         width: 140px;
@@ -30,7 +30,7 @@ let ME1X_1 = `
     </div>`;
 
 let ME1X_2 = `
-    <img id="circlingPicture" src="pics/mattie_day_circle/ME1X_2.png">
+    <img id="circlingPicture" src="pics/mattie_day_circle/ME1X_2.webp">
     <div class="redmagnifying" id="ME1A_0" style="
         height: 86px;
         width: 112px;
@@ -39,7 +39,7 @@ let ME1X_2 = `
     </div>`;
 
 let ME1X_3 = `
-    <img id="circlingPicture" src="pics/mattie_day_circle/ME1X_3.png">
+    <img id="circlingPicture" src="pics/mattie_day_circle/ME1X_3.webp">
     <div class="redmagnifying" id="ME1A_0" style="
         height: 116px;
         width: 230px;
@@ -48,7 +48,7 @@ let ME1X_3 = `
     </div>`;
 
 let ME1X_4 = `
-    <img id="circlingPicture" src="pics/mattie_day_circle/ME1X_4.png">
+    <img id="circlingPicture" src="pics/mattie_day_circle/ME1X_4.webp">
     <div class="redmagnifying" id="ME1A_0" style="
         height: 138px;
         width: 253px;
@@ -57,7 +57,7 @@ let ME1X_4 = `
     </div>`;
 
 let ME1X_5 = `
-    <img id="circlingPicture" src="pics/mattie_day_circle/ME1X_5.png">
+    <img id="circlingPicture" src="pics/mattie_day_circle/ME1X_5.webp">
     <div class="redmagnifying" id="ME1A_0" style="
         height: 125px;
         width: 236px;
@@ -66,7 +66,7 @@ let ME1X_5 = `
     </div>`;
 
 let ME1X_6 = `
-    <img id="circlingPicture" src="pics/mattie_day_circle/ME1X_6.png">
+    <img id="circlingPicture" src="pics/mattie_day_circle/ME1X_6.webp">
     <div class="redmagnifying" id="goToMap" style="
         height: 260px;
         width: 113px;
@@ -75,7 +75,7 @@ let ME1X_6 = `
     </div>`;
 
 let ME1X_7 = `
-    <img id="circlingPicture" src="pics/mattie_day_circle/ME1X_7.png">
+    <img id="circlingPicture" src="pics/mattie_day_circle/ME1X_7.webp">
     <div class="redmagnifying" id="goToMap" style="
         height: 268px;
         width: 93px;
@@ -84,7 +84,7 @@ let ME1X_7 = `
     </div>`;
 
 let ME1X_8 = `
-    <img id="circlingPicture" src="pics/mattie_day_circle/ME1X_8.png">
+    <img id="circlingPicture" src="pics/mattie_day_circle/ME1X_8.webp">
     <div class="redmagnifying" id="goToMap" style="
         height: 271px;
         width: 95px;
@@ -92,12 +92,12 @@ let ME1X_8 = `
         left: 322px;">
     </div>`;
 
-let ME1X_9 = `<img id="circlingPicture" src="pics/mattie_day_circle/ME1X_9.png">`;
+let ME1X_9 = `<img id="circlingPicture" src="pics/mattie_day_circle/ME1X_9.webp">`;
 
-let ME1X_10 = `<img id="circlingPicture" src="pics/mattie_day_circle/ME1X_10.png">`;
+let ME1X_10 = `<img id="circlingPicture" src="pics/mattie_day_circle/ME1X_10.webp">`;
 
 let ME1X_11 = `
-    <img id="circlingPicture" src="pics/mattie_day_circle/ME1X_11.png">
+    <img id="circlingPicture" src="pics/mattie_day_circle/ME1X_11.webp">
     <div id="stairsLATER" style="
         height: 164px;
         width: 120px;
@@ -106,7 +106,7 @@ let ME1X_11 = `
     </div>`;
 
 let ME1X_12 = `
-    <img id="circlingPicture" src="pics/mattie_day_circle/ME1X_12.png">
+    <img id="circlingPicture" src="pics/mattie_day_circle/ME1X_12.webp">
     <div id="stairsLATER" style="
         height: 207px;
         width: 200px;
@@ -115,7 +115,7 @@ let ME1X_12 = `
     </div>`;
 
 let ME1X_13 = `
-    <img id="circlingPicture" src="pics/mattie_day_circle/ME1X_13.png">
+    <img id="circlingPicture" src="pics/mattie_day_circle/ME1X_13.webp">
     <div id="stairsLATER" style="
         height: 247px;
         width: 285px;
@@ -124,7 +124,7 @@ let ME1X_13 = `
     </div>`;
 
 let ME1X_14 = `
-    <img id="circlingPicture" src="pics/mattie_day_circle/ME1X_14.png">
+    <img id="circlingPicture" src="pics/mattie_day_circle/ME1X_14.webp">
     <div id="stairsLATER" style="
         height: 262px;
         width: 334px;
@@ -133,7 +133,7 @@ let ME1X_14 = `
     </div>`;
 
 let ME1X_15 = `
-    <img id="circlingPicture" src="pics/mattie_day_circle/ME1X_15.png">
+    <img id="circlingPicture" src="pics/mattie_day_circle/ME1X_15.webp">
     <div id="stairsLATER" style="
         height: 248px;
         width: 135px;
@@ -141,10 +141,10 @@ let ME1X_15 = `
         left: 349px;">
     </div>`;
 
-let ME1X_16 = `<img id="circlingPicture" src="pics/mattie_day_circle/ME1X_16.png">`;
+let ME1X_16 = `<img id="circlingPicture" src="pics/mattie_day_circle/ME1X_16.webp">`;
 
 let ME1X_17 = `
-    <img id="circlingPicture" src="pics/mattie_day_circle/ME1X_17.png">
+    <img id="circlingPicture" src="pics/mattie_day_circle/ME1X_17.webp">
     <div class="redmagnifying" id="ME4D_0" style="
         height: 180px;
         width: 200px;
@@ -153,7 +153,7 @@ let ME1X_17 = `
     </div>`;
 
 let ME1X_18 = `
-    <img id="circlingPicture" src="pics/mattie_day_circle/ME1X_18.png">
+    <img id="circlingPicture" src="pics/mattie_day_circle/ME1X_18.webp">
     <div class="redmagnifying" id="ME4D_0" style="
         height: 175px;
         width: 244px;
@@ -162,7 +162,7 @@ let ME1X_18 = `
     </div>`;
 
 let ME1X_19 = `
-    <img id="circlingPicture" src="pics/mattie_day_circle/ME1X_19.png">
+    <img id="circlingPicture" src="pics/mattie_day_circle/ME1X_19.webp">
     <div class="redmagnifying" id="ME4D_0" style="
         height: 120px;
         width: 137px;
@@ -1012,7 +1012,7 @@ let MD1X_all = `
 </div>`;
 
 let MD1X_0 = `
-    <img id="circlingPicture" src="pics/mattie-room_day_circle/MD1X_0.png">
+    <img id="circlingPicture" src="pics/mattie-room_day_circle/MD1X_0.webp">
     <div class="redmagnifying" id="MD3S_0" style="
         height: 211px;
         width: 165px;
@@ -1023,7 +1023,7 @@ let MD1X_0 = `
     `;
 
 let MD1X_1 = `
-    <img id="circlingPicture" src="pics/mattie-room_day_circle/MD1X_1.png">
+    <img id="circlingPicture" src="pics/mattie-room_day_circle/MD1X_1.webp">
     <div class="redmagnifying" id="MD3S_0" style="
         height: 205px;
         width: 144px;
@@ -1041,7 +1041,7 @@ let MD1X_1 = `
     `;
 
 let MD1X_2 = `
-    <img id="circlingPicture" src="pics/mattie-room_day_circle/MD1X_2.png">
+    <img id="circlingPicture" src="pics/mattie-room_day_circle/MD1X_2.webp">
     <div class="redmagnifying" id="MD3S_0" style="
         height: 215px;
         width: 154px;
@@ -1059,7 +1059,7 @@ let MD1X_2 = `
     `;
 
 let MD1X_3 = `
-    <img id="circlingPicture" src="pics/mattie-room_day_circle/MD1X_3.png">
+    <img id="circlingPicture" src="pics/mattie-room_day_circle/MD1X_3.webp">
     <div class="redmagnifying" id="MD6R_0" style="
         height: 99px;
         width: 127px;
@@ -1076,7 +1076,7 @@ let MD1X_3 = `
     </div>`;
 
 let MD1X_4 = `
-    <img id="circlingPicture" src="pics/mattie-room_day_circle/MD1X_4.png">
+    <img id="circlingPicture" src="pics/mattie-room_day_circle/MD1X_4.webp">
     <div class="redmagnifying" id="MD6Q_0" style="
         height: 99px;
         width: 126px;
@@ -1100,7 +1100,7 @@ let MD1X_4 = `
     </div>`;
 
 let MD1X_5 = `
-    <img id="circlingPicture" src="pics/mattie-room_day_circle/MD1X_5.png">
+    <img id="circlingPicture" src="pics/mattie-room_day_circle/MD1X_5.webp">
     <div class="redmagnifying" id="MD6Q_0" style="
         height: 99px;
         width: 154px;
@@ -1117,7 +1117,7 @@ let MD1X_5 = `
     </div>`;
 
 let MD1X_6 = `
-    <img id="circlingPicture" src="pics/mattie-room_day_circle/MD1X_6.png">
+    <img id="circlingPicture" src="pics/mattie-room_day_circle/MD1X_6.webp">
     <div class="redmagnifying" id="MD6Q_0" style="
         height: 99px;
         width: 154px;
@@ -1134,7 +1134,7 @@ let MD1X_6 = `
     </div>`;
 
 let MD1X_7 = `
-    <img id="circlingPicture" src="pics/mattie-room_day_circle/MD1X_7.png">
+    <img id="circlingPicture" src="pics/mattie-room_day_circle/MD1X_7.webp">
     <div class="redmagnifying" id="MD1S_0" style="
         height: 83px;
         width: 165px;
@@ -1152,7 +1152,7 @@ let MD1X_7 = `
     `;
 
 let MD1X_8 = `
-    <img id="circlingPicture" src="pics/mattie-room_day_circle/MD1X_8.png">
+    <img id="circlingPicture" src="pics/mattie-room_day_circle/MD1X_8.webp">
     <div class="redmagnifying" id="MD1S_0" style="
         height: 83px;
         width: 162px;
@@ -1175,7 +1175,7 @@ let MD1X_8 = `
     </div>`;
 
 let MD1X_9 = `
-    <img id="circlingPicture" src="pics/mattie-room_day_circle/MD1X_9.png">
+    <img id="circlingPicture" src="pics/mattie-room_day_circle/MD1X_9.webp">
     <div class="redmagnifying" id="MD1S_0" style="
         height: 83px;
         width: 165px;
@@ -1199,7 +1199,7 @@ let MD1X_9 = `
     </div>`;
 
 let MD1X_10 = `
-    <img id="circlingPicture" src="pics/mattie-room_day_circle/MD1X_10.png">
+    <img id="circlingPicture" src="pics/mattie-room_day_circle/MD1X_10.webp">
     <div class="redmagnifying" id="MD3E_0" style="
         height: 91px;
         width: 115px;
@@ -1209,7 +1209,7 @@ let MD1X_10 = `
     </div>`;
 
 let MD1X_11 = `
-    <img id="circlingPicture" src="pics/mattie-room_day_circle/MD1X_11.png">
+    <img id="circlingPicture" src="pics/mattie-room_day_circle/MD1X_11.webp">
     <div class="redmagnifying" id="MD3E_0" style="
         height: 91px;
         width: 115px;
@@ -1219,10 +1219,10 @@ let MD1X_11 = `
     </div>
     `;
 
-let MD1X_12 = `<img id="circlingPicture" src="pics/mattie-room_day_circle/MD1X_12.png">`;
+let MD1X_12 = `<img id="circlingPicture" src="pics/mattie-room_day_circle/MD1X_12.webp">`;
 
 let MD1X_13 = `
-    <img id="circlingPicture" src="pics/mattie-room_day_circle/MD1X_13.png">
+    <img id="circlingPicture" src="pics/mattie-room_day_circle/MD1X_13.webp">
     <div class="redmagnifying" id="MD6V_0" style="
         height: 74px;
         width: 136px;
@@ -1233,7 +1233,7 @@ let MD1X_13 = `
     `;
 
 let MD1X_14 = `
-    <img id="circlingPicture" src="pics/mattie-room_day_circle/MD1X_14.png">
+    <img id="circlingPicture" src="pics/mattie-room_day_circle/MD1X_14.webp">
     <div class="redmagnifying" id="MD6V_0" style="
         height: 54px;
         width: 158px;
@@ -1251,7 +1251,7 @@ let MD1X_14 = `
     `;
 
 let MD1X_15 = `
-    <img id="circlingPicture" src="pics/mattie-room_day_circle/MD1X_15.png">
+    <img id="circlingPicture" src="pics/mattie-room_day_circle/MD1X_15.webp">
     <div class="redmagnifying" id="MD6V_0" style="
         height: 64px;
         width: 164px;
@@ -1276,7 +1276,7 @@ let MD1X_15 = `
     `;
 
 let MD1X_16 = `
-    <img id="circlingPicture" src="pics/mattie-room_day_circle/MD1X_16.png">
+    <img id="circlingPicture" src="pics/mattie-room_day_circle/MD1X_16.webp">
     <div class="redmagnifying" id="MD6V_0" style="
         height: 64px;
         width: 115px;
@@ -1308,7 +1308,7 @@ let MD1X_16 = `
     `;
 
 let MD1X_17 = `
-    <img id="circlingPicture" src="pics/mattie-room_day_circle/MD1X_17.png">
+    <img id="circlingPicture" src="pics/mattie-room_day_circle/MD1X_17.webp">
     <div class="redmagnifying" id="MD3P_0" style="
         height: 210px;
         width: 92px;
@@ -1333,7 +1333,7 @@ let MD1X_17 = `
     `;
 
 let MD1X_18 = `
-    <img id="circlingPicture" src="pics/mattie-room_day_circle/MD1X_18.png">
+    <img id="circlingPicture" src="pics/mattie-room_day_circle/MD1X_18.webp">
     <div class="redmagnifying" id="MD3P_0" style="
         height: 205px;
         width: 93px;
@@ -1344,7 +1344,7 @@ let MD1X_18 = `
     `;
 
 let MD1X_19 = `
-    <img id="circlingPicture" src="pics/mattie-room_day_circle/MD1X_19.png">
+    <img id="circlingPicture" src="pics/mattie-room_day_circle/MD1X_19.webp">
     `;
 
 let sequenceOfScreensInRoom = [MD1X_0, MD1X_1, MD1X_2, MD1X_3, MD1X_4, MD1X_5, MD1X_6, MD1X_7, MD1X_8, MD1X_9, MD1X_10, MD1X_11, MD1X_12, MD1X_13, MD1X_14, MD1X_15, MD1X_16, MD1X_17, MD1X_18, MD1X_19];

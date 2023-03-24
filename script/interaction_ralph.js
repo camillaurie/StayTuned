@@ -1,7 +1,7 @@
 function signTheListScreen1() {
     document.getElementById("video")
         .innerHTML = `
-            <img src="pics/studio_hallways/SE2D_0.png">
+            <img src="pics/studio_hallways/SE2D_0.webp">
             <div class="redmagnifying" onclick="placeholder();" id="SE2F_0" style="
                 display: none;
             "></div>`
@@ -24,7 +24,7 @@ function getCloserToLogInPaper() {
         .innerHTML = ``
     document.getElementById("video")
         .innerHTML = `
-            <img src="pics/studio_hallways/SE2F_0.png"> 
+            <img src="pics/studio_hallways/SE2F_0.webp"> 
             <div class="redmagnifying" onclick="signThePaper();" style="
                 height: 30px;
                 width: 410px;
@@ -45,7 +45,7 @@ function signThePaper() {
             setVoiceVolume();
     document.getElementById("video")
         .innerHTML = `
-            <img src="pics/studio_hallways/SE2F_1.png">`;
+            <img src="pics/studio_hallways/SE2F_1.webp">`;
 }
 
 function hereYouAre() {
