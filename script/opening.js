@@ -26,6 +26,7 @@ function theOpeningLetter(event) {
                             <source src="video/the_opening_letter.webm" type="video/webm">
                         </video>
                     </div>
+                    <div class="preload_images"></div>
                     <div class="game__help">!!!</div>
                     <div class="game__time">!!!</div>
                     <div class="game__dialogue dialogue">

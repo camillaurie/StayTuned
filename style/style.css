@@ -447,3 +447,9 @@ body {
 
                 url(../pics/map1.png); 
   }
+
+.preload_introduction_video {
+    width: 0;
+    height: 0;
+    background: url(../video/the_opening_letter.webm),
+}
