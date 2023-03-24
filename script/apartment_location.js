@@ -880,6 +880,7 @@ function seeMattiesFrontDoor() {
                     top: 225px;
                 "></div>
             </div>
+            <div class="preload_images_studio"></div>
         `
     ;
     if (haveISpokenWithMattie == false) {
