@@ -1873,7 +1873,7 @@ function goToADifferentScreenInMattiesRoom(event) {
             .innerHTML = `
                 <audio controls autoplay onended="magazineUnderTheRemoteCover(); clearTheAudio();" class="SoundEffects" id="currentAudio">
                     <source 
-                        src="audio/Magazine.wav" 
+                        src="audio/magazine.wav" 
                         type="audio/mpeg">
                 </audio>
             `
@@ -1887,7 +1887,7 @@ function goToADifferentScreenInMattiesRoom(event) {
             .innerHTML = `
                 <audio controls autoplay onended="magazineUnderTheRemotePage(); clearTheAudio();" class="SoundEffects" id="currentAudio">
                     <source 
-                        src="audio/Magazine.wav" 
+                        src="audio/magazine.wav" 
                         type="audio/mpeg">
                 </audio>
             `
@@ -2001,7 +2001,7 @@ function goToADifferentScreenInMattiesRoom(event) {
             .innerHTML = `
                 <audio controls autoplay onended="closedMagazine3(); clearTheAudio();" class="SoundEffects" id="currentAudio">
                     <source 
-                        src="audio/Magazine.wav" 
+                        src="audio/magazine.wav" 
                         type="audio/mpeg">
                 </audio>
             `
@@ -2014,7 +2014,7 @@ function goToADifferentScreenInMattiesRoom(event) {
             .innerHTML = `
                 <audio controls autoplay onended="magazine3page1(); clearTheAudio();" class="SoundEffects" id="currentAudio">
                     <source 
-                        src="audio/Magazine.wav" 
+                        src="audio/magazine.wav" 
                         type="audio/mpeg">
                 </audio>
             `

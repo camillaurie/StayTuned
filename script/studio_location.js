@@ -572,7 +572,7 @@ function goToADifferentScreenInStudioHalf(event) {
             .innerHTML = `
                 <audio controls autoplay onended="magazine2Cover(); clearTheAudio();" class="SoundEffects" id="currentAudio">
                     <source 
-                        src="audio/Magazine.wav" 
+                        src="audio/magazine.wav" 
                         type="audio/mpeg">
                 </audio>
             `
@@ -590,7 +590,7 @@ function goToADifferentScreenInStudioHalf(event) {
             .innerHTML = `
                 <audio controls autoplay onended="magazine2Page1(); clearTheAudio();" class="SoundEffects" id="currentAudio">
                     <source 
-                        src="audio/Magazine.wav" 
+                        src="audio/magazine.wav" 
                         type="audio/mpeg">
                 </audio>`
         setEffectsVolume();
@@ -602,7 +602,7 @@ function goToADifferentScreenInStudioHalf(event) {
             .innerHTML = `
                 <audio controls autoplay onended="magazine2Page2(); clearTheAudio();" class="SoundEffects" id="currentAudio">
                     <source 
-                        src="audio/Magazine.wav" 
+                        src="audio/magazine.wav" 
                         type="audio/mpeg">
                 </audio>`
         setEffectsVolume();
@@ -637,7 +637,7 @@ function goToADifferentScreenInStudioHalf(event) {
             .innerHTML = `
                 <audio controls autoplay onended="magazineCover(); clearTheAudio();" class="SoundEffects" id="currentAudio">
                     <source 
-                        src="audio/Magazine.wav" 
+                        src="audio/magazine.wav" 
                         type="audio/mpeg">
                 </audio>`
                 setEffectsVolume();
@@ -653,7 +653,7 @@ function goToADifferentScreenInStudioHalf(event) {
             .innerHTML = `
                 <audio controls autoplay onended="magazinePage1(); clearTheAudio();" class="SoundEffects" id="currentAudio">
                     <source 
-                        src="audio/Magazine.wav" 
+                        src="audio/magazine.wav" 
                         type="audio/mpeg">
                 </audio>
             `
@@ -667,7 +667,7 @@ function goToADifferentScreenInStudioHalf(event) {
             .innerHTML = `
                 <audio controls autoplay onended="magazinePage2(); clearTheAudio();" class="SoundEffects" id="currentAudio">
                     <source 
-                        src="audio/Magazine.wav" 
+                        src="audio/magazine.wav" 
                         type="audio/mpeg">
                 </audio>
             `
