@@ -71,6 +71,7 @@ function map2() {
         .innerHTML = `
             <div class="map2logics" style="position: relative;">
                 <img src="pics/map2.png">
+                <div class="preload_images_studio"></div>
                 <div class="redmagnifying" id="fromMapGoToTheApartment" style="
                     height: 90px;
                     width: 240px;
