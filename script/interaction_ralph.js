@@ -13,7 +13,7 @@ function signTheListScreen1() {
         `
     document.getElementById("media_elements")
         .innerHTML = `
-        <audio controls autoplay class="SoundOfVoice" onended="getCloserToLogInPaper();"><source src="audio/Ral05.wav" type="audio/mpeg"></audio>
+        <audio controls autoplay class="SoundOfVoice" onended="getCloserToLogInPaper(); clearTheAudio();"><source src="audio/Ral05.wav" type="audio/mpeg"></audio>
         `;
         setVoiceVolume();
     z = 17;

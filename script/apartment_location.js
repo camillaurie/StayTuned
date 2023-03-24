@@ -180,31 +180,31 @@ let sequenceOfScreensInHallway = [ME1X_0, ME1X_1, ME1X_2, ME1X_3, ME1X_4, ME1X_5
 
 // The Hallway 
 
-let ME1S_0 = `<img id="ME1S_0" src="pics/apartment/ME1S_0.png">`
+let ME1S_0 = `<img id="ME1S_0" src="pics/apartment/ME1S_0.webp">`
 
-let ME1S_1 = `<img id="ME1S_1" src="pics/apartment/ME1S_1.png">`
+let ME1S_1 = `<img id="ME1S_1" src="pics/apartment/ME1S_1.webp">`
 
-let ME4D_0 = `<img id="ME4D_0" src="pics/apartment/ME4D_0.png">`
+let ME4D_0 = `<img id="ME4D_0" src="pics/apartment/ME4D_0.webp">`
 
-let ME4A_0 = `<img id="ME4A_0" src="pics/apartment/ME4A_0.png">`
+let ME4A_0 = `<img id="ME4A_0" src="pics/apartment/ME4A_0.webp">`
 
-let ME4B_0 = `<img id="ME4B_0" src="pics/apartment/ME4B_0.png">`
+let ME4B_0 = `<img id="ME4B_0" src="pics/apartment/ME4B_0.webp">`
 
-let ME4C_0 = `<img id="ME4C_0" src="pics/apartment/ME4C_0.png">`
+let ME4C_0 = `<img id="ME4C_0" src="pics/apartment/ME4C_0.webp">`
 
-let ME1L_0 = `<img id="ME1L_0" src="pics/apartment/ME1L_0.png">`
+let ME1L_0 = `<img id="ME1L_0" src="pics/apartment/ME1L_0.webp">`
 
-let ME1M_0 = `<img id="ME1L_0" src="pics/apartment/ME1M_0.png">`
+let ME1M_0 = `<img id="ME1L_0" src="pics/apartment/ME1M_0.webp">`
 
-let ME2N_0 = `<img id="ME1L_0" src="pics/apartment/ME2N_0.png">`
+let ME2N_0 = `<img id="ME1L_0" src="pics/apartment/ME2N_0.webp">`
 
-let ME2O_0 = `<img id="ME1L_0" src="pics/apartment/ME1O_0.png">`
+let ME2O_0 = `<img id="ME1L_0" src="pics/apartment/ME1O_0.webp">`
 
-let ME2P_0 = `<img id="ME1L_0" src="pics/apartment/ME1P_0.png">`
+let ME2P_0 = `<img id="ME1L_0" src="pics/apartment/ME1P_0.webp">`
 
-let ME4F_0 = `<img id="ME1L_0" src="pics/apartment/ME4F_0.png">`
+let ME4F_0 = `<img id="ME1L_0" src="pics/apartment/ME4F_0.webp">`
 
-let ME4K_0 = `<img id="ME1L_0" src="pics/apartment/ME4K_0.png">`
+let ME4K_0 = `<img id="ME1L_0" src="pics/apartment/ME4K_0.webp">`
 
 // Functions 
 
@@ -270,7 +270,7 @@ function goToADifferentScreenInMattiesHallway(event) {
         .getElementById("video")
         .innerHTML = `
             <div class="thisScreenThisTime">
-                <img src="pics/apartment/ME1S_0.png">
+                <img src="pics/apartment/ME1S_0.webp">
                 <div class="redmagnifying" onclick="r = 6" id="MD1X_6" style="
                     height: 246px;
                     width: 162px;
@@ -292,7 +292,7 @@ function goToADifferentScreenInMattiesHallway(event) {
             .getElementById("video")
             .innerHTML = `
             <div class="thisScreenThisTime">
-                <img src="pics/apartment/ME1A_0.png">
+                <img src="pics/apartment/ME1A_0.webp">
                 <div class="redmagnifying" id="ME1L_0" style="
                     height: 183px;
                     width: 162px;
@@ -336,7 +336,7 @@ function goToADifferentScreenInMattiesHallway(event) {
         .getElementById("video")
         .innerHTML = `
             <div class="thisScreenThisTime">
-                <img src="pics/apartment/ME4D_0.png">
+                <img src="pics/apartment/ME4D_0.webp">
                 <div class="redmagnifying" id="ME4A_0" style="
                     height: 127px;
                     width: 142px;
@@ -370,7 +370,7 @@ function goToADifferentScreenInMattiesHallway(event) {
         .getElementById("video")
         .innerHTML = `
             <div class="thisScreenThisTime">
-                <img src="pics/apartment/ME4A_0.png">
+                <img src="pics/apartment/ME4A_0.webp">
                 <div class="backpointer" id="ME4D_0" style="
                     height: 67px;
                     width: 536px;
@@ -385,7 +385,7 @@ function goToADifferentScreenInMattiesHallway(event) {
         .getElementById("video")
         .innerHTML = `
             <div class="thisScreenThisTime">
-                <img src="pics/apartment/ME4B_0.png">
+                <img src="pics/apartment/ME4B_0.webp">
                 <div class="backpointer" id="ME4D_0" style="
                     height: 67px;
                     width: 536px;
@@ -400,7 +400,7 @@ function goToADifferentScreenInMattiesHallway(event) {
         .getElementById("video")
         .innerHTML = `
             <div class="thisScreenThisTime">
-                <img src="pics/apartment/ME4C_0.png">
+                <img src="pics/apartment/ME4C_0.webp">
                 <div class="backpointer" id="ME4D_0" style="
                     height: 67px;
                     width: 536px;
@@ -422,7 +422,7 @@ function goToADifferentScreenInMattiesHallway(event) {
             .getElementById("video")
             .innerHTML = `
                 <div class="thisScreenThisTime">
-                    <img src="pics/apartment/ME1L_0.png">
+                    <img src="pics/apartment/ME1L_0.webp">
                     <div class="redmagnifying" id="ME1M_0" style="
                         height: 150px;
                         width: 142px;
@@ -452,7 +452,7 @@ function goToADifferentScreenInMattiesHallway(event) {
                 .getElementById("video")
                 .innerHTML = `
                     <div class="thisScreenThisTime">
-                        <img src="pics/apartment/ME1P_0.png">
+                        <img src="pics/apartment/ME1P_0.webp">
                         <div class="backpointer" id="ME1L_0" style="
                             height: 67px;
                             width: 536px;
@@ -467,7 +467,7 @@ function goToADifferentScreenInMattiesHallway(event) {
                 .getElementById("video")
                 .innerHTML = `
                     <div class="thisScreenThisTime">
-                        <img src="pics/apartment/ME1N_0.png">
+                        <img src="pics/apartment/ME1N_0.webp">
                         <div class="backpointer" id="ME1L_0" style="
                             height: 67px;
                             width: 536px;
@@ -482,7 +482,7 @@ function goToADifferentScreenInMattiesHallway(event) {
                 .getElementById("video")
                 .innerHTML = `
                     <div class="thisScreenThisTime">
-                        <img src="pics/apartment/ME1O_0.png">
+                        <img src="pics/apartment/ME1O_0.webp">
                         <div class="backpointer" id="ME1L_0" style="
                             height: 67px;
                             width: 536px;
@@ -500,7 +500,7 @@ function goToADifferentScreenInMattiesHallway(event) {
             .getElementById("video")
             .innerHTML = `
                 <div class="thisScreenThisTime">
-                    <img src="pics/apartment/ME1M_0.png">
+                    <img src="pics/apartment/ME1M_0.webp">
                     <div class="redmagnifying" id="phoneButton1" style="
                         height: 32px;
                         width: 63px;
@@ -1410,7 +1410,7 @@ function goToADifferentScreenInMattiesRoom(event) {
         .getElementById("video")
         .innerHTML = `
             <div class="thisScreenThisTime">
-                <img src="pics/apartment/MD1S_0.png">
+                <img src="pics/apartment/MD1S_0.webp">
                 <div class="backpointer" id="goBackToSpinningRoom" style="
                     height: 67px;
                     width: 536px;
@@ -1503,7 +1503,7 @@ function goToADifferentScreenInMattiesRoom(event) {
             .getElementById("video")
             .innerHTML = `
                 <div class="thisScreenThisTime">
-                    <img src="pics/apartment/MD9F_0.png">
+                    <img src="pics/apartment/MD9F_0.webp">
                     <div class="backpointer" id="MD1S_0" style="
                         height: 58px;
                         width: 536px;
@@ -1525,7 +1525,7 @@ function goToADifferentScreenInMattiesRoom(event) {
             .getElementById("video")
             .innerHTML = `
                 <div class="thisScreenThisTime">
-                    <img src="pics/apartment/MD9G_0.png">
+                    <img src="pics/apartment/MD9G_0.webp">
                     <div class="backpointer" id="MD9F_0" style="
                         height: 58px;
                         width: 536px;
@@ -1541,7 +1541,7 @@ function goToADifferentScreenInMattiesRoom(event) {
             .getElementById("video")
             .innerHTML = `
                 <div class="thisScreenThisTime">
-                    <img src="pics/apartment/MD6F_0.png">
+                    <img src="pics/apartment/MD6F_0.webp">
                     <div class="backpointer" id="MD1S_0" style="
                         height: 58px;
                         width: 536px;
@@ -1637,7 +1637,7 @@ function goToADifferentScreenInMattiesRoom(event) {
             .getElementById("video")
             .innerHTML = `
                 <div class="thisScreenThisTime">
-                    <img src="pics/apartment/MD1R_0.png">
+                    <img src="pics/apartment/MD1R_0.webp">
                     <div class="backpointer" id="MD1S_0" style="
                         height: 58px;
                         width: 426px;
@@ -1688,7 +1688,7 @@ function goToADifferentScreenInMattiesRoom(event) {
             .getElementById("video")
             .innerHTML = `
                 <div class="thisScreenThisTime">
-                    <img src="pics/apartment/MD6M_0.png">
+                    <img src="pics/apartment/MD6M_0.webp">
                     <div class="backpointer" onclick="showOpenForgottenDrawer();" style="
                         height: 58px;
                         width: 536px;
@@ -1710,7 +1710,7 @@ function goToADifferentScreenInMattiesRoom(event) {
             .getElementById("video")
             .innerHTML = `
                 <div class="thisScreenThisTime">
-                    <img src="pics/apartment/MD6K_0.png">
+                    <img src="pics/apartment/MD6K_0.webp">
                     <div class="redmagnifying" id="MD6L_0" style="
                         height: 264px;
                         width: 275px;
@@ -1726,7 +1726,7 @@ function goToADifferentScreenInMattiesRoom(event) {
             .getElementById("video")
             .innerHTML = `
                 <div class="thisScreenThisTime">
-                    <img src="pics/apartment/MD6L_0.png">
+                    <img src="pics/apartment/MD6L_0.webp">
                     <div class="backpointer" id="MD6M_0" style="
                         height: 58px;
                         width: 536px;
@@ -1748,7 +1748,7 @@ function goToADifferentScreenInMattiesRoom(event) {
             .getElementById("video")
             .innerHTML = `
                 <div class="thisScreenThisTime">
-                    <img src="pics/apartment/MD7C_0.png">
+                    <img src="pics/apartment/MD7C_0.webp">
                     <div class="backpointer" onclick="showOpenForgottenDrawer();" style="
                         height: 58px;
                         width: 536px;
@@ -1770,7 +1770,7 @@ function goToADifferentScreenInMattiesRoom(event) {
             .getElementById("video")
             .innerHTML = `
                 <div class="thisScreenThisTime">
-                    <img src="pics/apartment/MD7D_0.png">
+                    <img src="pics/apartment/MD7D_0.webp">
                     <div class="backpointer" onclick="showOpenForgottenDrawer();" style="
                         height: 58px;
                         width: 536px;
@@ -1792,7 +1792,7 @@ function goToADifferentScreenInMattiesRoom(event) {
             .getElementById("video")
             .innerHTML = `
                 <div class="thisScreenThisTime">
-                    <img src="pics/apartment/MD6E_0.png">
+                    <img src="pics/apartment/MD6E_0.webp">
                     <div class="backpointer" id="MD1R_0" style="
                         height: 58px;
                         width: 536px;
@@ -1808,7 +1808,7 @@ function goToADifferentScreenInMattiesRoom(event) {
         .getElementById("video")
         .innerHTML = `
             <div class="thisScreenThisTime">
-                <img src="pics/apartment/MD3E_0.png">
+                <img src="pics/apartment/MD3E_0.webp">
                 <div class="redmagnifying" id="MD6W_0" style="
                     height: 110px;
                     width: 146px;
@@ -1975,7 +1975,7 @@ function goToADifferentScreenInMattiesRoom(event) {
             .getElementById("video")
             .innerHTML = `
                 <div class="thisScreenThisTime">
-                    <img src="pics/apartment/MD6V_0.png">
+                    <img src="pics/apartment/MD6V_0.webp">
                     <div class="backpointer" id="goBackToSpinningRoom" style="
                         height: 67px;
                         width: 536px;
@@ -2029,7 +2029,7 @@ function goToADifferentScreenInMattiesRoom(event) {
             .getElementById("video")
             .innerHTML = `
                 <div class="thisScreenThisTime">
-                    <img src="pics/apartment/MD6S_0.png">
+                    <img src="pics/apartment/MD6S_0.webp">
                     <div class="backpointer" id="MD6U_0" style="
                         height: 67px;
                         width: 536px;
@@ -2045,7 +2045,7 @@ function goToADifferentScreenInMattiesRoom(event) {
         .getElementById("video")
         .innerHTML = `
         <div class="thisScreenThisTime">
-        <img src="pics/apartment/MD3S_0.png">
+        <img src="pics/apartment/MD3S_0.webp">
         <div class="backpointer" id="goBackToSpinningRoom" style="
             height: 67px;
             width: 536px;
@@ -2065,7 +2065,7 @@ function goToADifferentScreenInMattiesRoom(event) {
         .getElementById("video")
         .innerHTML = `
         <div class="thisScreenThisTime">
-        <img src="pics/apartment/MD3P_0.png">
+        <img src="pics/apartment/MD3P_0.webp">
         <div class="backpointer" id="goBackToSpinningRoom" style="
             height: 37px;
             width: 536px;
@@ -2092,7 +2092,7 @@ function goToADifferentScreenInMattiesRoom(event) {
         .getElementById("video")
         .innerHTML = `
         <div class="thisScreenThisTime">
-        <img src="pics/apartment/ME1E_0.png">
+        <img src="pics/apartment/ME1E_0.webp">
         <div class="backpointer" id="goBackToSpinningRoom" style="
             height: 67px;
             width: 536px;
@@ -2112,7 +2112,7 @@ function goToADifferentScreenInMattiesRoom(event) {
         .getElementById("video")
         .innerHTML = `
         <div class="thisScreenThisTime">
-        <img src="pics/apartment/md1z_0.png">
+        <img src="pics/apartment/md1z_0.webp">
         <div class="backpointer" id="goBackToSpinningRoom" style="
             height: 37px;
             width: 536px;
@@ -2132,7 +2132,7 @@ function goToADifferentScreenInMattiesRoom(event) {
         .getElementById("video")
         .innerHTML = `
         <div class="thisScreenThisTime">
-        <img src="pics/apartment/MD3U_0.png">
+        <img src="pics/apartment/MD3U_0.webp">
         <div class="backpointer" id="md1z_0" style="
             height: 67px;
             width: 536px;
@@ -2166,7 +2166,7 @@ function goToADifferentScreenInMattiesRoom(event) {
         .getElementById("video")
         .innerHTML = `
         <div class="thisScreenThisTime">
-        <img src="pics/apartment/MD3V_0.png">
+        <img src="pics/apartment/MD3V_0.webp">
         <div class="backpointer" id="MD3U_0" style="
             height: 67px;
             width: 536px;
@@ -2179,7 +2179,7 @@ function goToADifferentScreenInMattiesRoom(event) {
         .getElementById("video")
         .innerHTML = `
         <div class="thisScreenThisTime">
-        <img src="pics/apartment/MD3W_0.png">
+        <img src="pics/apartment/MD3W_0.webp">
         <div class="backpointer" id="MD3U_0" style="
             height: 67px;
             width: 536px;
@@ -2192,7 +2192,7 @@ function goToADifferentScreenInMattiesRoom(event) {
         .getElementById("video")
         .innerHTML = `
         <div class="thisScreenThisTime">
-        <img src="pics/apartment/MD3Y_0.png">
+        <img src="pics/apartment/MD3Y_0.webp">
         <div class="backpointer" id="MD3U_0" style="
             height: 67px;
             width: 536px;
@@ -2205,7 +2205,7 @@ function goToADifferentScreenInMattiesRoom(event) {
         .getElementById("video")
         .innerHTML = `
         <div class="thisScreenThisTime">
-        <img src="pics/apartment/MD3Q_0.png">
+        <img src="pics/apartment/MD3Q_0.webp">
         <div class="backpointer" id="MD3P_0" style="
             height: 67px;
             width: 536px;
@@ -2218,7 +2218,7 @@ function goToADifferentScreenInMattiesRoom(event) {
         .getElementById("video")
         .innerHTML = `
         <div class="thisScreenThisTime">
-        <img src="pics/apartment/MD3R_0.png">
+        <img src="pics/apartment/MD3R_0.webp">
         <div class="backpointer" id="MD3P_0" style="
             height: 67px;
             width: 536px;
@@ -2231,7 +2231,7 @@ function goToADifferentScreenInMattiesRoom(event) {
         .getElementById("video")
         .innerHTML = `
         <div class="thisScreenThisTime">
-        <img src="pics/apartment/MD3T_0.png">
+        <img src="pics/apartment/MD3T_0.webp">
         <div class="backpointer" id="MD3S_0" style="
             height: 37px;
             width: 536px;
@@ -2244,7 +2244,7 @@ function goToADifferentScreenInMattiesRoom(event) {
         .getElementById("video")
         .innerHTML = `
         <div class="thisScreenThisTime">
-        <img src="pics/apartment/MD6Q_0.png">
+        <img src="pics/apartment/MD6Q_0.webp">
         <div class="backpointer" id="goBackToSpinningRoom" style="
             height: 37px;
             width: 536px;
@@ -2257,7 +2257,7 @@ function goToADifferentScreenInMattiesRoom(event) {
         .getElementById("video")
         .innerHTML = `
         <div class="thisScreenThisTime">
-        <img src="pics/apartment/MD6R_0.png">
+        <img src="pics/apartment/MD6R_0.webp">
         <div class="backpointer" id="goBackToSpinningRoom" style="
             height: 37px;
             width: 536px;
@@ -2270,7 +2270,7 @@ function goToADifferentScreenInMattiesRoom(event) {
             .getElementById("video")
             .innerHTML = `
                 <div class="thisScreenThisTime">
-                    <img src="pics/apartment/MD1P_0.png">
+                    <img src="pics/apartment/MD1P_0.webp">
                     <div class="backpointer" id="goBackToSpinningRoom" style="
                         height: 67px;
                         width: 536px;
@@ -2292,7 +2292,7 @@ function goToADifferentScreenInMattiesRoom(event) {
         .getElementById("video")
         .innerHTML = `
         <div class="thisScreenThisTime">
-        <img src="pics/apartment/MD8C_0.png">
+        <img src="pics/apartment/MD8C_0.webp">
         <div class="backpointer" id="goBackToSpinningRoom" style="
             height: 67px;
             width: 536px;
@@ -2312,7 +2312,7 @@ function goToADifferentScreenInMattiesRoom(event) {
         .getElementById("video")
         .innerHTML = `
         <div class="thisScreenThisTime">
-        <img src="pics/apartment/MD8A_0.png">
+        <img src="pics/apartment/MD8A_0.webp">
         <div class="arrowdown" id="MD8B_0" style="
             height: 67px;
             width: 536px;
@@ -2326,7 +2326,7 @@ function goToADifferentScreenInMattiesRoom(event) {
         .getElementById("video")
         .innerHTML = `
         <div class="thisScreenThisTime">
-        <img src="pics/apartment/MD8B_0.png">
+        <img src="pics/apartment/MD8B_0.webp">
         <div class="backpointer" id="MD8C_0" style="
             height: 67px;
             width: 536px;
@@ -2350,7 +2350,7 @@ function closedMagazine3() {
         .getElementById("video")
         .innerHTML = `
             <div class="thisScreenThisTime">
-                <img src="pics/apartment/MD6T_0.png">
+                <img src="pics/apartment/MD6T_0.webp">
                 <div class="backpointer" id="MD6V_0" style="
                     height: 67px;
                     width: 536px;
@@ -2373,7 +2373,7 @@ function showBasketWithNoRemote() {
         .getElementById("video")
         .innerHTML = `
             <div class="thisScreenThisTime">
-                <img src="pics/apartment/MD3G_0.png">
+                <img src="pics/apartment/MD3G_0.webp">
                 <div class="redmagnifying" id="MD3C_0_close" style="
                     height: 58px;
                     width: 300px;
@@ -2396,7 +2396,7 @@ function magazine3page1() {
         .getElementById("video")
         .innerHTML = `
             <div class="thisScreenThisTime">
-                <img src="pics/apartment/MD6U_0.png">
+                <img src="pics/apartment/MD6U_0.webp">
                 <div class="redmagnifying" id="MD6T_0_fromInside" style="
                     height: 292px;
                     width: 140px;
@@ -2430,7 +2430,7 @@ function calendar() {
             .getElementById("video")
             .innerHTML = `
                 <div class="thisScreenThisTime">
-                    <img src="pics/apartment/MD6A_0.png">
+                    <img src="pics/apartment/MD6A_0.webp">
                     <div class="backpointer" id="MD1S_0" style="
                         height: 58px;
                         width: 536px;
@@ -2445,7 +2445,7 @@ function calendar() {
             .getElementById("video")
             .innerHTML = `
                 <div class="thisScreenThisTime">
-                    <img src="pics/apartment/MD6B_0.png">
+                    <img src="pics/apartment/MD6B_0.webp">
                     <div class="backpointer" id="MD1S_0" style="
                         height: 58px;
                         width: 536px;
@@ -2463,7 +2463,7 @@ function showOpenForgottenDrawer() {
         .getElementById("video")
         .innerHTML = `
             <div class="thisScreenThisTime">
-                <img src="pics/apartment/MD1T_0.png">
+                <img src="pics/apartment/MD1T_0.webp">
                 <div class="backpointer" id="MD1R_0" style="
                     height: 58px;
                     width: 536px;
@@ -2496,7 +2496,7 @@ function usingTheTV() {
             .getElementById("video")
             .innerHTML = `
                 <div class="thisScreenThisTime">
-                    <img src="pics/apartment/MD9V_0.png">
+                    <img src="pics/apartment/MD9V_0.webp">
                     <div class="redmagnifying" onclick="turnOffTheTV();" style="
                         height: 270px;
                         width: 229px;
@@ -2570,7 +2570,7 @@ function turnOffTheTV() {
             .getElementById("video")
             .innerHTML = `
                 <div class="thisScreenThisTime">
-                    <img src="pics/apartment/MD1P_0.png">
+                    <img src="pics/apartment/MD1P_0.webp">
                     <div class="backpointer" id="goBackToSpinningRoom" style="
                         height: 67px;
                         width: 536px;
@@ -2607,7 +2607,7 @@ function showLetterFromEnvelope() {
         .getElementById("video")
         .innerHTML = `
             <div class="thisScreenThisTime">
-                <img src="pics/apartment/MD6H_0.png">
+                <img src="pics/apartment/MD6H_0.webp">
                 <div class="redmagnifying" id="MD6G_0_close" style="
                     height: 202px;
                     width: 358px;
@@ -2625,7 +2625,7 @@ function showEnvelopeAfterLetter() {
         .getElementById("video")
         .innerHTML = `
             <div class="thisScreenThisTime">
-                <img src="pics/apartment/MD6G_0.png">
+                <img src="pics/apartment/MD6G_0.webp">
                 <div class="backpointer" id="MD6F_0" style="
                     height: 58px;
                     width: 536px;
@@ -2648,7 +2648,7 @@ function showOpenedDrawer() {
         .getElementById("video")
         .innerHTML = `
             <div class="thisScreenThisTime">
-                <img src="pics/apartment/MD6P_0.png">
+                <img src="pics/apartment/MD6P_0.webp">
                 <div class="backpointer" id="MD6N_0_close" style="
                     height: 58px;
                     width: 536px;
@@ -2671,7 +2671,7 @@ function showClosedDrawer() {
         .getElementById("video")
         .innerHTML = `
             <div class="thisScreenThisTime">
-                <img src="pics/apartment/MD6N_0.png">
+                <img src="pics/apartment/MD6N_0.webp">
                 <div class="backpointer" id="MD1S_0" style="
                     height: 58px;
                     width: 536px;
@@ -2694,7 +2694,7 @@ function letterFromTallDrawer() {
         .getElementById("video")
         .innerHTML = `
             <div class="thisScreenThisTime">
-                <img src="pics/apartment/MD6O_0.png">
+                <img src="pics/apartment/MD6O_0.webp">
                 <div class="backpointer" id="MD6P_0_close" style="
                     height: 58px;
                     width: 536px;
@@ -2711,7 +2711,7 @@ function MattiesMomLetter2page() {
         .getElementById("video")
         .innerHTML = `
             <div class="thisScreenThisTime">
-                <img src="pics/apartment/MD6J_0.png">
+                <img src="pics/apartment/MD6J_0.webp">
                 <div class="redmagnifying" id="MD6I_0_back" style="
                     height: 292px;
                     width: 130px;
@@ -2728,7 +2728,7 @@ function MattiesMomLetter1page() {
         .getElementById("video")
         .innerHTML = `
             <div class="thisScreenThisTime">
-                <img src="pics/apartment/MD6I_0.png">
+                <img src="pics/apartment/MD6I_0.webp">
                 <div class="backpointer" id="MD6F_0" style="
                     height: 58px;
                     width: 536px;
@@ -2751,7 +2751,7 @@ function magazineUnderTheRemoteCover() {
             .getElementById("video")
             .innerHTML = `
             <div class="thisScreenThisTime">
-                <img src="pics/apartment/MD3N_0.png">
+                <img src="pics/apartment/MD3N_0.webp">
                 <div class="backpointer" onclick="showBasketWithNoRemote()" style="
                     height: 67px;
                     width: 536px;
@@ -2775,7 +2775,7 @@ function magazineUnderTheRemotePage() {
         .getElementById("video")
         .innerHTML = `
             <div class="thisScreenThisTime">
-                <img src="pics/apartment/MD3O_0.png">
+                <img src="pics/apartment/MD3O_0.webp">
                 <div class="redmagnifying" id="MD3N_0_close" style="
                     height: 292px;
                     width: 196px;
@@ -2794,7 +2794,7 @@ function willIseeRemoteScreen() {
             .getElementById("video")
             .innerHTML = `
                 <div class="thisScreenThisTime">
-                    <img src="pics/apartment/MD3A_0.png">
+                    <img src="pics/apartment/MD3A_0.webp">
                     <div class="redmagnifying" id="MD3C_0_close" style="
                         height: 58px;
                         width: 300px;
@@ -2820,7 +2820,7 @@ function showClosedBasket() {
         .getElementById("video")
         .innerHTML = `
             <div class="thisScreenThisTime">
-                <img src="pics/apartment/MD3C_0.png">
+                <img src="pics/apartment/MD3C_0.webp">
                 <div class="backpointer" id="MD3E_0" style="
                     height: 58px;
                     width: 536px;
@@ -2843,7 +2843,7 @@ function openedTheAlbumScreen() {
         .getElementById("video")
         .innerHTML = `
             <div class="thisScreenThisTime">
-                <img src="pics/apartment/MD6X_0.png">
+                <img src="pics/apartment/MD6X_0.webp">
                 <div class="redmagnifying" id="MD6Y_0" style="
                     height: 202px;
                     width: 185px;
@@ -2866,7 +2866,7 @@ function openedTheAlbumScreenPage2() {
         .getElementById("video")
         .innerHTML = `
             <div class="thisScreenThisTime">
-                <img src="pics/apartment/MD6W_0.png">
+                <img src="pics/apartment/MD6W_0.webp">
                 <div class="backpointer" id="MD3E_0" style="
                     height: 58px;
                     width: 536px;
@@ -2889,7 +2889,7 @@ function openedTheAlbumScreenPage3() {
         .getElementById("video")
         .innerHTML = `
             <div class="thisScreenThisTime">
-                <img src="pics/apartment/MD6Y_0.png">
+                <img src="pics/apartment/MD6Y_0.webp">
                 <div class="redmagnifying" id="MD6Z_0" style="
                     height: 202px;
                     width: 185px;
@@ -2912,7 +2912,7 @@ function openedTheAlbumScreenPage4() {
         .getElementById("video")
         .innerHTML = `
             <div class="thisScreenThisTime">
-                <img src="pics/apartment/MD6Z_0.png">
+                <img src="pics/apartment/MD6Z_0.webp">
                 <div class="redmagnifying" id="MD6Y_0" style="
                     height: 218px;
                     width: 146px;
