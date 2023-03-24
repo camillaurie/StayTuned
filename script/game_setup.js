@@ -15,7 +15,7 @@ function gameSetupScreen() {
         .getElementById("gameSetupScreen")
         .innerHTML = `
             <div class="settings_screen">
-                <audio controls id="testSoundForVoice" autoplay loop class="SoundOfVoiceTest">
+                <audio id="testSoundForVoice" autoplay loop class="SoundOfVoiceTest">
                     <source 
                         src="audio/Ng01.wav" 
                         type="audio/mpeg">
@@ -24,7 +24,7 @@ function gameSetupScreen() {
                 <input class="volume_slider volume_slider__voice" type="range" min="0" max="100" id="fader" step="1" oninput="outputUpdateVoice(value)">
             </div>
             <div class="music_volume">
-                <audio controls id="testSoundForMusic" autoplay loop class="SoundOfMusicTest">
+                <audio id="testSoundForMusic" autoplay loop class="SoundOfMusicTest">
                     <source 
                         src="audio/Music_Stage.mp3" 
                         type="audio/mpeg">
@@ -33,7 +33,7 @@ function gameSetupScreen() {
                 <input class="volume_slider volume_slider__music" type="range" min="0" max="100" id="fader" step="1" oninput="outputUpdateMusic(value)">
             </div>
             <div class="effects_volume">
-                <audio controls id="testSoundForEffects" autoplay loop class="SoundEffectsTest">
+                <audio id="testSoundForEffects" autoplay loop class="SoundEffectsTest">
                     <source 
                         src="audio/LIDOFF.wav" 
                         type="audio/mpeg">

@@ -7,7 +7,7 @@ function seeingTheStudioEntrance(event) {
         document
             .getElementById("media_elements")
             .innerHTML = `
-                <audio controls 
+                <audio 
                      
                     autoplay 
                     class="SoundOfVoice" 
@@ -91,7 +91,7 @@ let SE1X_all = `
             <div id="turnleftincirclestudio1" class ="activesides activeleftside"></div>
             <div id="turnrightincirclestudio1" class ="activesides activerightside"></div>
         </div>
-        <video playsinline autoplay controls id="talkToRalph"  muted loop onclick="interaction_ralph()">
+        <video playsinline autoplay id="talkToRalph"  muted loop onclick="interaction_ralph()">
             <source src="video/ralph.webm" type="video/webm">
         </video>;
     `
@@ -133,7 +133,7 @@ let SE1X_2 = `
         left: 304px;
         ">
     </div>`;
-    // <video playsinline autoplay controls id="talkToRalph"  mute loop style="
+    // <video playsinline autoplay id="talkToRalph"  mute loop style="
     //     position: absolute;
     //     top: 70px;
     //     left: 0px;
@@ -142,7 +142,7 @@ let SE1X_2 = `
     // </video>
 
 let SE1X_3 = `<img id="circlingPicture" src="pics/studio_first_circle/SE1X_3.webp">`;
-    // <video playsinline autoplay controls id="talkToRalph"  mute loop style="
+    // <video playsinline autoplay id="talkToRalph"  mute loop style="
     //     position: absolute;
     //     top: 70px;
     //     left: 204px;
@@ -151,7 +151,7 @@ let SE1X_3 = `<img id="circlingPicture" src="pics/studio_first_circle/SE1X_3.web
     // </video>;
 
 let SE1X_4 = `<img id="circlingPicture" src="pics/studio_first_circle/SE1X_4.webp">`;
-    // <video playsinline autoplay controls id="talkToRalph"  mute loop style="
+    // <video playsinline autoplay id="talkToRalph"  mute loop style="
     //     position: absolute;
     //     top: 70px;
     //     left: 391px;
@@ -570,7 +570,7 @@ function goToADifferentScreenInStudioHalf(event) {
         document
             .getElementById("media_elements")
             .innerHTML = `
-                <audio controls autoplay onended="magazine2Cover(); clearTheAudio();" class="SoundEffects" id="currentAudio">
+                <audio autoplay onended="magazine2Cover(); clearTheAudio();" class="SoundEffects" id="currentAudio">
                     <source 
                         src="audio/magazine.wav" 
                         type="audio/mpeg">
@@ -588,7 +588,7 @@ function goToADifferentScreenInStudioHalf(event) {
         document
             .getElementById("media_elements")
             .innerHTML = `
-                <audio controls autoplay onended="magazine2Page1(); clearTheAudio();" class="SoundEffects" id="currentAudio">
+                <audio autoplay onended="magazine2Page1(); clearTheAudio();" class="SoundEffects" id="currentAudio">
                     <source 
                         src="audio/magazine.wav" 
                         type="audio/mpeg">
@@ -600,7 +600,7 @@ function goToADifferentScreenInStudioHalf(event) {
         document
             .getElementById("media_elements")
             .innerHTML = `
-                <audio controls autoplay onended="magazine2Page2(); clearTheAudio();" class="SoundEffects" id="currentAudio">
+                <audio autoplay onended="magazine2Page2(); clearTheAudio();" class="SoundEffects" id="currentAudio">
                     <source 
                         src="audio/magazine.wav" 
                         type="audio/mpeg">
@@ -635,7 +635,7 @@ function goToADifferentScreenInStudioHalf(event) {
         document
             .getElementById("media_elements")
             .innerHTML = `
-                <audio controls autoplay onended="magazineCover(); clearTheAudio();" class="SoundEffects" id="currentAudio">
+                <audio autoplay onended="magazineCover(); clearTheAudio();" class="SoundEffects" id="currentAudio">
                     <source 
                         src="audio/magazine.wav" 
                         type="audio/mpeg">
@@ -651,7 +651,7 @@ function goToADifferentScreenInStudioHalf(event) {
         document
             .getElementById("media_elements")
             .innerHTML = `
-                <audio controls autoplay onended="magazinePage1(); clearTheAudio();" class="SoundEffects" id="currentAudio">
+                <audio autoplay onended="magazinePage1(); clearTheAudio();" class="SoundEffects" id="currentAudio">
                     <source 
                         src="audio/magazine.wav" 
                         type="audio/mpeg">
@@ -665,7 +665,7 @@ function goToADifferentScreenInStudioHalf(event) {
         document
             .getElementById("media_elements")
             .innerHTML = `
-                <audio controls autoplay onended="magazinePage2(); clearTheAudio();" class="SoundEffects" id="currentAudio">
+                <audio autoplay onended="magazinePage2(); clearTheAudio();" class="SoundEffects" id="currentAudio">
                     <source 
                         src="audio/magazine.wav" 
                         type="audio/mpeg">
@@ -789,7 +789,7 @@ function goToADifferentScreenInStudioHalf(event) {
             document
                 .getElementById("media_elements")
                 .innerHTML = `
-                    <audio controls autoplay class="SoundOfVoice" onended="clearTheDialogueBox(); clearTheAudio();" id="currentAudio">
+                    <audio autoplay class="SoundOfVoice" onended="clearTheDialogueBox(); clearTheAudio();" id="currentAudio">
                     <source 
                         src="audio/Pap01.wav" 
                         type="audio/mpeg">
@@ -808,7 +808,7 @@ function goToADifferentScreenInStudioHalf(event) {
         document
         .getElementById("media_elements")
         .innerHTML = `
-            <audio controls autoplay onended="clearTheAudio(); clearTheDialogueBox();" class="SoundOfVoice" id="currentAudio">
+            <audio autoplay onended="clearTheAudio(); clearTheDialogueBox();" class="SoundOfVoice" id="currentAudio">
             <source 
                 src="audio/Ral01.wav" 
                 type="audio/mpeg">
@@ -912,7 +912,7 @@ function goToADifferentScreenInStudioHalf(event) {
                 document
                     .getElementById("media_elements")
                     .innerHTML = `
-                        <audio controls autoplay="" ="" class="SoundEffects" id="currentAudio">
+                        <audio autoplay="" ="" class="SoundEffects" id="currentAudio">
                             <source src="audio/SLIDER3.wav" type="audio/mpeg">
                         </audio>
                     `;
@@ -925,7 +925,7 @@ function goToADifferentScreenInStudioHalf(event) {
             document
                 .getElementById("media_elements")
                 .innerHTML = `
-                    <audio controls autoplay="" ="" onended="clearTheAudio();" class="SoundOfVoice" id="currentAudio">
+                    <audio autoplay="" ="" onended="clearTheAudio();" class="SoundOfVoice" id="currentAudio">
                         <source src="audio/Icant.wav" type="audio/mpeg">
                     </audio>
                 `;
@@ -1116,7 +1116,7 @@ function goToADifferentScreenInStudioHalf(event) {
             document
                 .getElementById("media_elements")
                 .innerHTML = `
-                    <audio controls 
+                    <audio 
                          
                         autoplay 
                         class="SoundOfVoice" 
@@ -1125,7 +1125,7 @@ function goToADifferentScreenInStudioHalf(event) {
                             src="audio/Mv19.wav" 
                             type="audio/mpeg">
                     </audio>
-                    <audio controls 
+                    <audio 
                          
                         autoplay 
                         class="SoundEffects">
@@ -1140,7 +1140,7 @@ function goToADifferentScreenInStudioHalf(event) {
             document
                 .getElementById("media_elements")
                 .innerHTML = `
-                    <audio controls 
+                    <audio 
                          
                         autoplay 
                         class="SoundOfVoice" 
@@ -1161,7 +1161,7 @@ function goToADifferentScreenInStudioHalf(event) {
             document
                 .getElementById("media_elements")
                 .innerHTML = `
-                    <audio controls 
+                    <audio 
                          
                         autoplay 
                         class="SoundOfVoice" 
@@ -1170,7 +1170,7 @@ function goToADifferentScreenInStudioHalf(event) {
                             src="audio/Pv01.wav" 
                             type="audio/mpeg">
                     </audio>
-                    <audio controls 
+                    <audio 
                          
                         autoplay 
                         class="SoundEffects">
@@ -1185,7 +1185,7 @@ function goToADifferentScreenInStudioHalf(event) {
             document
                 .getElementById("media_elements")
                 .innerHTML = `
-                    <audio controls 
+                    <audio 
                          
                         autoplay 
                         class="SoundOfVoice" 
@@ -1240,7 +1240,7 @@ function goToADifferentScreenInStudioHalf(event) {
         document
             .getElementById("media_elements")
             .innerHTML = `
-                <audio controls 
+                <audio 
                      
                     autoplay
                     class="SoundEffects"

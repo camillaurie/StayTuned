@@ -592,7 +592,7 @@ function phoneCalling(event) {
         document
         .getElementById("media_elements")
         .innerHTML = `
-            <audio controls autoplay loop class="PersistentSoundEffects SoundEffects" id="currentAudio">
+            <audio autoplay loop class="PersistentSoundEffects SoundEffects" id="currentAudio">
                 <source 
                     src="audio/DialTone.wav" 
                     type="audio/mpeg">
@@ -613,7 +613,7 @@ function phoneCalling(event) {
         document
         .getElementById("media_elements")
         .innerHTML = `
-            <audio controls autoplay class="SoundEffects" id="currentAudio">
+            <audio autoplay class="SoundEffects" id="currentAudio">
                 <source 
                     src="audio/Dial1.wav" 
                     type="audio/mpeg">
@@ -627,7 +627,7 @@ function phoneCalling(event) {
         document
         .getElementById("media_elements")
         .innerHTML = `
-            <audio controls autoplay class="SoundEffects" id="currentAudio">
+            <audio autoplay class="SoundEffects" id="currentAudio">
                 <source 
                     src="audio/Dial2.wav" 
                     type="audio/mpeg">
@@ -641,7 +641,7 @@ function phoneCalling(event) {
         document
         .getElementById("media_elements")
         .innerHTML = `
-            <audio controls autoplay class="SoundEffects" id="currentAudio">
+            <audio autoplay class="SoundEffects" id="currentAudio">
                 <source 
                     src="audio/Dial3.wav" 
                     type="audio/mpeg">
@@ -655,7 +655,7 @@ function phoneCalling(event) {
         document
         .getElementById("media_elements")
         .innerHTML = `
-            <audio controls autoplay class="SoundEffects" id="currentAudio">
+            <audio autoplay class="SoundEffects" id="currentAudio">
             <source 
                 src="audio/Dial4.wav" 
                 type="audio/mpeg">
@@ -669,7 +669,7 @@ function phoneCalling(event) {
         document
         .getElementById("media_elements")
         .innerHTML = `
-            <audio controls autoplay class="SoundEffects" id="currentAudio">
+            <audio autoplay class="SoundEffects" id="currentAudio">
             <source 
                 src="audio/Dial5.wav" 
                 type="audio/mpeg">
@@ -683,7 +683,7 @@ function phoneCalling(event) {
         document
         .getElementById("media_elements")
         .innerHTML = `
-            <audio controls autoplay class="SoundEffects" id="currentAudio">
+            <audio autoplay class="SoundEffects" id="currentAudio">
             <source 
                 src="audio/Dial6.wav" 
                 type="audio/mpeg">
@@ -697,7 +697,7 @@ function phoneCalling(event) {
         document
         .getElementById("media_elements")
         .innerHTML = `
-            <audio controls autoplay class="SoundEffects" id="currentAudio">
+            <audio autoplay class="SoundEffects" id="currentAudio">
             <source 
                 src="audio/Dial7.wav" 
                 type="audio/mpeg">
@@ -711,7 +711,7 @@ function phoneCalling(event) {
         document
         .getElementById("media_elements")
         .innerHTML = `
-            <audio controls autoplay class="SoundEffects" id="currentAudio">
+            <audio autoplay class="SoundEffects" id="currentAudio">
             <source 
                 src="audio/Dial8.wav" 
                 type="audio/mpeg">
@@ -725,7 +725,7 @@ function phoneCalling(event) {
         document
         .getElementById("media_elements")
         .innerHTML = `
-            <audio controls autoplay class="SoundEffects" id="currentAudio">
+            <audio autoplay class="SoundEffects" id="currentAudio">
             <source 
                 src="audio/Dial9.wav" 
                 type="audio/mpeg">
@@ -739,7 +739,7 @@ function phoneCalling(event) {
         document
         .getElementById("media_elements")
         .innerHTML = `
-            <audio controls autoplay class="SoundEffects" id="currentAudio">
+            <audio autoplay class="SoundEffects" id="currentAudio">
             <source 
                 src="audio/Dial0.wav" 
                 type="audio/mpeg">
@@ -754,7 +754,7 @@ function phoneCalling(event) {
             document
             .getElementById("media_elements")
             .innerHTML = `
-                <audio controls autoplay class="SoundEffects" id="currentAudio">
+                <audio autoplay class="SoundEffects" id="currentAudio">
                 <source 
                     src="audio/TelRing.wav" 
                     type="audio/mpeg">
@@ -767,7 +767,7 @@ function phoneCalling(event) {
             document
             .getElementById("media_elements")
             .innerHTML = `
-                <audio controls autoplay class="SoundEffects" id="currentAudio">
+                <audio autoplay class="SoundEffects" id="currentAudio">
                 <source 
                     src="audio/TelRing.wav" 
                     type="audio/mpeg">
@@ -780,7 +780,7 @@ function phoneCalling(event) {
             document
             .getElementById("media_elements")
             .innerHTML = `
-                <audio controls autoplay class="SoundEffects"o id="currentAudio">
+                <audio autoplay class="SoundEffects"o id="currentAudio">
                 <source 
                     src="audio/TelRing.wav" 
                     type="audio/mpeg">
@@ -794,7 +794,7 @@ function phoneCalling(event) {
             document
             .getElementById("media_elements")
             .innerHTML = `
-                <audio controls autoplay class="SoundEffects" id="currentAudio">
+                <audio autoplay class="SoundEffects" id="currentAudio">
                 <source 
                     src="audio/TelRing.wav" 
                     type="audio/mpeg">
@@ -825,7 +825,7 @@ function dialAgain() {
     document
         .getElementById("media_elements")
         .innerHTML = `
-            <audio controls autoplay class="SoundEffects" id="currentAudio">
+            <audio autoplay class="SoundEffects" id="currentAudio">
             <source 
                 src="audio/DialAgin.wav" 
                 type="audio/mpeg">
@@ -849,7 +849,7 @@ function tryDialingAgain() {
         document
         .getElementById("media_elements")
         .innerHTML = `
-            <audio controls autoplay loop class="SoundEffects" id="currentAudio">
+            <audio autoplay loop class="SoundEffects" id="currentAudio">
             <source 
                 src="audio/DialTone.wav" 
                 type="audio/mpeg">
@@ -902,7 +902,7 @@ function knockingOnTheApartmentDoor(event) {
         document
             .getElementById("media_elements")
             .innerHTML = `
-                <audio controls 
+                <audio 
                     autoplay 
                     class="SoundOfVoice" 
                     onended="seeMattiesFrontDoor();
@@ -925,7 +925,7 @@ function openingApartmentWithKeys() {
         document
         .getElementById("media_elements")
         .innerHTML = `
-            <audio controls autoplay class="SoundEffects" id="currentAudio" onended="doorToTheApartmentOpened()">
+            <audio autoplay class="SoundEffects" id="currentAudio" onended="doorToTheApartmentOpened()">
                 <source 
                     src="audio/dooropn.wav" 
                     type="audio/mpeg">
@@ -935,7 +935,7 @@ function openingApartmentWithKeys() {
         document
             .getElementById("media_elements")
             .innerHTML = `
-                <audio controls autoplay class="SoundOfVoice" id="currentAudio">
+                <audio autoplay class="SoundOfVoice" id="currentAudio">
                     <source 
                         src="audio/Nv18.wav" 
                         type="audio/mpeg">
@@ -966,7 +966,7 @@ function invitationIntoTheApartment() {
     document
     .getElementById("media_elements")
     .innerHTML = `
-        <audio controls autoplay onended="currentMusicFile.innerHTML = musicInMattiesApartmentDay; setMusicVolume(); clearTheAudio();" class="SoundOfVoice" id="currentAudio">
+        <audio autoplay onended="currentMusicFile.innerHTML = musicInMattiesApartmentDay; setMusicVolume(); clearTheAudio();" class="SoundOfVoice" id="currentAudio">
         <source 
             src="audio/mattie_comeoninnancy.mp3" 
             type="audio/mpeg">
@@ -1458,7 +1458,7 @@ function goToADifferentScreenInMattiesRoom(event) {
         document
             .getElementById("media_elements")
             .innerHTML = `
-                <audio controls autoplay onended="showClosedDrawer(); clearTheAudio();" class="SoundEffects" id="currentAudio">
+                <audio autoplay onended="showClosedDrawer(); clearTheAudio();" class="SoundEffects" id="currentAudio">
                     <source 
                         src="audio/drwropen.wav" 
                         type="audio/mpeg">
@@ -1471,7 +1471,7 @@ function goToADifferentScreenInMattiesRoom(event) {
         document
             .getElementById("media_elements")
             .innerHTML = `
-                <audio controls autoplay onended="showOpenedDrawer(); clearTheAudio();" class="SoundEffects" id="currentAudio">
+                <audio autoplay onended="showOpenedDrawer(); clearTheAudio();" class="SoundEffects" id="currentAudio">
                     <source 
                         src="audio/drwropen.wav" 
                         type="audio/mpeg">
@@ -1490,7 +1490,7 @@ function goToADifferentScreenInMattiesRoom(event) {
         document
             .getElementById("media_elements")
             .innerHTML = `
-                <audio controls autoplay onended="letterFromTallDrawer(); clearTheAudio();" class="SoundEffects" id="currentAudio">
+                <audio autoplay onended="letterFromTallDrawer(); clearTheAudio();" class="SoundEffects" id="currentAudio">
                     <source 
                         src="audio/mag.wav" 
                         type="audio/mpeg">
@@ -1572,7 +1572,7 @@ function goToADifferentScreenInMattiesRoom(event) {
         document
             .getElementById("media_elements")
             .innerHTML = `
-                <audio controls 
+                <audio 
                     autoplay 
                      
                     onended="MattiesMomLetter1page(); clearTheAudio();" 
@@ -1590,7 +1590,7 @@ function goToADifferentScreenInMattiesRoom(event) {
         document
             .getElementById("media_elements")
             .innerHTML = `
-                <audio controls 
+                <audio 
                     autoplay 
                      
                     onended="MattiesMomLetter2page(); clearTheAudio();" 
@@ -1611,7 +1611,7 @@ function goToADifferentScreenInMattiesRoom(event) {
         document
             .getElementById("media_elements")
             .innerHTML = `
-                <audio controls autoplay onended="showEnvelopeAfterLetter(); clearTheAudio();" class="SoundEffects" id="currentAudio">
+                <audio autoplay onended="showEnvelopeAfterLetter(); clearTheAudio();" class="SoundEffects" id="currentAudio">
                     <source 
                         src="audio/envelope.wav" 
                         type="audio/mpeg">
@@ -1624,7 +1624,7 @@ function goToADifferentScreenInMattiesRoom(event) {
         document
             .getElementById("media_elements")
             .innerHTML = `
-                <audio controls autoplay onended="showLetterFromEnvelope(); clearTheAudio();" class="SoundEffects" id="currentAudio">
+                <audio autoplay onended="showLetterFromEnvelope(); clearTheAudio();" class="SoundEffects" id="currentAudio">
                     <source 
                         src="audio/envelope.wav" 
                         type="audio/mpeg">
@@ -1667,7 +1667,7 @@ function goToADifferentScreenInMattiesRoom(event) {
             document
                 .getElementById("media_elements")
                 .innerHTML = `
-                    <audio controls 
+                    <audio 
                         ="" 
                         autoplay="" 
                         class="SoundOfVoice" 
@@ -1836,7 +1836,7 @@ function goToADifferentScreenInMattiesRoom(event) {
         document
             .getElementById("media_elements")
             .innerHTML = `
-                <audio controls autoplay onended="showClosedBasket(); clearTheAudio();" class="SoundEffects" id="currentAudio">
+                <audio autoplay onended="showClosedBasket(); clearTheAudio();" class="SoundEffects" id="currentAudio">
                     <source 
                         src="audio/lidclse.wav" 
                         type="audio/mpeg">
@@ -1854,7 +1854,7 @@ function goToADifferentScreenInMattiesRoom(event) {
         document
             .getElementById("media_elements")
             .innerHTML = `
-                <audio controls autoplay onended="willIseeRemoteScreen(); clearTheAudio();" class="SoundEffects" id="currentAudio">
+                <audio autoplay onended="willIseeRemoteScreen(); clearTheAudio();" class="SoundEffects" id="currentAudio">
                     <source 
                         src="audio/lidopen.wav" 
                         type="audio/mpeg">
@@ -1872,7 +1872,7 @@ function goToADifferentScreenInMattiesRoom(event) {
         document
             .getElementById("media_elements")
             .innerHTML = `
-                <audio controls autoplay onended="magazineUnderTheRemoteCover(); clearTheAudio();" class="SoundEffects" id="currentAudio">
+                <audio autoplay onended="magazineUnderTheRemoteCover(); clearTheAudio();" class="SoundEffects" id="currentAudio">
                     <source 
                         src="audio/magazine.wav" 
                         type="audio/mpeg">
@@ -1886,7 +1886,7 @@ function goToADifferentScreenInMattiesRoom(event) {
         document
             .getElementById("media_elements")
             .innerHTML = `
-                <audio controls autoplay onended="magazineUnderTheRemotePage(); clearTheAudio();" class="SoundEffects" id="currentAudio">
+                <audio autoplay onended="magazineUnderTheRemotePage(); clearTheAudio();" class="SoundEffects" id="currentAudio">
                     <source 
                         src="audio/magazine.wav" 
                         type="audio/mpeg">
@@ -1904,7 +1904,7 @@ function goToADifferentScreenInMattiesRoom(event) {
         document
             .getElementById("media_elements")
             .innerHTML = `
-                <audio controls autoplay onended="openedTheAlbumScreenPage2(); clearTheAudio();" class="SoundEffects" id="currentAudio">
+                <audio autoplay onended="openedTheAlbumScreenPage2(); clearTheAudio();" class="SoundEffects" id="currentAudio">
                     <source 
                         src="audio/wickclse.wav" 
                         type="audio/mpeg">
@@ -1922,7 +1922,7 @@ function goToADifferentScreenInMattiesRoom(event) {
         document
             .getElementById("media_elements")
             .innerHTML = `
-                <audio controls autoplay onended="openedTheAlbumScreen(); clearTheAudio();" class="SoundEffects" id="currentAudio">
+                <audio autoplay onended="openedTheAlbumScreen(); clearTheAudio();" class="SoundEffects" id="currentAudio">
                     <source 
                         src="audio/paper2.wav" 
                         type="audio/mpeg">
@@ -1936,7 +1936,7 @@ function goToADifferentScreenInMattiesRoom(event) {
         document
             .getElementById("media_elements")
             .innerHTML = `
-                <audio controls autoplay onended="openedTheAlbumScreen(); clearTheAudio();" class="SoundEffects" id="currentAudio">
+                <audio autoplay onended="openedTheAlbumScreen(); clearTheAudio();" class="SoundEffects" id="currentAudio">
                     <source 
                         src="audio/wickopn.wav" 
                         type="audio/mpeg">
@@ -1949,7 +1949,7 @@ function goToADifferentScreenInMattiesRoom(event) {
         document
             .getElementById("media_elements")
             .innerHTML = `
-                <audio controls autoplay onended="openedTheAlbumScreenPage3(); clearTheAudio();" class="SoundEffects" id="currentAudio">
+                <audio autoplay onended="openedTheAlbumScreenPage3(); clearTheAudio();" class="SoundEffects" id="currentAudio">
                     <source 
                         src="audio/paper2.wav" 
                         type="audio/mpeg">
@@ -1962,7 +1962,7 @@ function goToADifferentScreenInMattiesRoom(event) {
         document
             .getElementById("media_elements")
             .innerHTML = `
-                <audio controls autoplay onended="openedTheAlbumScreenPage4(); clearTheAudio();" class="SoundEffects" id="currentAudio">
+                <audio autoplay onended="openedTheAlbumScreenPage4(); clearTheAudio();" class="SoundEffects" id="currentAudio">
                     <source 
                         src="audio/paper2.wav" 
                         type="audio/mpeg">
@@ -2000,7 +2000,7 @@ function goToADifferentScreenInMattiesRoom(event) {
         document
             .getElementById("media_elements")
             .innerHTML = `
-                <audio controls autoplay onended="closedMagazine3(); clearTheAudio();" class="SoundEffects" id="currentAudio">
+                <audio autoplay onended="closedMagazine3(); clearTheAudio();" class="SoundEffects" id="currentAudio">
                     <source 
                         src="audio/magazine.wav" 
                         type="audio/mpeg">
@@ -2013,7 +2013,7 @@ function goToADifferentScreenInMattiesRoom(event) {
         document
             .getElementById("media_elements")
             .innerHTML = `
-                <audio controls autoplay onended="magazine3page1(); clearTheAudio();" class="SoundEffects" id="currentAudio">
+                <audio autoplay onended="magazine3page1(); clearTheAudio();" class="SoundEffects" id="currentAudio">
                     <source 
                         src="audio/magazine.wav" 
                         type="audio/mpeg">
@@ -2505,7 +2505,7 @@ function usingTheTV() {
                         top: 10px;
                         z-index: 5;
                     "></div>
-                    <video playsinline autoplay controls mute loop style="
+                    <video playsinline autoplay mute loop style="
                         position: absolute;
                         top: 115px;
                         left: 178px;">
@@ -2517,7 +2517,7 @@ function usingTheTV() {
         document
             .getElementById("media_elements")
             .innerHTML = `
-                <audio controls 
+                <audio 
                     
                     autoplay 
                     loop
@@ -2527,7 +2527,7 @@ function usingTheTV() {
                         src="audio/noise1.wav" 
                         type="audio/mpeg">
                 </audio>
-                <audio controls 
+                <audio 
                      
                     id="ICantOverTV">
                     <source 
@@ -2547,7 +2547,7 @@ function usingTheTV() {
         document
             .getElementById("media_elements")
             .innerHTML = `
-                <audio controls 
+                <audio 
                     
                     autoplay 
                     class="SoundOfVoice" 

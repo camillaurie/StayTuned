@@ -9,7 +9,7 @@ function theOpeningLetter(event) {
         document
             .getElementById('game_music')
             .innerHTML = `
-                <audio controls autoplay loop class="SoundOfMusic"">
+                <audio autoplay loop class="SoundOfMusic"">
                     <source 
                         src="audio/Music_Stage.mp3" 
                         type="audio/mpeg">
@@ -22,7 +22,7 @@ function theOpeningLetter(event) {
                 <div class="game">
                     <div id="menu_button" class="game__menu"></div>
                     <div id="video" class="game__scene">
-                        <video playsinline autoplay controls class="SoundOfVoice" id="currentVideo"    >
+                        <video playsinline autoplay class="SoundOfVoice" id="currentVideo"    >
                             <source src="video/the_opening_letter.webm" type="video/webm">
                         </video>
                     </div>

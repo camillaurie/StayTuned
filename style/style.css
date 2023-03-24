@@ -59,7 +59,7 @@ body {
 
 .game__menu {
     position: absolute;
-    background-color: #777777d6;
+    /* background-color: #777777d6; */
     width: 39px;
     height: 73px;
     left: 5px;
@@ -76,7 +76,7 @@ body {
 
 .menu__item {
     list-style: none;
-    background-color: #ffffff4f;
+    /* background-color: #ffffff4f; */
     width: 294px;
     height: 23px;
     margin: 24px;
@@ -88,13 +88,13 @@ body {
 
 .arrowdown {
     position: absolute;
-    background-color: #6aa2e24f;
+    /* background-color: #6aa2e24f; */
     cursor: url(../pics/sprites/arrow_down.png), pointer;
 }
 
 .arrowup {
     position: absolute;
-    background-color: #60db3b4f;
+    /* background-color: #60db3b4f; */
     cursor: url(../pics/sprites/arrow_up.png), pointer;
 }
 
@@ -130,7 +130,7 @@ body {
 }
 
 .activesides {
-    background-color: #ffffff40;
+    /* background-color: #ffffff40; */
     height: 292px;
     width: 50px;
     position: absolute;
@@ -169,7 +169,7 @@ body {
     position: absolute;
     left: 52px;
     top: 338px;
-    background-color: #000000;
+    /* background-color: #000000; */
     height: 123px;
     width: 284px;
     padding: 0 25px;
@@ -197,12 +197,12 @@ body {
 }
 
 .activelocationspot div {
-    background-color: #37ff0066;
+    /* background-color: #37ff0066; */
     position: absolute;
 }
 
 .greymagnifying {
-    background-color: #cf10105b;
+    /* background-color: #cf10105b; */
     height: 292px;
     width: 50px;
     position: absolute;
@@ -220,18 +220,18 @@ body {
 
 .backpointer {
     cursor: url(../pics/sprites/back_away.png), s-resize;
-    background-color: #d1c73d66;
+    /* background-color: #d1c73d66; */
     position: absolute;
 }
 
 .theendpointer {
     cursor: url(../pics/sprites/theend.png), not-allowed;
-    background-color: #71474766;
+    /* background-color: #71474766; */
     position: absolute;
 }
 
 .redmagnifying {
-    background-color: #506c3866;
+    /* background-color: #506c3866; */
     position: absolute;
 }
 
@@ -278,14 +278,14 @@ body {
     left: 197px;
     width: 210px;
     height: 38px;
-    background-color: #00000077;
+    /* background-color: #00000077; */
 }
 
 .inventory__place {
     position: absolute;
     display: flex;
     flex-wrap: wrap;
-    background-color: #000000;
+    /* background-color: #000000; */
     width: 150px;
     height: 123px;
     padding-top: 3px;

@@ -31,7 +31,7 @@ function closeEmptyInventory() {
             <div class="inventory_close_gif">
                 <img id="closed_inventory_gif" alt="" src="pics/sprites/inventory_closes.gif">
             </div>
-            <audio controls id="inventoryclicksound" class="SoundEffects" autoplay>
+            <audio id="inventoryclicksound" class="SoundEffects" autoplay>
                 <source src="audio/Clik7.wav" type="audio/mpeg">
             </audio>
         `
@@ -168,10 +168,10 @@ function closedInventoryToInventoryWithKeys() {
             <div id="inventory__place" class="inventory__place">
                 <div id="apartmentkeys" class="inventory__item inventory__keys"></div>
             </div>
-            <video playsinline autoplay controls onended="killVideoOpenGif()" id="inventory_opens_video_gif" class="inventory_open_gif">
+            <video playsinline autoplay onended="killVideoOpenGif()" id="inventory_opens_video_gif" class="inventory_open_gif">
                 <source src="pics/sprites/inventory_opens.webm">
             </video>
-            <audio controls id="inventoryclicksound" class="SoundEffects" autoplay>
+            <audio id="inventoryclicksound" class="SoundEffects" autoplay>
                 <source src="audio/Clik7.wav" type="audio/mpeg">
             </audio>`
 }
