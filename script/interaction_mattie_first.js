@@ -457,13 +457,18 @@ function interaction_mattie_first() {
         .getElementById("wrapper")
         .innerHTML = `
             <div class="game">
+                <div id="help" style="display: none;">
+                    <img src="pics/help.png" alt="">
+                    <div id="backFromHelp"></div>
+                    <audio class="SoundOfMusic" id="helpSong" src="audio/main.mp3">
+                </div>
                 <div id="menu_button" class="game__menu"></div>
                 <div id='video' class="game__scene">
                     <video playsinline autoplay controls class="SoundOfVoice" id="currentVideo"    onended="defaultMattieImage();">
                         <source src="video/mattie_welcome.webm" type="video/webm">
                     </video>
                 </div>
-                <div class="game__help">!!!</div>
+                <div id="game__help" class="game__help"></div>
                 <div class="game__time">!!!</div>
                 <div class="game__dialogue dialogue">
                     <div id="wholedialogue" class="dialogue__window">

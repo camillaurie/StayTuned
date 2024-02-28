@@ -67,6 +67,32 @@ body {
     border-radius: 50%;
 }
 
+#help {
+    position: absolute;
+    z-index: 20;
+}
+
+#backFromHelp {
+    background: white;
+    opacity: 60%;
+    width: 74px;
+    height: 39px;
+    position: absolute;
+    top: 419px;
+    left: 280px;
+    border-radius: 50%;
+}
+
+.game__help {
+    position: absolute;
+    background-color: #777777d6;
+    width: 39px;
+    height: 73px;
+    left: 595px;
+    top: 41px;
+    border-radius: 50%;
+}
+
 .menu__list {
     padding: 10px;
     position: absolute;

@@ -74,6 +74,11 @@ function PauseAllTheSoundsOfTheGame() {
             .querySelector('.PersistentSoundEffects')
             .pause();
     }
+    if (document.querySelector('.SoundEffects')) {
+        document
+            .querySelector('.SoundEffects')
+            .pause();
+    }
 }
 
 function PlayAllTheSoundsOfTheGame() {
@@ -209,6 +214,39 @@ function pauseTheGameInMainMenu(event) {
             .querySelector('.continue_game') 
             .classList.add('active__point');
         PauseAllTheSoundsOfTheGame();
+    }
+}
+
+document
+    .getElementById("wrapper")
+    .addEventListener("click", pauseTheGameInHelpScreen);
+function pauseTheGameInHelpScreen(event) {
+    if (event && event.target.id == 'game__help') {
+        PauseAllTheSoundsOfTheGame();
+        document
+            .getElementById('help')
+            .style.display = 'block';
+        document
+            .getElementById('helpSong')
+            .currentTime = 0;
+        document
+            .getElementById('helpSong')
+            .play();
+    }
+}
+
+document
+    .getElementById("wrapper")
+    .addEventListener("click", goBackFromHelpScreen);
+function goBackFromHelpScreen(event) {
+    if (event && event.target.id == 'backFromHelp') {
+        PlayAllTheSoundsOfTheGame();
+        document
+            .getElementById('help')
+            .style.display = 'none';
+            document
+                .getElementById('helpSong')
+                .pause();
     }
 }
 

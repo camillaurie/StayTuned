@@ -91,7 +91,7 @@ let SE1X_all = `
             <div id="turnleftincirclestudio1" class ="activesides activeleftside"></div>
             <div id="turnrightincirclestudio1" class ="activesides activerightside"></div>
         </div>
-        <video playsinline autoplay controls id="talkToRalph"  muted loop onclick="interaction_ralph()">
+        <video playsinline autoplay id="talkToRalph"  muted loop onclick="interaction_ralph()">
             <source src="video/ralph.webm" type="video/webm">
         </video>;
     `
@@ -133,29 +133,29 @@ let SE1X_2 = `
         left: 304px;
         ">
     </div>`;
-    // <video playsinline autoplay controls id="talkToRalph"  mute loop style="
+    // <video playsinline autoplay id="talkToRalph"  mute loop style="
     //     position: absolute;
-    //     top: 87px;
-    //     left: 239px;
-    //     width: 70px;">
+    //         top: 89px;
+    //         left: 243px;
+    //         width: 60px;
     //     <source src="video/ralph.webm" type="video/webm">
     // </video>
 
 let SE1X_3 = `<img id="circlingPicture" src="pics/studio_first_circle/SE1X_3.webp">`;
-    // <video playsinline autoplay controls id="talkToRalph"  mute loop style="
+    // <video playsinline autoplay id="talkToRalph"  mute loop style="
     //     position: absolute;
-    //     top: 87px;
-    //     left: 239px;
-    //     width: 70px;">
+    //         top: 89px;
+    //         left: 243px;
+    //         width: 60px;">
     //     <source src="video/ralph.webm" type="video/webm">
     // </video>;
 
 let SE1X_4 = `<img id="circlingPicture" src="pics/studio_first_circle/SE1X_4.webp">`;
-    // <video playsinline autoplay controls id="talkToRalph"  mute loop style="
+    // <video playsinline autoplay id="talkToRalph"  mute loop style="
     //     position: absolute;
-    //     top: 87px;
-    //     left: 239px;
-    //     width: 70px;">
+    //         top: 89px;
+    //         left: 243px;
+    //         width: 60px;">
     //     <source src="video/ralph.webm" type="video/webm">
     // </video>;
 
@@ -326,9 +326,9 @@ async function startTheCycleInStudio1(event) {
                         .getElementById("talkToRalph")
                         .style = `
                             position: absolute;
-                            top: 84px;
-                            left: 44px;
-                            width: 74px;
+                            top: 82px;
+                            left: 46px;
+                            width: 67px;
                         `
                     ;
                 };
@@ -337,9 +337,9 @@ async function startTheCycleInStudio1(event) {
                     .getElementById("talkToRalph")
                     .style = `    
                         position: absolute;
-                        top: 87px;
-                        left: 239px;
-                        width: 70px;">
+                        top: 89px;
+                        left: 243px;
+                        width: 60px;">
                     `
                 ;
             } else if (s == 4) {
@@ -348,8 +348,8 @@ async function startTheCycleInStudio1(event) {
                     .style = `
                         position: absolute;
                         top: 82px;
-                        left: 431px;
-                        width: 76px;
+                        left: 434px;
+                        width: 68px;
                     `
                 ;
             } else {
@@ -381,9 +381,9 @@ async function startTheCycleInStudio1(event) {
                         .getElementById("talkToRalph")
                         .style = `
                             position: absolute;
-                            top: 84px;
-                            left: 44px;
-                            width: 74px;
+                            top: 82px;
+                            left: 46px;
+                            width: 67px;
                         `
                     ;
                 } else if (s == 3) {
@@ -391,9 +391,9 @@ async function startTheCycleInStudio1(event) {
                         .getElementById("talkToRalph")
                         .style = `
                             position: absolute;
-                            top: 87px;
-                            left: 239px;
-                            width: 70px;
+                            top: 89px;
+                            left: 243px;
+                            width: 60px;
                         `
                     ;
                 } else if (s == 4) {
@@ -402,8 +402,8 @@ async function startTheCycleInStudio1(event) {
                         .style = `
                             position: absolute;
                             top: 82px;
-                            left: 431px;
-                            width: 76px;
+                            left: 434px;
+                            width: 68px;
                         `
                     ;
                 } else {
@@ -434,22 +434,22 @@ function exploringTheStudioDay() {
         document.getElementById('talkToRalph').style = `
             position: absolute;
             top: 82px;
-            left: 431px;
-            width: 76px;`
+            left: 434px;
+            width: 68px;`
         ;
     } else if (s == 3) {
         document.getElementById('talkToRalph').style = `
             position: absolute;
-            top: 87px;
-            left: 239px;
-            width: 70px;`
+            top: 89px;
+            left: 243px;
+            width: 60px;`
         ;
     } else if (s == 2) {
         document.getElementById('talkToRalph').style = `
             position: absolute;
-            top: 84px;
-            left: 44px;
-            width: 74px;`
+            top: 82px;
+            left: 46px;
+            width: 67px;`
         ;
     } else {
         document.getElementById('talkToRalph').style = `display: none;`
@@ -507,9 +507,9 @@ function goToADifferentScreenInStudio1(event) {
                     .getElementById("talkToRalph")
                     .style = `
                         position: absolute;
-                        top: 84px;
-                        left: 44px;
-                        width: 74px;
+                        top: 82px;
+                        left: 46px;
+                        width: 67px;
                     `
                 ;
             };
